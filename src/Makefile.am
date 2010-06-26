@@ -2,6 +2,7 @@ AM_CPPFLAGS = \
 	-I$(top_srcdir) \
 	-DICONDIR='"$(datadir)/icons"' \
 	-DGLADEDIR='"$(pkgdatadir)/glade"' \
+	-DLOCALEDIR=\"$(localedir)\" \
 	$(GIGGLE_CFLAGS) $(PLATFORM_CFLAGS) \
 	$(WARN_CFLAGS)
 
