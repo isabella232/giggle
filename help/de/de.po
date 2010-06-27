@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: giggle help master\n"
 "POT-Creation-Date: 2010-05-01 22:40+0000\n"
-"PO-Revision-Date: 2010-06-27 21:48+0100\n"
+"PO-Revision-Date: 2010-06-27 22:15+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -47,8 +47,8 @@ msgid ""
 msgstr ""
 "Um eine neue Markierung zu erstellen, öffnen Sie durch Anklicken einer "
 "Einspielung im Revisionsfenster mit der rechten Maustaste das Kontextmenü. "
-"Dabei spielt es keine Rolle, ob sich dieses derzeit im Browser- oder "
-"Chronikmodus befindet. Klicken Sie anschließend auf <gui>Neue Markierung</"
+"Dabei spielt es keine Rolle, ob sich dieses derzeit im Datei- oder "
+"Verlaufsmodus befindet. Klicken Sie anschließend auf <gui>Neue Markierung</"
 "gui> und geben Sie einen Namen im geöffneten Dialogfenster ein."
 
 #: C/tagging-commits.page:28(p)
@@ -249,11 +249,11 @@ msgstr "translated"
 
 #: C/history-view.page:6(desc)
 msgid "Viewing the history of a repository"
-msgstr "Betrachten der Chronik eines Softwarebestandes"
+msgstr "Betrachten des Verlaufs eines Softwarebestandes"
 
 #: C/history-view.page:25(title)
 msgid "History view"
-msgstr "Chronikansicht"
+msgstr "Verlaufsansicht"
 
 #: C/history-view.page:27(title) C/browse-view.page:28(title)
 msgid "Overview"
@@ -261,17 +261,17 @@ msgstr "Überblick"
 
 #: C/history-view.page:29(desc)
 msgid "Giggle in History view mode"
-msgstr "Giggle in der Chronikansicht"
+msgstr "Giggle in der Verlaufsansicht"
 
 #: C/history-view.page:32(p)
 msgid "<app>Giggle</app>'s history view is set up in three main parts:"
 msgstr ""
-"Die Chronikansicht in <app>Giggle</app> gliedert sich in drei "
+"Die Verlaufsansicht in <app>Giggle</app> gliedert sich in drei "
 "Hauptbestandteile:"
 
 #: C/history-view.page:35(p) C/browse-view.page:44(p)
 msgid "History graph"
-msgstr "Chronik-Graph"
+msgstr "Verlaufs-Graph"
 
 #: C/history-view.page:36(p)
 msgid ""
@@ -281,12 +281,12 @@ msgid ""
 "Moving through history is accomplished either by using the mouse or the "
 "<key>Up</key> and <key>Down</key> keys."
 msgstr ""
-"Zeigt eine visuelle Darstellung der Chronik des aktuellen Softwarebestandes "
+"Zeigt eine visuelle Darstellung des Verlaufs des aktuellen Softwarebestandes "
 "an, einschließlich aller lokalen oder entfernten Zweige. Wenn Sie den "
 "Mauszeiger über die Symbole bewegen, werden zusätzliche Informationen "
 "angezeigt, wie beispielsweise die Namen der Zweige und Markierungen. Sie "
 "können siech entweder mit der Maus oder mit den <key>Pfeiltasten hoch und "
-"runter</key> durch die Chronik bewegen."
+"runter</key> durch den Verlauf bewegen."
 
 #: C/history-view.page:39(p)
 msgid "Changed files"
@@ -334,17 +334,16 @@ msgstr "Betrachten des Inhalts eines Softwarebestandes"
 
 #: C/browse-view.page:26(title)
 msgid "Browse view"
-msgstr "Browseransicht"
+msgstr "Dateiansicht"
 
 #: C/browse-view.page:30(desc)
 msgid "Giggle in Browse view mode"
-msgstr "Giggle in der Browseransicht"
+msgstr "Giggle in der Dateiansicht"
 
 #: C/browse-view.page:33(p)
 msgid "<app>Giggle</app>'s browse view is set up in three main parts:"
 msgstr ""
-"Die Browseransicht in <app>Giggle</app> gliedert sich in drei "
-"Hauptbestandteile:"
+"Die Dateiansicht in <app>Giggle</app> gliedert sich in drei Hauptbestandteile:"
 
 #: C/browse-view.page:36(p)
 msgid "Project tree"
@@ -370,7 +369,7 @@ msgstr ""
 msgid ""
 "Displays a visual representation of the currently selected file's history"
 msgstr ""
-"Zeigt eine visuelle Darstellung der Chronik der aktuell ausgewählten Datei an"
+"Zeigt eine visuelle Darstellung des Verlaufs der aktuell ausgewählten Datei an"
 
 #: C/browse-view.page:50(title)
 msgid "About the Project tree"
