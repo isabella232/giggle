@@ -1,13 +1,13 @@
 # German translation for giggle.
 # Copyright (C) 2010 giggle's COPYRIGHT HOLDER
 # This file is distributed under the same license as the giggle package.
-# Mario Blättermann <mariobl@freenet.de>, 2010.
+# Mario Blättermann <mariobl@gnome.org>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: giggle master\n"
-"POT-Creation-Date: 2010-05-01 12:18+0000\n"
-"PO-Revision-Date: 2010-05-02 00:36+0100\n"
+"Project-Id-Version: giggle help master\n"
+"POT-Creation-Date: 2010-05-01 22:40+0000\n"
+"PO-Revision-Date: 2010-06-27 21:48+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -45,12 +45,19 @@ msgid ""
 "revision window (it doesn't matter if it's the Browse or History view), then "
 "click <gui>Create tag</gui> and enter a name in the just opened dialog window."
 msgstr ""
+"Um eine neue Markierung zu erstellen, öffnen Sie durch Anklicken einer "
+"Einspielung im Revisionsfenster mit der rechten Maustaste das Kontextmenü. "
+"Dabei spielt es keine Rolle, ob sich dieses derzeit im Browser- oder "
+"Chronikmodus befindet. Klicken Sie anschließend auf <gui>Neue Markierung</"
+"gui> und geben Sie einen Namen im geöffneten Dialogfenster ein."
 
 #: C/tagging-commits.page:28(p)
 msgid ""
 "You will notice that near the revision you have selected a new icon has "
 "appeared - it's your newly created tag."
 msgstr ""
+"Ihnen wird auffallen, dass neben der ausgewählten Revision ein neues Symbol "
+"erschienen ist. Dies ist Ihre neu erstellte Markierung."
 
 #: C/opening-repositories.page:6(desc)
 msgid "Opening GIT repositories"
@@ -69,15 +76,19 @@ msgid ""
 "using <guiseq><gui>Project</gui><gui>Open</gui></guiseq>, and selecting the "
 "directory with your repository,"
 msgstr ""
+"Wählen Sie <guiseq><gui>Projekt</gui><gui>Öffnen</gui></guiseq> und wählen "
+"Sie den Ordner aus, welcher Ihren Softwarebestand enthält."
 
 #: C/opening-repositories.page:33(p)
 msgid "running <cmd>giggle</cmd> in your project's directory,"
-msgstr ""
+msgstr "Rufen Sie <cmd>giggle</cmd> im Ordner Ihres Softwarebestandes auf."
 
 #: C/opening-repositories.page:36(p)
 msgid ""
 "running <cmd>giggle</cmd> with the repository path specified as an argument."
 msgstr ""
+"Rufen Sie <cmd>giggle</cmd> auf und fügen Sie zum Befehl den Pfad zum "
+"Softwarebestand als Argument hinzu."
 
 #: C/license.page:7(desc)
 msgid "Legal information."
@@ -165,6 +176,7 @@ msgstr ""
 #: C/introduction.page:6(desc)
 msgid "Introduction to the <app>Giggle</app> GIT repository viewer"
 msgstr ""
+"Einführung in <app>Giggle</app>, einen Betrachter für GIT-Softwarebestände"
 
 #: C/introduction.page:26(title)
 msgid "Introduction"
@@ -199,6 +211,8 @@ msgid ""
 "Run <cmd>giggle</cmd> at the prompt in a terminal such or from the <gui>Run "
 "Application</gui> dialog."
 msgstr ""
+"Rufen Sie <cmd>giggle</cmd> in der Eingabezeile eines Terminalfensters oder "
+"im Dialog <gui>Anwendung ausführen</gui> auf."
 
 #: C/introduction.page:43(title)
 msgid "Closing <app>giggle</app>"
@@ -231,7 +245,7 @@ msgstr "Arbeiten mit GIT-Softwarebeständen"
 msgid ""
 "@@image: 'figures/giggle-history_view_sections.png'; "
 "md5=3b487583a028a4d087e3d6a5bcd589b8"
-msgstr ""
+msgstr "translated"
 
 #: C/history-view.page:6(desc)
 msgid "Viewing the history of a repository"
@@ -239,7 +253,7 @@ msgstr "Betrachten der Chronik eines Softwarebestandes"
 
 #: C/history-view.page:25(title)
 msgid "History view"
-msgstr ""
+msgstr "Chronikansicht"
 
 #: C/history-view.page:27(title) C/browse-view.page:28(title)
 msgid "Overview"
@@ -247,15 +261,17 @@ msgstr "Überblick"
 
 #: C/history-view.page:29(desc)
 msgid "Giggle in History view mode"
-msgstr ""
+msgstr "Giggle in der Chronikansicht"
 
 #: C/history-view.page:32(p)
 msgid "<app>Giggle</app>'s history view is set up in three main parts:"
 msgstr ""
+"Die Chronikansicht in <app>Giggle</app> gliedert sich in drei "
+"Hauptbestandteile:"
 
 #: C/history-view.page:35(p) C/browse-view.page:44(p)
 msgid "History graph"
-msgstr ""
+msgstr "Chronik-Graph"
 
 #: C/history-view.page:36(p)
 msgid ""
@@ -265,6 +281,12 @@ msgid ""
 "Moving through history is accomplished either by using the mouse or the "
 "<key>Up</key> and <key>Down</key> keys."
 msgstr ""
+"Zeigt eine visuelle Darstellung der Chronik des aktuellen Softwarebestandes "
+"an, einschließlich aller lokalen oder entfernten Zweige. Wenn Sie den "
+"Mauszeiger über die Symbole bewegen, werden zusätzliche Informationen "
+"angezeigt, wie beispielsweise die Namen der Zweige und Markierungen. Sie "
+"können siech entweder mit der Maus oder mit den <key>Pfeiltasten hoch und "
+"runter</key> durch die Chronik bewegen."
 
 #: C/history-view.page:39(p)
 msgid "Changed files"
@@ -272,7 +294,7 @@ msgstr "Veränderte Dateien"
 
 #: C/history-view.page:40(p)
 msgid "Displays files changed in the currently selected revision"
-msgstr ""
+msgstr "Zeigt geänderte Dateien in der aktuell ausgewählten Revision"
 
 #: C/history-view.page:43(p)
 msgid "Diff"
@@ -280,7 +302,7 @@ msgstr "Diff"
 
 #: C/history-view.page:44(p)
 msgid "Displays the differences for the selected file and revision."
-msgstr ""
+msgstr "Zeigt die Unterschiede für die gewählte Datei und Revision an."
 
 #: C/history-view.page:46(p)
 msgid ""
@@ -290,6 +312,13 @@ msgid ""
 "<keyseq><key>Alt</key><key>Down</key></keyseq> keys. Doing so will also move "
 "you through the list of changed files as the diff progresses."
 msgstr ""
+"<app>Giggle</app> zeigt die Unterschiede in einzelnen Abschnitten an. Sie "
+"können sich darin entweder mit Hilfe der Hoch- und Runter-Symbole oberhalb "
+"der Liste der geänderten Dateien oder durch Drücken der Tastenkombinationen "
+"<keyseq><key>Alt</key><key>Pfeiltaste hoch</key></keyseq> und "
+"<keyseq><key>Alt</key><key>Pfeiltaste runter</key></keyseq> bewegen. Auf "
+"diese Weise bewegen Sie sich auch durch die Liste der geänderten Dateien, "
+"wenn die Unterschiede fortschreiten."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -297,7 +326,7 @@ msgstr ""
 msgid ""
 "@@image: 'figures/giggle-browse_view_sections.png'; "
 "md5=390225c079a94ec75fd1c172f90c6b3c"
-msgstr ""
+msgstr "translated"
 
 #: C/browse-view.page:6(desc)
 msgid "Viewing the contents of the repository"
@@ -305,15 +334,17 @@ msgstr "Betrachten des Inhalts eines Softwarebestandes"
 
 #: C/browse-view.page:26(title)
 msgid "Browse view"
-msgstr ""
+msgstr "Browseransicht"
 
 #: C/browse-view.page:30(desc)
 msgid "Giggle in Browse view mode"
-msgstr ""
+msgstr "Giggle in der Browseransicht"
 
 #: C/browse-view.page:33(p)
 msgid "<app>Giggle</app>'s browse view is set up in three main parts:"
 msgstr ""
+"Die Browseransicht in <app>Giggle</app> gliedert sich in drei "
+"Hauptbestandteile:"
 
 #: C/browse-view.page:36(p)
 msgid "Project tree"
@@ -339,6 +370,7 @@ msgstr ""
 msgid ""
 "Displays a visual representation of the currently selected file's history"
 msgstr ""
+"Zeigt eine visuelle Darstellung der Chronik der aktuell ausgewählten Datei an"
 
 #: C/browse-view.page:50(title)
 msgid "About the Project tree"
@@ -352,10 +384,16 @@ msgid ""
 "context menu option <gui>Show all files</gui>. Files which are not part of "
 "your repository are greyed out."
 msgstr ""
+"Der Projektbaum ist ein bedeutsamer Bestandteil der Benutzeroberfläche von "
+"Giggle. Standardmäßig werden keine aufgrund der Liste in <file>.gitignore</"
+"file> verborgenen Dateien angezeigt. Sie können dieses Verhalten mit der "
+"Option <gui>Alle Dateien anzeigen</gui> im Kontexmenü ändern. Dateien, die "
+"nicht von der Softwareverwaltung erfasst sind, werden dann ausgegraut "
+"dargestellt."
 
 #: C/browse-view.page:52(p)
 msgid "The Project tree offers you the following:"
-msgstr ""
+msgstr "Der Projektbaum ermöglicht Folgendes:"
 
 #: C/browse-view.page:55(p)
 msgid "Adding files to the repository."
@@ -364,6 +402,8 @@ msgstr "Dateien zum Softwarebestand hinzufügen."
 #: C/browse-view.page:56(p)
 msgid "By using the <gui>Add file to repository</gui> context menu option."
 msgstr ""
+"Mit Hilfe der Option <gui>Datei zum Softwarebestand hinzufügen</gui> im "
+"Kontexmenü."
 
 #: C/browse-view.page:59(p)
 msgid "Adding/removing files to <file>.gitignore</file>."
@@ -374,6 +414,8 @@ msgid ""
 "By using the <gui>Add to .gitignore</gui> or <gui>Remove from .gitignore</"
 "gui> context menu options."
 msgstr ""
+"Mit Hilfe der Optionen <gui>Zu .gitignore hinzufügen</gui> und <gui>Aus ."
+"gitignore entfernen</gui> im Kontexmenü."
 
 #: C/browse-view.page:63(p)
 msgid "Editing files"
@@ -381,7 +423,7 @@ msgstr "Bearbeiten von Dateien"
 
 #: C/browse-view.page:66(p)
 msgid "Committing"
-msgstr ""
+msgstr "Einspielen"
 
 #: C/browse-view.page:69(p)
 msgid "Creating patches"
@@ -392,6 +434,8 @@ msgid ""
 "When there are any unstaged changes in the file list, you can create a patch "
 "by using the <gui>Create patch</gui> context menu option."
 msgstr ""
+"Falls es zurückgenommene Änderungen in der Dateiliste gibt, können Sie mit "
+"der Option <gui>Patch erstellen</gui> im Kontextmenü einen Patch erstellen."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/index.page:0(None)
