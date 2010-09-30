@@ -1115,8 +1115,8 @@ goto_entry_activate_cb (GtkEntry       *entry,
 }
 
 static void
-goto_item_clicked_cb (GtkObject *button,
-	 	      GtkWidget *entry)
+goto_item_clicked_cb (GtkToolButton *toolbutton,
+                      GtkWidget     *entry)
 {
 	g_signal_emit_by_name (entry, "activate", 0);
 }
