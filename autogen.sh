@@ -1,23 +1,11 @@
 #!/bin/sh
 # Run this to generate all the initial makefiles, etc.
 
-srcdir=`dirname $0`
-test -z "$srcdir" && srcdir=.
-
-PKG_NAME="giggle"
-
-(test -f $srcdir/configure.ac) || {
-    echo -n "**Error**: Directory "\`$srcdir\'" does not look like the"
-    echo " top-level $PKG_NAME directory"
-    exit 1
-}
-
-which gnome-autogen.sh || {
-    echo "You need to install gnome-common module and make"
-    echo "sure the gnome-autogen.sh script is in your \$PATH."
-    exit 1
-}
-
-autopoint --force || exit $?
-
-USE_GNOME2_MACROS=1 . gnome-autogen.sh
+test -n "$srcdir" || srcdir=`dirname "$0"`
+test -n "$srcdir" || srcdir=.
+(
+  cd "$srcdir" &&
+  autopoint --force &&
+  AUTOPOINT='intltoolize --automake --copy' autoreconf --force --install
+) || exit
+test -n "$NOCONFIGURE" || "$srcdir/configure" "$@"
