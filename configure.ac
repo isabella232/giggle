@@ -35,12 +35,6 @@ AC_C_INLINE
 AC_FUNC_MKTIME
 AC_CHECK_FUNCS([localtime_r setlocale strchr strrchr strstr])
 
-GNOME_COMPILE_WARNINGS([maximum])
-GNOME_CXX_WARNINGS([yes])
-
-GNOME_MAINTAINER_MODE_DEFINES
-DISABLE_DEPRECATED="$DISABLE_DEPRECATED -DGSEAL_ENABLE"
-AC_SUBST(DISABLE_DEPRECATED)
 
 AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
 AC_PATH_PROG(GLIB_MKENUMS, glib-mkenums)
@@ -189,6 +183,63 @@ else
   AC_DEFINE_UNQUOTED(GIT_COMMAND,"$GIT_COMMAND",[GIT command path])
 fi
 
+
+dnl ---------------------------------------------------------------------------
+dnl - Use strict options (default enabled for devs, disabled in releases)
+dnl ---------------------------------------------------------------------------
+if test -d ".git"; then
+	default_strict=yes
+else
+	default_strict=no
+fi
+
+AC_ARG_ENABLE(strict, AS_HELP_STRING([--enable-strict],[Enable strict compilation options]), enable_strict=$enableval,
+					enable_strict=$default_strict)
+if test x$enable_strict != xno; then
+	CPPFLAGS="$CPPFLAGS -DG_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_SINGLE_INCLUDES"
+	CPPFLAGS="$CPPFLAGS -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DGDK_DISABLE_DEPRECATED"
+	CPPFLAGS="$CPPFLAGS -DGSEAL_ENABLE"
+#	if test "$GCC" = "yes"; then
+#		CPPFLAGS="$CPPFLAGS -Werror"
+#	fi
+fi
+
+dnl ---------------------------------------------------------------------------
+dnl - Extra verbose warning switches
+dnl ---------------------------------------------------------------------------
+
+if test "$GCC" = "yes"; then
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wall"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wcast-align -Wno-uninitialized"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wmissing-declarations"
+#	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wredundant-decls"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wpointer-arith"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wcast-align"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wwrite-strings"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Winit-self"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wreturn-type"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wformat-nonliteral"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wformat-security"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wmissing-include-dirs"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wmissing-format-attribute"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wclobbered"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wempty-body"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wignored-qualifiers"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wsign-compare"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wtype-limits"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wuninitialized"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Waggregate-return"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wdeclaration-after-statement"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wshadow"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wno-strict-aliasing"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Winline"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wmissing-parameter-type"
+	WARNINGFLAGS_C="$WARNINGFLAGS_C -Woverride-init"
+else
+	WARNINGFLAGS_C=""
+fi
+AC_SUBST(WARNINGFLAGS_C)
+
 dnl -----------------------------------------------------------
 
 
@@ -209,6 +260,9 @@ AC_OUTPUT
 
 echo
 echo "Prefix:                    $prefix"
+echo "datadir:                   ${datadir}"
+echo "CFLAGS:                    ${CFLAGS}"
+echo "CPPFLAGS:                  ${CPPFLAGS}"
 echo "GIT command path:          $GIT_COMMAND"
 echo "Use Evolution Data Server: $enable_evolution_data_server"
 echo "Use VTE terminal widget:   $enable_terminal"
