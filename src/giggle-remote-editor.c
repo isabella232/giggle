@@ -185,8 +185,6 @@ giggle_remote_editor_init (GiggleRemoteEditor *remote_editor)
 
 	priv = GET_PRIV (remote_editor);
 
-	gtk_dialog_set_has_separator (GTK_DIALOG (remote_editor), FALSE);
-
 	builder = gtk_builder_new ();
 	if(!gtk_builder_add_from_file (builder, GLADEDIR "/main-window.ui", &error)) {
 		g_warning ("Couldn't load biulder file: %s", error->message);
