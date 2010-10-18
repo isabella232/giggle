@@ -1539,7 +1539,11 @@ window_update_search_ui (GiggleWindow *window)
 
 static void
 window_view_shell_switch_page_cb (GtkNotebook     *notebook,
-				  GtkNotebookPage *page,
+#if GTK_CHECK_VERSION (2,90,0)
+                                  GtkWidget       *page,
+#else
+                                  gpointer         page,
+#endif
 				  guint            page_num,
 				  GiggleWindow    *window)
 {
