@@ -619,7 +619,7 @@ source_view_expose_event_cb (GtkTextView    *text_view,
 	gtk_text_view_get_iter_at_location (text_view, &iter, visible_rect.x, visible_rect.y);
 	visible_rect.y += visible_rect.height;
 
-	gdk_drawable_get_size (left_margin, &margin_width, NULL);
+	margin_width = gdk_window_get_width (left_margin);
 	cairo_translate (cr, margin_width - 16, 0); /* FIXME: see GB#572785 */
 
 	do {
