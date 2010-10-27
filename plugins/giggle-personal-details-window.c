@@ -281,6 +281,5 @@ GtkWidget*
 giggle_personal_details_window_new (void)
 {
 	return g_object_new (GIGGLE_TYPE_PERSONAL_DETAILS_WINDOW,
-			     "has-separator", FALSE,
 			     NULL);
 }

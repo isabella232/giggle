@@ -236,7 +236,6 @@ giggle_clone_dialog_new (const gchar *repo, const gchar *dir) {
 
 	dialog = g_object_new (GIGGLE_TYPE_CLONE_DIALOG,
 	                       "title", _("Clone Repository"),
-	                       "has-separator", FALSE,
 	                       "border-width", 12,
 	                       NULL);
 	priv = dialog->priv;

@@ -273,7 +273,7 @@ short_list_show_dialog (GiggleShortList* self)
 
 	dialog = gtk_dialog_new_with_buttons (_("Details"),
 					      GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (self))),
-					      GTK_DIALOG_NO_SEPARATOR,
+	                                      0,
 					      GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE,
 					      NULL);
 

@@ -742,7 +742,7 @@ window_action_properties_cb (GtkAction    *action,
 
 		priv->summary_dialog = gtk_dialog_new_with_buttons
 			(title, GTK_WINDOW (window),
-			 GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_NO_SEPARATOR,
+			 GTK_DIALOG_DESTROY_WITH_PARENT,
 			 GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
 
 		summary_view = giggle_view_summary_new ();

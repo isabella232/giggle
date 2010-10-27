@@ -149,7 +149,6 @@ giggle_input_dialog_init (GiggleInputDialog *input_dialog)
 	gtk_window_set_resizable (GTK_WINDOW (input_dialog), FALSE);
 
 	gtk_dialog_set_default_response (GTK_DIALOG (input_dialog), GTK_RESPONSE_OK);
-	g_object_set (input_dialog, "has-separator", FALSE, NULL);
 }
 
 static void
