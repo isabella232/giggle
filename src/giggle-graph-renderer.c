@@ -107,20 +107,19 @@ static void giggle_graph_renderer_set_property (GObject         *object,
 						guint            param_id,
 						const GValue    *value,
 						GParamSpec      *pspec);
-static void giggle_graph_renderer_get_size     (GtkCellRenderer *cell,
-						GtkWidget       *widget,
-						GdkRectangle    *cell_area,
-						gint            *x_offset,
-						gint            *y_offset,
-						gint            *width,
-						gint            *height);
-static void giggle_graph_renderer_render       (GtkCellRenderer *cell,
-						GdkWindow       *window,
-						GtkWidget       *widget,
-						GdkRectangle    *background_area,
-						GdkRectangle    *cell_area,
-						GdkRectangle    *expose_area,
-						guint            flags);
+static void giggle_graph_renderer_get_size     (GtkCellRenderer    *cell,
+                                                GtkWidget          *widget,
+                                                const GdkRectangle *cell_area,
+                                                gint               *x_offset,
+                                                gint               *y_offset,
+                                                gint               *width,
+                                                gint               *height);
+static void giggle_graph_renderer_render       (GtkCellRenderer      *cell,
+                                                cairo_t              *cr,
+                                                GtkWidget            *widget,
+                                                const GdkRectangle   *background_area,
+                                                const GdkRectangle   *cell_area,
+                                                GtkCellRendererState  flags);
 
 G_DEFINE_TYPE (GiggleGraphRenderer, giggle_graph_renderer, GTK_TYPE_CELL_RENDERER)
 
@@ -210,13 +209,13 @@ giggle_graph_renderer_set_property (GObject      *object,
 }
 
 static void
-giggle_graph_renderer_get_size (GtkCellRenderer *cell,
-				GtkWidget       *widget,
-				GdkRectangle    *cell_area,
-				gint            *x_offset,
-				gint            *y_offset,
-				gint            *width,
-				gint            *height)
+giggle_graph_renderer_get_size (GtkCellRenderer    *cell,
+                                GtkWidget          *widget,
+                                const GdkRectangle *cell_area,
+                                gint               *x_offset,
+                                gint               *y_offset,
+                                gint               *width,
+                                gint               *height)
 {
 	GiggleGraphRendererPrivate *priv;
 	gint size;
@@ -266,20 +265,18 @@ set_source_color (cairo_t         *cr,
 }
 
 static void
-giggle_graph_renderer_render (GtkCellRenderer *cell,
-			      GdkWindow       *window,
-			      GtkWidget       *widget,
-			      GdkRectangle    *background_area,
-			      GdkRectangle    *cell_area,
-			      GdkRectangle    *expose_area,
-			      guint            flags)
+giggle_graph_renderer_render (GtkCellRenderer      *cell,
+                              cairo_t              *cr,
+			      GtkWidget            *widget,
+                              const GdkRectangle   *background_area,
+                              const GdkRectangle   *cell_area,
+                              GtkCellRendererState  flags)
 {
 	GiggleGraphRendererPrivate   *priv;
 	GiggleGraphRendererPathState *path_state;
 	GiggleRevision               *revision;
 	GArray                       *paths_state;
 	GHashTable                   *table;
-	cairo_t                      *cr;
 	gint                          x, y, h;
 	gint                          cur_pos, pos;
 	GList                        *children;
@@ -291,7 +288,6 @@ giggle_graph_renderer_render (GtkCellRenderer *cell,
 		return;
 	}
 
-	cr = gdk_cairo_create (window);
 	x = cell_area->x;
 	y = background_area->y;
 	h = background_area->height;
@@ -372,7 +368,6 @@ giggle_graph_renderer_render (GtkCellRenderer *cell,
 	cairo_fill (cr);
 	cairo_stroke (cr);
 
-	cairo_destroy (cr);
 	g_hash_table_destroy (table);
 }
 
