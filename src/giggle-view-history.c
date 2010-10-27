@@ -516,7 +516,8 @@ view_history_revision_list_key_press_cb (GiggleRevListView *list,
 
 	priv = view->priv;
 
-	if (event->keyval != GDK_space && event->keyval != GDK_BackSpace)
+	if (event->keyval != GDK_KEY_space &&
+	    event->keyval != GDK_KEY_BackSpace)
 		return FALSE;
 
 	giggle_view_shell_set_view_name (GIGGLE_VIEW_SHELL (priv->revision_shell), "DiffView");
@@ -525,7 +526,7 @@ view_history_revision_list_key_press_cb (GiggleRevListView *list,
 	adj_value = gtk_adjustment_get_value (adj);
 	page_size = gtk_adjustment_get_page_size (adj);
 
-	value = event->keyval == GDK_space ?
+	value = event->keyval == GDK_KEY_space ?
 		adj_value + (page_size * 0.8) :
 		adj_value - (page_size * 0.8);
 
@@ -534,7 +535,7 @@ view_history_revision_list_key_press_cb (GiggleRevListView *list,
 
 	if (gtk_tree_view_get_visible_range (GTK_TREE_VIEW (priv->revision_list), &start, &end)) {
 		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (priv->revision_list));
-		path = event->keyval == GDK_space ? end : start;
+		path = event->keyval == GDK_KEY_space ? end : start;
 
 		gtk_tree_selection_unselect_all (selection);
 		gtk_tree_selection_select_path (selection, path);
