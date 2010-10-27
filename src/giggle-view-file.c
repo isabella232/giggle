@@ -587,9 +587,9 @@ source_view_style_set_cb (GtkWidget      *widget,
 }
 
 static gboolean
-source_view_expose_event_cb (GtkTextView    *text_view,
-			     GdkEventExpose *event,
-			     GiggleViewFile *view)
+source_view_draw_cb (GtkTextView    *text_view,
+                     cairo_t        *cr,
+                     GiggleViewFile *view)
 {
 	GiggleViewFilePriv *priv = GET_PRIV (view);
 	GtkSourceBuffer    *buffer;
@@ -601,19 +601,11 @@ source_view_expose_event_cb (GtkTextView    *text_view,
 	const char         *name;
 	GdkColor           *color;
 	GtkTextIter         iter;
-	cairo_t            *cr;
 
 	left_margin = gtk_text_view_get_window (text_view, GTK_TEXT_WINDOW_LEFT);
 
-	if (left_margin != event->window)
-		return FALSE;
-
 	buffer = GTK_SOURCE_BUFFER (gtk_text_view_get_buffer (text_view));
 	color = &gtk_widget_get_style (priv->source_view)->base[GTK_STATE_SELECTED];
-
-	cr = gdk_cairo_create (event->window);
-	gdk_cairo_region (cr, event->region);
-	cairo_clip (cr);
 
 	gtk_text_view_get_visible_rect (text_view, &visible_rect);
 	gtk_text_view_get_iter_at_location (text_view, &iter, visible_rect.x, visible_rect.y);
@@ -646,8 +638,6 @@ source_view_expose_event_cb (GtkTextView    *text_view,
 
 		cairo_translate (cr, 0, height);
 	} while (gtk_text_iter_forward_line (&iter));
-
-	cairo_destroy (cr);
 
 	return FALSE;
 }
@@ -1518,8 +1508,8 @@ giggle_view_file_init (GiggleViewFile *view)
 			  G_CALLBACK (source_view_query_tooltip_cb), view);
 	g_signal_connect (priv->source_view, "style-set",
 			  G_CALLBACK (source_view_style_set_cb), view);
-	g_signal_connect (priv->source_view, "expose-event",
-			  G_CALLBACK (source_view_expose_event_cb), view);
+	g_signal_connect (priv->source_view, "draw",
+			  G_CALLBACK (source_view_draw_cb), view);
 
 	monospaced = pango_font_description_from_string ("Mono");
 	gtk_widget_modify_font (priv->source_view, monospaced);
