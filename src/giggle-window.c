@@ -939,8 +939,6 @@ static void
 window_action_about_cb (GtkAction    *action,
 			GiggleWindow *window)
 {
-	gchar *license_translated;
-
 	const char *artists[] = {
 		"Andreas Nilsson",
 		NULL
@@ -970,25 +968,6 @@ window_action_about_cb (GtkAction    *action,
 	                           "Copyright © 2008 - 2009 Mathias Hasselmann\n"
 	                           "Copyright © 2009 - 2010 The Giggle authors");
 
-	const gchar *license[] = {
-		N_("This program is free software; you can redistribute it and/or modify "
-		   "it under the terms of the GNU General Public License as published by "
-		   "the Free Software Foundation; either version 2 of the License, or "
-		   "(at your option) any later version."),
-		N_("This program is distributed in the hope that it will be useful, "
-		   "but WITHOUT ANY WARRANTY; without even the implied warranty of "
-		   "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the "
-		   "GNU General Public License for more details."),
-		N_("You should have received a copy of the GNU General Public License "
-		   "along with this program; if not, write to the Free Software Foundation, Inc., "
-		   "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA")
-	};
-	license_translated = g_strjoin ("\n\n",
-	                                _(license[0]),
-	                                _(license[1]),
-	                                _(license[2]),
-	                                NULL);
-
 	/* Translators: This is a special message that shouldn't be translated
          * literally. It is used in the about box to give credits to
          * the translators.
@@ -1005,7 +984,7 @@ window_action_about_cb (GtkAction    *action,
 	                       "comments", _("A graphical frontend for Git"),
 			       "copyright", copyright,
 	                       "documenters", documenters,
-	                       "license", license_translated,
+	                       "license-type", GTK_LICENSE_GPL_2_0,
 	                       "logo-icon-name", PACKAGE,
 	                       "title", _("About Giggle"),
 			       "translator-credits", translators,
@@ -1014,8 +993,6 @@ window_action_about_cb (GtkAction    *action,
 	                       "website-label", _("Giggle Website"),
 	                       "wrap-license", TRUE,
 			       NULL);
-
-	g_free (license_translated);
 }
 
 static void
