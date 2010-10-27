@@ -120,12 +120,12 @@ short_list_size_request (GtkWidget      *widget,
 	border_width = gtk_container_get_border_width (GTK_CONTAINER (widget));
 	spacing = gtk_box_get_spacing (GTK_BOX (widget));
 
-	gtk_widget_size_request (priv->label, &req);
+	gtk_widget_get_preferred_size (priv->label, &req, NULL);
 	*requisition = req;
 
-	gtk_widget_size_request (priv->content_box, &req);
+	gtk_widget_get_preferred_size (priv->content_box, &req, NULL);
+	gtk_widget_get_preferred_size (priv->more_button, &req, NULL);
 
-	gtk_widget_size_request (priv->more_button, &req);
 	requisition->width = MAX (requisition->width, req.width) + (2 * border_width);
 	requisition->height += req.width + spacing + (2 * border_width);
 }
@@ -164,7 +164,7 @@ short_list_size_allocate (GtkWidget     *widget,
 	child_allocation.width = allocation->width;
 
 	/* allocate label */
-	gtk_widget_size_request (priv->label, &label_requisition);
+	gtk_widget_get_preferred_size (priv->label, &label_requisition, NULL);
 
 	child_allocation.y = allocation->y;
 	child_allocation.height = label_requisition.height;
@@ -176,7 +176,7 @@ short_list_size_allocate (GtkWidget     *widget,
 	children = list = gtk_container_get_children (GTK_CONTAINER (priv->content_box));
 
 	while (list) {
-		gtk_widget_size_request (list->data, &data_requisition);
+		gtk_widget_get_preferred_size (list->data, &data_requisition, NULL);
 
 		content_height += data_requisition.height;
 		list = list->next;
@@ -185,7 +185,7 @@ short_list_size_allocate (GtkWidget     *widget,
 	if (content_height > allocation->height) {
 		GtkRequisition  button_requisition;
 
-		gtk_widget_size_request (priv->more_button, &button_requisition);
+		gtk_widget_get_preferred_size (priv->more_button, &button_requisition, NULL);
 
 		/* just show the elements that fit in the allocation */
 		child_allocation.y = allocation->y;
@@ -199,7 +199,7 @@ short_list_size_allocate (GtkWidget     *widget,
 		content_height = child_allocation.height;
 
 		while (list) {
-			gtk_widget_size_request (list->data, &data_requisition);
+			gtk_widget_get_preferred_size (list->data, &data_requisition, NULL);
 
 			if (content_height > data_requisition.height) {
 				gtk_widget_set_child_visible (GTK_WIDGET (list->data), TRUE);
