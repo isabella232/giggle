@@ -636,7 +636,7 @@ view_history_constructed (GObject *object)
 	gtk_widget_push_composite_child ();
 
 	/* widgets */
-	priv->main_vpaned = gtk_vpaned_new ();
+	priv->main_vpaned = gtk_paned_new (GTK_ORIENTATION_VERTICAL);
 	gtk_widget_show (priv->main_vpaned);
 	gtk_container_add (GTK_CONTAINER (object), priv->main_vpaned);
 

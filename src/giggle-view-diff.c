@@ -330,7 +330,7 @@ giggle_view_diff_init (GiggleViewDiff *view)
 				  G_CALLBACK (view_diff_update_status), view);
 
 	/* hpaned */
-	priv->hpaned = gtk_hpaned_new ();
+	priv->hpaned = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);
 	gtk_paned_pack1 (GTK_PANED (priv->hpaned), scrolled_window, FALSE, FALSE);
 	gtk_paned_pack2 (GTK_PANED (priv->hpaned), priv->diff_view_sw, TRUE, FALSE);
 	gtk_widget_show_all (priv->hpaned);

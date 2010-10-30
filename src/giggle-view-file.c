@@ -1463,11 +1463,11 @@ giggle_view_file_init (GiggleViewFile *view)
 
 	goto_toolbar_init (view);
 
-	priv->hpaned = gtk_hpaned_new ();
+	priv->hpaned = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);
 	gtk_paned_set_position (GTK_PANED (priv->hpaned), 200);
 	gtk_widget_show (priv->hpaned);
 
-	priv->vpaned = gtk_vpaned_new ();
+	priv->vpaned = gtk_paned_new (GTK_ORIENTATION_VERTICAL);
 	gtk_widget_show (priv->vpaned);
 	gtk_paned_pack2 (GTK_PANED (priv->hpaned), priv->vpaned, TRUE, FALSE);
 

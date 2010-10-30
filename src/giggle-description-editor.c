@@ -141,7 +141,7 @@ giggle_description_editor_init (GiggleDescriptionEditor *editor)
 	g_signal_connect_swapped (buffer, "modified-changed",
 				  G_CALLBACK (description_editor_modified_changed_cb), editor);
 
-	buttonbox = gtk_hbutton_box_new ();
+	buttonbox = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
 	gtk_widget_show (buttonbox);
 	gtk_button_box_set_layout (GTK_BUTTON_BOX (buttonbox), GTK_BUTTONBOX_START);
 	gtk_box_pack_start (GTK_BOX (editor), buttonbox, FALSE, FALSE, 0);
