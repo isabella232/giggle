@@ -397,7 +397,6 @@ avatar_image_get_preferred_width (GtkWidget *widget,
                                   gint      *minimum,
                                   gint      *natural)
 {
-	GiggleAvatarImagePriv *priv = GET_PRIV (widget);
 	GtkRequisition requisition;
 
 	avatar_image_size_request (widget, &requisition);
@@ -410,7 +409,6 @@ avatar_image_get_preferred_height (GtkWidget *widget,
                                    gint      *minimum,
                                    gint      *natural)
 {
-	GiggleAvatarImagePriv *priv = GET_PRIV (widget);
 	GtkRequisition requisition;
 
 	avatar_image_size_request (widget, &requisition);
