@@ -75,15 +75,6 @@ giggle_SOURCES = \
 giggle_LDADD = \
 	../libgiggle-git/libgiggle-git.la
 
-if IGE_PLATFORM_OSX
-
-giggle_SOURCES += \
-	ige-mac-menu.c \
-	ige-mac-menu.h \
-	$(NULL)
-
-endif
-
 #test_graph_renderer_SOURCES = \
 #	giggle-revision.c giggle-revision.h \
 #	giggle-graph-renderer.c	giggle-graph-renderer.h \

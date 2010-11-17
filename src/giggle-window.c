@@ -39,10 +39,6 @@
 
 #include <libgiggle-git/giggle-git-config.h>
 
-#ifdef GDK_WINDOWING_QUARTZ
-#include "ige-mac-menu.h"
-#endif
-
 #include <glib/gi18n.h>
 #include <string.h>
 #include <stdlib.h>
@@ -545,44 +541,6 @@ giggle_window_clipboard_init (GiggleClipboardIface *iface)
 	iface->can_copy = window_can_copy;
 	iface->do_copy  = window_do_copy;
 }
-
-#if 0
-static void
-window_create_menu (GiggleWindow *window)
-{
-	GiggleWindowPriv *priv;
-	GtkActionGroup   *action_group;
-	GError           *error = NULL;
-
-	priv = window->priv;;
-
-
-#ifdef GDK_WINDOWING_QUARTZ
-	{
-		GtkWidget       *menu;
-		GtkWidget       *item;
-		IgeMacMenuGroup *group;
-
-		menu = gtk_ui_manager_get_widget (priv->ui_manager,
-						  "/MainMenubar");
-
-		ige_mac_menu_set_menu_bar (GTK_MENU_SHELL (menu));
-		gtk_widget_hide (menu);
-
-		item = gtk_ui_manager_get_widget (priv->ui_manager,
-						  "/MainMenubar/ProjectMenu/Quit");
-		ige_mac_menu_set_quit_menu_item (GTK_MENU_ITEM (item));
-
-		item = gtk_ui_manager_get_widget (priv->ui_manager,
-						  "/MainMenubar/HelpMenu/About");
-		group =  ige_mac_menu_add_app_menu_group ();
-		ige_mac_menu_add_app_menu_item  (group, GTK_MENU_ITEM (item),
-						 _("About Giggle"));
-	}
-#endif
-}
-
-#endif
 
 void
 giggle_window_set_directory (GiggleWindow *window,
