@@ -58,9 +58,12 @@ static void     dummy_set_property        (GObject           *object,
 					   guint              param_id,
 					   const GValue      *value,
 					   GParamSpec        *pspec);
-
-static void     short_list_size_request   (GtkWidget      *widget,
-					   GtkRequisition *requisition);
+static void     short_list_get_preferred_width  (GtkWidget *widget,
+                                                 gint      *minimum,
+                                                 gint      *maximum);
+static void     short_list_get_preferred_height (GtkWidget *widget,
+                                                 gint      *minimum,
+                                                 gint      *maximum);
 static void     short_list_size_allocate  (GtkWidget      *widget,
 					   GtkAllocation  *allocation);
 
@@ -79,7 +82,8 @@ giggle_short_list_class_init (GiggleShortListClass *class)
 	object_class->get_property = dummy_get_property;
 	object_class->set_property = dummy_set_property;
 
-	widget_class->size_request = short_list_size_request;
+	widget_class->get_preferred_width = short_list_get_preferred_width;
+	widget_class->get_preferred_height = short_list_get_preferred_height;
 	widget_class->size_allocate = short_list_size_allocate;
 
 	g_object_class_install_property (object_class,
@@ -129,6 +133,31 @@ short_list_size_request (GtkWidget      *widget,
 	requisition->width = MAX (requisition->width, req.width) + (2 * border_width);
 	requisition->height += req.width + spacing + (2 * border_width);
 }
+
+static void
+short_list_get_preferred_width (GtkWidget *widget,
+                                gint      *minimum,
+                                gint      *maximum)
+{
+	GtkRequisition requisition;
+
+	short_list_size_request (widget, &requisition);
+
+	*minimum = *maximum = requisition.width;
+}
+
+static void
+short_list_get_preferred_height (GtkWidget *widget,
+                                 gint      *minimum,
+                                 gint      *maximum)
+{
+	GtkRequisition requisition;
+
+	short_list_size_request (widget, &requisition);
+
+	*minimum = *maximum = requisition.height;
+}
+
 
 static void
 short_list_size_allocate (GtkWidget     *widget,
