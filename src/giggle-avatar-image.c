@@ -393,6 +393,32 @@ avatar_image_size_request (GtkWidget      *widget,
 }
 
 static void
+avatar_image_get_preferred_width (GtkWidget *widget,
+                                  gint      *minimum,
+                                  gint      *natural)
+{
+	GiggleAvatarImagePriv *priv = GET_PRIV (widget);
+	GtkRequisition requisition;
+
+	avatar_image_size_request (widget, &requisition);
+
+	*minimum = *natural = requisition.width;
+}
+
+static void
+avatar_image_get_preferred_height (GtkWidget *widget,
+                                   gint      *minimum,
+                                   gint      *natural)
+{
+	GiggleAvatarImagePriv *priv = GET_PRIV (widget);
+	GtkRequisition requisition;
+
+	avatar_image_size_request (widget, &requisition);
+
+	*minimum = *natural = requisition.height;
+}
+
+static void
 giggle_avatar_image_class_init (GiggleAvatarImageClass *class)
 {
 	GObjectClass   *object_class = G_OBJECT_CLASS (class);
@@ -403,7 +429,8 @@ giggle_avatar_image_class_init (GiggleAvatarImageClass *class)
 	object_class->finalize     = avatar_image_finalize;
 
 	widget_class->draw = avatar_image_draw;
-	widget_class->size_request = avatar_image_size_request;
+	widget_class->get_preferred_width = avatar_image_get_preferred_width;
+	widget_class->get_preferred_height = avatar_image_get_preferred_height;
 
 	g_object_class_install_property
 		(object_class, PROP_CACHE,
