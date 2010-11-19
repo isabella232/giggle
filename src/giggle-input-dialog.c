@@ -117,7 +117,7 @@ giggle_input_dialog_init (GiggleInputDialog *input_dialog)
 
 	priv = GET_PRIV (input_dialog);
 
-	box = gtk_vbox_new (6, FALSE);
+	box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_container_set_border_width (GTK_CONTAINER (box), 7);
 
 	priv->label = gtk_label_new (NULL);

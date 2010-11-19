@@ -1130,7 +1130,7 @@ goto_toolbar_init (GiggleViewFile *view)
 	gtk_entry_set_max_length (GTK_ENTRY (priv->goto_entry), 16);
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), priv->goto_entry);
 
-	box = gtk_hbox_new (FALSE, 12);
+	box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
 	gtk_box_pack_start (GTK_BOX (box), label, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (box), priv->goto_entry, TRUE, TRUE, 0);
 
@@ -1539,7 +1539,7 @@ giggle_view_file_init (GiggleViewFile *view)
 	gtk_container_add (GTK_CONTAINER (scrolled_window), priv->revision_list);
 	gtk_paned_pack2 (GTK_PANED (priv->vpaned), scrolled_window, FALSE, TRUE);
 
-	vbox = gtk_vbox_new (FALSE, 0);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_box_pack_start (GTK_BOX (vbox), priv->hpaned, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (vbox), priv->goto_toolbar, FALSE, TRUE, 0);
 	gtk_container_add (GTK_CONTAINER (view), vbox);

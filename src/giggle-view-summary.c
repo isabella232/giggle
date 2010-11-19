@@ -97,7 +97,7 @@ create_summary_page (GiggleViewSummaryPriv *priv)
 	GtkWidget *label;
 	gchar     *markup;
 
-	page = gtk_vbox_new (FALSE, 6);
+	page = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 
 	/* create header */
 
@@ -159,7 +159,7 @@ create_remotes_page (GiggleViewSummaryPriv *priv)
 
 	/* add remotes view */
 	priv->remotes_view = giggle_remotes_view_new ();
-	page = gtk_vbox_new (FALSE, 6);
+	page = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 
 	/* FIXME: string should not contain markup */
 	label = gtk_label_new (NULL);

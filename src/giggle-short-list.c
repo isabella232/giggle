@@ -408,7 +408,7 @@ giggle_short_list_init (GiggleShortList *self)
 
 	pango_attr_list_unref (attributes);
 
-	priv->content_box = gtk_vbox_new (FALSE, 0);
+	priv->content_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_box_pack_start (GTK_BOX (self), priv->content_box, TRUE, TRUE, 0);
 
 	priv->more_button = gtk_button_new_with_mnemonic (_("Show A_ll..."));

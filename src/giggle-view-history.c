@@ -595,7 +595,7 @@ view_history_setup_revision_pane (GObject *object)
 					   "/ViewHistoryToolbar/ViewShell");
 	gtk_container_set_border_width (GTK_CONTAINER (priv->revision_shell), 6);
 
-	vbox = gtk_vbox_new (FALSE, 0);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_box_pack_start (GTK_BOX (vbox), toolbar, FALSE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (vbox), priv->revision_shell, TRUE, TRUE, 0);
 	gtk_paned_pack2 (GTK_PANED (priv->main_vpaned), vbox, FALSE, FALSE);

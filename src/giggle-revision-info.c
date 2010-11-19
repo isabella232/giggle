@@ -214,7 +214,7 @@ giggle_revision_info_init (GiggleRevisionInfo *info)
 
 	priv = GET_PRIV (info);
 
-	hbox = gtk_hbox_new (FALSE, 6);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
 	gtk_box_pack_start (GTK_BOX (info), hbox, FALSE, FALSE, 0);
 
 	priv->label = gtk_label_new (NULL);
@@ -229,7 +229,7 @@ giggle_revision_info_init (GiggleRevisionInfo *info)
 
 	gtk_widget_show_all (hbox);
 
-	hbox = gtk_hbox_new (FALSE, 6);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
 	gtk_box_pack_start (GTK_BOX (info), hbox, FALSE, FALSE, 0);
 
 	priv->summary = gtk_label_new (NULL);

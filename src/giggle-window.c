@@ -1620,7 +1620,7 @@ giggle_window_init (GiggleWindow *window)
 	priv->git = giggle_git_get ();
 	priv->configuration = giggle_git_config_new ();
 
-	priv->content_vbox = gtk_vbox_new (FALSE, 0);
+	priv->content_vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	window_create_ui_manager (window);
 
 	priv->view_shell = giggle_view_shell_new_with_ui (priv->ui_manager,
