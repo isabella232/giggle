@@ -40,7 +40,6 @@
 #include <gio/gio.h>
 #include <glib/gi18n.h>
 
-#include <gtksourceview/gtksourceiter.h>
 #include <gtksourceview/gtksourcelanguagemanager.h>
 #include <gtksourceview/gtksourceview.h>
 
@@ -1243,7 +1242,7 @@ view_file_search (GiggleSearchable      *searchable,
 		  gboolean               full_search)
 {
 	GiggleViewFilePriv   *priv;
-	GtkSourceSearchFlags  flags;
+	GtkTextSearchFlags    flags;
 	gboolean	      result = FALSE;
 	int		      cursor_position;
 	GtkTextIter	      start, end, cursor;
@@ -1252,8 +1251,8 @@ view_file_search (GiggleSearchable      *searchable,
 
 	priv = GET_PRIV (searchable);
 
-	flags = GTK_SOURCE_SEARCH_TEXT_ONLY |
-		GTK_SOURCE_SEARCH_CASE_INSENSITIVE;
+	flags = GTK_TEXT_SEARCH_TEXT_ONLY |
+	        GTK_TEXT_SEARCH_CASE_INSENSITIVE;
 
 	buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (priv->source_view));
 	g_object_get (buffer, "cursor-position", &cursor_position, NULL);
@@ -1264,37 +1263,37 @@ view_file_search (GiggleSearchable      *searchable,
 
 	switch (direction) {
 	case GIGGLE_SEARCH_DIRECTION_NEXT:
-		result = gtk_source_iter_forward_search (&cursor, search_term,
-							 flags, &match_start, &match_end, NULL);
+		result = gtk_text_iter_forward_search (&cursor, search_term,
+		                                       flags, &match_start, &match_end, NULL);
 
 		if (result && gtk_text_iter_get_offset (&cursor) == gtk_text_iter_get_offset (&match_start)) {
 			gtk_text_iter_forward_char (&cursor);
 
-			result = gtk_source_iter_forward_search (&cursor, search_term,
-								 flags, &match_start, &match_end, NULL);
+			result = gtk_text_iter_forward_search (&cursor, search_term,
+			                                       flags, &match_start, &match_end, NULL);
 		}
 
 		if (!result) {
-			result = gtk_source_iter_forward_search (&start, search_term,
-								 flags, &match_start, &match_end, NULL);
+			result = gtk_text_iter_forward_search (&start, search_term,
+			                                       flags, &match_start, &match_end, NULL);
 		}
 
 		break;
 
 	case GIGGLE_SEARCH_DIRECTION_PREV:
-		result = gtk_source_iter_backward_search (&cursor, search_term,
-							  flags, &match_start, &match_end, NULL);
+		result = gtk_text_iter_backward_search (&cursor, search_term,
+		                                        flags, &match_start, &match_end, NULL);
 
 		if (result && gtk_text_iter_get_offset (&cursor) == gtk_text_iter_get_offset (&match_start)) {
 			gtk_text_iter_backward_char (&cursor);
 
-			result = gtk_source_iter_backward_search (&cursor, search_term,
-								  flags, &match_start, &match_end, NULL);
+			result = gtk_text_iter_backward_search (&cursor, search_term,
+			                                        flags, &match_start, &match_end, NULL);
 		}
 
 		if (!result) {
-			result = gtk_source_iter_backward_search (&end, search_term,
-								  flags, &match_start, &match_end, NULL);
+			result = gtk_text_iter_backward_search (&end, search_term,
+			                                        flags, &match_start, &match_end, NULL);
 		}
 
 		break;
