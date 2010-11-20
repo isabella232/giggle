@@ -777,7 +777,7 @@ window_find (EggFindBar            *find_bar,
 	GiggleWindowPriv *priv;
 	GiggleView       *view;
 	const gchar      *search_string;
-	gboolean          full_search;
+	gboolean          full_search, case_sensitive;
 
 	priv = window->priv;
 
@@ -791,8 +791,11 @@ window_find (EggFindBar            *find_bar,
 		full_search = gtk_toggle_tool_button_get_active (
 			GTK_TOGGLE_TOOL_BUTTON (priv->full_search));
 
+		case_sensitive = egg_find_bar_get_case_sensitive (find_bar);
+
 		giggle_searchable_search (GIGGLE_SEARCHABLE (view),
-					  search_string, direction, full_search);
+					  search_string, direction,
+		                          full_search, case_sensitive);
 	}
 }
 

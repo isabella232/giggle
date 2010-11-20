@@ -671,19 +671,22 @@ static gboolean
 view_history_search (GiggleSearchable      *searchable,
 		     const gchar           *search_term,
 		     GiggleSearchDirection  direction,
-		     gboolean               full_search)
+		     gboolean               full_search,
+                     gboolean               case_sensitive)
 {
 	GiggleViewHistoryPriv *priv;
 
 	priv = GIGGLE_VIEW_HISTORY (searchable)->priv;
 
 	if (!giggle_searchable_search (GIGGLE_SEARCHABLE (priv->revision_list),
-				       search_term, direction, full_search)) {
+	                               search_term, direction,
+	                               full_search, case_sensitive)) {
 		return FALSE;
 	}
 
 	if (giggle_searchable_search (GIGGLE_SEARCHABLE (priv->revision_view),
-				      search_term, direction, full_search)) {
+	                              search_term, direction,
+	                              full_search, case_sensitive)) {
 		/* search term is contained in the
 		 * revision description, expand it
 		 */

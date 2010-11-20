@@ -1239,7 +1239,8 @@ static gboolean
 view_file_search (GiggleSearchable      *searchable,
 		  const gchar           *search_term,
 		  GiggleSearchDirection  direction,
-		  gboolean               full_search)
+                  gboolean               full_search,
+                  gboolean               case_sensitive)
 {
 	GiggleViewFilePriv   *priv;
 	GtkTextSearchFlags    flags;
@@ -1251,8 +1252,9 @@ view_file_search (GiggleSearchable      *searchable,
 
 	priv = GET_PRIV (searchable);
 
-	flags = GTK_TEXT_SEARCH_TEXT_ONLY |
-	        GTK_TEXT_SEARCH_CASE_INSENSITIVE;
+	flags = GTK_TEXT_SEARCH_TEXT_ONLY;
+	if (case_sensitive == FALSE)
+		flags |= GTK_TEXT_SEARCH_CASE_INSENSITIVE;
 
 	buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (priv->source_view));
 	g_object_get (buffer, "cursor-position", &cursor_position, NULL);
