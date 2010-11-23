@@ -280,7 +280,8 @@ giggle_graph_renderer_render (GtkCellRenderer      *cell,
 	gint                          x, y, h;
 	gint                          cur_pos, pos;
 	GList                        *children;
-	gint                          size, i;
+	gint                          size;
+	guint                         i;
 
 	priv = GIGGLE_GRAPH_RENDERER (cell)->_priv;
 
@@ -450,7 +451,8 @@ giggle_graph_renderer_calculate_revision_state (GiggleGraphRenderer *renderer,
 	GList                        *children;
 	gboolean                      current_path_reused = FALSE;
 	gboolean                      update_color;
-	gint                          n_path, i;
+	gint                          n_path;
+	guint                         i;
 
 	priv = renderer->_priv;
 	children = giggle_revision_get_children (revision);

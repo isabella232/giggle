@@ -220,7 +220,8 @@ diff_view_set_current_hunk (GiggleDiffView *view,
 			    int             hunk_index)
 {
 	GiggleDiffViewPriv *priv = GET_PRIV (view);
-	int                 hunk_offset, i;
+	guint               i;
+	int                 hunk_offset;
 	GiggleDiffViewHunk *hunk = NULL;
 	GiggleDiffViewFile *file = NULL;
 	GtkTextBuffer      *buffer;
@@ -723,7 +724,7 @@ giggle_diff_view_scroll_to_file (GiggleDiffView *diff_view,
 	GiggleDiffViewHunk *hunk;
 	GiggleDiffViewFile *file;
 	GtkTextMark        *mark;
-	unsigned	    i;
+	gint                i;
 
 	g_return_if_fail (GIGGLE_IS_DIFF_VIEW (diff_view));
 	g_return_if_fail (NULL != filename);
@@ -740,7 +741,7 @@ giggle_diff_view_scroll_to_file (GiggleDiffView *diff_view,
 						      mark, 0.0, TRUE, 0.0, 0.0);
 		}
 	} else {
-		for (i = 0; i < priv->hunks->len; ++i) {
+		for (i = 0; (guint) i < priv->hunks->len; ++i) {
 			hunk = diff_view_get_hunk (priv, i);
 			file = diff_view_get_file (priv, hunk->file);
 
