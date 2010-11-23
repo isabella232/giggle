@@ -384,7 +384,8 @@ static gboolean
 diff_view_search (GiggleSearchable      *searchable,
 		  const gchar           *search_term,
 		  GiggleSearchDirection  direction,
-		  gboolean               full_search)
+		  gboolean               full_search,
+		  gboolean               case_insensitive)
 {
 	GiggleDiffViewPriv *priv;
 

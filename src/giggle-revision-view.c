@@ -66,7 +66,8 @@ static void       revision_view_set_property       (GObject        *object,
 static gboolean   revision_view_search             (GiggleSearchable      *searchable,
 						    const gchar           *search_term,
 						    GiggleSearchDirection  direction,
-						    gboolean               full_search);
+						    gboolean               full_search,
+						    gboolean               case_insensitive);
 
 static void       revision_view_update             (GiggleRevisionView *view);
 
@@ -302,7 +303,8 @@ static gboolean
 revision_view_search (GiggleSearchable      *searchable,
 		      const gchar           *search_term,
 		      GiggleSearchDirection  direction,
-		      gboolean               full_search)
+		      gboolean               full_search,
+		      gboolean               case_insensitive)
 {
 	GiggleRevisionViewPriv *priv;
 	const gchar            *str, *p;
