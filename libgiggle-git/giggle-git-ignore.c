@@ -247,18 +247,18 @@ giggle_git_ignore_new (const gchar *directory_path)
 static const gchar *
 git_ignore_get_basename (const gchar *path)
 {
-	const gchar *basename;
+	const gchar *the_basename;
 
-	basename = strrchr (path, G_DIR_SEPARATOR);
+	the_basename = strrchr (path, G_DIR_SEPARATOR);
 
-	if (!basename) {
-		basename = path;
+	if (!the_basename) {
+		the_basename = path;
 	} else {
 		/* avoid dir separator */
-		basename++;
+		the_basename++;
 	}
 
-	return basename;
+	return the_basename;
 }
 
 static gboolean

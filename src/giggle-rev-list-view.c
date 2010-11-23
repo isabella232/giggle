@@ -1248,15 +1248,15 @@ rev_list_view_create_patch_callback (GiggleGit *git,
 	/* We didn't show any of the errors above, report the success */
 	if (show_success) {
 		gchar *dirname;
-		gchar *basename;
+		gchar *the_basename;
 		gchar *secondary_str;
 
 		dirname = g_path_get_dirname (filename);
-		basename = g_path_get_basename (filename);
-		
-		primary_str = g_strdup_printf (_("Patch saved as %s"), basename);
-		g_free (basename);
-		
+		the_basename = g_path_get_basename (filename);
+
+		primary_str = g_strdup_printf (_("Patch saved as %s"), the_basename);
+		g_free (the_basename);
+
 		if (!dirname || strcmp (dirname, ".") == 0) {
 			secondary_str = g_strdup_printf (_("Created in project directory"));
 			g_free (dirname);
