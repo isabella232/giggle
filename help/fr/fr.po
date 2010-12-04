@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-31 03:19+0000\n"
+"POT-Creation-Date: 2010-11-18 16:05+0000\n"
 "PO-Revision-Date: 2010-11-09 21:11+0100\n"
 "Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -39,7 +39,7 @@ msgstr "deejay1@srem.org"
 #: C/introduction.page:22(p) C/index.page:18(p) C/history-view.page:22(p)
 #: C/browse-view.page:22(p)
 msgid "Creative Commons Share Alike 3.0"
-msgstr "Paternité-Partage des Conditions Initiales à l'Identique 3.0"
+msgstr "Creative Commons Share Alike 3.0"
 
 #: C/tagging-commits.page:27(p)
 msgid ""
@@ -106,8 +106,8 @@ msgid ""
 "This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
 "Unported license."
 msgstr ""
-"Ce document est publié sous licence Creative Commons Paternité-Partage des "
-"Conditions Initiales à l'Identique 3.0 Unported."
+"Cette œuvre est distribuée sous licence Creative Commons Paternité-Partage "
+"des Conditions Initiales à l'Identique 3.0 Unported."
 
 #: C/license.page:19(p)
 msgid "You are free:"
@@ -119,7 +119,7 @@ msgstr "de partager"
 
 #: C/license.page:25(p)
 msgid "To copy, distribute and transmit the work."
-msgstr "de reproduire, distribuer et communiquer cette création."
+msgstr "de reproduire, distribuer et communiquer cette création"
 
 #: C/license.page:28(em)
 msgid "To remix"
@@ -127,7 +127,7 @@ msgstr "de modifier"
 
 #: C/license.page:29(p)
 msgid "To adapt the work."
-msgstr "d'adapter cette création."
+msgstr "d'adapter cette création,"
 
 #: C/license.page:32(p)
 msgid "Under the following conditions:"
@@ -135,7 +135,7 @@ msgstr "selon les conditions suivantes :"
 
 #: C/license.page:37(em)
 msgid "Attribution"
-msgstr "Attribution"
+msgstr "Paternité"
 
 #: C/license.page:38(p)
 msgid ""
@@ -143,10 +143,10 @@ msgid ""
 "licensor (but not in any way that suggests that they endorse you or your use "
 "of the work)."
 msgstr ""
-"Vous devez citer le nom de l'auteur original de la manière indiquée par "
-"l'auteur de l'œuvre ou le titulaire des droits qui vous confère cette "
-"autorisation (mais pas d'une manière qui suggérerait qu'ils vous soutiennent "
-"ou approuvent votre utilisation de l'œuvre)."
+"Vous devez citer le nom de l'auteur original de la manière indiquée par l'auteur "
+"de l'œuvre ou le titulaire des droits qui vous confère cette autorisation "
+"(mais pas d'une manière qui suggérerait qu'ils vous soutiennent ou approuvent "
+"votre utilisation de l'œuvre)."
 
 #: C/license.page:45(em)
 msgid "Share Alike"
@@ -157,9 +157,8 @@ msgid ""
 "If you alter, transform, or build upon this work, you may distribute the "
 "resulting work only under the same, similar or a compatible license."
 msgstr ""
-"Si vous transformez ou modifiez cette œuvre pour en créer une nouvelle, vous "
-"devez la distribuer selon les termes du même contrat ou avec une licence "
-"similaire ou compatible."
+"Si vous modifiez, transformez ou adaptez cette création, vous n'avez le "
+"droit de distribuer la création qui en résulte que sous un contrat identique à celui-ci."
 
 #: C/license.page:52(p)
 msgid ""
@@ -168,10 +167,10 @@ msgid ""
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
 "sa/3.0/\">Commons Deed</link>."
 msgstr ""
-"Pour lire le texte complet de la licence, consultez le <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">site Web de "
-"CreativeCommons</link>, ou lisez <link href=\"http://creativecommons.org/"
-"licenses/by-sa/3.0/\">le contrat complet de Commons</link>."
+"Pour prendre connaissance du texte complet de la licence, consultez le "
+"<link href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">site Web "
+"CreativeCommons</link> ou lisez in extenso le <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">contrat Commons</link>."
 
 #: C/introduction.page:6(desc)
 msgid "Introduction to the <app>Giggle</app> GIT repository viewer"
