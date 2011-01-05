@@ -10,11 +10,11 @@ AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_SRCDIR([configure.ac])
 AC_CONFIG_MACRO_DIR([m4])
 
-AM_INIT_AUTOMAKE([1.10 check-news -Wall])
+AM_INIT_AUTOMAKE([1.11 check-news -Wall])
 # Support silent build rules, requires at least automake-1.11. Disable
 # by either passing --disable-silent-rules to configure or passing V=1
 # to make
-m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+AM_SILENT_RULES([yes])
 
 # Check for programs
 AC_PROG_CC
@@ -122,7 +122,7 @@ AC_RUN_IFELSE(
 dnl  ------------------
 dnl | Language Support |---------------------------------------
 dnl  ------------------
-IT_PROG_INTLTOOL([0.40.0])
+IT_PROG_INTLTOOL([0.41.0])
 
 AM_GNU_GETTEXT_VERSION([0.17])
 AM_GNU_GETTEXT([external])
@@ -135,7 +135,7 @@ AC_SUBST([CONFIG_STATUS_DEPENDENCIES],['$(top_srcdir)/po/LINGUAS'])
 dnl  -------------
 dnl | User Manual |---------------------------------------
 dnl  -------------
-GNOME_DOC_INIT([0.17.3])
+GNOME_DOC_INIT([0.20])
 
 dnl  -----------------------
 dnl | GIT command detection |----------------------------------
