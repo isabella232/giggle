@@ -572,9 +572,8 @@ create_category (GiggleViewFilePriv *priv,
 }
 
 static void
-source_view_style_set_cb (GtkWidget      *widget,
-			  GtkStyle       *prev,
-			  GiggleViewFile *view)
+source_view_style_updated_cb (GtkWidget      *widget,
+                              GiggleViewFile *view)
 {
 	GiggleViewFilePriv *priv = GET_PRIV (view);
 
@@ -1511,8 +1510,8 @@ giggle_view_file_init (GiggleViewFile *view)
 
 	g_signal_connect (priv->source_view, "query-tooltip",
 			  G_CALLBACK (source_view_query_tooltip_cb), view);
-	g_signal_connect (priv->source_view, "style-set",
-			  G_CALLBACK (source_view_style_set_cb), view);
+	g_signal_connect (priv->source_view, "style-updated",
+			  G_CALLBACK (source_view_style_updated_cb), view);
 	g_signal_connect (priv->source_view, "draw",
 			  G_CALLBACK (source_view_draw_cb), view);
 

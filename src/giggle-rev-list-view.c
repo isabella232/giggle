@@ -560,8 +560,7 @@ finish:
 }
 
 static void
-rev_list_view_style_set (GtkWidget *widget,
-			 GtkStyle  *prev_style)
+rev_list_view_style_updated (GtkWidget *widget)
 {
 	GiggleRevListViewPriv *priv = GET_PRIV (widget);
 	GtkIconTheme          *icon_theme;
@@ -594,7 +593,7 @@ rev_list_view_style_set (GtkWidget *widget,
 					    priv->emblem_size * 3 +
 					    2 * gtk_widget_get_style (widget)->xthickness);
 
-	GTK_WIDGET_CLASS (giggle_rev_list_view_parent_class)->style_set (widget, prev_style);
+	GTK_WIDGET_CLASS (giggle_rev_list_view_parent_class)->style_updated (widget);
 }
 
 static void
@@ -634,7 +633,7 @@ giggle_rev_list_view_class_init (GiggleRevListViewClass *class)
 
 	widget_class->button_press_event  = rev_list_view_button_press;
 	widget_class->query_tooltip       = rev_list_view_query_tooltip;
-	widget_class->style_set           = rev_list_view_style_set;
+	widget_class->style_updated       = rev_list_view_style_updated;
 
 	tree_view_class->row_activated    = rev_list_view_row_activated;
 

@@ -282,14 +282,14 @@ diff_view_set_property (GObject      *object,
 }
 
 static void
-diff_view_style_set (GtkWidget *widget,
-		     GtkStyle  *prev)
+diff_view_style_updated (GtkWidget *widget)
 {
 	GiggleDiffViewPriv *priv = GET_PRIV (widget);
 	static const GdkColor red = { 0, 0xffff, 0, 0 };
 	GdkColor *error_color;
 
-	GTK_WIDGET_CLASS (giggle_diff_view_parent_class)->style_set (widget, prev);
+	GTK_WIDGET_CLASS (giggle_diff_view_parent_class)->style_updated (widget);
+
 	gtk_widget_style_get (widget, "error-underline-color", &error_color, NULL);
 
 	if (!error_color)
@@ -297,7 +297,9 @@ diff_view_style_set (GtkWidget *widget,
 
 	g_object_set (priv->invalid_char,
 		      "foreground-gdk", &gtk_widget_get_style (widget)->base[GTK_STATE_NORMAL],
-		      "background-gdk", error_color, "style", PANGO_STYLE_ITALIC, NULL);
+	              "background-gdk", error_color,
+	              "style", PANGO_STYLE_ITALIC,
+	              NULL);
 
 	gdk_color_free (error_color);
 }
@@ -312,7 +314,7 @@ giggle_diff_view_class_init (GiggleDiffViewClass *class)
 	object_class->set_property = diff_view_set_property;
 	object_class->get_property = diff_view_get_property;
 
-	widget_class->style_set    = diff_view_style_set;
+	widget_class->style_updated = diff_view_style_updated;
 
 	g_object_class_install_property (
 		object_class,
@@ -435,7 +437,7 @@ giggle_diff_view_init (GiggleDiffView *diff_view)
 	gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (diff_view), FALSE);
 
 	font_desc = pango_font_description_from_string ("monospace");
-	gtk_widget_modify_font (GTK_WIDGET (diff_view), font_desc);
+	gtk_widget_override_font (GTK_WIDGET (diff_view), font_desc);
 	pango_font_description_free (font_desc);
 
 	manager = gtk_source_language_manager_new ();

@@ -339,7 +339,7 @@ avatar_image_draw (GtkWidget  *widget,
 {
 	GiggleAvatarImagePriv *priv = GET_PRIV (widget);
 	GtkRequisition         requisition;
-	GtkStyle              *style;
+	GtkStyleContext       *context;
 	float                  xalign, yalign;
 	double                 x, y;
 	gint                   width, height;
@@ -348,7 +348,7 @@ avatar_image_draw (GtkWidget  *widget,
 	gtk_widget_get_preferred_size (widget, &requisition, NULL);
 	width = gtk_widget_get_allocated_width (widget);
 	height = gtk_widget_get_allocated_height (widget);
-	style = gtk_widget_get_style (widget);
+	context = gtk_widget_get_style_context (widget);
 
 	w = requisition.width;
 	h = requisition.height;
