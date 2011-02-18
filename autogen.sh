@@ -3,10 +3,32 @@
 
 test -n "$srcdir" || srcdir=`dirname "$0"`
 test -n "$srcdir" || srcdir=.
-(
-  cd "$srcdir" &&
-  gnome-doc-prepare --automake --copy --force &&
-  autopoint --force &&
-  AUTOPOINT='intltoolize --automake --copy' autoreconf --force --install
-) || exit
+
+olddir=`pwd`
+cd $srcdir
+
+AUTORECONF=`which autoreconf`
+if test -z $AUTORECONF; then
+        echo "*** No autoreconf found, please intall it ***"
+        exit 1
+fi
+
+INTLTOOLIZE=`which intltoolize`
+if test -z $INTLTOOLIZE; then
+        echo "*** No intltoolize found, please install the intltool package ***"
+        exit 1
+fi
+
+AUTORECONF=`which gnome-doc-prepare`
+if test -z $AUTORECONF; then
+        echo "*** The tools to build the documentation are not found,"
+        echo "    please intall the gnome-doc-utils package ***"
+        exit 1
+fi
+
+gnome-doc-prepare --automake --copy --force
+autopoint --force
+AUTOPOINT='intltoolize --automake --copy' autoreconf --force --install --verbose
+
+cd $olddir
 test -n "$NOCONFIGURE" || "$srcdir/configure" "$@"
