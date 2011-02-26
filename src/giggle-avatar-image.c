@@ -340,6 +340,7 @@ avatar_image_draw (GtkWidget  *widget,
 	GiggleAvatarImagePriv *priv = GET_PRIV (widget);
 	GtkRequisition         requisition;
 	GtkStyleContext       *context;
+	GdkRGBA                rgba;
 	float                  xalign, yalign;
 	double                 x, y;
 	gint                   width, height;
@@ -360,7 +361,8 @@ avatar_image_draw (GtkWidget  *widget,
 	                 (int) ((height - h) * yalign));
 
 	rounded_rectangle (cr, 0.5, 0.5, w - 1, h - 1, MIN (w, h) * 0.2);
-	gdk_cairo_set_source_color (cr, &style->base[GTK_STATE_NORMAL]);
+	gtk_style_context_get_color (context, GTK_STATE_FLAG_NORMAL, &rgba);
+	gdk_cairo_set_source_rgba (cr, &rgba);
 	cairo_fill_preserve (cr);
 
 	if (priv->pixbuf) {
@@ -371,7 +373,8 @@ avatar_image_draw (GtkWidget  *widget,
 		cairo_fill_preserve (cr);
 	}
 
-	gdk_cairo_set_source_color (cr, &style->text[GTK_STATE_NORMAL]);
+	gtk_style_context_get_color (context, GTK_STATE_FLAG_NORMAL, &rgba);
+	gdk_cairo_set_source_rgba (cr, &rgba);
 	cairo_set_line_width (cr, 1);
 	cairo_stroke (cr);
 
