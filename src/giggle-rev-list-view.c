@@ -563,6 +563,8 @@ static void
 rev_list_view_style_updated (GtkWidget *widget)
 {
 	GiggleRevListViewPriv *priv = GET_PRIV (widget);
+	GtkStyleContext       *context;
+	GtkBorder              border;
 	GtkIconTheme          *icon_theme;
 	GdkScreen             *screen;
 	int                    w, h;
@@ -589,9 +591,11 @@ rev_list_view_style_updated (GtkWidget *widget)
 	priv->emblem_tag    = gtk_icon_theme_load_icon (icon_theme, "giggle-tag",
 							priv->emblem_size, 0, NULL);
 
+	context = gtk_widget_get_style_context (widget);
+	gtk_style_context_get_border (context, 0, &border);
 	gtk_tree_view_column_set_min_width (priv->emblem_column,
 					    priv->emblem_size * 3 +
-					    2 * gtk_widget_get_style (widget)->xthickness);
+					    border.left + border.right);
 
 	GTK_WIDGET_CLASS (giggle_rev_list_view_parent_class)->style_updated (widget);
 }
@@ -1684,6 +1688,8 @@ giggle_rev_list_view_init (GiggleRevListView *rev_list_view)
 		"</ui>";
 
 	GiggleRevListViewPriv *priv;
+	GtkStyleContext       *context;
+	const PangoFontDescription *font_desc;
 	GtkTreeSelection      *selection;
 	GtkActionGroup        *action_group;
 	GtkTreeViewColumn     *column;
@@ -1691,7 +1697,10 @@ giggle_rev_list_view_init (GiggleRevListView *rev_list_view)
 	GtkCellRenderer       *cell;
 
 	priv = GET_PRIV (rev_list_view);
-	font_size = pango_font_description_get_size (gtk_widget_get_style (GTK_WIDGET (rev_list_view))->font_desc);
+
+	context = gtk_widget_get_style_context (GTK_WIDGET (rev_list_view));
+	font_desc = gtk_style_context_get_font (context, gtk_widget_get_state_flags (GTK_WIDGET (rev_list_view)));
+	font_size = pango_font_description_get_size (font_desc);
 	font_size = PANGO_PIXELS (font_size);
 
 	/* yes, it's a hack */
