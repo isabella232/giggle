@@ -218,10 +218,15 @@ giggle_graph_renderer_get_size (GtkCellRenderer    *cell,
                                 gint               *height)
 {
 	GiggleGraphRendererPrivate *priv;
+	GtkStyleContext            *context;
+	const PangoFontDescription *font_desc;
 	gint size;
 
 	priv = GIGGLE_GRAPH_RENDERER (cell)->_priv;
-	size = PANGO_PIXELS (pango_font_description_get_size (gtk_widget_get_style (widget)->font_desc));
+
+	context = gtk_widget_get_style_context (widget);
+	font_desc = gtk_style_context_get_font (context, gtk_widget_get_state_flags (widget));
+	size = PANGO_PIXELS (pango_font_description_get_size (font_desc));
 
 	if (height) {
 		*height = PATH_SPACE (size);
@@ -275,6 +280,8 @@ giggle_graph_renderer_render (GtkCellRenderer      *cell,
 	GiggleGraphRendererPrivate   *priv;
 	GiggleGraphRendererPathState *path_state;
 	GiggleRevision               *revision;
+	GtkStyleContext              *context;
+	const PangoFontDescription   *font_desc;
 	GArray                       *paths_state;
 	GHashTable                   *table;
 	gint                          x, y, h;
@@ -293,7 +300,8 @@ giggle_graph_renderer_render (GtkCellRenderer      *cell,
 	y = background_area->y;
 	h = background_area->height;
 	revision = priv->revision;
-	size = PANGO_PIXELS (pango_font_description_get_size (gtk_widget_get_style (widget)->font_desc));
+	font_desc = gtk_style_context_get_font (context, gtk_widget_get_state_flags (widget));
+	size = PANGO_PIXELS (pango_font_description_get_size (font_desc));
 
 	table = g_hash_table_new (g_direct_hash, g_direct_equal);
 	paths_state = g_object_get_qdata (G_OBJECT (revision), revision_paths_state_quark);
