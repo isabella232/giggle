@@ -528,7 +528,6 @@ create_category_icon (GiggleViewFilePriv *priv,
 		      const char         *name)
 {
 	int              width, height;
-	GdkColor        *color;
 	GdkPixbuf       *pixbuf;
 	cairo_surface_t *image;
 	cairo_t         *canvas;
@@ -537,7 +536,6 @@ create_category_icon (GiggleViewFilePriv *priv,
 	image = cairo_image_surface_create (CAIRO_FORMAT_ARGB32, width, height);
 
 	canvas = cairo_create (image);
-	color = &gtk_widget_get_style (priv->source_view)->base[GTK_STATE_SELECTED];
 	pixbuf = create_pixbuf_from_image (image);
 
 	cairo_surface_destroy (image);
@@ -552,8 +550,8 @@ create_category (GiggleViewFilePriv *priv,
 {
 	GdkPixbuf *pixbuf;
 
-	pixbuf = gtk_widget_render_icon (priv->source_view, name,
-					 GTK_ICON_SIZE_MENU, NULL);
+	pixbuf = gtk_widget_render_icon_pixbuf (priv->source_view, name,
+					        GTK_ICON_SIZE_MENU);
 
 	if (!pixbuf)
 		pixbuf = create_category_icon (priv, name);
@@ -601,13 +599,11 @@ source_view_draw_cb (GtkTextView    *text_view,
 	GdkWindow          *left_margin;
 	GSList             *markers;
 	const char         *name;
-	GdkColor           *color;
 	GtkTextIter         iter;
 
 	left_margin = gtk_text_view_get_window (text_view, GTK_TEXT_WINDOW_LEFT);
 
 	buffer = GTK_SOURCE_BUFFER (gtk_text_view_get_buffer (text_view));
-	color = &gtk_widget_get_style (priv->source_view)->base[GTK_STATE_SELECTED];
 
 	gtk_text_view_get_visible_rect (text_view, &visible_rect);
 	gtk_text_view_get_iter_at_location (text_view, &iter, visible_rect.x, visible_rect.y);
@@ -633,8 +629,11 @@ source_view_draw_cb (GtkTextView    *text_view,
 			markers = g_slist_delete_link (markers, markers);
 		}
 
-		if (name) /* FIXME: see GB#572785 */
+		if (name) { /* FIXME: see GB#572785 */
+			GdkColor *color;
+			color = &gtk_widget_get_style (priv->source_view)->base[GTK_STATE_SELECTED];
 			render_chunk_marker (cr, name, 16, height, color);
+		}
 
 		g_slist_free (markers);
 
@@ -1516,7 +1515,7 @@ giggle_view_file_init (GiggleViewFile *view)
 			  G_CALLBACK (source_view_draw_cb), view);
 
 	monospaced = pango_font_description_from_string ("Mono");
-	gtk_widget_modify_font (priv->source_view, monospaced);
+	gtk_widget_override_font (priv->source_view, monospaced);
 	pango_font_description_free (monospaced);
 
 	buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (priv->source_view));
