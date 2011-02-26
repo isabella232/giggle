@@ -300,6 +300,7 @@ giggle_graph_renderer_render (GtkCellRenderer      *cell,
 	y = background_area->y;
 	h = background_area->height;
 	revision = priv->revision;
+	context = gtk_widget_get_style_context (widget);
 	font_desc = gtk_style_context_get_font (context, gtk_widget_get_state_flags (widget));
 	size = PANGO_PIXELS (pango_font_description_get_size (font_desc));
 
