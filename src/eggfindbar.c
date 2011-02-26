@@ -330,7 +330,7 @@ egg_find_bar_init (EggFindBar *find_bar)
 
   /* Case button */
   priv->case_button = gtk_toggle_tool_button_new ();
-  g_object_set (G_OBJECT (priv->case_button), "label", _("C_ase Sensitive"), NULL);
+  gtk_tool_button_set_label (GTK_TOOL_BUTTON (priv->case_button), _("C_ase Sensitive"));
   gtk_tool_item_set_is_important (priv->case_button, TRUE);
   gtk_widget_set_tooltip_text (GTK_WIDGET (priv->case_button),
 			       _("Toggle case sensitive search"));
@@ -665,6 +665,6 @@ egg_find_bar_set_status_text (EggFindBar *find_bar,
   priv = (EggFindBarPrivate *)find_bar->priv;
   
   gtk_label_set_text (GTK_LABEL (priv->status_label), text);
-  g_object_set (priv->status_separator, "visible", text != NULL && *text != '\0', NULL);
-  g_object_set (priv->status_item, "visible", text != NULL && *text !='\0', NULL);
+  gtk_widget_set_visible (GTK_WIDGET (priv->status_separator), text != NULL && *text != '\0');
+  gtk_widget_set_visible (GTK_WIDGET (priv->status_item), text != NULL && *text !='\0');
 }
