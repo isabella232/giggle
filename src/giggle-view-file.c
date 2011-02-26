@@ -630,9 +630,18 @@ source_view_draw_cb (GtkTextView    *text_view,
 		}
 
 		if (name) { /* FIXME: see GB#572785 */
-			GdkColor *color;
-			color = &gtk_widget_get_style (priv->source_view)->base[GTK_STATE_SELECTED];
-			render_chunk_marker (cr, name, 16, height, color);
+			GtkStyleContext *context;
+			GdkRGBA  rgba;
+			GdkColor color;
+
+			context = gtk_widget_get_style_context (priv->source_view);
+			gtk_style_context_get_color (context, GTK_STATE_FLAG_SELECTED, &rgba);
+
+			color.red = rgba.red * 65535;
+			color.green = rgba.green * 65535;
+			color.blue = rgba.blue * 65535;
+
+			render_chunk_marker (cr, name, 16, height, &color);
 		}
 
 		g_slist_free (markers);
