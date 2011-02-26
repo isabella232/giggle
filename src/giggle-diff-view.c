@@ -285,8 +285,11 @@ static void
 diff_view_style_updated (GtkWidget *widget)
 {
 	GiggleDiffViewPriv *priv = GET_PRIV (widget);
+	GtkStyleContext *context;
 	static const GdkColor red = { 0, 0xffff, 0, 0 };
 	GdkColor *error_color;
+	GdkColor color;
+	GdkRGBA rgba;
 
 	GTK_WIDGET_CLASS (giggle_diff_view_parent_class)->style_updated (widget);
 
@@ -295,8 +298,15 @@ diff_view_style_updated (GtkWidget *widget)
 	if (!error_color)
 		error_color = gdk_color_copy (&red);
 
+	context = gtk_widget_get_style_context (widget);
+	gtk_style_context_get_color (context, GTK_STATE_FLAG_NORMAL, &rgba);
+
+	color.red = rgba.red * 65535;
+	color.green = rgba.green * 65535;
+	color.blue = rgba.blue * 65535;
+
 	g_object_set (priv->invalid_char,
-		      "foreground-gdk", &gtk_widget_get_style (widget)->base[GTK_STATE_NORMAL],
+		      "foreground-gdk", &color,
 	              "background-gdk", error_color,
 	              "style", PANGO_STYLE_ITALIC,
 	              NULL);
