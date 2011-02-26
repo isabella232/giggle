@@ -19,8 +19,8 @@ if test -z $INTLTOOLIZE; then
         exit 1
 fi
 
-AUTORECONF=`which gnome-doc-prepare`
-if test -z $AUTORECONF; then
+GNOMEDOC=`which gnome-doc-prepare`
+if test -z $GNOMEDOC; then
         echo "*** The tools to build the documentation are not found,"
         echo "    please intall the gnome-doc-utils package ***"
         exit 1
