@@ -1268,23 +1268,26 @@ file_list_cell_data_background_func (GtkCellLayout   *cell_layout,
 				     GtkTreeIter     *iter,
 				     gpointer         data)
 {
-	GdkColor            color;
 	GiggleFileListPriv *priv;
 	GiggleFileList     *file_list;
+	GtkStyleContext    *context;
+	GdkRGBA             rgba;
 	gboolean            highlight;
 	gchar              *rel_path;
 
 	file_list = GIGGLE_FILE_LIST (data);
 	priv = GET_PRIV (file_list);
-	color = gtk_widget_get_style (GTK_WIDGET (file_list))->bg[GTK_STATE_NORMAL];
+
+	context = gtk_widget_get_style_context (GTK_WIDGET (file_list));
+	gtk_style_context_get_color (context, GTK_STATE_FLAG_NORMAL, &rgba);
 
 	gtk_tree_model_get (tree_model, iter,
 			    COL_REL_PATH, &rel_path,
 			    COL_HIGHLIGHT, &highlight,
 			    -1);
 
-	g_object_set (G_OBJECT (renderer), "cell-background-gdk",
-		      (rel_path && *rel_path && highlight) ? &color : NULL,
+	g_object_set (G_OBJECT (renderer), "cell-background-rgba",
+		      (rel_path && *rel_path && highlight) ? &rgba : NULL,
 		      NULL);
 
 	g_free (rel_path);
@@ -1304,7 +1307,8 @@ file_list_cell_data_sensitive_func (GtkCellLayout   *layout,
 	gboolean            value = TRUE;
 	GtkTreeIter         parent;
 	GtkStateType        state;
-	GdkColor            color;
+	GtkStyleContext    *context;
+	GdkRGBA             rgba;
 
 	list = GIGGLE_FILE_LIST (data);
 	priv = GET_PRIV (list);
@@ -1333,8 +1337,9 @@ file_list_cell_data_sensitive_func (GtkCellLayout   *layout,
 
 	if (GTK_IS_CELL_RENDERER_TEXT (renderer)) {
 		state = (value) ? GTK_STATE_NORMAL : GTK_STATE_INSENSITIVE;
-		color = gtk_widget_get_style (GTK_WIDGET (list))->text [state];
-		g_object_set (renderer, "foreground-gdk", &color, NULL);
+		context = gtk_widget_get_style_context (GTK_WIDGET (list));
+		gtk_style_context_get_color (context, state, &rgba);
+		g_object_set (renderer, "foreground-rgba", &rgba, NULL);
 	} else {
 		g_object_set (renderer, "sensitive", value, NULL);
 	}
