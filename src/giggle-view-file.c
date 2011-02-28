@@ -635,7 +635,7 @@ source_view_draw_cb (GtkTextView    *text_view,
 			GdkColor color;
 
 			context = gtk_widget_get_style_context (priv->source_view);
-			gtk_style_context_get_color (context, GTK_STATE_FLAG_SELECTED, &rgba);
+			gtk_style_context_get_background_color (context, GTK_STATE_FLAG_SELECTED, &rgba);
 
 			color.red = rgba.red * 65535;
 			color.green = rgba.green * 65535;

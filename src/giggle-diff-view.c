@@ -299,7 +299,7 @@ diff_view_style_updated (GtkWidget *widget)
 		error_color = gdk_color_copy (&red);
 
 	context = gtk_widget_get_style_context (widget);
-	gtk_style_context_get_color (context, GTK_STATE_FLAG_NORMAL, &rgba);
+	gtk_style_context_get_background_color (context, GTK_STATE_FLAG_NORMAL, &rgba);
 
 	color.red = rgba.red * 65535;
 	color.green = rgba.green * 65535;

@@ -373,7 +373,7 @@ avatar_image_draw (GtkWidget  *widget,
 		cairo_fill_preserve (cr);
 	}
 
-	gtk_style_context_get_color (context, GTK_STATE_FLAG_NORMAL, &rgba);
+	gtk_style_context_get_background_color (context, GTK_STATE_FLAG_NORMAL, &rgba);
 	gdk_cairo_set_source_rgba (cr, &rgba);
 	cairo_set_line_width (cr, 1);
 	cairo_stroke (cr);
