@@ -98,22 +98,22 @@ AC_DEFINE(_GNU_SOURCE, 1, [Enable GNU Extensions])
 dnl Make sure that strptime can be used (read: has gnu extensions)
 AC_MSG_CHECKING([for GNU extensions of strptime()])
 AC_RUN_IFELSE(
-  AC_LANG_PROGRAM(
+  [AC_LANG_PROGRAM(
     [[#include <time.h>]],
     [[const char* date = "1168635922 +0100"; struct tm tm;
       char const* returned = strptime(date, "%s %z", &tm);
-      return (!returned || *returned ? 1 : 0);]]),
-    [AC_MSG_RESULT(available)
-     AC_DEFINE([STRPTIME_HAS_GNU], [1],
-               [strptime() has GNU extensions %s and %z])],
-    [AC_MSG_RESULT(not available)])
+      return (!returned || *returned ? 1 : 0);]])],
+  [AC_MSG_RESULT(available)
+   AC_DEFINE([STRPTIME_HAS_GNU], [1],
+             [strptime() has GNU extensions %s and %z])],
+  [AC_MSG_RESULT(not available)])
 
 dnl Figure out which format string to use for time_t
 AC_MSG_CHECKING([size of time_t type])
 AC_RUN_IFELSE(
-  AC_LANG_PROGRAM(
+  [AC_LANG_PROGRAM(
     [[#include <time.h>]],
-    [[return (sizeof (time_t) == sizeof (long) ? 0 : 1);]]),
+    [[return (sizeof (time_t) == sizeof (long) ? 0 : 1);]])],
   [AC_MSG_RESULT(long)
    AC_DEFINE([GIGGLE_FORMAT_TIME_T], ["ld"], [format string for time_t])],
   [AC_MSG_RESULT(int)
