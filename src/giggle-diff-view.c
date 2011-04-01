@@ -62,7 +62,7 @@ struct GiggleDiffViewHunk {
 
 static void       giggle_diff_view_searchable_init (GiggleSearchableIface *iface);
 
-G_DEFINE_TYPE_WITH_CODE (GiggleDiffView, giggle_diff_view, GTK_TYPE_SOURCE_VIEW,
+G_DEFINE_TYPE_WITH_CODE (GiggleDiffView, giggle_diff_view, GTK_SOURCE_TYPE_VIEW,
 			 G_IMPLEMENT_INTERFACE (GIGGLE_TYPE_SEARCHABLE,
 						giggle_diff_view_searchable_init))
 
