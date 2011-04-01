@@ -105,9 +105,6 @@ giggle_remote_class_init (GiggleRemoteClass *class)
 static void
 giggle_remote_init (GiggleRemote *remote)
 {
-	GiggleRemotePriv *priv;
-
-	priv = GET_PRIV (remote);
 }
 
 static void
@@ -184,10 +181,6 @@ remote_set_property (GObject      *object,
 		     const GValue *value,
 		     GParamSpec   *pspec)
 {
-	GiggleRemotePriv *priv;
-
-	priv = GET_PRIV (object);
-
 	switch (param_id) {
 	case PROP_ICON_NAME:
 		giggle_remote_set_icon_name (GIGGLE_REMOTE (object),

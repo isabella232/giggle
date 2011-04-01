@@ -178,10 +178,6 @@ file_list_set_property (GObject      *object,
 			const GValue *value,
 			GParamSpec   *pspec)
 {
-	GiggleFileListPriv *priv;
-
-	priv = GET_PRIV (object);
-
 	switch (param_id) {
 	case PROP_SHOW_ALL:
 		giggle_file_list_set_show_all (GIGGLE_FILE_LIST (object),
@@ -1054,10 +1050,8 @@ static void
 file_list_toggle_show_all (GtkAction      *action,
 			   GiggleFileList *list)
 {
-	GiggleFileListPriv *priv;
 	gboolean active;
 
-	priv = GET_PRIV (list);
 	active = gtk_toggle_action_get_active (GTK_TOGGLE_ACTION (action));
 	giggle_file_list_set_show_all (list, active);
 }
@@ -1077,12 +1071,10 @@ file_list_populate_dir (GiggleFileList *list,
 			const gchar    *rel_path,
 			GtkTreeIter    *parent_iter)
 {
-	GiggleFileListPriv *priv;
 	GDir               *dir;
 	const gchar        *name;
 	gchar              *full_path, *path;
 
-	priv = GET_PRIV (list);
 	full_path = g_build_filename (directory, rel_path, NULL);
 	dir = g_dir_open (full_path, 0, NULL);
 
@@ -1268,7 +1260,6 @@ file_list_cell_data_background_func (GtkCellLayout   *cell_layout,
 				     GtkTreeIter     *iter,
 				     gpointer         data)
 {
-	GiggleFileListPriv *priv;
 	GiggleFileList     *file_list;
 	GtkStyleContext    *context;
 	GdkRGBA             rgba;
@@ -1276,7 +1267,6 @@ file_list_cell_data_background_func (GtkCellLayout   *cell_layout,
 	gchar              *rel_path;
 
 	file_list = GIGGLE_FILE_LIST (data);
-	priv = GET_PRIV (file_list);
 
 	context = gtk_widget_get_style_context (GTK_WIDGET (file_list));
 	gtk_style_context_get_background_color (context, GTK_STATE_FLAG_NORMAL, &rgba);
@@ -1552,7 +1542,6 @@ giggle_file_list_set_show_all (GiggleFileList *list,
 GList *
 giggle_file_list_get_selection (GiggleFileList *list)
 {
-	GiggleFileListPriv *priv;
 	GtkTreeSelection   *selection;
 	GtkTreeModel       *model;
 	GtkTreeIter         iter;
@@ -1561,7 +1550,6 @@ giggle_file_list_get_selection (GiggleFileList *list)
 
 	g_return_val_if_fail (GIGGLE_IS_FILE_LIST (list), NULL);
 
-	priv = GET_PRIV (list);
 	files = NULL;
 
 	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (list));

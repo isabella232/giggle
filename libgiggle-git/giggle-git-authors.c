@@ -168,9 +168,6 @@ giggle_git_authors_class_init (GiggleGitAuthorsClass *class)
 static void
 giggle_git_authors_init (GiggleGitAuthors *git_authors)
 {
-	GiggleGitAuthorsPriv *priv;
-
-	priv = GET_PRIV (git_authors);
 }
 
 static void
@@ -193,10 +190,6 @@ git_authors_get_property (GObject    *object,
 		    GValue     *value,
 		    GParamSpec *pspec)
 {
-	GiggleGitAuthorsPriv *priv;
-
-	priv = GET_PRIV (object);
-
 	switch (param_id) {
 	default:
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, param_id, pspec);
@@ -210,10 +203,6 @@ git_authors_set_property (GObject      *object,
 		    const GValue *value,
 		    GParamSpec   *pspec)
 {
-	GiggleGitAuthorsPriv *priv;
-
-	priv = GET_PRIV (object);
-
 	switch (param_id) {
 	default:
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, param_id, pspec);
@@ -261,7 +250,6 @@ authors_handle_output (GiggleJob   *job,
 	GiggleGitAuthorsPriv *priv;
 	GHashTable           *authors_by_name;
 	GHashTable           *authors_by_email;
-	GList                *authors;
 	gchar               **lines;
 	gchar               **line;
 
@@ -272,7 +260,6 @@ authors_handle_output (GiggleJob   *job,
 	authors_by_name  = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, NULL);
 	authors_by_email = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, NULL);
 
-	authors = NULL;
 	for (line = lines; line && *line; line++) {
 		if (g_str_has_prefix (*line, "Author: ")) {
 			GiggleAuthor* author = giggle_author_new_from_string (*line + strlen ("Author: "));

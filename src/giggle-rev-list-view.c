@@ -194,10 +194,6 @@ rev_list_view_set_property (GObject      *object,
 			    const GValue *value,
 			    GParamSpec   *pspec)
 {
-	GiggleRevListViewPriv *priv;
-
-	priv = GET_PRIV (object);
-
 	switch (param_id) {
 	case PROP_GRAPH_VISIBLE:
 		giggle_rev_list_view_set_graph_visible (GIGGLE_REV_LIST_VIEW (object),
@@ -1442,11 +1438,8 @@ rev_list_view_cell_data_log_func (GtkCellLayout   *layout,
 				  GtkTreeIter     *iter,
 				  gpointer         data)
 {
-	GiggleRevListViewPriv *priv;
 	GiggleRevision         *revision;
 	gchar                  *markup;
-
-	priv = GET_PRIV (data);
 
 	gtk_tree_model_get (model, iter,
 			    COL_OBJECT, &revision,
@@ -1552,13 +1545,10 @@ rev_list_view_cell_data_date_func (GtkCellLayout   *layout,
 				   GtkTreeIter     *iter,
 				   gpointer         data)
 {
-	GiggleRevListViewPriv *priv;
 	GiggleRevision         *revision;
 	gchar                  *format;
 	gchar                   buf[256];
 	const struct tm        *tm;
-
-	priv = GET_PRIV (data);
 
 	gtk_tree_model_get (model, iter,
 			    COL_OBJECT, &revision,

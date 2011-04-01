@@ -191,10 +191,7 @@ input_dialog_get_property (GObject    *object,
 			   GValue     *value,
 			   GParamSpec *pspec)
 {
-	GiggleInputDialogPriv *priv;
 	const gchar           *text;
-
-	priv = GET_PRIV (object);
 
 	switch (param_id) {
 	case PROP_TEXT:

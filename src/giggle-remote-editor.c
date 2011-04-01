@@ -325,10 +325,6 @@ remote_editor_set_remote (GiggleRemoteEditor *editor,
 static void
 remote_editor_finalize (GObject *object)
 {
-	GiggleRemoteEditorPriv *priv;
-
-	priv = GET_PRIV (object);
-	
 	remote_editor_set_remote (GIGGLE_REMOTE_EDITOR (object), NULL);
 
 	G_OBJECT_CLASS (giggle_remote_editor_parent_class)->finalize (object);
@@ -360,10 +356,7 @@ remote_editor_set_property (GObject      *object,
 		    const GValue *value,
 		    GParamSpec   *pspec)
 {
-	GiggleRemoteEditorPriv *priv;
 	GiggleRemote           *remote;
-
-	priv = GET_PRIV (object);
 
 	switch (param_id) {
 	case PROP_REMOTE:
