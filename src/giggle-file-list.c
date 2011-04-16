@@ -1326,9 +1326,9 @@ file_list_cell_data_sensitive_func (GtkCellLayout   *layout,
 	}
 
 	if (GTK_IS_CELL_RENDERER_TEXT (renderer)) {
-		state = (value) ? GTK_STATE_NORMAL : GTK_STATE_INSENSITIVE;
+		state = (value) ? GTK_STATE_FLAG_NORMAL : GTK_STATE_FLAG_INSENSITIVE;
 		context = gtk_widget_get_style_context (GTK_WIDGET (list));
-		gtk_style_context_get_background_color (context, state, &rgba);
+		gtk_style_context_get_color (context, state, &rgba);
 		g_object_set (renderer, "foreground-rgba", &rgba, NULL);
 	} else {
 		g_object_set (renderer, "sensitive", value, NULL);
