@@ -251,21 +251,23 @@ set_source_color (cairo_t         *cr,
 		  GtkWidget       *widget,
 		  unsigned	   color_index)
 {
+	GtkStyleContext *context;
+	GdkRGBA rgba;
 	GdkColor  color;
-	GtkStyle *style;
-
 
 	if (gtk_widget_is_sensitive (widget)) {
 		gdk_cairo_set_source_color (cr, &colors[color_index]);
 	} else {
-		style = gtk_widget_get_style (widget);
+		context = gtk_widget_get_style_context (widget);
+		gtk_style_context_get_color (context, GTK_STATE_FLAG_INSENSITIVE, &rgba);
 		color = colors[color_index];
 
-		color.red   = (color.red   + 7 * style->text[GTK_STATE_INSENSITIVE].red)   / 8;
-		color.green = (color.green + 7 * style->text[GTK_STATE_INSENSITIVE].green) / 8;
-		color.blue  = (color.blue  + 7 * style->text[GTK_STATE_INSENSITIVE].blue)  / 8;
+		/* convert color values to rgba values, lying in the [0,1] range */
+		rgba.red   = (color.red / 65535.0   + 7 * rgba.red)   / 8;
+		rgba.green = (color.green / 65535.0 + 7 * rgba.green) / 8;
+		rgba.blue  = (color.blue / 65535.0  + 7 * rgba.blue)  / 8;
 
-		gdk_cairo_set_source_color (cr, &color);
+		gdk_cairo_set_source_rgba (cr, &rgba);
 	}
 }
 
