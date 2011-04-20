@@ -419,7 +419,7 @@ render_chunk_marker (cairo_t    *cr,
 		     const char *name,
 		     int         width,
 		     int         height,
-		     GdkColor   *color)
+		     GdkRGBA    *rgba)
 {
 	double           r, g, b;
 	double           x0, y0, x1, y1;
@@ -443,9 +443,9 @@ render_chunk_marker (cairo_t    *cr,
 	x1 = width - 3;
 	y1 = height - 1;
 
-	r = color->red   / 65535.0;
-	g = color->green / 65535.0;
-	b = color->blue  / 65535.0;
+	r = rgba->red;
+	g = rgba->green;
+	b = rgba->blue;
 
 	gradient = cairo_pattern_create_linear (0, 0, 0, height);
 
@@ -632,16 +632,11 @@ source_view_draw_cb (GtkTextView    *text_view,
 		if (name) { /* FIXME: see GB#572785 */
 			GtkStyleContext *context;
 			GdkRGBA  rgba;
-			GdkColor color;
 
 			context = gtk_widget_get_style_context (priv->source_view);
 			gtk_style_context_get_background_color (context, GTK_STATE_FLAG_SELECTED, &rgba);
 
-			color.red = rgba.red * 65535;
-			color.green = rgba.green * 65535;
-			color.blue = rgba.blue * 65535;
-
-			render_chunk_marker (cr, name, 16, height, &color);
+			render_chunk_marker (cr, name, 16, height, &rgba);
 		}
 
 		g_slist_free (markers);
