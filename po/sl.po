@@ -26,7 +26,7 @@ msgstr "Giggle"
 
 #: ../data/giggle.desktop.in.h:2
 msgid "Git repository viewer"
-msgstr "Pregledovalnik skladišč git"
+msgstr "Pregledovalnik skladišč Git"
 
 #: ../data/giggle.schemas.in.h:1
 msgid "Run Giggle in a terminal?"
@@ -643,11 +643,11 @@ msgstr "O programu"
 #: ../src/giggle-window.c:605
 #, c-format
 msgid "The directory '%s' does not look like a git repository."
-msgstr "Mapa '%s' ni videti kot skladišče git."
+msgstr "Mapa '%s' ni videti kot skladišče Git."
 
 #: ../src/giggle-window.c:688
 msgid "Select git repository"
-msgstr "Izbor skladišča git"
+msgstr "Izbor skladišča Git"
 
 #: ../src/giggle-window.c:741
 #, c-format
@@ -746,7 +746,7 @@ msgstr "Pomo_č"
 
 #: ../src/giggle-window.c:1097
 msgid "Open a git repository"
-msgstr "Odpri skladišče get"
+msgstr "Odpri skladišče git"
 
 #: ../src/giggle-window.c:1101
 msgid "Clone _location"
