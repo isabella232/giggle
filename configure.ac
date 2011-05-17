@@ -60,9 +60,8 @@ dnl | Evolution Data Server |-----------------------------------
 dnl  -----------------------
 
 AC_ARG_ENABLE([evolution-data-server],
-              [AS_HELP_STRING([--disable-evolution-data-server],
-                              [disable features using Evolution Data Server])],,
-              [enable_evolution_data_server=yes])
+              [AS_HELP_STRING([--enable-evolution-data-server],
+                              [Enable features using Evolution Data Server])])
 
 if test "$enable_evolution_data_server" = "yes"
 then
