@@ -122,7 +122,8 @@ giggle_input_dialog_init (GiggleInputDialog *input_dialog)
 
 	priv->label = gtk_label_new (NULL);
 	g_object_ref_sink (priv->label);
-	gtk_misc_set_alignment (GTK_MISC (priv->label), 0., 0.);
+	gtk_widget_set_halign (priv->label, GTK_ALIGN_START);
+	gtk_widget_set_valign (priv->label, GTK_ALIGN_START);
 	gtk_box_pack_start (GTK_BOX (box), priv->label, FALSE, FALSE, 0);
 
 	priv->entry = gtk_entry_new ();
