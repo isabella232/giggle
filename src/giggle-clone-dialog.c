@@ -225,7 +225,8 @@ set_table_row (GtkTable *table,
 
 	if (label) {
 		gtk_label_set_mnemonic_widget (GTK_LABEL (label), widget);
-		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+		gtk_widget_set_halign (label, GTK_ALIGN_START);
+		gtk_widget_set_valign (label, GTK_ALIGN_CENTER);
 		gtk_widget_show (label);
 
 		gtk_table_attach (GTK_TABLE (table), label,
