@@ -360,7 +360,8 @@ short_list_update_label_idle (gpointer user_data)
 				       object, &text);
 
 			label = gtk_label_new (text);
-			gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+			gtk_widget_set_halign (label, GTK_ALIGN_START);
+			gtk_widget_set_valign (label, GTK_ALIGN_CENTER);
 			gtk_widget_show (label);
 			gtk_box_pack_start (GTK_BOX (priv->content_box), label, FALSE, FALSE, 0);
 
@@ -403,7 +404,8 @@ giggle_short_list_init (GiggleShortList *self)
 
 	priv->label = gtk_label_new (NULL);
 	gtk_label_set_attributes (GTK_LABEL (priv->label), attributes);
-	gtk_misc_set_alignment (GTK_MISC (priv->label), 0.0, 0.5);
+	gtk_widget_set_halign (priv->label, GTK_ALIGN_START);
+	gtk_widget_set_valign (priv->label, GTK_ALIGN_CENTER);
 	gtk_box_pack_start (GTK_BOX (self), priv->label, FALSE, FALSE, 0);
 
 	pango_attr_list_unref (attributes);
