@@ -102,7 +102,8 @@ giggle_diff_window_init (GiggleDiffWindow *diff_window)
 
 	label = gtk_label_new (NULL);
 	str = g_strdup_printf ("<b>%s</b>", _("Revision log:"));
-	gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.0);
+	gtk_widget_set_halign (label, GTK_ALIGN_START);
+	gtk_widget_set_valign (label, GTK_ALIGN_START);
 	gtk_label_set_markup (GTK_LABEL (label), str);
 	g_free (str);
 
