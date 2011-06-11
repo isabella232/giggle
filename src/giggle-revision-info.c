@@ -218,12 +218,14 @@ giggle_revision_info_init (GiggleRevisionInfo *info)
 	gtk_box_pack_start (GTK_BOX (info), hbox, FALSE, FALSE, 0);
 
 	priv->label = gtk_label_new (NULL);
-	gtk_misc_set_alignment (GTK_MISC (priv->label), 0.0, 0.5);
+	gtk_widget_set_halign (priv->label, GTK_ALIGN_START);
+	gtk_widget_set_valign (priv->label, GTK_ALIGN_CENTER);
 	gtk_label_set_ellipsize (GTK_LABEL (priv->label), PANGO_ELLIPSIZE_END);
 	gtk_box_pack_start (GTK_BOX (hbox), priv->label, TRUE, TRUE, 0);
 
 	priv->sha1 = gtk_label_new (NULL);
-	gtk_misc_set_alignment (GTK_MISC (priv->sha1), 1.0, 0.5);
+	gtk_widget_set_halign (priv->sha1, GTK_ALIGN_END);
+	gtk_widget_set_valign (priv->sha1, GTK_ALIGN_CENTER);
 	gtk_label_set_selectable (GTK_LABEL (priv->sha1), TRUE);
 	gtk_box_pack_start (GTK_BOX (hbox), priv->sha1, FALSE, FALSE, 0);
 
@@ -233,13 +235,15 @@ giggle_revision_info_init (GiggleRevisionInfo *info)
 	gtk_box_pack_start (GTK_BOX (info), hbox, FALSE, FALSE, 0);
 
 	priv->summary = gtk_label_new (NULL);
-	gtk_misc_set_alignment (GTK_MISC (priv->summary), 0.0, 0.5);
+	gtk_widget_set_halign (priv->summary, GTK_ALIGN_START);
+	gtk_widget_set_valign (priv->summary, GTK_ALIGN_CENTER);
 	gtk_label_set_selectable (GTK_LABEL (priv->summary), TRUE);
 	gtk_label_set_ellipsize (GTK_LABEL (priv->summary), PANGO_ELLIPSIZE_END);
 	gtk_box_pack_start (GTK_BOX (hbox), priv->summary, TRUE, TRUE, 0);
 
 	priv->date = gtk_label_new (NULL);
-	gtk_misc_set_alignment (GTK_MISC (priv->date), 1.0, 0.5);
+	gtk_widget_set_halign (priv->date, GTK_ALIGN_END);
+	gtk_widget_set_valign (priv->date, GTK_ALIGN_CENTER);
 	gtk_label_set_selectable (GTK_LABEL (priv->date), TRUE);
 	gtk_box_pack_start (GTK_BOX (hbox), priv->date, FALSE, FALSE, 0);
 
