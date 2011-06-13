@@ -537,7 +537,7 @@ giggle_avatar_image_set_image_uri (GiggleAvatarImage *image,
 	g_object_set (image, "image-uri", uri, NULL);
 }
 
-G_CONST_RETURN char *
+const char *
 giggle_avatar_image_get_image_uri (GiggleAvatarImage *image)
 {
 	g_return_val_if_fail (GIGGLE_IS_AVATAR_IMAGE (image), NULL);
@@ -552,7 +552,7 @@ giggle_avatar_image_set_gravatar_id (GiggleAvatarImage *image,
 	g_object_set (image, "gravatar-id", id, NULL);
 }
 
-G_CONST_RETURN char *
+const char *
 giggle_avatar_image_get_gravatar_id (GiggleAvatarImage *image)
 {
 	g_return_val_if_fail (GIGGLE_IS_AVATAR_IMAGE (image), NULL);

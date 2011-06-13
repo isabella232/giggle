@@ -213,7 +213,7 @@ giggle_input_dialog_new (const gchar *text)
 			     NULL);
 }
 
-G_CONST_RETURN gchar*
+const gchar*
 giggle_input_dialog_get_text (GiggleInputDialog *input_dialog)
 {
 	GiggleInputDialogPriv *priv;
