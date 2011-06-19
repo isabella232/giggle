@@ -9,6 +9,7 @@ AC_INIT([Giggle],
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_SRCDIR([configure.ac])
 AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_AUX_DIR([build-aux])
 
 AM_INIT_AUTOMAKE([1.11 check-news -Wall tar-ustar no-dist-gzip dist-xz])
 # Support silent build rules, requires at least automake-1.11. Disable

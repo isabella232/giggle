@@ -26,6 +26,8 @@ if test -z $GNOMEDOC; then
         exit 1
 fi
 
+mkdir -p build-aux
+
 gnome-doc-prepare --automake --copy --force
 autopoint --force
 AUTOPOINT='intltoolize --automake --copy' autoreconf --force --install --verbose

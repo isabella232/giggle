@@ -1,4 +1,4 @@
-include $(top_srcdir)/gnome-doc-utils.make
+include $(top_srcdir)/build-aux/gnome-doc-utils.make
 
 DOC_ID = giggle
 DOC_INCLUDES =
