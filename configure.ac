@@ -133,7 +133,7 @@ AC_DEFINE([GETTEXT_PACKAGE], [PACKAGE_TARNAME],[Define to the gettext package na
 dnl  -------------
 dnl | User Manual |---------------------------------------
 dnl  -------------
-GNOME_DOC_INIT([0.20])
+YELP_HELP_INIT
 
 dnl  -----------------------
 dnl | GIT command detection |----------------------------------

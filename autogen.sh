@@ -28,7 +28,6 @@ fi
 
 mkdir -p build-aux
 
-gnome-doc-prepare --automake --copy --force
 autopoint --force
 AUTOPOINT='intltoolize --automake --copy' autoreconf --force --install --verbose
 
