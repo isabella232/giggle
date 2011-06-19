@@ -130,8 +130,6 @@ AM_GNU_GETTEXT([external])
 AC_SUBST([GETTEXT_PACKAGE], [giggle])
 AC_DEFINE([GETTEXT_PACKAGE], [PACKAGE_TARNAME],[Define to the gettext package name])
 
-AC_SUBST([CONFIG_STATUS_DEPENDENCIES],['$(top_srcdir)/po/LINGUAS'])
-
 dnl  -------------
 dnl | User Manual |---------------------------------------
 dnl  -------------
