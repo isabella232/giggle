@@ -41,11 +41,11 @@ typedef struct _GiggleShortList             GiggleShortList;
 typedef struct _GiggleShortListClass        GiggleShortListClass;
 
 struct _GiggleShortList {
-	GtkVBox parent_instance;
+	GtkBox parent_instance;
 };
 
 struct _GiggleShortListClass {
-	GtkVBoxClass parent_class;
+	GtkBoxClass parent_class;
 
 	/* signals */
 	gchar* (*display_object) (GiggleShortList* self,

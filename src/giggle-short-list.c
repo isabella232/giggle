@@ -68,7 +68,7 @@ static void     short_list_size_allocate  (GtkWidget      *widget,
 					   GtkAllocation  *allocation);
 
 
-G_DEFINE_TYPE (GiggleShortList, giggle_short_list, GTK_TYPE_VBOX)
+G_DEFINE_TYPE (GiggleShortList, giggle_short_list, GTK_TYPE_BOX)
 
 #define GET_PRIV(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), GIGGLE_TYPE_SHORT_LIST, GiggleShortListPriv))
 
@@ -392,6 +392,9 @@ giggle_short_list_init (GiggleShortList *self)
 	PangoAttribute      *attribute;
 
 	priv = GET_PRIV (self);
+
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (self),
+	                                GTK_ORIENTATION_VERTICAL);
 
 	gtk_box_set_homogeneous (GTK_BOX (self), FALSE);
 	gtk_box_set_spacing (GTK_BOX (self), 6);
