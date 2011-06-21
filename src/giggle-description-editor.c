@@ -38,7 +38,7 @@ struct GiggleDescriptionEditorPriv {
 static void description_editor_finalize                (GObject *object);
 
 
-G_DEFINE_TYPE (GiggleDescriptionEditor, giggle_description_editor, GTK_TYPE_VBOX)
+G_DEFINE_TYPE (GiggleDescriptionEditor, giggle_description_editor, GTK_TYPE_BOX)
 
 #define GET_PRIV(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), GIGGLE_TYPE_DESCRIPTION_EDITOR, GiggleDescriptionEditorPriv))
 
@@ -116,6 +116,9 @@ giggle_description_editor_init (GiggleDescriptionEditor *editor)
 	GtkTextBuffer               *buffer;
 
 	priv = GET_PRIV (editor);
+
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (editor),
+	                                GTK_ORIENTATION_VERTICAL);
 
 	gtk_box_set_spacing (GTK_BOX (editor), 6);
 
