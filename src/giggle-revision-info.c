@@ -43,7 +43,7 @@ typedef struct {
 	unsigned        use_markup : 1;
 } GiggleRevisionInfoPriv;
 
-G_DEFINE_TYPE (GiggleRevisionInfo, giggle_revision_info, GTK_TYPE_VBOX)
+G_DEFINE_TYPE (GiggleRevisionInfo, giggle_revision_info, GTK_TYPE_BOX)
 
 static void
 revision_info_set_revision (GiggleRevisionInfoPriv *priv,
@@ -213,6 +213,9 @@ giggle_revision_info_init (GiggleRevisionInfo *info)
 	GtkWidget *hbox;
 
 	priv = GET_PRIV (info);
+
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (info),
+	                                GTK_ORIENTATION_VERTICAL);
 
 	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
 	gtk_box_pack_start (GTK_BOX (info), hbox, FALSE, FALSE, 0);
