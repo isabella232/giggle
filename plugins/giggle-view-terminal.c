@@ -70,18 +70,6 @@ giggle_view_terminal_class_init (GiggleViewTerminalClass *class)
 
 	object_class->dispose = view_terminal_dispose;
 
-	gtk_rc_parse_string
-		("style \"giggle-terminal-tab-close-button-style\" {"
-		 "	GtkButton::inner-border = { 0, 0, 0, 0 }"
-		 "	GtkWidget::focus-padding = 0"
-		 "	GtkWidget::focus-line-width = 0"
-		 "	xthickness = 0"
-		 "	ythickness = 0"
-		 "}"
-		 "widget \"*.giggle-terminal-tab-close-button\" "
-		 "style \"giggle-terminal-tab-close-button-style\"");
-
-
 	g_type_class_add_private (class, sizeof (GiggleViewTerminalPriv));
 }
 

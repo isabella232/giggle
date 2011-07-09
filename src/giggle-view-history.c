@@ -581,12 +581,6 @@ view_history_setup_revision_pane (GObject *object)
 
 	priv = GIGGLE_VIEW_HISTORY (object)->priv;
 
-	gtk_rc_parse_string ("style \"view-history-toolbar-style\" {"
-			     "  GtkToolbar::shadow-type = none"
-			     "}"
-			     "widget \"*.ViewHistoryToolbar\" "
-			     "style \"view-history-toolbar-style\"");
-
 	toolbar = gtk_ui_manager_get_widget (priv->ui_manager, "/ViewHistoryToolbar");
 
 	priv->revision_shell = giggle_view_shell_new_with_ui (priv->ui_manager,
