@@ -854,6 +854,20 @@ window_action_view_graph_cb (GtkAction    *action,
 }
 
 static void
+window_action_view_diff_cb (GtkRadioAction *action,
+			    GtkRadioAction *current,
+			    GiggleWindow *window)
+{
+	GiggleWindowPriv *priv;
+	gint             current_value;
+
+	priv = window->priv;
+
+	current_value = gtk_radio_action_get_current_value (current);
+	giggle_view_history_set_view_style (GIGGLE_VIEW_HISTORY (priv->history_view), current_value);
+}
+
+static void
 window_action_refresh_history (GtkAction    *action,
 			       GiggleWindow *window)
 {
@@ -1097,6 +1111,18 @@ window_create_ui_manager (GiggleWindow *window)
 		},
 	};
 
+	static const GtkRadioActionEntry radio_action_entries[] = {
+		{ "ShowDiffChunk", NULL,
+		  N_("Show diffs by chunk"), NULL, NULL, 0
+		},
+		{ "ShowDiffFile", NULL,
+		  N_("Show diffs by file"), NULL, NULL, 1
+		},
+		{ "ShowDiffAll", NULL,
+		  N_("Show all diffs"), NULL, NULL, 2
+		},
+	};
+
 	static const GtkActionEntry project_action_entries[] = {
 		{ "Properties", GTK_STOCK_PROPERTIES, NULL,
 		  "<alt>Return", N_("Show and edit project properties"),
@@ -1143,6 +1169,10 @@ window_create_ui_manager (GiggleWindow *window)
 		"      <placeholder name='ViewShell'/>"
 		"      <separator/>"
 		"      <menuitem action='ShowGraph'/>"
+		"      <separator/>"
+		"      <menuitem action='ShowDiffChunk'/>"
+		"      <menuitem action='ShowDiffFile'/>"
+		"      <menuitem action='ShowDiffAll'/>"
 		"      <placeholder name='ViewMenuPreferences'/>"
 		"      <separator/>"
 		"      <menuitem action='RefreshHistory'/>"
@@ -1205,6 +1235,10 @@ window_create_ui_manager (GiggleWindow *window)
 					     G_N_ELEMENTS (toggle_action_entries),
 					     window);
 
+	gtk_action_group_add_radio_actions (action_group, radio_action_entries,
+					    G_N_ELEMENTS (radio_action_entries),
+					    0, G_CALLBACK (window_action_view_diff_cb),
+					    window);
 	gtk_ui_manager_insert_action_group (priv->ui_manager, action_group, 0);
 	g_object_unref (action_group);
 

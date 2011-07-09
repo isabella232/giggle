@@ -869,6 +869,20 @@ giggle_view_history_set_graph_visible (GiggleViewHistory *view,
 		GIGGLE_REV_LIST_VIEW (priv->revision_list), visible);
 }
 
+void
+giggle_view_history_set_view_style (GiggleViewHistory *view,
+				    gint              style)
+{
+	GiggleViewHistoryPriv *priv;
+
+	g_return_if_fail (GIGGLE_IS_VIEW_HISTORY (view));
+
+	priv = view->priv;
+
+	giggle_view_diff_set_style (
+		GIGGLE_VIEW_DIFF (priv->view_diff), style);
+}
+
 gboolean
 giggle_view_history_select (GiggleViewHistory *view,
 			    GiggleRevision    *revision)
