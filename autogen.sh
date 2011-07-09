@@ -19,10 +19,10 @@ if test -z $INTLTOOLIZE; then
         exit 1
 fi
 
-GNOMEDOC=`which gnome-doc-prepare`
+GNOMEDOC=`which yelp-build`
 if test -z $GNOMEDOC; then
         echo "*** The tools to build the documentation are not found,"
-        echo "    please intall the gnome-doc-utils package ***"
+        echo "    please intall the yelp-tool package ***"
         exit 1
 fi
 
