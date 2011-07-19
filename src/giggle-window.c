@@ -941,7 +941,7 @@ window_action_about_cb (GtkAction    *action,
 
 	const gchar *copyright = _("Copyright © 2007 - 2008 Imendio AB\n"
 	                           "Copyright © 2008 - 2009 Mathias Hasselmann\n"
-	                           "Copyright © 2009 - 2010 The Giggle authors");
+	                           "Copyright © 2009 - 2011 The Giggle authors");
 
 	/* Translators: This is a special message that shouldn't be translated
          * literally. It is used in the about box to give credits to
