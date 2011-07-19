@@ -22,7 +22,7 @@ fi
 GNOMEDOC=`which yelp-build`
 if test -z $GNOMEDOC; then
         echo "*** The tools to build the documentation are not found,"
-        echo "    please intall the yelp-tool package ***"
+        echo "    please intall the yelp-tools package ***"
         exit 1
 fi
 
