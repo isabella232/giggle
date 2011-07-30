@@ -5,13 +5,14 @@
 # Mathias Hasselmann <hasselmm@gnome.org>, 2009.
 # Mario Blättermann <mariobl@freenet.de>, 2010, 2011.
 # Christian Kirbach  <Christian.Kirbach@googlemail.com>, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2011-07-09 18:36+0000\n"
-"PO-Revision-Date: 2011-07-15 20:06+0100\n"
+"POT-Creation-Date: 2011-07-19 19:49+0000\n"
+"PO-Revision-Date: 2011-07-30 20:47+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@freenet.de>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -634,11 +635,11 @@ msgstr "Mitwirkende:"
 msgid ""
 "Copyright © 2007 - 2008 Imendio AB\n"
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
-"Copyright © 2009 - 2010 The Giggle authors"
+"Copyright © 2009 - 2011 The Giggle authors"
 msgstr ""
 "Copyright © 2007 - 2008 Imendio AB\n"
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
-"Copyright © 2009 - 2010 Die Giggle-Autoren"
+"Copyright © 2009 - 2011 Die Giggle-Autoren"
 
 #. Translators: This is a special message that shouldn't be translated
 #. * literally. It is used in the about box to give credits to
