@@ -73,6 +73,8 @@ giggle_SOURCES = \
 	$(NULL)
 
 giggle_LDADD = \
+	$(GIGGLE_LIBS) \
+	../libgiggle/libgiggle.la \
 	../libgiggle-git/libgiggle-git.la
 
 #test_graph_renderer_SOURCES = \
