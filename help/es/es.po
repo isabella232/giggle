@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle.help.master\n"
-"POT-Creation-Date: 2011-07-09 16:39+0000\n"
-"PO-Revision-Date: 2011-07-10 12:25+0200\n"
+"POT-Creation-Date: 2011-07-10 10:26+0000\n"
+"PO-Revision-Date: 2011-09-15 12:31+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,6 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#| msgid "translator-credits"
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
@@ -57,9 +56,6 @@ msgstr "Trabajar con repositorios GIT"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/browse-view.page:31(media)
-#| msgid ""
-#| "@@image: 'figures/giggle-browse_view_sections.png'; "
-#| "md5=390225c079a94ec75fd1c172f90c6b3c"
 msgctxt "_"
 msgid ""
 "external ref='figures/giggle-browse_view_sections.png' "
@@ -192,9 +188,6 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/history-view.page:30(media)
-#| msgid ""
-#| "@@image: 'figures/giggle-history_view_sections.png'; "
-#| "md5=3b487583a028a4d087e3d6a5bcd589b8"
 msgctxt "_"
 msgid ""
 "external ref='figures/giggle-history_view_sections.png' "
@@ -291,9 +284,6 @@ msgid "You can start <app>giggle</app> in the following ways:"
 msgstr "Puede iniciar <app>Giggle</app> de las siguientes formas:"
 
 #: C/introduction.page:34(item/p)
-#| msgid ""
-#| "Choose <guiseq><gui>Programming</gui><gui>Giggle</gui></guiseq> from the "
-#| "<gui>Applications</gui> menu."
 msgid ""
 "Choose <guiseq><gui>Programming</gui> <gui>Giggle</gui></guiseq> from the "
 "<gui>Applications</gui> menu."
@@ -342,7 +332,6 @@ msgid "You are free:"
 msgstr "Es libre de:"
 
 #: C/license.page:24(item/title)
-#| msgid "To share"
 msgid "<em>To share</em>"
 msgstr "<em>Compartir</em>"
 
@@ -351,7 +340,6 @@ msgid "To copy, distribute and transmit the work."
 msgstr "Copiar, distribuir y comunicar públicamente la obra"
 
 #: C/license.page:28(item/title)
-#| msgid "To remix"
 msgid "<em>To remix</em>"
 msgstr "<em>Hacer obras derivadas</em>"
 
@@ -364,7 +352,6 @@ msgid "Under the following conditions:"
 msgstr "Bajo las siguientes condiciones:"
 
 #: C/license.page:37(item/title)
-#| msgid "Attribution"
 msgid "<em>Attribution</em>"
 msgstr "<em>Atribución</em>"
 
@@ -379,7 +366,6 @@ msgstr ""
 "o apoyan el uso que hace de su obra)."
 
 #: C/license.page:45(item/title)
-#| msgid "Share Alike"
 msgid "<em>Share Alike</em>"
 msgstr "<em>Compartir igual</em>"
 
@@ -422,11 +408,11 @@ msgid ""
 "directory with your repository,"
 msgstr ""
 "usando <guiseq><gui>Proyecto</gui><gui>Abrir</gui></guiseq> y seleccionado "
-"el directorio con su repositorio,"
+"la carpeta con su repositorio,"
 
 #: C/opening-repositories.page:33(item/p)
 msgid "running <cmd>giggle</cmd> in your project's directory,"
-msgstr "ejecutando <cmd>giggle</cmd> en el directorio de su proyecto,"
+msgstr "ejecutando <cmd>giggle</cmd> en la carpeta de su proyecto,"
 
 #: C/opening-repositories.page:36(item/p)
 msgid ""
