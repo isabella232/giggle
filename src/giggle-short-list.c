@@ -24,7 +24,6 @@
 #include <gtk/gtk.h>
 
 #include "giggle-short-list.h"
-#include "libgiggle/giggle-marshal.h"
 
 typedef struct GiggleShortListPriv GiggleShortListPriv;
 
@@ -105,7 +104,7 @@ giggle_short_list_class_init (GiggleShortListClass *class)
 		g_signal_new ("display-object", GIGGLE_TYPE_SHORT_LIST,
 			      G_SIGNAL_RUN_LAST, G_STRUCT_OFFSET (GiggleShortListClass, display_object),
 			      NULL, NULL,
-			      giggle_marshal_STRING__OBJECT,
+			      g_cclosure_marshal_generic,
 			      G_TYPE_STRING, 1,
 			      G_TYPE_OBJECT);
 

@@ -36,7 +36,8 @@ giggle_clipboard_iface_init (gpointer iface,
 			      GIGGLE_TYPE_CLIPBOARD,
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GiggleClipboardIface, clipboard_changed),
-			      NULL, NULL, g_cclosure_marshal_VOID__VOID,
+			      NULL, NULL,
+		              g_cclosure_marshal_generic,
 			      G_TYPE_NONE, 0);
 }
 

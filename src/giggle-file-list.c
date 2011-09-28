@@ -498,7 +498,7 @@ giggle_file_list_class_init (GiggleFileListClass *class)
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GiggleFileListClass, path_selected),
 			      NULL, NULL,
-			      g_cclosure_marshal_VOID__STRING,
+			      g_cclosure_marshal_generic,
 			      G_TYPE_NONE,
 			      1, G_TYPE_STRING);
 
@@ -508,7 +508,7 @@ giggle_file_list_class_init (GiggleFileListClass *class)
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GiggleFileListClass, project_loaded),
 			      NULL, NULL,
-			      g_cclosure_marshal_VOID__VOID,
+			      g_cclosure_marshal_generic,
 			      G_TYPE_NONE, 0);
 
 	signals[STATUS_CHANGED] =
@@ -517,7 +517,7 @@ giggle_file_list_class_init (GiggleFileListClass *class)
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GiggleFileListClass, status_changed),
 			      NULL, NULL,
-			      g_cclosure_marshal_VOID__VOID,
+			      g_cclosure_marshal_generic,
 			      G_TYPE_NONE, 0);
 
 	g_type_class_add_private (object_class, sizeof (GiggleFileListPriv));

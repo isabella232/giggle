@@ -105,7 +105,7 @@ egg_find_bar_class_init (EggFindBarClass *klass)
 		  G_SIGNAL_RUN_FIRST,
                   G_STRUCT_OFFSET (EggFindBarClass, next),
 		  NULL, NULL,
-		  g_cclosure_marshal_VOID__VOID,
+		  g_cclosure_marshal_generic,
 		  G_TYPE_NONE, 0);
   find_bar_signals[PREVIOUS] =
     g_signal_new ("previous",
@@ -113,7 +113,7 @@ egg_find_bar_class_init (EggFindBarClass *klass)
 		  G_SIGNAL_RUN_FIRST,
                   G_STRUCT_OFFSET (EggFindBarClass, previous),
 		  NULL, NULL,
-		  g_cclosure_marshal_VOID__VOID,
+		  g_cclosure_marshal_generic,
 		  G_TYPE_NONE, 0);
   find_bar_signals[CLOSE] =
     g_signal_new ("close",
@@ -121,7 +121,7 @@ egg_find_bar_class_init (EggFindBarClass *klass)
 		  G_SIGNAL_RUN_FIRST | G_SIGNAL_ACTION,
                   G_STRUCT_OFFSET (EggFindBarClass, close),
 		  NULL, NULL,
-		  g_cclosure_marshal_VOID__VOID,
+		  g_cclosure_marshal_generic,
 		  G_TYPE_NONE, 0);
   find_bar_signals[SCROLL] =
     g_signal_new ("scroll",
@@ -129,7 +129,7 @@ egg_find_bar_class_init (EggFindBarClass *klass)
 		  G_SIGNAL_RUN_FIRST | G_SIGNAL_ACTION,
                   G_STRUCT_OFFSET (EggFindBarClass, scroll),
 		  NULL, NULL,
-		  g_cclosure_marshal_VOID__ENUM,
+		  g_cclosure_marshal_generic,
 		  G_TYPE_NONE, 1,
 		  GTK_TYPE_SCROLL_TYPE);
 

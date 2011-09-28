@@ -251,12 +251,14 @@ giggle_view_class_init (GiggleViewClass *class)
 
 	signals[ADD_UI] = g_signal_new ("add-ui", GIGGLE_TYPE_VIEW, G_SIGNAL_RUN_FIRST,
 					G_STRUCT_OFFSET (GiggleViewClass, add_ui),
-					NULL, NULL, g_cclosure_marshal_VOID__OBJECT,
+					NULL, NULL,
+	                                g_cclosure_marshal_generic,
 					G_TYPE_NONE, 1, GTK_TYPE_UI_MANAGER);
 
 	signals[REMOVE_UI] = g_signal_new ("remove-ui", GIGGLE_TYPE_VIEW, G_SIGNAL_RUN_LAST,
 					   G_STRUCT_OFFSET (GiggleViewClass, remove_ui),
-					   NULL, NULL, g_cclosure_marshal_VOID__VOID,
+					   NULL, NULL,
+	                                   g_cclosure_marshal_generic,
 					   G_TYPE_NONE, 0);
 
 	g_type_class_add_private (class, sizeof (GiggleViewPriv));

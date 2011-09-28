@@ -28,7 +28,6 @@
 #include <libgiggle/giggle-branch.h>
 #include <libgiggle/giggle-clipboard.h>
 #include <libgiggle/giggle-job.h>
-#include <libgiggle/giggle-marshal.h>
 #include <libgiggle/giggle-revision.h>
 #include <libgiggle/giggle-searchable.h>
 #include <libgiggle/giggle-tag.h>
@@ -658,7 +657,7 @@ giggle_rev_list_view_class_init (GiggleRevListViewClass *class)
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GiggleRevListViewClass, selection_changed),
 			      NULL, NULL,
-			      giggle_marshal_VOID__OBJECT_OBJECT,
+			      g_cclosure_marshal_generic,
 			      G_TYPE_NONE,
 			      2, GIGGLE_TYPE_REVISION, GIGGLE_TYPE_REVISION);
 
@@ -668,7 +667,7 @@ giggle_rev_list_view_class_init (GiggleRevListViewClass *class)
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GiggleRevListViewClass, revision_activated),
 			      NULL, NULL,
-			      g_cclosure_marshal_VOID__OBJECT,
+			      g_cclosure_marshal_generic,
 			      G_TYPE_NONE,
 			      1, GIGGLE_TYPE_REVISION);
 

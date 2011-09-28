@@ -37,7 +37,6 @@ AC_FUNC_MKTIME
 AC_CHECK_FUNCS([localtime_r setlocale strchr strrchr strstr])
 
 
-AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
 AC_PATH_PROG(GLIB_MKENUMS, glib-mkenums)
 
 AC_SUBST([LIBGIGGLE_ABI],     [0:0:0])
@@ -48,10 +47,12 @@ dnl  ------------------
 dnl | Pkgconfig checks |---------------------------------------
 dnl  ------------------
 
+GLIB_REQUIRED_VERSION=2.30
+
 PKG_CHECK_MODULES(GIGGLE, [
-        gio-2.0           >= 2.18
-        glib-2.0          >= 2.18
-        gthread-2.0       >= 2.16
+        gio-2.0           >= $GLIB_REQUIRED_VERSION
+        glib-2.0          >= $GLIB_REQUIRED_VERSION
+        gthread-2.0       >= $GLIB_REQUIRED_VERSION
         gtk+-3.0          >= 2.91
         gtksourceview-3.0 >= 2.9
 ])

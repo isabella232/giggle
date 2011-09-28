@@ -80,7 +80,7 @@ giggle_diff_tree_view_class_init (GiggleDiffTreeViewClass *class)
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GiggleDiffTreeViewClass, path_selected),
 			      NULL, NULL,
-			      g_cclosure_marshal_VOID__STRING,
+			      g_cclosure_marshal_generic,
 			      G_TYPE_NONE,
 			      1, G_TYPE_STRING);
 

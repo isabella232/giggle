@@ -37,7 +37,8 @@ giggle_history_iface_init (gpointer iface,
 			      GIGGLE_TYPE_HISTORY,
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GiggleHistoryIface, changed),
-			      NULL, NULL, g_cclosure_marshal_VOID__VOID,
+			      NULL, NULL,
+		              g_cclosure_marshal_generic,
 			      G_TYPE_NONE, 0);
 
 	signals[HISTORY_RESET] =
@@ -45,7 +46,8 @@ giggle_history_iface_init (gpointer iface,
 			      GIGGLE_TYPE_HISTORY,
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GiggleHistoryIface, reset),
-			      NULL, NULL, g_cclosure_marshal_VOID__VOID,
+			      NULL, NULL,
+		              g_cclosure_marshal_generic,
 			      G_TYPE_NONE, 0);
 }
 

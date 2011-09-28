@@ -181,7 +181,8 @@ giggle_plugin_manager_class_init (GigglePluginManagerClass *class)
 		g_signal_new ("plugin-added",
 			      GIGGLE_TYPE_PLUGIN_MANAGER, G_SIGNAL_RUN_FIRST,
 			      G_STRUCT_OFFSET (GigglePluginManagerClass, plugin_added),
-			      NULL, NULL, g_cclosure_marshal_VOID__OBJECT,
+			      NULL, NULL,
+		              g_cclosure_marshal_generic,
 			      G_TYPE_NONE, 1, GIGGLE_TYPE_PLUGIN);
 
 	g_type_class_add_private (class, sizeof (GigglePluginManagerPriv));

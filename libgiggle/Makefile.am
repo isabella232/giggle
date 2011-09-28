@@ -58,7 +58,6 @@ libgiggle_la_SOURCES = \
 libgiggle_HEADERS = \
 	$(libgiggle_git_h_files) \
 	giggle-enums.h \
-	giggle-marshal.h \
 	$(NULL)
 
 libgiggle_la_LIBADD = \
@@ -79,29 +78,13 @@ giggle-enums.c: giggle-enums.c.in $(libgiggle_h_files)
 	$(AM_V_at)( cmp -s xgen-gtbc $@ || (echo "  ENUM  $@..."; cp xgen-gtbc $@ ))
 	$(AM_V_at)( rm -f xgen-gtbc )
 
-giggle-marshal.h: giggle-marshal.list
-	$(AM_V_at)( cd $(srcdir) && \
-	  $(GLIB_GENMARSHAL) --prefix=giggle_marshal $< --header ) > xgen-gmh
-	$(AM_V_at)( cmp -s xgen-gmh $@ || (echo "  GENM  $@..."; cp xgen-gmh $@ ))
-	$(AM_V_at)( rm -f xgen-gmh )
-
-giggle-marshal.c: giggle-marshal.list
-	$(AM_V_at)( cd $(srcdir) && \
-	  echo "#include \"giggle-marshal.h\"" && \
-	  $(GLIB_GENMARSHAL) --prefix=giggle_marshal $< --body ) > xgen-gmc
-	$(AM_V_at)( cmp -s xgen-gmc $@ || (echo "  GENM  $@..."; cp xgen-gmc $@ ))
-	$(AM_V_at)( rm -f xgen-gmc )
-
 BUILT_SOURCES = \
-	giggle-marshal.h \
-	giggle-marshal.c \
 	giggle-enums.h \
 	giggle-enums.c
 
 CLEANFILES = $(BUILT_SOURCES)
 
 EXTRA_DIST = \
-	giggle-marshal.list \
 	giggle-enums.c.in \
 	giggle-enums.h.in
 

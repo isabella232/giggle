@@ -370,7 +370,7 @@ giggle_git_config_class_init (GiggleGitConfigClass *class)
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GiggleGitConfigClass, changed),
 			      NULL, NULL,
-			      g_cclosure_marshal_VOID__VOID,
+			      g_cclosure_marshal_generic,
 			      G_TYPE_NONE, 0);
 
 	g_type_class_add_private (object_class, sizeof (GiggleGitConfigPriv));
