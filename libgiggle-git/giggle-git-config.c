@@ -279,7 +279,7 @@ binding_notify_callback (GObject    *object,
 			 gpointer    user_data)
 {
 	GiggleGitConfigBinding *binding = user_data;
-	GValue                  value = { 0, };
+	GValue                  value = G_VALUE_INIT;
 
 	if (binding->config) {
 		g_value_init (&value, G_PARAM_SPEC_VALUE_TYPE (pspec));

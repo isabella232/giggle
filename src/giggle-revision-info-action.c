@@ -47,7 +47,7 @@ notify_cb (GtkAction  *action,
 	   GtkWidget  *widget)
 {
 	GParamSpec *widget_prop;
-	GValue      value = {0,};
+	GValue      value = G_VALUE_INIT;
 
 	widget_prop = g_object_class_find_property (G_OBJECT_GET_CLASS (widget),
 						    action_prop->name);
