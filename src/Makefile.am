@@ -3,11 +3,10 @@ AM_CPPFLAGS = \
 	-DICONDIR='"$(datadir)/icons"' \
 	-DGLADEDIR='"$(pkgdatadir)/glade"' \
 	-DLOCALEDIR=\"$(localedir)\" \
-	$(GIGGLE_CFLAGS) $(PLATFORM_CFLAGS) \
+	$(GIGGLE_CFLAGS) \
 	$(WARNINGFLAGS_C)
 
 AM_LDFLAGS = \
-	$(PLATFORM_LDFLAGS) \
 	-Wl,--export-dynamic -rpath '$(libdir)'
 
 bin_PROGRAMS = giggle
