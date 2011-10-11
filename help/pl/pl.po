@@ -172,7 +172,7 @@ msgstr "Wybierając z menu <gui>Programy</gui> polecenie <guiseq><gui>Programowa
 
 #: C/introduction.page:37(p)
 msgid "Run <cmd>giggle</cmd> at the prompt in a terminal such or from the <gui>Run Application</gui> dialog."
-msgstr "Wpisując z oknie terminala lub oknie <gui>Uruchom program</gui polecenie <cmd>giggle</cmd>."
+msgstr "Wpisując z oknie terminala lub oknie <gui>Uruchom program</gui> polecenie <cmd>giggle</cmd>."
 
 #: C/introduction.page:43(title)
 msgid "Closing <app>giggle</app>"
