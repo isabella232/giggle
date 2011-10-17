@@ -209,10 +209,21 @@ view_unrealize (GtkWidget *widget)
 }
 
 static void
+view_add (GtkContainer *container,
+          GtkWidget    *widget)
+{
+	gtk_box_pack_start (GTK_BOX (container), widget,
+	                    TRUE,
+	                    TRUE,
+	                    0);
+}
+
+static void
 giggle_view_class_init (GiggleViewClass *class)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (class);
 	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (class);
+	GtkContainerClass *container_class = GTK_CONTAINER_CLASS (class);
 
 	object_class->get_property = view_get_property;
 	object_class->set_property = view_set_property;
@@ -222,6 +233,8 @@ giggle_view_class_init (GiggleViewClass *class)
 
 	widget_class->realize      = view_realize;
 	widget_class->unrealize    = view_unrealize;
+
+	container_class->add       = view_add;
 
 	g_object_class_install_property (object_class,
 					 PROP_ACTION,
