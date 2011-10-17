@@ -158,31 +158,6 @@ else
   AC_DEFINE_UNQUOTED(GIT_COMMAND,"$GIT_COMMAND",[GIT command path])
 fi
 
-
-dnl ---------------------------------------------------------------------------
-dnl - Use strict options (default enabled for devs, disabled in releases)
-dnl ---------------------------------------------------------------------------
-if test -d "${srcdir}/.git"; then
-	default_strict=yes
-else
-	default_strict=no
-fi
-
-AC_ARG_ENABLE([strict],
-              [AS_HELP_STRING([--enable-strict],
-                              [Enable strict compilation options])],
-              [enable_strict=$enableval],
-              [enable_strict=$default_strict])
-
-if test x$enable_strict != xno; then
-	CPPFLAGS="$CPPFLAGS -DG_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_SINGLE_INCLUDES"
-	CPPFLAGS="$CPPFLAGS -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DGDK_DISABLE_DEPRECATED"
-	CPPFLAGS="$CPPFLAGS -DGSEAL_ENABLE"
-#	if test "$GCC" = "yes"; then
-#		CPPFLAGS="$CPPFLAGS -Werror"
-#	fi
-fi
-
 dnl ---------------------------------------------------------------------------
 dnl - Extra verbose warning switches
 dnl ---------------------------------------------------------------------------
@@ -241,7 +216,6 @@ echo
 echo "Prefix:                    $prefix"
 echo "datadir:                   ${datadir}"
 echo "CFLAGS:                    ${CFLAGS}"
-echo "CPPFLAGS:                  ${CPPFLAGS}"
 echo "GIT command path:          $GIT_COMMAND"
 echo "Use Evolution Data Server: $enable_evolution_data_server"
 echo "Use VTE terminal widget:   $enable_terminal"
