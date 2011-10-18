@@ -158,6 +158,15 @@ else
 fi
 
 dnl ---------------------------------------------------------------------------
+dnl - Enable strict warnings (-Werror) (disabled by default)
+dnl ---------------------------------------------------------------------------
+AC_ARG_ENABLE([strict],
+              [AS_HELP_STRING([--enable-strict],
+                              [Enable strict compilation warnings '-Werror'])])
+AS_IF([test "x$enable_strict" = "xyes"],
+      [CPPFLAGS="$CPPFLAGS -Werror"])
+
+dnl ---------------------------------------------------------------------------
 dnl - Extra verbose warning switches
 dnl ---------------------------------------------------------------------------
 
