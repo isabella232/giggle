@@ -81,11 +81,11 @@ giggle_git_clone_class_init (GiggleGitCloneClass *class)
 }
 
 static void
-giggle_git_clone_init (GiggleGitClone *clone)
+giggle_git_clone_init (GiggleGitClone *self)
 {
-	clone->priv = G_TYPE_INSTANCE_GET_PRIVATE (clone,
-						   GIGGLE_TYPE_GIT_CLONE,
-						   GiggleGitClonePrivate);
+	self->priv = G_TYPE_INSTANCE_GET_PRIVATE (clone,
+	                                          GIGGLE_TYPE_GIT_CLONE,
+	                                          GiggleGitClonePrivate);
 }
 
 static void
@@ -174,17 +174,17 @@ giggle_git_clone_new (const gchar *repo, const gchar *directory)
 }
 
 const gchar *
-giggle_git_clone_get_directory (GiggleGitClone *clone)
+giggle_git_clone_get_directory (GiggleGitClone *self)
 {
-	g_return_val_if_fail (GIGGLE_IS_GIT_CLONE (clone), NULL);
+	g_return_val_if_fail (GIGGLE_IS_GIT_CLONE (self), NULL);
 
-	return clone->priv->directory;
+	return self->priv->directory;
 }
 
 const gchar *
-giggle_git_clone_get_repo (GiggleGitClone *clone)
+giggle_git_clone_get_repo (GiggleGitClone *self)
 {
-	g_return_val_if_fail (GIGGLE_IS_GIT_CLONE (clone), NULL);
+	g_return_val_if_fail (GIGGLE_IS_GIT_CLONE (self), NULL);
 
-	return clone->priv->repo;
+	return self->priv->repo;
 }
