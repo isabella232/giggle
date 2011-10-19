@@ -382,15 +382,15 @@ giggle_clone_dialog_init (GiggleCloneDialog *dialog)
 static void
 giggle_clone_dialog_response (GtkDialog *dialog, GtkResponseType response_id)
 {
-	GiggleCloneDialog *clone;
+	GiggleCloneDialog *self = GIGGLE_CLONE_DIALOG (dialog);
+	GiggleCloneDialogPrivate *priv = self->priv;
 
-	clone = GIGGLE_CLONE_DIALOG (dialog);
-	if (response_id == GTK_RESPONSE_REJECT
-	    && clone->priv->git_directory) {
-		giggle_remove_directory_recursive (clone->priv->git_directory);
+	if (response_id == GTK_RESPONSE_REJECT &&
+	    priv->git_directory) {
+		giggle_remove_directory_recursive (priv->git_directory);
 
-		g_free (clone->priv->git_directory);
-		clone->priv->git_directory = NULL;
+		g_free (priv->git_directory);
+		priv->git_directory = NULL;
 	}
 }
 
