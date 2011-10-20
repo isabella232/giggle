@@ -48,13 +48,15 @@ dnl | Pkgconfig checks |---------------------------------------
 dnl  ------------------
 
 GLIB_REQUIRED_VERSION=2.30
+GTK_REQUIRED_VERSION=3.0
+GTKSOURCE_REQUIRED_VERSION=3.0
 
 PKG_CHECK_MODULES(GIGGLE, [
         gio-2.0           >= $GLIB_REQUIRED_VERSION
         glib-2.0          >= $GLIB_REQUIRED_VERSION
         gthread-2.0       >= $GLIB_REQUIRED_VERSION
-        gtk+-3.0          >= 2.91
-        gtksourceview-3.0 >= 2.9
+        gtk+-3.0          >= $GTK_REQUIRED_VERSION
+        gtksourceview-3.0 >= $GTKSOURCE_REQUIRED_VERSION
 ])
 
 dnl  -----------------------
