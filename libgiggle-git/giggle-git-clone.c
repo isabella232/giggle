@@ -83,7 +83,7 @@ giggle_git_clone_class_init (GiggleGitCloneClass *class)
 static void
 giggle_git_clone_init (GiggleGitClone *self)
 {
-	self->priv = G_TYPE_INSTANCE_GET_PRIVATE (clone,
+	self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self,
 	                                          GIGGLE_TYPE_GIT_CLONE,
 	                                          GiggleGitClonePrivate);
 }
