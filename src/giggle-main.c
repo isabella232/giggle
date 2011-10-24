@@ -65,7 +65,9 @@ main (int    argc,
 	textdomain (GETTEXT_PACKAGE);
 	setlocale (LC_ALL, "");
 
+#if !GLIB_CHECK_VERSION(2,31,0)
 	g_thread_init (NULL);
+#endif
 
 	gdk_threads_init ();
 	gdk_threads_enter ();
