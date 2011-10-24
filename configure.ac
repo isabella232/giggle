@@ -57,7 +57,7 @@ PKG_CHECK_MODULES(GIGGLE, [
         glib-2.0          >= $GLIB_REQUIRED_VERSION
         gthread-2.0       >= $GLIB_REQUIRED_VERSION
         gdk-pixbuf-2.0    >= $GDK_PIXBUF_REQUIRED_VERSION
-        gdk-2.0           >= $GTK_REQUIRED_VERSION
+        gdk-3.0           >= $GTK_REQUIRED_VERSION
         gtk+-3.0          >= $GTK_REQUIRED_VERSION
         gtksourceview-3.0 >= $GTKSOURCE_REQUIRED_VERSION
 ])
