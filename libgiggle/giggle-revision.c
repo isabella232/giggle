@@ -139,10 +139,8 @@ revision_finalize (GObject *object)
 	g_free (priv->sha);
 	g_free (priv->short_log);
 
-	if (priv->author)
-		g_object_unref (priv->author);
-	if (priv->committer)
-		g_object_unref (priv->committer);
+	g_clear_object (&priv->author);
+	g_clear_object (&priv->committer);
 	if (priv->date)
 		g_free (priv->date);
 
@@ -252,8 +250,7 @@ giggle_revision_set_author (GiggleRevision *revision,
 	g_return_if_fail (GIGGLE_IS_REVISION (revision));
 	g_return_if_fail (GIGGLE_IS_AUTHOR (author) | !author);
 
-	if (revision->priv->author)
-		g_object_unref (revision->priv->author);
+	g_clear_object (&revision->priv->author)
 	revision->priv->author = g_object_ref (author);
 }
 
@@ -272,8 +269,7 @@ giggle_revision_set_committer (GiggleRevision *revision,
 	g_return_if_fail (GIGGLE_IS_REVISION (revision));
 	g_return_if_fail (GIGGLE_IS_AUTHOR (committer) | !committer);
 
-	if (revision->priv->committer)
-		g_object_unref (revision->priv->committer);
+	g_clear_object (&revision->priv->committer);
 	revision->priv->committer = g_object_ref (committer);
 }
 

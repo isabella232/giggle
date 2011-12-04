@@ -50,15 +50,8 @@ remotes_view_dispose (GObject *object)
 
 	priv = GET_PRIV (object);
 
-	if (priv->git) {
-		g_object_unref (priv->git);
-		priv->git = NULL;
-	}
-
-	if (priv->store) {
-		g_object_unref (priv->store);
-		priv->store = NULL;
-	}
+	g_clear_object (&priv->git);
+	g_clear_object (&priv->store);
 
 	G_OBJECT_CLASS (giggle_remotes_view_parent_class)->dispose (object);
 }

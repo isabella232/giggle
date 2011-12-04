@@ -269,15 +269,9 @@ window_dispose (GObject *object)
 		priv->personal_details_window = NULL;
 	}
 
-	if (priv->git) {
-		g_object_unref (priv->git);
-		priv->git = NULL;
-	}
+	g_clear_object (&priv->git);
 
-	if (priv->recent_manager) {
-		g_object_unref (priv->recent_manager);
-		priv->recent_manager = NULL;
-	}
+        g_clear_object (&priv->recent_manager);
 
 	if (priv->recent_action_group) {
 		gtk_ui_manager_remove_action_group (priv->ui_manager,
@@ -285,20 +279,11 @@ window_dispose (GObject *object)
 		priv->recent_action_group = NULL;
 	}
 
-	if (priv->ui_manager) {
-		g_object_unref (priv->ui_manager);
-		priv->ui_manager = NULL;
-	}
+	g_clear_object (&priv->ui_manager);
 
-	if (priv->configuration) {
-		g_object_unref (priv->configuration);
-		priv->configuration = NULL;
-	}
+	g_clear_object (&priv->configuration);
 
-	if (priv->plugin_manager) {
-		g_object_unref (priv->plugin_manager);
-		priv->plugin_manager = NULL;
-	}
+	g_clear_object (&priv->plugin_manager);
 
 	G_OBJECT_CLASS (giggle_window_parent_class)->dispose (object);
 }

@@ -120,20 +120,9 @@ G_DEFINE_TYPE_WITH_CODE (GiggleRevListView, giggle_rev_list_view, GTK_TYPE_TREE_
 static void
 rev_list_view_reset_emblems (GiggleRevListViewPriv *priv)
 {
-	if (priv->emblem_branch) {
-		g_object_unref (priv->emblem_branch);
-		priv->emblem_branch = NULL;
-	}
-
-	if (priv->emblem_remote) {
-		g_object_unref (priv->emblem_remote);
-		priv->emblem_remote = NULL;
-	}
-
-	if (priv->emblem_tag) {
-		g_object_unref (priv->emblem_tag);
-		priv->emblem_tag = NULL;
-	}
+	g_clear_object (&priv->emblem_branch);
+	g_clear_object (&priv->emblem_remote);
+	g_clear_object (&priv->emblem_tag);
 }
 
 static void
@@ -151,10 +140,7 @@ rev_list_view_dispose (GObject *object)
 		priv->job = NULL;
 	}
 
-	if (priv->git) {
-		g_object_unref (priv->git);
-		priv->git = NULL;
-	}
+	g_clear_object (&priv->git);
 
 	if (priv->main_loop) {
 		if (g_main_loop_is_running (priv->main_loop))
@@ -219,8 +205,7 @@ modify_ref_cb (GiggleGit *git,
 		g_object_notify (G_OBJECT (priv->git), "git-dir");
 	}
 
-	g_object_unref (priv->job);
-	priv->job = NULL;
+	g_clear_object (&priv->job);
 }
 
 static void
@@ -723,8 +708,7 @@ log_matches_cb (GiggleGit *git,
 		g_free (casefold_log);
 	}
 
-	g_object_unref (priv->job);
-	priv->job = NULL;
+	g_clear_object (&priv->job);
 
 	g_main_loop_quit (data->main_loop);
 }
@@ -791,8 +775,7 @@ diff_matches_cb (GiggleGit *git,
 		data->match = (strstr (diff_str, data->search_term) != NULL);
 	}
 
-	g_object_unref (priv->job);
-	priv->job = NULL;
+	g_clear_object (&priv->job);
 
 	g_main_loop_quit (data->main_loop);
 }
@@ -1278,9 +1261,8 @@ rev_list_view_create_patch_callback (GiggleGit *git,
 
 	g_signal_connect (dialog, "response", G_CALLBACK (gtk_widget_destroy), NULL);
 	gtk_widget_show (dialog);
-	
-	g_object_unref (priv->job);
-	priv->job = NULL;
+
+	g_clear_object (&priv->job);
 }
 
 static void
@@ -1352,9 +1334,7 @@ rev_list_view_create_patch (GtkAction          *action,
 			    rev_list_view_create_patch_callback,
 			    list);
 
-	if (revision) {
-		g_object_unref (revision);
-	}
+	g_clear_object (&revision);
 }
 
 static void

@@ -168,8 +168,8 @@ view_history_finalize (GObject *object)
 		priv->diff_current_job = NULL;
 	}
 
-	g_object_unref (priv->configuration);
-	g_object_unref (priv->git);
+	g_clear_object (&priv->configuration);
+	g_clear_object (&priv->git);
 
 	G_OBJECT_CLASS (giggle_view_history_parent_class)->finalize (object);
 }
@@ -282,8 +282,7 @@ view_history_get_branches_cb (GiggleGit    *git,
 		}
 	}
 
-	g_object_unref (priv->job);
-	priv->job = NULL;
+	g_clear_object (&priv->job);
 }
 
 static void
@@ -736,10 +735,7 @@ view_history_snapshot_dispose (GObject *object)
 		snapshot->cursor_row = NULL;
 	}
 
-	if (snapshot->cursor_column) {
-		g_object_unref (snapshot->cursor_column);
-		snapshot->cursor_column = NULL;
-	}
+	g_clear_object (&snapshot->cursor_column);
 
 	G_OBJECT_CLASS (giggle_view_history_snapshot_parent_class)->dispose (object);
 }

@@ -104,10 +104,8 @@ giggle_ref_finalize (GObject *object)
 	g_free (priv->name);
 	g_free (priv->sha);
 
-	if (priv->revision) {
-		g_object_unref (priv->revision);
-	}
-	
+	g_clear_object (&priv->revision);
+
 	G_OBJECT_CLASS (giggle_ref_parent_class)->finalize (object);
 }
 
@@ -157,9 +155,7 @@ giggle_ref_set_property (GObject      *object,
 		priv->sha = g_value_dup_string (value);
 		break;
 	case PROP_HEAD:
-		if (priv->revision) {
-			g_object_unref (priv->revision);
-		}
+		g_clear_object (&priv->revision);
 		priv->revision = GIGGLE_REVISION (g_value_dup_object (value));
 		break;
 	default:
