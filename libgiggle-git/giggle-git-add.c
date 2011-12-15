@@ -142,7 +142,7 @@ git_add_get_command_line (GiggleJob *job, gchar **command_line)
 	str = g_string_new (GIT_COMMAND " add");
 
 	while (files) {
-		g_string_append_printf (str, " %s", (gchar *) files->data);
+		g_string_append_printf (str, " \"%s\"", (gchar *) files->data);
 		files = files->next;
 	}
 
