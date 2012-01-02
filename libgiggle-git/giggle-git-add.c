@@ -83,8 +83,7 @@ git_add_finalize (GObject *object)
 
 	priv = GET_PRIV (object);
 
-	g_list_foreach (priv->files, (GFunc) g_free, NULL);
-	g_list_free (priv->files);
+	g_list_free_full (priv->files, g_free);
 
 	G_OBJECT_CLASS (giggle_git_add_parent_class)->finalize (object);
 }

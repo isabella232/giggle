@@ -128,7 +128,7 @@ giggle_flexible_author_new (gchar const* name,
 }
 /* END: GiggleFlexibleAuthor API */
 
-static void     git_authors_finalize      (GObject           *object);
+static void     git_authors_dispose       (GObject           *object);
 static void     git_authors_get_property  (GObject           *object,
 					   guint              param_id,
 					   GValue            *value,
@@ -153,7 +153,7 @@ giggle_git_authors_class_init (GiggleGitAuthorsClass *class)
 	GObjectClass *object_class = G_OBJECT_CLASS (class);
 	GiggleJobClass *job_class  = GIGGLE_JOB_CLASS (class);
 
-	object_class->finalize     = git_authors_finalize;
+	object_class->dispose      = git_authors_dispose;
 	object_class->get_property = git_authors_get_property;
 	object_class->set_property = git_authors_set_property;
 
@@ -179,17 +179,16 @@ giggle_git_authors_init (GiggleGitAuthors *git_authors)
 }
 
 static void
-git_authors_finalize (GObject *object)
+git_authors_dispose (GObject *object)
 {
 	GiggleGitAuthorsPriv *priv;
 
 	priv = GET_PRIV (object);
 
-	g_list_foreach (priv->authors, (GFunc) g_object_unref, NULL);
-	g_list_free (priv->authors);
+	g_list_free_full (priv->authors, g_object_unref);
 	priv->authors = NULL;
 
-	G_OBJECT_CLASS (giggle_git_authors_parent_class)->finalize (object);
+	G_OBJECT_CLASS (giggle_git_authors_parent_class)->dispose (object);
 }
 
 static void
@@ -346,10 +345,9 @@ authors_handle_output (GiggleJob   *job,
 		}
 	}
 
-	g_list_foreach (priv->authors, (GFunc) g_object_unref, NULL);
-	g_list_free (priv->authors);
-
+	g_list_free_full (priv->authors, g_object_unref);
 	priv->authors = NULL;
+
 	g_hash_table_foreach (authors_by_name, (GHFunc) add_author, priv);
 
 	priv->authors = g_list_sort (priv->authors, (GCompareFunc) authors_compare_commits);

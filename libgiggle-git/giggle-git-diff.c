@@ -127,8 +127,7 @@ git_diff_finalize (GObject *object)
 
 	g_free (priv->result);
 
-	g_list_foreach (priv->files, (GFunc) g_free, NULL);
-	g_list_free (priv->files);
+	g_list_free_full (priv->files, g_free);
 
 	if (priv->patch_format) {
 		g_object_unref (priv->patch_format);

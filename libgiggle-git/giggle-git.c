@@ -522,8 +522,7 @@ giggle_git_update_remotes (GiggleGit* git)
 	priv = git->priv;
 
 	/* cleanup */
-	g_list_foreach (priv->remotes, (GFunc) g_object_unref, NULL);
-	g_list_free (priv->remotes);
+	g_list_free_full (priv->remotes, g_object_unref);
 	priv->remotes = NULL;
 
 	/* list remotes */

@@ -35,7 +35,7 @@ struct GiggleGitRefsPriv {
 	GList *remotes;
 };
 
-static void     git_refs_finalize            (GObject           *object);
+static void     git_refs_dispose             (GObject           *object);
 static void     git_refs_get_property        (GObject           *object,
 					      guint              param_id,
 					      GValue            *value,
@@ -63,7 +63,7 @@ giggle_git_refs_class_init (GiggleGitRefsClass *class)
 	GObjectClass   *object_class = G_OBJECT_CLASS (class);
 	GiggleJobClass *job_class    = GIGGLE_JOB_CLASS (class);
 
-	object_class->finalize     = git_refs_finalize;
+	object_class->dispose      = git_refs_dispose;
 	object_class->get_property = git_refs_get_property;
 	object_class->set_property = git_refs_set_property;
 
@@ -79,22 +79,17 @@ giggle_git_refs_init (GiggleGitRefs *refs)
 }
 
 static void
-git_refs_finalize (GObject *object)
+git_refs_dispose (GObject *object)
 {
 	GiggleGitRefsPriv *priv;
 
 	priv = GET_PRIV (object);
 
-	g_list_foreach (priv->branches, (GFunc) g_object_unref, NULL);
-	g_list_free (priv->branches);
+	g_list_free_full (priv->branches, g_object_unref);
+	g_list_free_full (priv->tags, g_object_unref);
+	g_list_free_full (priv->remotes, g_object_unref);
 
-	g_list_foreach (priv->tags, (GFunc) g_object_unref, NULL);
-	g_list_free (priv->tags);
-
-	g_list_foreach (priv->remotes, (GFunc) g_object_unref, NULL);
-	g_list_free (priv->remotes);
-
-	G_OBJECT_CLASS (giggle_git_refs_parent_class)->finalize (object);
+	G_OBJECT_CLASS (giggle_git_refs_parent_class)->dispose (object);
 }
 
 static void

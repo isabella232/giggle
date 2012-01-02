@@ -250,7 +250,7 @@ giggle_revision_set_author (GiggleRevision *revision,
 	g_return_if_fail (GIGGLE_IS_REVISION (revision));
 	g_return_if_fail (GIGGLE_IS_AUTHOR (author) | !author);
 
-	g_clear_object (&revision->priv->author)
+	g_clear_object (&revision->priv->author);
 	revision->priv->author = g_object_ref (author);
 }
 

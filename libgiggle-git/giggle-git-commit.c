@@ -95,8 +95,7 @@ git_commit_finalize (GObject *object)
 
 	g_free (priv->log);
 
-	g_list_foreach (priv->files, (GFunc) g_free, NULL);
-	g_list_free (priv->files);
+	g_list_free_full (priv->files, g_free);
 
 	G_OBJECT_CLASS (giggle_git_commit_parent_class)->finalize (object);
 }

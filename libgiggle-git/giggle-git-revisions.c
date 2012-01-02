@@ -38,20 +38,27 @@ struct _GiggleGitRevisionsPriv {
 G_DEFINE_TYPE (GiggleGitRevisions, giggle_git_revisions, GIGGLE_TYPE_JOB)
 
 static void
+git_revisions_dispose (GObject *object)
+{
+	GiggleGitRevisions *revisions = GIGGLE_GIT_REVISIONS (object);
+	GiggleGitRevisionsPriv *priv = revisions->priv;
+
+        if (priv->regex_committer)
+                g_regex_unref (priv->regex_committer);
+
+        g_list_free_full (priv->revisions, g_object_unref);
+
+        G_OBJECT_CLASS (giggle_git_revisions_parent_class)->dispose (object);
+}
+
+static void
 git_revisions_finalize (GObject *object)
 {
 	GiggleGitRevisionsPriv *priv;
 
 	priv = GIGGLE_GIT_REVISIONS (object)->priv;
 
-	if (priv->regex_committer)
-		g_regex_unref (priv->regex_committer);
-
-	g_list_foreach (priv->revisions, (GFunc) g_object_unref, NULL);
-	g_list_free (priv->revisions);
-
-	g_list_foreach (priv->files, (GFunc) g_free, NULL);
-	g_list_free (priv->files);
+	g_list_free_full (priv->files, g_free);
 
 	G_OBJECT_CLASS (giggle_git_revisions_parent_class)->finalize (object);
 }
@@ -337,6 +344,7 @@ giggle_git_revisions_class_init (GiggleGitRevisionsClass *class)
 	GObjectClass   *object_class = G_OBJECT_CLASS (class);
 	GiggleJobClass *job_class    = GIGGLE_JOB_CLASS (class);
 
+	object_class->dispose      = git_revisions_dispose;
 	object_class->finalize     = git_revisions_finalize;
 	object_class->get_property = git_revisions_get_property;
 	object_class->set_property = git_revisions_set_property;

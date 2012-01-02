@@ -120,8 +120,7 @@ git_diff_tree_finalize (GObject *object)
 		g_object_unref (priv->rev2);
 	}
 
-	g_list_foreach (priv->files, (GFunc) g_free, NULL);
-	g_list_free (priv->files);
+	g_list_free_full (priv->files, g_free);
 
 	g_hash_table_destroy (priv->actions);
 	g_hash_table_destroy (priv->sha_table1);
@@ -223,8 +222,7 @@ git_diff_tree_handle_output (GiggleJob   *job,
 
 	priv = GET_PRIV (job);
 
-	g_list_foreach (priv->files, (GFunc) g_free, NULL);
-	g_list_free (priv->files);
+	g_list_free_full (priv->files, g_free);
 
 	lines = g_strsplit (output_str, "\n", -1);
 

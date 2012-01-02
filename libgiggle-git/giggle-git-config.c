@@ -461,8 +461,7 @@ GIT_CONFIG_write (GiggleGitConfigTask *task)
 		g_signal_emit (task->config, signals[CHANGED], 0);
 
 		/* we're done with the task, free it */
-		g_list_foreach (priv->changed_keys, (GFunc) g_free, NULL);
-		g_list_free (priv->changed_keys);
+		g_list_free_full (priv->changed_keys, g_free);
 		g_free (task);
 	}
 }
