@@ -352,9 +352,9 @@ giggle_remote_remove_branches (GiggleRemote *self)
 
 	priv = GET_PRIV (self);
 
-	g_list_foreach (priv->branches, (GFunc)g_object_unref, NULL);
-	g_list_free (priv->branches);
+	g_list_free_full (priv->branches, g_object_unref);
 	priv->branches = NULL;
+
 	g_object_notify_by_pspec (G_OBJECT (self), properties[PROP_BRANCHES]);
 }
 

@@ -130,6 +130,22 @@ revision_get_property (GObject    *object,
 }
 
 static void
+revision_dispose (GObject *object)
+{
+	GiggleRevision *revision = GIGGLE_REVISON (object);
+	GiggleRevisionPriv *priv = revision->priv;
+
+	g_clear_object (&priv->author);
+	g_clear_object (&priv->committer);
+
+	g_list_free_full (priv->branch_heads, g_object_unref);
+	g_list_free_full (priv->tags, g_object_unref);
+	g_list_free_full (priv->remotes, g_object_unref);
+
+	G_OBJECT_CLASS (giggle_revision_parent_class)->dispose (object);
+}
+
+static void
 revision_finalize (GObject *object)
 {
 	GiggleRevisionPriv *priv;
@@ -139,23 +155,11 @@ revision_finalize (GObject *object)
 	g_free (priv->sha);
 	g_free (priv->short_log);
 
-	g_clear_object (&priv->author);
-	g_clear_object (&priv->committer);
 	if (priv->date)
 		g_free (priv->date);
 
 	g_list_free (priv->parents);
 	g_list_free (priv->children);
-
-	g_list_foreach (priv->branch_heads, (GFunc) g_object_unref, NULL);
-	g_list_free (priv->branch_heads);
-
-	g_list_foreach (priv->tags, (GFunc) g_object_unref, NULL);
-	g_list_free (priv->tags);
-
-	g_list_foreach (priv->remotes, (GFunc) g_object_unref, NULL);
-	g_list_free (priv->remotes);
-
 	g_list_free (priv->descendent_branches);
 
 	G_OBJECT_CLASS (giggle_revision_parent_class)->finalize (object);
