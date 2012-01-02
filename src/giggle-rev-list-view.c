@@ -924,8 +924,7 @@ rev_list_view_search (GiggleSearchable      *searchable,
 	}
 
 	gtk_tree_path_free (path);
-	g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-	g_list_free (list);
+	g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 
 	return (found && !priv->cancelled);
 }
@@ -1080,8 +1079,8 @@ rev_list_view_create_branch (GtkAction          *action,
 		g_object_unref (branch);
 	}
 
-	g_list_foreach (paths, (GFunc) gtk_tree_path_free, NULL);
-	g_list_free (paths);
+	g_list_free_full (paths, (GDestroyNotify) gtk_tree_path_free);
+
 	g_object_unref (revision);
 	gtk_widget_destroy (input_dialog);
 }
@@ -1132,8 +1131,8 @@ rev_list_view_create_tag (GtkAction          *action,
 		g_object_unref (tag);
 	}
 
-	g_list_foreach (paths, (GFunc) gtk_tree_path_free, NULL);
-	g_list_free (paths);
+	g_list_free_full (paths, (GDestroyNotify) gtk_tree_path_free);
+
 	g_object_unref (revision);
 	gtk_widget_destroy (input_dialog);
 }
@@ -1287,8 +1286,7 @@ rev_list_view_create_patch (GtkAction          *action,
 
 	gtk_tree_model_get_iter (model, &iter, (GtkTreePath *) paths->data);
 	gtk_tree_model_get (model, &iter, COL_OBJECT, &revision, -1);
-	g_list_foreach (paths, (GFunc) gtk_tree_path_free, NULL);
-	g_list_free (paths);
+	g_list_free_full (paths, (GDestroyNotify) gtk_tree_path_free);
 
 	/* If we don't have a revision, it means we selected the item
 	 * for uncommitted changes, and we can only do a diff here.
@@ -1614,8 +1612,7 @@ rev_list_view_selection_changed_cb (GtkTreeSelection  *selection,
 	if (last_revision)
 		g_object_unref (last_revision);
 
-	g_list_foreach (rows, (GFunc) gtk_tree_path_free, NULL);
-	g_list_free (rows);
+	g_list_free_full (rows, (GDestroyNotify) gtk_tree_path_free);
 }
 
 static void

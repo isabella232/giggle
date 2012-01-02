@@ -1399,8 +1399,7 @@ window_recent_repositories_update (GiggleWindow *window)
 		}
 	}
 
-	g_list_foreach (recent_items, (GFunc) gtk_recent_info_unref, NULL);
-	g_list_free (recent_items);
+	g_list_free_full (recent_items, (GDestroyNotify) gtk_recent_info_unref);
 }
 
 static void

@@ -132,7 +132,7 @@ revision_get_property (GObject    *object,
 static void
 revision_dispose (GObject *object)
 {
-	GiggleRevision *revision = GIGGLE_REVISON (object);
+	GiggleRevision *revision = GIGGLE_REVISION (object);
 	GiggleRevisionPriv *priv = revision->priv;
 
 	g_clear_object (&priv->author);

@@ -147,8 +147,7 @@ diff_window_finalize (GObject *object)
 
 	g_object_unref (priv->git);
 
-	g_list_foreach (priv->files, (GFunc) g_free, NULL);
-	g_list_free (priv->files);
+	g_list_free_full (priv->files, g_free);
 
 	G_OBJECT_CLASS (giggle_diff_window_parent_class)->finalize (object);
 }
@@ -269,10 +268,8 @@ giggle_diff_window_set_files (GiggleDiffWindow *window,
 
 	priv = GET_PRIV (window);
 
-	if (priv->files) {
-		g_list_foreach (priv->files, (GFunc) g_free, NULL);
-		g_list_free (priv->files);
-	}
+	if (priv->files)
+		g_list_free_full (priv->files, g_free);
 
 	priv->files = files;
 }

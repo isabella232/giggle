@@ -298,8 +298,7 @@ file_list_button_press (GtkWidget      *widget,
 		gtk_menu_popup (GTK_MENU (priv->popup), NULL, NULL,
 				NULL, NULL, event->button, event->time);
 
-		g_list_foreach (rows, (GFunc) gtk_tree_path_free, NULL);
-		g_list_free (rows);
+		g_list_free_full (rows, (GDestroyNotify) gtk_tree_path_free);
 	} else {
 		GTK_WIDGET_CLASS (giggle_file_list_parent_class)->button_press_event (widget, event);
 
@@ -1565,8 +1564,7 @@ giggle_file_list_get_selection (GiggleFileList *list)
 		files = g_list_prepend (files, path);
 	}
 
-	g_list_foreach (rows, (GFunc) gtk_tree_path_free, NULL);
-	g_list_free (rows);
+	g_list_free_full (rows, (GDestroyNotify) gtk_tree_path_free);
 
 	return g_list_reverse (files);
 }
