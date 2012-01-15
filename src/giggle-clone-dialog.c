@@ -213,39 +213,25 @@ clone_repository (GiggleCloneDialog *dialog, GtkButton *button)
 }
 
 static void
-set_table_row (GtkTable *table,
+set_grid_row (GtkGrid *grid,
                GtkWidget *label, GtkWidget *widget,
                gpointer user_data)
 {
-	static guint row = 0;
-	guint col = 0;
+	static gint row = 0;
 
-	g_return_if_fail (GTK_IS_TABLE (table));
-	g_return_if_fail (GTK_IS_WIDGET (widget));
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label), widget);
+	gtk_widget_set_halign (label, GTK_ALIGN_START);
+	gtk_widget_set_valign (label, GTK_ALIGN_CENTER);
+	gtk_widget_show (label);
 
-	if (label) {
-		gtk_label_set_mnemonic_widget (GTK_LABEL (label), widget);
-		gtk_widget_set_halign (label, GTK_ALIGN_START);
-		gtk_widget_set_valign (label, GTK_ALIGN_CENTER);
-		gtk_widget_show (label);
+	gtk_grid_attach (GTK_GRID (grid), label,
+	                 0, row, 1, 1);
 
-		gtk_table_attach (GTK_TABLE (table), label,
-	                          0, ++col, row, row + 1,
-		                  GTK_FILL, 0, 0, 0);
-	}
-
-	if (GTK_IS_EDITABLE (widget)) {
-		g_signal_connect_swapped (widget, "changed",
-		                          G_CALLBACK (verify_input), user_data);
-		g_signal_connect_swapped (widget, "activate",
-		                          G_CALLBACK (cycle_focus), user_data);
-	}
-
+	gtk_widget_set_hexpand (widget, TRUE);
 	gtk_widget_show (widget);
+	gtk_grid_attach (GTK_GRID (grid), widget,
+	                 1, row, 1, 1);
 
-	gtk_table_attach (GTK_TABLE (table), widget,
-	                  col, 2, row, row + 1,
-	                  GTK_EXPAND | GTK_FILL, 0, 0, 0);
 	row++;
 }
 
@@ -253,7 +239,7 @@ GtkWidget *
 giggle_clone_dialog_new (const gchar *repo, const gchar *dir) {
 	GiggleCloneDialogPrivate *priv;
 	GiggleCloneDialog *dialog;
-	GtkWidget *table, *box;
+	GtkWidget *grid, *box;
 	GtkWidget *action_box;
 
 	dialog = g_object_new (GIGGLE_TYPE_CLONE_DIALOG,
@@ -279,24 +265,28 @@ giggle_clone_dialog_new (const gchar *repo, const gchar *dir) {
 	box = gtk_dialog_get_content_area (GTK_DIALOG (dialog));
 	gtk_box_set_spacing (GTK_BOX (box), 18);
 
-	table = gtk_table_new (4, 2, FALSE);
-	gtk_table_set_col_spacings (GTK_TABLE (table), 12);
-	gtk_table_set_row_spacings (GTK_TABLE (table), 6);
-	gtk_widget_show (table);
+	grid = gtk_grid_new ();
+	gtk_grid_set_column_spacing (GTK_GRID (grid), 12);
+	gtk_grid_set_row_spacing (GTK_GRID (grid), 6);
+	gtk_widget_show (grid);
 
-	gtk_box_pack_start (GTK_BOX (box), table, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (box), grid, FALSE, FALSE, 0);
 
 	priv->remote_entry = gtk_entry_new ();
 	gtk_entry_set_width_chars (GTK_ENTRY (priv->remote_entry), 40);
-	set_table_row (GTK_TABLE (table),
+	set_grid_row (GTK_GRID (grid),
 	               gtk_label_new_with_mnemonic (_("_Repository:")),
 	               priv->remote_entry,
 	               dialog);
+	g_signal_connect_swapped (priv->remote_entry, "changed",
+	                          G_CALLBACK (verify_input), dialog);
+	g_signal_connect_swapped (priv->remote_entry, "activate",
+	                          G_CALLBACK (cycle_focus), dialog);
 	g_signal_connect_swapped (priv->remote_entry, "focus-out-event",
 	                          G_CALLBACK (preset_local_name), dialog);
 
 	priv->local_entry = gtk_entry_new ();
-	set_table_row (GTK_TABLE (table),
+	set_grid_row (GTK_GRID (grid),
 	               gtk_label_new_with_mnemonic (_("_Local name:")),
 	               priv->local_entry,
 	               dialog);
@@ -304,7 +294,7 @@ giggle_clone_dialog_new (const gchar *repo, const gchar *dir) {
 	priv->folder_button = gtk_file_chooser_button_new (
 			_("Please select a location for the clone"),
 			GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER);
-	set_table_row (GTK_TABLE (table),
+	set_grid_row (GTK_GRID (grid),
 	               gtk_label_new_with_mnemonic (_("Clone in _folder:")),
 	               priv->folder_button,
 	               dialog);
