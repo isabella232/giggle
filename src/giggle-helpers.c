@@ -67,7 +67,7 @@ giggle_list_view_delete_selection (GtkWidget   *treeview,
 							     (GtkTreeSelectionForeachFunc)
 								remote_editor_tree_selection_get_branches,
 							     &branches);
-			g_list_free_full (branches, remote_editor_remove_branch);
+			g_list_free_full (branches, (GDestroyNotify) remote_editor_remove_branch);
 			return TRUE;
 		}
 	}
