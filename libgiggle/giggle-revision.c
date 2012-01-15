@@ -172,6 +172,7 @@ giggle_revision_class_init (GiggleRevisionClass *class)
 
 	object_class->set_property = revision_set_property;
 	object_class->get_property = revision_get_property;
+	object_class->dispose      = revision_dispose;
 	object_class->finalize     = revision_finalize;
 
 	g_object_class_install_property
