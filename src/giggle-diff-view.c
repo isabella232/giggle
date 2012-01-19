@@ -167,11 +167,7 @@ diff_view_get_property (GObject    *object,
 			GValue     *value,
 			GParamSpec *pspec)
 {
-	GiggleDiffView     *view;
-	GiggleDiffViewPriv *priv;
-
-	view = GIGGLE_DIFF_VIEW (object);
-	priv = GET_PRIV (view);
+	GiggleDiffView     *view = GIGGLE_DIFF_VIEW (object);
 
 	switch (param_id) {
 	case PROP_CURRENT_FILE:
@@ -179,19 +175,19 @@ diff_view_get_property (GObject    *object,
 		break;
 
 	case PROP_N_FILES:
-		g_value_set_int (value, priv->files->len);
+		g_value_set_int (value, giggle_diff_view_get_n_files (view));
 		break;
 
 	case PROP_CURRENT_HUNK:
-		g_value_set_int (value, priv->current_hunk);
+		g_value_set_int (value, giggle_diff_view_get_current_hunk (view));
 		break;
 
 	case PROP_N_HUNKS:
-		g_value_set_int (value, priv->hunks->len);
+		g_value_set_int (value, giggle_diff_view_get_n_hunks (view));
 		break;
 
 	case PROP_CURRENT_STYLE:
-		g_value_set_int (value, priv->current_style);
+		g_value_set_int (value, giggle_diff_view_get_current_style (view));
 		break;
 
 	default:
@@ -899,6 +895,13 @@ giggle_diff_view_get_current_file (GiggleDiffView *diff_view)
                return file->filename;
 
        return NULL;
+}
+
+int
+giggle_diff_view_get_n_files (GiggleDiffView *diff_view)
+{
+        g_return_val_if_fail (GIGGLE_IS_DIFF_VIEW (diff_view), 0);
+        return GET_PRIV (diff_view)->files->len;
 }
 
 void

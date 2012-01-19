@@ -79,6 +79,7 @@ void               giggle_diff_view_scroll_to_file    (GiggleDiffView *diff_view
 const char *       giggle_diff_view_get_current_file  (GiggleDiffView *diff_view);
 
 int                giggle_diff_view_get_current_file_nb (GiggleDiffView *diff_view);
+int                giggle_diff_view_get_n_files       (GiggleDiffView *diff_view);
 
 G_END_DECLS
 
