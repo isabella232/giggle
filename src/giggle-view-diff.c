@@ -83,19 +83,18 @@ static void
 view_diff_update_status (GiggleViewDiff *view)
 {
 	GiggleViewDiffPriv *priv;
+	GiggleDiffView     *diff_view;
 	GtkAction	   *action;
 	char		   *format, *markup;
-	int		    current_hunk, n_hunks, current_style;
-	char		   *current_file;
+	int		    current_hunk, n_hunks;
+	const gchar	   *current_file;
 
 	priv = GET_PRIV (view);
+	diff_view = GIGGLE_DIFF_VIEW (priv->diff_view);
 
-	g_object_get (priv->diff_view,
-		      "current-file", &current_file,
-		      "current-hunk", &current_hunk,
-		      "n-hunks", &n_hunks,
-		      "current-style", &current_style,
-		      NULL);
+	current_file = giggle_diff_view_get_current_file (diff_view);
+	current_hunk = giggle_diff_view_get_current_hunk (diff_view);
+	n_hunks = giggle_diff_view_get_n_hunks (diff_view);
 
 	if (priv->action_group) {
 		gtk_action_group_set_sensitive (priv->action_group, n_hunks > 0);
@@ -121,8 +120,6 @@ view_diff_update_status (GiggleViewDiff *view)
 	g_free (format);
 
 	giggle_tree_view_select_row_by_string (priv->file_view, 0, current_file);
-
-	g_free (current_file);
 }
 
 static void
