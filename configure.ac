@@ -55,6 +55,7 @@ GTKSOURCE_REQUIRED_VERSION=3.0
 PKG_CHECK_MODULES(GIGGLE, [
         gio-2.0           >= $GLIB_REQUIRED_VERSION
         glib-2.0          >= $GLIB_REQUIRED_VERSION
+        gmodule-2.0       >= $GLIB_REQUIRED_VERSION
         gthread-2.0       >= $GLIB_REQUIRED_VERSION
         gdk-pixbuf-2.0    >= $GDK_PIXBUF_REQUIRED_VERSION
         gdk-3.0           >= $GTK_REQUIRED_VERSION
