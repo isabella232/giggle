@@ -51,6 +51,9 @@ GLIB_REQUIRED_VERSION=2.30
 GDK_PIXBUF_REQUIRED_VERSION=2.22
 GTK_REQUIRED_VERSION=3.0
 GTKSOURCE_REQUIRED_VERSION=3.0
+EDS_REQUIRED_VERSION=3.2
+VTE_REQUIRED_VERSION=0.28
+
 
 PKG_CHECK_MODULES(GIGGLE, [
         gio-2.0           >= $GLIB_REQUIRED_VERSION
@@ -68,33 +71,49 @@ dnl | Evolution Data Server |-----------------------------------
 dnl  -----------------------
 
 AC_ARG_ENABLE([evolution-data-server],
-              [AS_HELP_STRING([--enable-evolution-data-server],
-                              [Enable features using Evolution Data Server])])
+              [AS_HELP_STRING([--enable-evolution-data-server=@<:@yes/no@:>@],
+                              [Enable features using Evolution Data Server (default=check)])],
+              [enable_evolution_data_server=$enableval],
+              [enable_evolution_data_server=check])
 
-if test "$enable_evolution_data_server" = "yes"
-then
-  PKG_CHECK_MODULES(EBOOK, [libebook-1.2])
-  AC_DEFINE(ENABLE_EDS, 1, [Use features from libebook])
-fi
+AS_IF([test "x$enable_evolution_data_server" != xno],
+      [
+        PKG_CHECK_MODULES([EBOOK],
+                          [libebook-1.2 >= $EDS_REQUIRED_VERSION],
+                          [have_evolution_data_server=yes
+                           AC_DEFINE([HAVE_EDS], [1],
+                                     [Use features from libebook])
+                          ],
+                          [have_evolution_data_server=no
+                           AS_IF([test "x$enable_evolution_data_server" != xcheck],
+                                 [AC_MSG_FAILURE([--enable-evolution-data-server was given, but libebook-1.2 was not found])])
+                          ])
+      ])
 
-AM_CONDITIONAL([ENABLE_EDS], [test "$enable_evolution_data_server" = "yes"])
+AM_CONDITIONAL([USE_EDS], [test "$have_evolution_data_server" = "yes"])
 
 dnl  ------------------
 dnl | terminal support |-----------------------------------
 dnl  ------------------
 
 AC_ARG_ENABLE([terminal],
-              [AS_HELP_STRING([--disable-terminal],
-                              [disable features using vte terminal widget])],,
+              [AS_HELP_STRING([--enable-terminal=@<:@yes/no@:>@],
+                              [Enable features using vte terminal widget (default=yes)])],
+              [enable_terminal=$enableval],
               [enable_terminal=yes])
 
-if test "$enable_terminal" = "yes"
-then
-  PKG_CHECK_MODULES(VTE, [vte-2.90 >= 0.26])
-  AC_DEFINE(ENABLE_VTE, 1, [Use features from vte])
-fi
+AS_IF([test "x$enable_terminal" = "xyes"],
+      [
+        PKG_CHECK_MODULES([VTE],
+                          [vte-2.90 >= $VTE_REQUIRED_VERSION],
+                          [have_vte=yes
+                           AC_DEFINE([HAVE_VTE], [1],
+                                     [Use features from vte])
+                          ],
+                          [have_vte=no])
+      ])
 
-AM_CONDITIONAL([ENABLE_VTE], [test "$enable_terminal" = "yes"])
+AM_CONDITIONAL([USE_VTE], [test "x$have_vte" = "xyes"])
 
 dnl  ----------------------
 dnl | library requirements |-----------------------------------
@@ -232,6 +251,6 @@ echo "Prefix:                    $prefix"
 echo "datadir:                   ${datadir}"
 echo "CFLAGS:                    ${CFLAGS}"
 echo "GIT command path:          $GIT_COMMAND"
-echo "Use Evolution Data Server: $enable_evolution_data_server"
-echo "Use VTE terminal widget:   $enable_terminal"
+echo "Use Evolution Data Server: $have_evolution_data_server"
+echo "Use VTE terminal widget:   $have_vte"
 echo

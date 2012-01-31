@@ -26,9 +26,9 @@
 #include <glib/gi18n.h>
 #include <string.h>
 
-#ifdef ENABLE_EDS
+#ifdef USE_EDS
 #include <libebook/e-book.h>
-#endif /* ENABLE_EDS */
+#endif /* USE_EDS */
 
 #define GET_PRIV(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), GIGGLE_TYPE_PERSONAL_DETAILS_WINDOW, GigglePersonalDetailsWindowPriv))
 
@@ -121,7 +121,7 @@ giggle_personal_details_window_class_init (GigglePersonalDetailsWindowClass *cla
 				  sizeof (GigglePersonalDetailsWindowPriv));
 }
 
-#ifdef ENABLE_EDS
+#ifdef USE_EDS
 
 static GtkEntryCompletion *
 create_email_completion (EContact *contact)
@@ -151,7 +151,7 @@ create_email_completion (EContact *contact)
 	return completion;
 }
 
-#endif /* ENABLE_EDS */
+#endif /* USE_EDS */
 
 static void
 personal_details_configuration_updated_cb (GiggleGitConfig *configuration,
@@ -162,11 +162,11 @@ personal_details_configuration_updated_cb (GiggleGitConfig *configuration,
 	GigglePersonalDetailsWindowPriv *priv = GET_PRIV (window);
 	const char			*name, *email;
 
-#ifdef ENABLE_EDS
+#ifdef USE_EDS
 	EContact 			*contact = NULL;
 	EBook				*book = NULL;
 	GError   			*error = NULL;
-#endif /* ENABLE_EDS */
+#endif /* USE_EDS */
 
 	gtk_widget_set_sensitive (GTK_WIDGET (window), TRUE);
 
@@ -194,7 +194,7 @@ personal_details_configuration_updated_cb (GiggleGitConfig *configuration,
 	name = giggle_git_config_get_field (configuration, GIGGLE_GIT_CONFIG_FIELD_NAME);
 	email = giggle_git_config_get_field (configuration, GIGGLE_GIT_CONFIG_FIELD_EMAIL);
 
-#ifdef ENABLE_EDS
+#ifdef USE_EDS
 
 	if (!e_book_get_self (&contact, &book, &error)) {
 		g_warning ("%s: Cannot open retreive self-contact: %s",
@@ -206,7 +206,7 @@ personal_details_configuration_updated_cb (GiggleGitConfig *configuration,
 	if ((!email || !*email) && contact)
 		email = e_contact_get_const (contact, E_CONTACT_EMAIL_1);
 
-#endif /* ENABLE_EDS */
+#endif /* USE_EDS */
 
 	if (!name || !*name)
 		name = g_get_real_name ();
@@ -218,7 +218,7 @@ personal_details_configuration_updated_cb (GiggleGitConfig *configuration,
 	if (email)
 		gtk_entry_set_text (GTK_ENTRY (priv->email_entry), email);
 
-#ifdef ENABLE_EDS
+#ifdef USE_EDS
 
 	if (contact) {
 		GtkEntryCompletion *completion = create_email_completion (contact);
@@ -231,7 +231,7 @@ personal_details_configuration_updated_cb (GiggleGitConfig *configuration,
 	if (book)
 		g_object_unref (book);
 
-#endif /* ENABLE_EDS */
+#endif /* USE_EDS */
 }
 
 static void

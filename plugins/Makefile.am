@@ -39,7 +39,7 @@ libpersonal_details_la_LIBADD = \
 	$(EBOOK_LIBS) \
 	$(GIGGLE_LIBS)
 
-if ENABLE_VTE
+if USE_VTE
 
 plugin_LTLIBRARIES += \
 	libterminal-view.la
