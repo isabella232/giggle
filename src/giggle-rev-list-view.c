@@ -385,7 +385,7 @@ rev_list_view_button_press (GtkWidget      *widget,
 	GtkTreeIter             iter;
 	GiggleRevision         *revision;
 
-	if (event->button == 3) {
+	if (gdk_event_triggers_context_menu ((GdkEvent *) event)) {
 		priv = GET_PRIV (widget);
 		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (widget));
 		model = gtk_tree_view_get_model (GTK_TREE_VIEW (widget));

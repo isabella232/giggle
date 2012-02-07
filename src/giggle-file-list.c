@@ -248,7 +248,7 @@ file_list_button_press (GtkWidget      *widget,
 	priv = GET_PRIV (list);
 	ignore = unignore = add = FALSE;
 
-	if (event->button == 3) {
+	if (gdk_event_triggers_context_menu ((GdkEvent *) event)) {
 		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (list));
 
 		if (!gtk_tree_view_get_path_at_pos (GTK_TREE_VIEW (widget), event->x, event->y,
