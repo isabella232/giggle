@@ -32,7 +32,7 @@ timeout_cancel (gpointer data)
 
 	giggle_dispatcher_cancel (dispatcher, id);
 
-	return FALSE;
+	return G_SOURCE_REMOVE;
 }
 
 int

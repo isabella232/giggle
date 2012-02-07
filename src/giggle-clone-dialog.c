@@ -96,7 +96,7 @@ update_progress_bar (gpointer data)
 	dialog = GIGGLE_CLONE_DIALOG (data);
 	gtk_progress_bar_pulse (GTK_PROGRESS_BAR (dialog->priv->progress_bar));
 
-	return TRUE;
+	return G_SOURCE_CONTINUE;
 }
 
 static gchar *
