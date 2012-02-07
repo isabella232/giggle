@@ -71,7 +71,8 @@ giggle_list_view_delete_selection (GtkWidget   *treeview,
 			return TRUE;
 		}
 	}
-	return FALSE;
+
+	return GDK_EVENT_PROPAGATE;
 }
 
 static gboolean

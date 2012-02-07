@@ -253,7 +253,7 @@ file_list_button_press (GtkWidget      *widget,
 
 		if (!gtk_tree_view_get_path_at_pos (GTK_TREE_VIEW (widget), event->x, event->y,
 						    &path, NULL, NULL, NULL)) {
-			return TRUE;
+			return GDK_EVENT_STOP;
 		}
 
 		if ((event->state & (GDK_SHIFT_MASK | GDK_CONTROL_MASK)) != 0) {
@@ -318,7 +318,7 @@ file_list_button_press (GtkWidget      *widget,
 		}
 	}
 
-	return TRUE;
+	return GDK_EVENT_STOP;
 }
 
 static void

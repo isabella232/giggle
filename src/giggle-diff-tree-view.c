@@ -256,7 +256,7 @@ diff_tree_view_button_press (GtkWidget      *widget,
 		g_free (path);
 	}
 
-	return FALSE;
+	return GDK_EVENT_PROPAGATE;
 }
 
 GtkWidget *

@@ -392,7 +392,7 @@ rev_list_view_button_press (GtkWidget      *widget,
 
 		if (!gtk_tree_view_get_path_at_pos (GTK_TREE_VIEW (widget), event->x, event->y,
 						    &path, NULL, NULL, NULL)) {
-			return TRUE;
+			return GDK_EVENT_STOP;
 		}
 
 		gtk_tree_selection_unselect_all (selection);
@@ -416,7 +416,7 @@ rev_list_view_button_press (GtkWidget      *widget,
 		    event->type == GDK_2BUTTON_PRESS) {
 			if (!gtk_tree_view_get_path_at_pos (GTK_TREE_VIEW (widget), event->x, event->y,
 							    &path, NULL, NULL, NULL)) {
-				return TRUE;
+				return GDK_EVENT_STOP;
 			}
 
 			model = gtk_tree_view_get_model (GTK_TREE_VIEW (widget));
@@ -435,7 +435,7 @@ rev_list_view_button_press (GtkWidget      *widget,
 		}
 	}
 
-	return TRUE;
+	return GDK_EVENT_STOP;
 }
 
 static void

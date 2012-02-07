@@ -62,13 +62,13 @@ remotes_view_key_press_event (GtkWidget   *widget,
 {
 	if (giggle_list_view_delete_selection (widget, event)) {
 		// FIXME: delete the files
-		return TRUE;
+		return GDK_EVENT_STOP;
 	}
 
 	if (GTK_WIDGET_CLASS (giggle_remotes_view_parent_class)->key_press_event)
 		return GTK_WIDGET_CLASS (giggle_remotes_view_parent_class)->key_press_event (widget, event);
 
-	return FALSE;
+	return GDK_EVENT_PROPAGATE;
 }
 
 static void

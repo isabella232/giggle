@@ -139,7 +139,7 @@ preset_local_name (GiggleCloneDialog *dialog,
 		g_free (local);
 	}
 
-	return FALSE;
+	return GDK_EVENT_PROPAGATE;
 }
 
 static void
