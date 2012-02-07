@@ -245,7 +245,7 @@ diff_tree_view_button_press (GtkWidget      *widget,
 
 	GTK_WIDGET_CLASS (giggle_diff_tree_view_parent_class)->button_press_event (widget, event);
 
-	if (event->button == 1 &&
+	if (event->button == GDK_BUTTON_PRIMARY &&
 	    event->type == GDK_2BUTTON_PRESS) {
 		path = giggle_diff_tree_view_get_selection (GIGGLE_DIFF_TREE_VIEW (widget));
 

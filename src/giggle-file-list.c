@@ -302,7 +302,7 @@ file_list_button_press (GtkWidget      *widget,
 	} else {
 		GTK_WIDGET_CLASS (giggle_file_list_parent_class)->button_press_event (widget, event);
 
-		if (event->button == 1 &&
+		if (event->button == GDK_BUTTON_PRIMARY &&
 		    (event->state & (GDK_SHIFT_MASK | GDK_CONTROL_MASK)) == 0 &&
 		    event->type == GDK_2BUTTON_PRESS) {
 			selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (list));

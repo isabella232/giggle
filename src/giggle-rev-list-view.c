@@ -412,7 +412,7 @@ rev_list_view_button_press (GtkWidget      *widget,
 	} else {
 		GTK_WIDGET_CLASS (giggle_rev_list_view_parent_class)->button_press_event (widget, event);
 
-		if (event->button == 1 &&
+		if (event->button == GDK_BUTTON_PRIMARY &&
 		    event->type == GDK_2BUTTON_PRESS) {
 			if (!gtk_tree_view_get_path_at_pos (GTK_TREE_VIEW (widget), event->x, event->y,
 							    &path, NULL, NULL, NULL)) {
