@@ -194,7 +194,7 @@ personal_details_configuration_updated_cb (GiggleGitConfig *configuration,
 
 #ifdef USE_EDS
 
-	if (!e_book_get_self (&contact, &book, &error)) {
+	if (!e_book_client_get_self (&contact, &book, &error)) {
 		g_warning ("%s: Cannot open retreive self-contact: %s",
 			   G_STRFUNC, error->message);
 	}
