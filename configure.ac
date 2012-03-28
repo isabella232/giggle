@@ -150,7 +150,7 @@ dnl | Language Support |---------------------------------------
 dnl  ------------------
 IT_PROG_INTLTOOL([0.41.0])
 
-AM_GNU_GETTEXT_VERSION([0.17])
+AM_GNU_GETTEXT_VERSION([0.18.1])
 AM_GNU_GETTEXT([external])
 
 AC_SUBST([GETTEXT_PACKAGE], [giggle])

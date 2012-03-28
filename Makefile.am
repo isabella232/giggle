@@ -8,6 +8,7 @@ INTLTOOL = \
 	intltool-update.in
 
 EXTRA_DIST = \
+	build-aux/config.rpath  \
 	$(INTLTOOL)
 
 DISTCLEANFILES = \
