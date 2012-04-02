@@ -8,6 +8,7 @@ INTLTOOL = \
 	intltool-update.in
 
 EXTRA_DIST = \
+	m4/gnulib-cache.m4 \
 	build-aux/config.rpath  \
 	$(INTLTOOL)
 
