@@ -4,7 +4,9 @@ AM_CPPFLAGS = \
 	-I$(top_srcdir) \
 	-DGLADEDIR='"$(pkgdatadir)/glade"' \
 	-DPLUGINDIR='"$(plugindir)"' \
-	$(GIGGLE_CFLAGS) \
+	$(GIGGLE_CFLAGS)
+
+AM_CFLAGS = \
 	$(WARNINGFLAGS_C)
 
 AM_LDFLAGS = \

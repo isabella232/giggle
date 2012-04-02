@@ -3,7 +3,9 @@ AM_CPPFLAGS = \
 	-DICONDIR='"$(datadir)/icons"' \
 	-DGLADEDIR='"$(pkgdatadir)/glade"' \
 	-DLOCALEDIR=\"$(localedir)\" \
-	$(GIGGLE_CFLAGS) \
+	$(GIGGLE_CFLAGS)
+
+AM_CFLAGS = \
 	$(WARNINGFLAGS_C)
 
 AM_LDFLAGS = \

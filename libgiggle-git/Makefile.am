@@ -3,7 +3,9 @@ libgiggle_gitdir = $(pkgincludedir)/libgiggle-git
 AM_CPPFLAGS = \
 	-I$(top_srcdir) \
 	-DGLADEDIR='"$(pkgdatadir)/glade"' \
-	$(GIGGLE_CFLAGS) \
+	$(GIGGLE_CFLAGS)
+
+AM_CFLAGS = \
 	$(WARNINGFLAGS_C)
 
 lib_LTLIBRARIES = libgiggle-git.la
