@@ -200,37 +200,24 @@ dnl ---------------------------------------------------------------------------
 dnl - Extra verbose warning switches
 dnl ---------------------------------------------------------------------------
 
-if test "$GCC" = "yes"; then
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wall"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wcast-align -Wno-uninitialized"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wmissing-declarations"
-#	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wredundant-decls"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wpointer-arith"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wcast-align"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wwrite-strings"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Winit-self"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wreturn-type"
-#	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wformat-nonliteral"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wformat-security"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wmissing-include-dirs"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wmissing-format-attribute"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wclobbered"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wempty-body"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wignored-qualifiers"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wsign-compare"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wtype-limits"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wuninitialized"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Waggregate-return"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wdeclaration-after-statement"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wshadow"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wno-strict-aliasing"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Winline"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Wmissing-parameter-type"
-	WARNINGFLAGS_C="$WARNINGFLAGS_C -Woverride-init"
-else
-	WARNINGFLAGS_C=""
-fi
-AC_SUBST(WARNINGFLAGS_C)
+gl_MANYWARN_ALL_GCC([warnings])
+# Set up the list of the pointless, undesired warnings.
+nw=
+nw="$nw -Wsystem-headers"       # Don't let system headers trigger warnings
+nw="$nw -Wundef"                # All compiler preprocessors support #if UNDEF
+nw="$nw -Wtraditional"          # All compilers nowadays support ANSI C
+nw="$nw -Wtraditional-conversion"
+nw="$nw -Wpadded"               # Happy for compiler to add struct padding
+nw="$nw -Wconversion"           # These warnings usually don't point to mistakes.
+nw="$nw -Wsign-conversion"      # Likewise.
+nw="$nw -Wc++-compat"           # Don't care about C++ compiler compat
+nw="$nw -Wunused-parameter"     # Unused parameters are fine
+
+# Enable all GCC warnings not in this list.
+gl_MANYWARN_COMPLEMENT([warnings], [$warnings], [$nw])
+for w in $warnings; do
+  gl_WARN_ADD([$w])
+done
 
 dnl -----------------------------------------------------------
 

@@ -6,7 +6,7 @@ AM_CPPFLAGS = \
 	$(GIGGLE_CFLAGS)
 
 AM_CFLAGS = \
-	$(WARNINGFLAGS_C)
+	$(WARN_CFLAGS)
 
 AM_LDFLAGS = \
 	-Wl,--export-dynamic -rpath '$(libdir)'

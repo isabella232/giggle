@@ -6,7 +6,7 @@ AM_CPPFLAGS = \
 	$(GIGGLE_CFLAGS)
 
 AM_CFLAGS = \
-	$(WARNINGFLAGS_C)
+	$(WARN_CFLAGS)
 
 lib_LTLIBRARIES = libgiggle-git.la
 
