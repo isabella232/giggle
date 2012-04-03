@@ -211,13 +211,14 @@ nw="$nw -Wpadded"               # Happy for compiler to add struct padding
 nw="$nw -Wconversion"           # These warnings usually don't point to mistakes.
 nw="$nw -Wsign-conversion"      # Likewise.
 nw="$nw -Wc++-compat"           # Don't care about C++ compiler compat
-nw="$nw -Wunused-parameter"     # Unused parameters are fine
 
 # Enable all GCC warnings not in this list.
 gl_MANYWARN_COMPLEMENT([warnings], [$warnings], [$nw])
 for w in $warnings; do
   gl_WARN_ADD([$w])
 done
+
+gl_WARN_ADD([-Wno-unused-parameter]) # Too many warnings for now
 
 dnl -----------------------------------------------------------
 
