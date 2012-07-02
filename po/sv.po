@@ -12,9 +12,9 @@ msgstr ""
 "Project-Id-Version: Giggle 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-06-20 16:27+0200\n"
-"PO-Revision-Date: 2012-06-20 14:22+0100\n"
+"PO-Revision-Date: 2012-07-01 23:07+0100\n"
 "Last-Translator: Andreas Rönnquist <gusnan@gusnan.se>\n"
-"Language-Team: sv <sv@li.org>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -206,7 +206,7 @@ msgstr ""
 
 #: ../src/giggle-diff-window.c:80
 msgid "Commit changes"
-msgstr "Committa ändringar"
+msgstr "Checka in ändringar"
 
 #: ../src/giggle-diff-window.c:102
 msgid "Revision log:"
@@ -214,7 +214,7 @@ msgstr "Revisionslogg:"
 
 #: ../src/giggle-diff-window.c:130
 msgid "Co_mmit"
-msgstr "_Committa"
+msgstr "_Checka in"
 
 #: ../src/giggle-diff-window.c:202
 #, c-format
@@ -287,7 +287,7 @@ msgstr ""
 
 #: ../src/giggle-file-list.c:1411
 msgid "_Commit Changes"
-msgstr "_Committa ändringar"
+msgstr "_Checka in ändringar"
 
 #: ../src/giggle-file-list.c:1413
 msgid "A_dd file to repository"
@@ -327,11 +327,11 @@ msgstr "URL"
 
 #: ../src/giggle-main.c:40
 msgid "Show the diff window"
-msgstr "Visa diff-fönstret"
+msgstr "Visa ändringsfönstret"
 
 #: ../src/giggle-main.c:44
 msgid "Show version information and exit"
-msgstr "Visa versions-information och avsluta"
+msgstr "Visa versionsinformation och avsluta"
 
 #: ../src/giggle-main.c:47
 msgid "[DIRECTORY]"
@@ -437,7 +437,7 @@ msgstr "Kunde inte skapa patch"
 
 #: ../src/giggle-rev-list-view.c:1429
 msgid "Uncommitted changes"
-msgstr "Ocommittade ändringar"
+msgstr "Icke incheckade ändringar"
 
 #. TRANSLATORS: it's a strftime format string
 #: ../src/giggle-rev-list-view.c:1483
@@ -462,7 +462,7 @@ msgstr "%b %d %Y"
 
 #: ../src/giggle-rev-list-view.c:1635
 msgid "Commit"
-msgstr "Committa"
+msgstr "Checka in"
 
 #: ../src/giggle-rev-list-view.c:1636
 msgid "Create _Branch"
@@ -594,7 +594,7 @@ msgstr "Beskrivning:"
 
 #: ../src/giggle-view-summary.c:167
 msgid "Remotes:"
-msgstr "Remotes:"
+msgstr "Fjärrgrenar:"
 
 #: ../src/giggle-view-summary.c:195
 msgid "_Summary"
@@ -650,7 +650,9 @@ msgstr ""
 #.
 #: ../src/giggle-window.c:937
 msgid "translator-credits"
-msgstr "Richard Hult"
+msgstr ""
+"Richard Hult\n"
+"Andreas Rönnquist <gusnan@gusnan.se>"
 
 #: ../src/giggle-window.c:942
 msgid "A graphical frontend for Git"
@@ -746,7 +748,7 @@ msgstr "Innehåll"
 
 #: ../src/giggle-window.c:1077
 msgid "Show user guide for Giggle"
-msgstr "Visa en användarguide för Giggle"
+msgstr "Visa användarguiden för Giggle"
 
 #: ../src/giggle-window.c:1080
 msgid "Report _Issue"
@@ -766,11 +768,11 @@ msgstr "Visa projektträd"
 
 #: ../src/giggle-window.c:1099
 msgid "Show diffs by chunk"
-msgstr "Visa förändringar bit för bit"
+msgstr "Visa förändringar del för del"
 
 #: ../src/giggle-window.c:1102
 msgid "Show diffs by file"
-msgstr "Visa diffar efter filer"
+msgstr "Visa förändringar filvis"
 
 #: ../src/giggle-window.c:1105
 msgid "Show all diffs"
