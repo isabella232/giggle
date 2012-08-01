@@ -105,11 +105,7 @@ notify_visible_cb (GtkAction  *action,
 		   GParamSpec *pspec,
 		   GtkWidget  *view)
 {
-	if (gtk_action_get_visible (action)) {
-		gtk_widget_show (view);
-	} else {
-		gtk_widget_hide (view);
-	}
+	gtk_widget_set_visible (view, gtk_action_get_visible (action));
 }
 
 static void
