@@ -138,7 +138,7 @@ revision_view_attach_info (GtkWidget  *grid,
 		yalign = GTK_ALIGN_START;
 	}
 
-	label_widget = revision_view_create_label (label, GTK_ALIGN_CENTER, yalign);
+	label_widget = revision_view_create_label (label, GTK_ALIGN_START, yalign);
 	gtk_grid_attach_next_to (GTK_GRID (grid),
 	                         label_widget,
 	                         NULL, GTK_POS_BOTTOM,
