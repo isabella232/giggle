@@ -34,7 +34,7 @@ typedef struct GiggleRevisionViewPriv GiggleRevisionViewPriv;
 struct GiggleRevisionViewPriv {
 	GiggleRevision *revision;
 
-	GtkWidget      *table;
+	GtkWidget      *grid;
 	GtkWidget      *branches;
 	GtkWidget      *avatar;
 	GtkWidget      *author;
@@ -127,44 +127,31 @@ revision_view_create_label (const char *label,
 }
 
 static void
-revision_view_attach_info (GtkWidget  *table,
+revision_view_attach_info (GtkWidget  *grid,
 			   const char *label,
-			   GtkWidget  *info,
-			   int         row)
+			   GtkWidget  *info)
 {
-	GtkStyleContext  *context;
-	int               xpad = 6, ypad = 3;
 	GtkAlign          yalign = GTK_ALIGN_CENTER;
-	GtkAttachOptions  yattach = GTK_FILL;
-	int               end = 2;
-
-	context = gtk_widget_get_style_context (info);
-
-	if (GTK_IS_BUTTON (info))
-		xpad = ypad = 0;
+	GtkWidget        *label_widget;
 
 	if (GTK_IS_SCROLLED_WINDOW (info)) {
-		GtkBorder border;
-
-		gtk_style_context_get_border (context, 0, &border);
-		xpad = MAX (0, xpad - (border.left + border.right) / 2);
-		ypad = MAX (0, ypad - (border.top + border.bottom) / 2);
-		yattach |= GTK_EXPAND;
 		yalign = GTK_ALIGN_START;
-		end = 3;
 	}
 
-	gtk_table_attach (GTK_TABLE (table),
-			  revision_view_create_label (label, GTK_ALIGN_CENTER, yalign),
-			  0, 1, row, row + 1, GTK_FILL, GTK_FILL, 6, 2);
-	gtk_table_attach (GTK_TABLE (table), info, 1, end, row, row + 1,
-			  GTK_FILL | GTK_EXPAND, yattach, xpad, ypad);
+	label_widget = revision_view_create_label (label, GTK_ALIGN_CENTER, yalign);
+	gtk_grid_attach_next_to (GTK_GRID (grid),
+	                         label_widget,
+	                         NULL, GTK_POS_BOTTOM,
+	                         1, 1);
+	gtk_grid_attach_next_to (GTK_GRID (grid),
+	                         info,
+	                         label_widget, GTK_POS_RIGHT,
+	                         1, 1);
 }
 
 static GtkWidget *
-revision_view_create_info (GtkWidget  *table,
-			   const char *label,
-			   int         row)
+revision_view_create_info (GtkWidget  *grid,
+			   const char *label)
 {
 	GtkWidget *info;
 
@@ -174,7 +161,7 @@ revision_view_create_info (GtkWidget  *table,
 	gtk_widget_set_halign (info, GTK_ALIGN_START);
 	gtk_widget_set_valign (info, GTK_ALIGN_CENTER);
 
-	revision_view_attach_info (table, label, info, row);
+	revision_view_attach_info (grid, label, info);
 
 	return info;
 }
@@ -186,39 +173,41 @@ giggle_revision_view_init (GiggleRevisionView *view)
 	GtkWidget              *scrolled_window;
 	GtkTextBuffer          *buffer;
 	GtkTextIter             iter;
-	int                     row = 0;
 
 	priv = GET_PRIV (view);
 	priv->git = giggle_git_get ();
 
-	priv->table = gtk_table_new (5, 3, FALSE);
+	priv->grid = gtk_grid_new ();
+	gtk_grid_set_column_spacing (GTK_GRID (priv->grid), 6);
+
+	priv->author = gtk_link_button_new ("");
+	gtk_button_set_alignment (GTK_BUTTON (priv->author), 0.0, 0.5);
+	revision_view_attach_info (priv->grid, _("Author:"), priv->author);
+
+	priv->committer = gtk_link_button_new ("");
+	gtk_button_set_alignment (GTK_BUTTON (priv->committer), 0.0, 0.5);
+	revision_view_attach_info (priv->grid, _("Committer:"), priv->committer);
 
 	priv->avatar = giggle_avatar_image_new ();
 	gtk_widget_set_halign (priv->avatar, GTK_ALIGN_CENTER);
 	gtk_widget_set_valign (priv->avatar, GTK_ALIGN_START);
 	giggle_avatar_image_set_image_size (GIGGLE_AVATAR_IMAGE (priv->avatar), 80);
 
-	gtk_table_attach (GTK_TABLE (priv->table), priv->avatar,
-			  2, 3, 0, 4, GTK_FILL, GTK_FILL, 3, 3);
+	gtk_grid_attach_next_to (GTK_GRID (priv->grid), priv->avatar,
+	                         NULL, GTK_POS_RIGHT,
+	                         3, 3);
 
-	priv->author = gtk_link_button_new ("");
-	gtk_button_set_alignment (GTK_BUTTON (priv->author), 0.0, 0.5);
-	revision_view_attach_info (priv->table, _("Author:"), priv->author, row++);
-
-	priv->committer = gtk_link_button_new ("");
-	gtk_button_set_alignment (GTK_BUTTON (priv->committer), 0.0, 0.5);
-	revision_view_attach_info (priv->table, _("Committer:"), priv->committer, row++);
-
-	priv->date     = revision_view_create_info (priv->table, _("Date:"),     row++);
-	priv->sha      = revision_view_create_info (priv->table, _("SHA:"),      row++);
-	priv->branches = revision_view_create_info (priv->table, _("Branches:"), row++);
+	priv->date     = revision_view_create_info (priv->grid, _("Date:"));
+	priv->sha      = revision_view_create_info (priv->grid, _("SHA:"));
+	priv->branches = revision_view_create_info (priv->grid, _("Branches:"));
 
 	scrolled_window = gtk_scrolled_window_new (NULL, NULL);
 	gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (scrolled_window),
 					     GTK_SHADOW_IN);
 	gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled_window),
 					GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
-	gtk_widget_set_size_request (scrolled_window, -1, 60);
+	gtk_widget_set_hexpand (scrolled_window, TRUE);
+	gtk_widget_set_vexpand (scrolled_window, TRUE);
 	gtk_widget_show (scrolled_window);
 
 	priv->log = gtk_text_view_new ();
@@ -229,16 +218,16 @@ giggle_revision_view_init (GiggleRevisionView *view)
 
 	gtk_container_add (GTK_CONTAINER (scrolled_window), priv->log);
 
-	revision_view_attach_info (priv->table, _("Change Log:"), scrolled_window, row);
+	revision_view_attach_info (priv->grid, _("Change Log:"), scrolled_window);
 
 	gtk_text_buffer_get_start_iter (buffer, &iter);
 	priv->search_mark = gtk_text_buffer_create_mark (buffer,
 							 "search-mark",
 							 &iter, FALSE);
 
-	gtk_container_add (GTK_CONTAINER (view), priv->table);
-	gtk_widget_show_all (priv->table);
-	gtk_widget_hide (priv->table);
+	gtk_container_add (GTK_CONTAINER (view), priv->grid);
+	gtk_widget_show_all (priv->grid);
+	gtk_widget_hide (priv->grid);
 
 	gtk_widget_grab_focus (priv->log);
 }
@@ -504,9 +493,9 @@ revision_view_update (GiggleRevisionView *view)
 	revision_view_update_branches_label (view);
 
 	if (priv->revision) {
-		gtk_widget_show (priv->table);
+		gtk_widget_show (priv->grid);
 	} else {
-		gtk_widget_hide (priv->table);
+		gtk_widget_hide (priv->grid);
 	}
 }
 
