@@ -180,13 +180,8 @@ giggle_revision_view_init (GiggleRevisionView *view)
 	priv->grid = gtk_grid_new ();
 	gtk_grid_set_column_spacing (GTK_GRID (priv->grid), 6);
 
-	priv->author = gtk_link_button_new ("");
-	gtk_button_set_alignment (GTK_BUTTON (priv->author), 0.0, 0.5);
-	revision_view_attach_info (priv->grid, _("Author:"), priv->author);
-
-	priv->committer = gtk_link_button_new ("");
-	gtk_button_set_alignment (GTK_BUTTON (priv->committer), 0.0, 0.5);
-	revision_view_attach_info (priv->grid, _("Committer:"), priv->committer);
+	priv->author = revision_view_create_info (priv->grid, _("Author:"));
+	priv->committer = revision_view_create_info (priv->grid, _("Committer:"));
 
 	priv->avatar = giggle_avatar_image_new ();
 	gtk_widget_set_halign (priv->avatar, GTK_ALIGN_CENTER);
@@ -420,7 +415,7 @@ revision_view_update_branches_label (GiggleRevisionView *view)
 }
 
 static void
-update_autor_button (GtkWidget    *button,
+update_autor_button (GtkWidget    *label,
 		     GtkWidget    *image,
 		     GiggleAuthor *author)
 {
@@ -433,11 +428,12 @@ update_autor_button (GtkWidget    *button,
 		name = giggle_author_get_name (author);
 	}
 
-	if (name && email)
-		uri = g_strdup_printf ("mailto:%s <%s>", name, email);
-
-	gtk_button_set_label (GTK_BUTTON (button), name);
-	gtk_link_button_set_uri (GTK_LINK_BUTTON (button), uri ? uri : "");
+	if (name && email) {
+		uri = g_strdup_printf ("<a href=\"mailto:%s\">%s</a>", email, name);
+		gtk_label_set_markup (GTK_LABEL (label), uri);
+	} else {
+		gtk_label_set_text (GTK_LABEL (label), name);
+	}
 
 	if (image && email)
 		giggle_avatar_image_set_gravatar_id (GIGGLE_AVATAR_IMAGE (image), email);
