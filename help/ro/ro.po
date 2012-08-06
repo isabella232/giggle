@@ -1,0 +1,456 @@
+# Romanian translation for giggle.
+# Copyright (C) 2011 giggle's COPYRIGHT HOLDER
+# This file is distributed under the same license as the giggle package.
+# Cătălin Bălan <laserbeam333@gmail.com>, 2011.
+# Daniel Șerbănescu <daniel@serbanescu.dk>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: giggle master\n"
+"POT-Creation-Date: 2011-07-31 16:48+0000\n"
+"PO-Revision-Date: 2012-08-06 19:44+0200\n"
+"Last-Translator: Daniel Șerbănescu <daniel@serbanescu.dk>\n"
+"Language-Team: Gnome Romanian Translation Team\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.7.0\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#| msgid "translator-credits"
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Cătălin Bălan <laserbeam333@gmail.com> 2011"
+
+#: C/index.page:7(credit/name) C/browse-view.page:11(credit/name)
+#: C/history-view.page:11(credit/name) C/introduction.page:11(credit/name)
+#: C/opening-repositories.page:11(credit/name)
+#: C/tagging-commits.page:11(credit/name)
+msgid "Łukasz Jernaś"
+msgstr "Łukasz Jernaś"
+
+#: C/index.page:18(license/p) C/browse-view.page:22(license/p)
+#: C/history-view.page:22(license/p) C/introduction.page:22(license/p)
+#: C/opening-repositories.page:22(license/p)
+#: C/tagging-commits.page:22(license/p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Distribuire în condiții identice 3.0"
+
+#: C/index.page:22(page/title)
+msgid "Giggle Help"
+msgstr "Ajutor Giggle"
+
+#: C/index.page:25(section/title)
+msgid "Working with <app>Giggle</app>"
+msgstr "Lucrul cu <app>Giggle</app>"
+
+#: C/index.page:28(section/title)
+msgid "Working with GIT repositories"
+msgstr "Lucrul cu depozitele GIT"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/browse-view.page:31(media)
+#| msgid ""
+#| "@@image: 'figures/giggle-browse_view_sections.png'; "
+#| "md5=390225c079a94ec75fd1c172f90c6b3c"
+msgctxt "_"
+msgid ""
+"external ref='figures/giggle-browse_view_sections.png' "
+"md5='390225c079a94ec75fd1c172f90c6b3c'"
+msgstr ""
+"external ref='figures/giggle-browse_view_sections.png' "
+"md5='d5ad3559bcf75689ce6c327fca3ab084'"
+
+#: C/browse-view.page:6(info/desc)
+msgid "Viewing the contents of the repository"
+msgstr "Vizualizarea conținutului depozitului"
+
+#: C/browse-view.page:26(page/title)
+msgid "Browse view"
+msgstr "Vizualizarea pentru navigare"
+
+#: C/browse-view.page:28(section/title) C/history-view.page:27(section/title)
+msgid "Overview"
+msgstr "Vedere de ansamblu"
+
+#: C/browse-view.page:30(figure/desc)
+msgid "Giggle in Browse view mode"
+msgstr "Giggle în modul de vizualizare pentru navigare"
+
+#: C/browse-view.page:33(section/p)
+msgid "<app>Giggle</app>'s browse view is set up in three main parts:"
+msgstr ""
+"Modul de vizualizare pentru navigare în <app>Giggle</app> este compus din "
+"trei părți principale:"
+
+#: C/browse-view.page:36(item/p)
+msgid "Project tree"
+msgstr "Arborele proiectului"
+
+#: C/browse-view.page:37(item/p)
+msgid "Displays all the files included in the current repository."
+msgstr "Afișează toate fișierele incluse în depozitul curent."
+
+#: C/browse-view.page:40(item/p)
+msgid "File preview"
+msgstr "Previzualizarea fișierului"
+
+#: C/browse-view.page:41(item/p)
+msgid ""
+"Displays the contents of the currently selected file according as of the "
+"selected revision."
+msgstr ""
+"Afișează conținutul fișierului selectat în conformitate cu revizia "
+"selectată."
+
+#: C/browse-view.page:44(item/p) C/history-view.page:35(item/p)
+msgid "History graph"
+msgstr "Graful istoricului"
+
+#: C/browse-view.page:45(item/p)
+msgid ""
+"Displays a visual representation of the currently selected file's history"
+msgstr "Afișează o reprezentare vizuală a istoricului fișierului selectat"
+
+#: C/browse-view.page:50(section/title)
+msgid "About the Project tree"
+msgstr "Despre arborele proiectului"
+
+#: C/browse-view.page:51(section/p)
+msgid ""
+"The Project tree is a powerful part of Giggle's interface, of course if you "
+"know about it. By default it doesn't display files hidden by <file>."
+"gitignore</file>. You can change this behaviour by using the right-click "
+"context menu option <gui>Show all files</gui>. Files which are not part of "
+"your repository are greyed out."
+msgstr ""
+"Arborele proiectului este o unealtă puternică în interfața Giggle. În mod "
+"implicit, acesta nu afișează fișierele ascunse de <file>.gitignore</file>. "
+"Puteți schimba acest aspect folosind din meniul contextual dat de clic "
+"dreapta opțiunea <gui>Arată toate fișierele</gui>. Fișierele care nu fac "
+"parte din depozit sunt colorate gri."
+
+#: C/browse-view.page:52(section/p)
+msgid "The Project tree offers you the following:"
+msgstr "Arborele proiectului vă oferă:"
+
+#: C/browse-view.page:55(item/p)
+msgid "Adding files to the repository."
+msgstr "Adăugarea de fișiere în depozit."
+
+#: C/browse-view.page:56(item/p)
+msgid "By using the <gui>Add file to repository</gui> context menu option."
+msgstr ""
+"Folosind opțiunea <gui>Adaugă fișier în arhivă</gui> din meniul contextual."
+
+#: C/browse-view.page:59(item/p)
+msgid "Adding/removing files to <file>.gitignore</file>."
+msgstr "Adăugarea sau ștergerea de fișiere din <file>.gitignore</file>."
+
+#: C/browse-view.page:60(item/p)
+msgid ""
+"By using the <gui>Add to .gitignore</gui> or <gui>Remove from .gitignore</"
+"gui> context menu options."
+msgstr ""
+"Folosind opțiunea <gui>Adaugă la .gitignore</gui> sau <gui>Elimină din "
+".gitignore</gui> din meniul contextual."
+
+#: C/browse-view.page:63(item/p)
+msgid "Editing files"
+msgstr "Editarea fișierelor"
+
+#: C/browse-view.page:66(item/p)
+msgid "Committing"
+msgstr "Comiterea"
+
+#: C/browse-view.page:69(item/p)
+msgid "Creating patches"
+msgstr "Crearea peticelor"
+
+#: C/browse-view.page:70(item/p)
+msgid ""
+"When there are any unstaged changes in the file list, you can create a patch "
+"by using the <gui>Create patch</gui> context menu option."
+msgstr ""
+"Când sunt schimbări nemarcate în lista de fișiere, puteți crea un petic "
+"folosind opțiunea <gui>Creează petic</gui> din meniul contextual."
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/history-view.page:30(media)
+#| msgid ""
+#| "@@image: 'figures/giggle-history_view_sections.png'; "
+#| "md5=3b487583a028a4d087e3d6a5bcd589b8"
+msgctxt "_"
+msgid ""
+"external ref='figures/giggle-history_view_sections.png' "
+"md5='3b487583a028a4d087e3d6a5bcd589b8'"
+msgstr ""
+"external ref='figures/giggle-history_view_sections.png' "
+"md5='88cc67877d0c78bbc3beabb15c86c968'"
+
+#: C/history-view.page:6(info/desc)
+msgid "Viewing the history of a repository"
+msgstr "Vizualizarea istoricului unui depozit"
+
+#: C/history-view.page:25(page/title)
+msgid "History view"
+msgstr "Vizualizarea istoricului"
+
+#: C/history-view.page:29(figure/desc)
+msgid "Giggle in History view mode"
+msgstr "Giggle în modul de vizualizare Istoric"
+
+#: C/history-view.page:32(section/p)
+msgid "<app>Giggle</app>'s history view is set up in three main parts:"
+msgstr ""
+"Vizualizarea istoricului în <app>Giggle</app> este compusă din trei părți "
+"principale:"
+
+#: C/history-view.page:36(item/p)
+msgid ""
+"Displays a visual representation of the current repository history, "
+"including all the branches be it remote or local. By hovering the mouse "
+"cursor over the icons you can display additional information, such as branch "
+"and tag names. Moving through history is accomplished either by using the "
+"mouse or the <key>Up</key> and <key>Down</key> keys."
+msgstr ""
+"Afișează o reprezentare vizuală a istoricului depozitului, incluzând toate "
+"ramurile, fie ele la distanță sau locale. Prin trecerea cu mausul peste "
+"iconițe, puteți afișa informații adiționale, precum numele ramurii și "
+"etichetelor. Deplasarea prin istoric se poate realiza fie folosind mausul "
+"sau tastele <key>În sus</key> și <key>În jos</key>."
+
+#: C/history-view.page:39(item/p)
+msgid "Changed files"
+msgstr "Fișiere schimbate"
+
+#: C/history-view.page:40(item/p)
+msgid "Displays files changed in the currently selected revision"
+msgstr "Afișează fișierele schimbate în revizia selectată"
+
+#: C/history-view.page:43(item/p)
+msgid "Diff"
+msgstr "Diff"
+
+#: C/history-view.page:44(item/p)
+msgid "Displays the differences for the selected file and revision."
+msgstr "Afișează diferențele pentru fișierul și revizia selectată."
+
+#: C/history-view.page:46(note/p)
+msgid ""
+"<app>Giggle</app> displays the differences as individual chunks, you can "
+"move between them either by using the Up and Down icons above the list of "
+"changed files, or by pressing <keyseq><key>Alt</key><key>Up</key></keyseq> "
+"and <keyseq><key>Alt</key><key>Down</key></keyseq> keys. Doing so will also "
+"move you through the list of changed files as the diff progresses."
+msgstr ""
+"<app>Giggle</app> afișează diferențele ca bucăți individuale. Vă puteți "
+"deplasa printre acestea folosind fie iconițele Sus și Jos deasupra listei de "
+"fișiere schimbate, fie apăsând tastele <keyseq><key>Alt</key><key>În "
+"sus</key></keyseq> și <keyseq><key>Alt</key><key>În jos</key></keyseq>. "
+"Aceste acțiuni vor face deplasarea prin lista de fișiere schimbate pe măsură "
+"ce diff progresează."
+
+#: C/introduction.page:6(info/desc)
+msgid "Introduction to the <app>Giggle</app> GIT repository viewer"
+msgstr "Introducere în <app>Giggle</app> - vizualizatorul de depozite GIT"
+
+#: C/introduction.page:26(page/title)
+msgid "Introduction"
+msgstr "Introducere"
+
+#: C/introduction.page:27(page/p)
+msgid ""
+"The <app>Giggle</app> application enables you to graphically browse and "
+"manipulate the contents of a git directory tree."
+msgstr ""
+"Aplicația <app>Giggle</app> vă permite să navigați și manipulați în mod "
+"grafic conținutul unei structuri arborescente al unui depozit git."
+
+#: C/introduction.page:30(section/title)
+msgid "Starting <app>giggle</app>"
+msgstr "Pornirea aplicației <app>giggle</app>"
+
+#: C/introduction.page:31(section/p)
+msgid "You can start <app>giggle</app> in the following ways:"
+msgstr "Puteți porni <app>gigle</app> în următoarele moduri:"
+
+#: C/introduction.page:34(item/p)
+#| msgid ""
+#| "Choose <guiseq><gui>Programming</gui><gui>Giggle</gui></guiseq> from the "
+#| "<gui>Applications</gui> menu."
+msgid ""
+"Choose <guiseq><gui>Programming</gui> <gui>Giggle</gui></guiseq> from the "
+"<gui>Applications</gui> menu."
+msgstr ""
+"Selectați <guiseq><gui>Programare</gui><gui>Giggle</gui></guiseq> din meniul "
+"<gui>Aplicații</gui>."
+
+#: C/introduction.page:37(item/p)
+msgid ""
+"Run <cmd>giggle</cmd> at the prompt in a terminal such or from the <gui>Run "
+"Application</gui> dialog."
+msgstr ""
+"Executați <cmd>giggle</cmd> într-un terminal sau din dialogul <gui>Rulează "
+"aplicația</gui>."
+
+#: C/introduction.page:43(section/title)
+msgid "Closing <app>giggle</app>"
+msgstr "Închiderea aplicației <app>giggle</app>"
+
+#: C/introduction.page:44(section/p)
+msgid ""
+"To close <app>giggle</app> choose <guiseq><gui>Project</gui><gui>Quit</gui></"
+"guiseq>, or press <keyseq><key>Ctrl</key><key>Q</key></keyseq>."
+msgstr ""
+"Pentru a închide <app>giggle</app> selectați "
+"<guiseq><gui>Proiect</gui><gui>Ieșire</gui></guiseq>, sau apăsați "
+"<keyseq><key>Ctrl</key><key>Q</key></keyseq>."
+
+#: C/license.page:7(info/desc)
+msgid "Legal information."
+msgstr "Informații legale."
+
+#: C/license.page:10(page/title)
+msgid "License"
+msgstr "Licență"
+
+#: C/license.page:11(page/p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Această operă este distribuită sub o licență neadaptată CreativeCommons "
+"Atribuire-Distribuire în condiții identice 3.0."
+
+#: C/license.page:19(page/p)
+msgid "You are free:"
+msgstr "Sunteți liber să:"
+
+#: C/license.page:24(item/title)
+#| msgid "To share"
+msgid "<em>To share</em>"
+msgstr "<em>Să împărtășiți</em>"
+
+#: C/license.page:25(item/p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Dreptul de a copia, distribui și transmite opera."
+
+#: C/license.page:28(item/title)
+#| msgid "To remix"
+msgid "<em>To remix</em>"
+msgstr "<em>Să modificați</em>"
+
+#: C/license.page:29(item/p)
+msgid "To adapt the work."
+msgstr "Dreptul de a adapta opera."
+
+#: C/license.page:32(page/p)
+msgid "Under the following conditions:"
+msgstr "În următoarele condiții:"
+
+#: C/license.page:37(item/title)
+#| msgid "Attribution"
+msgid "<em>Attribution</em>"
+msgstr "<em>Atribuire</em>"
+
+#: C/license.page:38(item/p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Trebuie să atribuiți opera în maniera specificată de autor sau licențiator "
+"(dar sub nici o formă care ar sugera faptul că aceștia v-ar susține sau ar "
+"aproba folosirea de către dumneavoastră a operei)."
+
+#: C/license.page:45(item/title)
+#| msgid "Share Alike"
+msgid "<em>Share Alike</em>"
+msgstr "<em>Distribuire în condiții identice</em>"
+
+#: C/license.page:46(item/p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Dacă modificați, transformați sau creați pe baza acestei opere, puteți "
+"distribui opera rezultată numai sub aceeași licență sau o licență similară "
+"acesteia."
+
+#: C/license.page:52(page/p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Pentru textul integral al licenței, consultați <link "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">saitul "
+"CreativeCommons</link>, sau citiți întregul <link "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Commons Deed</link>."
+
+#: C/opening-repositories.page:6(info/desc)
+msgid "Opening GIT repositories"
+msgstr "Deschiderea depozitelor GIT"
+
+#: C/opening-repositories.page:26(page/title)
+msgid "Opening a repository"
+msgstr "Deschiderea unui depozit"
+
+#: C/opening-repositories.page:27(page/p)
+msgid "You can open a git repository in the following ways:"
+msgstr "Puteți deschide un depozit git în următoarele moduri:"
+
+#: C/opening-repositories.page:30(item/p)
+msgid ""
+"using <guiseq><gui>Project</gui><gui>Open</gui></guiseq>, and selecting the "
+"directory with your repository,"
+msgstr ""
+"folosind <guiseq><gui>Proiect</gui><gui>Deschide</gui></guiseq>, și "
+"selectând dosarul cu depozitul dorit,"
+
+#: C/opening-repositories.page:33(item/p)
+msgid "running <cmd>giggle</cmd> in your project's directory,"
+msgstr "executând <cmd>giggle</cmd> în dosarul proiectului,"
+
+#: C/opening-repositories.page:36(item/p)
+msgid ""
+"running <cmd>giggle</cmd> with the repository path specified as an argument."
+msgstr ""
+"executând <cmd>giggle</cmd> cu calea către depozit specificată ca argument."
+
+#: C/tagging-commits.page:6(info/desc) C/tagging-commits.page:26(page/title)
+msgid "Tagging commits"
+msgstr "Etichetarea comiterilor"
+
+#: C/tagging-commits.page:27(page/p)
+msgid ""
+"To make a new tag open the context menu by right clicking on a commit in the "
+"revision window (it doesn't matter if it's the Browse or History view), then "
+"click <gui>Create tag</gui> and enter a name in the just opened dialog "
+"window."
+msgstr ""
+"Pentru a crea o etichetă nouă, deschideți meniul contextual prin clic "
+"dreapta pe o comitere în fereastra de revizie (nu contează dacă este în "
+"vizualizarea de navigare sau a istoricului), apoi alegeți <gui>Creează "
+"etichetă</gui> și introduceți un nume în fereastra de dialog deschisă."
+
+#: C/tagging-commits.page:28(page/p)
+msgid ""
+"You will notice that near the revision you have selected a new icon has "
+"appeared - it's your newly created tag."
+msgstr ""
+"Veți observa că lângă revizia selectată o nouă iconiță a apărut - este "
+"eticheta proaspăt creată."
+
+#~ msgid "deejay1@srem.org"
+#~ msgstr "deejay1@srem.org"
