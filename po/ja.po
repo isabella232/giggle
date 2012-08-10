@@ -1,8 +1,9 @@
 # giggle ja.po
-# Copyright (C) 2007-2010 giggle's copyright holder
+# Copyright (C) 2007-2010,2012 giggle's copyright holder
 # This file is distributed under the same license as the giggle package.
 # Nishio Futoshi <futoshi@momonga-linux.org>, 2007.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010.
+# Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2012.
 #
 # 訳注: commit: 'コミットで' はなく 'commit' のままにする
 #       clone: '複製' ではなく 'clone' のままにする
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=giggle&keywords=I18N+L10N\n"
 "POT-Creation-Date: 2012-04-24 00:18+0000\n"
-"PO-Revision-Date: 2012-01-10 19:40+0900\n"
-"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
+"PO-Revision-Date: 2012-08-11 00:15+0900\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -662,7 +663,7 @@ msgstr "Git のグラフィカルなフロントエンド"
 
 #: ../src/giggle-window.c:947
 msgid "About Giggle"
-msgstr "Giggle について"
+msgstr "このアプリケーションについて"
 
 #: ../src/giggle-window.c:951
 msgid "Giggle Website"
