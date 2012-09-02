@@ -4,14 +4,15 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Łukasz Jernaś <deejay1@srem.org>, 2007, 2008, 2009, 2010, 2011.
-#
+# Łukasz Jernaś <deejay1@srem.org>, 2007-2011.
+# Piotr Drąg <piotrdrag@gmail.com>, 2011-2012.
+# Aviary.pl <gnomepl@aviary.pl>, 2010-2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-13 02:38+0200\n"
-"PO-Revision-Date: 2012-07-13 02:39+0200\n"
+"POT-Creation-Date: 2012-09-03 01:08+0200\n"
+"PO-Revision-Date: 2012-09-03 01:09+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -156,7 +157,7 @@ msgstr ""
 "Wystąpił błąd podczas pobierania listy gałęzi:\n"
 "%s"
 
-#: ../src/giggle-branches-view.c:145 ../src/giggle-revision-view.c:214
+#: ../src/giggle-branches-view.c:145 ../src/giggle-revision-view.c:197
 msgid "Branches:"
 msgstr "Gałęzie:"
 
@@ -374,31 +375,31 @@ msgstr "Nazwa"
 msgid "Double click to add remote..."
 msgstr "Dwukrotne kliknięcie dodaje zdalne repozytorium…"
 
-#: ../src/giggle-revision-view.c:206 ../src/giggle-view-file.c:1216
+#: ../src/giggle-revision-view.c:183 ../src/giggle-view-file.c:1216
 msgid "Author:"
 msgstr "Autor:"
 
-#: ../src/giggle-revision-view.c:210 ../src/giggle-view-file.c:1217
+#: ../src/giggle-revision-view.c:184 ../src/giggle-view-file.c:1217
 msgid "Committer:"
 msgstr "Zatwierdzający:"
 
-#: ../src/giggle-revision-view.c:212 ../src/giggle-view-file.c:1218
+#: ../src/giggle-revision-view.c:195 ../src/giggle-view-file.c:1218
 msgid "Date:"
 msgstr "Data:"
 
-#: ../src/giggle-revision-view.c:213 ../src/giggle-view-file.c:1219
+#: ../src/giggle-revision-view.c:196 ../src/giggle-view-file.c:1219
 msgid "SHA:"
 msgstr "SHA:"
 
-#: ../src/giggle-revision-view.c:232
+#: ../src/giggle-revision-view.c:216
 msgid "Change Log:"
 msgstr "Opis zmian:"
 
-#: ../src/giggle-revision-view.c:520
+#: ../src/giggle-revision-view.c:505
 msgid "_Details"
 msgstr "_Szczegóły"
 
-#: ../src/giggle-revision-view.c:521
+#: ../src/giggle-revision-view.c:506
 msgid "Display revision details"
 msgstr "Wyświetla informacje o rewizji"
 
@@ -653,20 +654,21 @@ msgstr ""
 #: ../src/giggle-window.c:937
 msgid "translator-credits"
 msgstr ""
-"Aviary.pl <gnomepl@aviary.pl>, 2010, 2011, 2012\n"
-"Łukasz Jernaś <deejay1@srem.org>, 2010, 2011"
+"Łukasz Jernaś <deejay1@srem.org>, 2007-2011\n"
+"Piotr Drąg <piotrdrag@gmail.com>, 2011-2012\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2010-2012"
 
 #: ../src/giggle-window.c:942
 msgid "A graphical frontend for Git"
-msgstr "Graficzna nakładka na system śledzenia katalogów git"
+msgstr "Graficzny interfejs dla systemu śledzenia katalogów git"
 
 #: ../src/giggle-window.c:947
 msgid "About Giggle"
-msgstr "O programie"
+msgstr "O programie Giggle"
 
 #: ../src/giggle-window.c:951
 msgid "Giggle Website"
-msgstr "Strona domowa programu Giggle"
+msgstr "Witryna programu Giggle"
 
 #: ../src/giggle-window.c:1007
 msgid "_Find..."
