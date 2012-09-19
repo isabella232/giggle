@@ -205,6 +205,10 @@ gl_MANYWARN_ALL_GCC([warnings])
 nw=
 nw="$nw -Wsystem-headers"       # Don't let system headers trigger warnings
 nw="$nw -Wunused-macros"        # Unused macros are ok
+# g_clear_object & G_ATOMIC_OP_USE_GCC_BUILTINS causes
+# violations with this. XXX Fix glib ?
+nw="$nw -Wunused-local-typedefs"
+nw="$nw -Wbad-function-cast"
 
 
 # Enable all GCC warnings not in this list.
