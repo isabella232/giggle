@@ -204,13 +204,6 @@ gl_MANYWARN_ALL_GCC([warnings])
 # Set up the list of the pointless, undesired warnings.
 nw=
 nw="$nw -Wsystem-headers"       # Don't let system headers trigger warnings
-nw="$nw -Wundef"                # All compiler preprocessors support #if UNDEF
-nw="$nw -Wtraditional"          # All compilers nowadays support ANSI C
-nw="$nw -Wtraditional-conversion"
-nw="$nw -Wpadded"               # Happy for compiler to add struct padding
-nw="$nw -Wconversion"           # These warnings usually don't point to mistakes.
-nw="$nw -Wsign-conversion"      # Likewise.
-nw="$nw -Wc++-compat"           # Don't care about C++ compiler compat
 
 # Enable all GCC warnings not in this list.
 gl_MANYWARN_COMPLEMENT([warnings], [$warnings], [$nw])

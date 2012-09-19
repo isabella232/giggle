@@ -1,5 +1,5 @@
-# manywarnings.m4 serial 1
-dnl Copyright (C) 2008-2011 Free Software Foundation, Inc.
+# manywarnings.m4 serial 4
+dnl Copyright (C) 2008-2012 Free Software Foundation, Inc.
 dnl This file is free software; the Free Software Foundation
 dnl gives unlimited permission to copy and/or distribute it,
 dnl with or without modifications, as long as this notice is preserved.
@@ -30,9 +30,9 @@ AC_DEFUN([gl_MANYWARN_COMPLEMENT],
 
 # gl_MANYWARN_ALL_GCC(VARIABLE)
 # -----------------------------
-# Add all documented GCC (currently as per version 4.4) warning
-# parameters to variable VARIABLE.  Note that you need to test them
-# using gl_WARN_ADD if you want to make sure your gcc understands it.
+# Add all documented GCC warning parameters to variable VARIABLE.
+# Note that you need to test them using gl_WARN_ADD if you want to
+# make sure your gcc understands it.
 AC_DEFUN([gl_MANYWARN_ALL_GCC],
 [
   dnl First, check if -Wno-missing-field-initializers is needed.
@@ -81,70 +81,118 @@ AC_DEFUN([gl_MANYWARN_ALL_GCC],
 
   gl_manywarn_set=
   for gl_manywarn_item in \
-    -Wall \
     -W \
-    -Wformat-y2k \
+    -Wabi \
+    -Waddress \
+    -Wall \
+    -Warray-bounds \
+    -Wattributes \
+    -Wbad-function-cast \
+    -Wbuiltin-macro-redefined \
+    -Wcast-align \
+    -Wchar-subscripts \
+    -Wclobbered \
+    -Wcomment \
+    -Wcomments \
+    -Wcoverage-mismatch \
+    -Wcpp \
+    -Wdeprecated \
+    -Wdeprecated-declarations \
+    -Wdisabled-optimization \
+    -Wdiv-by-zero \
+    -Wdouble-promotion \
+    -Wempty-body \
+    -Wendif-labels \
+    -Wenum-compare \
+    -Wextra \
+    -Wformat-contains-nul \
+    -Wformat-extra-args \
     -Wformat-nonliteral \
     -Wformat-security \
+    -Wformat-y2k \
+    -Wformat-zero-length \
+    -Wformat=2 \
+    -Wfree-nonheap-object \
+    -Wignored-qualifiers \
+    -Wimplicit \
+    -Wimplicit-function-declaration \
+    -Wimplicit-int \
     -Winit-self \
+    -Winline \
+    -Wint-to-pointer-cast \
+    -Winvalid-memory-model \
+    -Winvalid-pch \
+    -Wjump-misses-init \
+    -Wlogical-op \
+    -Wmain \
+    -Wmaybe-uninitialized \
+    -Wmissing-braces \
+    -Wmissing-declarations \
+    -Wmissing-field-initializers \
+    -Wmissing-format-attribute \
     -Wmissing-include-dirs \
-    -Wswitch-default \
-    -Wswitch-enum \
-    -Wunused \
-    -Wunknown-pragmas \
+    -Wmissing-noreturn \
+    -Wmissing-parameter-type \
+    -Wmissing-prototypes \
+    -Wmudflap \
+    -Wmultichar \
+    -Wnarrowing \
+    -Wnested-externs \
+    -Wnonnull \
+    -Wnormalized=nfc \
+    -Wold-style-declaration \
+    -Wold-style-definition \
+    -Woverflow \
+    -Woverlength-strings \
+    -Woverride-init \
+    -Wpacked \
+    -Wpacked-bitfield-compat \
+    -Wparentheses \
+    -Wpointer-arith \
+    -Wpointer-sign \
+    -Wpointer-to-int-cast \
+    -Wpragmas \
+    -Wreturn-type \
+    -Wsequence-point \
+    -Wshadow \
+    -Wsizeof-pointer-memaccess \
+    -Wstack-protector \
     -Wstrict-aliasing \
     -Wstrict-overflow \
-    -Wsystem-headers \
-    -Wfloat-equal \
-    -Wtraditional \
-    -Wtraditional-conversion \
-    -Wdeclaration-after-statement \
-    -Wundef \
-    -Wshadow \
-    -Wunsafe-loop-optimizations \
-    -Wpointer-arith \
-    -Wbad-function-cast \
-    -Wc++-compat \
-    -Wcast-qual \
-    -Wcast-align \
-    -Wwrite-strings \
-    -Wconversion \
-    -Wsign-conversion \
-    -Wlogical-op \
-    -Waggregate-return \
     -Wstrict-prototypes \
-    -Wold-style-definition \
-    -Wmissing-prototypes \
-    -Wmissing-declarations \
-    -Wmissing-noreturn \
-    -Wmissing-format-attribute \
-    -Wpacked \
-    -Wpadded \
-    -Wredundant-decls \
-    -Wnested-externs \
+    -Wsuggest-attribute=const \
+    -Wsuggest-attribute=format \
+    -Wsuggest-attribute=noreturn \
+    -Wsuggest-attribute=pure \
+    -Wswitch \
+    -Wswitch-default \
+    -Wsync-nand \
+    -Wsystem-headers \
+    -Wtrampolines \
+    -Wtrigraphs \
+    -Wtype-limits \
+    -Wuninitialized \
+    -Wunknown-pragmas \
     -Wunreachable-code \
-    -Winline \
-    -Winvalid-pch \
-    -Wlong-long \
+    -Wunsafe-loop-optimizations \
+    -Wunused \
+    -Wunused-but-set-parameter \
+    -Wunused-but-set-variable \
+    -Wunused-function \
+    -Wunused-label \
+    -Wunused-local-typedefs \
+    -Wunused-macros \
+    -Wunused-parameter \
+    -Wunused-result \
+    -Wunused-value \
+    -Wunused-variable \
+    -Wvarargs \
+    -Wvariadic-macros \
+    -Wvector-operation-performance \
     -Wvla \
     -Wvolatile-register-var \
-    -Wdisabled-optimization \
-    -Wstack-protector \
-    -Woverlength-strings \
-    -Wbuiltin-macro-redefined \
-    -Wmudflap \
-    -Wpacked-bitfield-compat \
-    -Wsync-nand \
-    ; do
-    gl_manywarn_set="$gl_manywarn_set $gl_manywarn_item"
-  done
-  # The following are not documented in the manual but are included in
-  # output from gcc --help=warnings.
-  for gl_manywarn_item in \
-    -Wattributes \
-    -Wcoverage-mismatch \
-    -Wmultichar \
-    -Wunused-macros \
+    -Wwrite-strings \
+    \
     ; do
     gl_manywarn_set="$gl_manywarn_set $gl_manywarn_item"
   done
