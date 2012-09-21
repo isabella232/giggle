@@ -173,7 +173,7 @@ giggle_error_dialog (GtkWindow *window,
 	                                 GTK_DIALOG_DESTROY_WITH_PARENT,
 	                                 GTK_MESSAGE_ERROR,
 	                                 GTK_BUTTONS_CLOSE,
-	                                 "%s", _("An error ocurred:"));
+	                                 "%s", _("An error occurred:"));
 	gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (widget),
 	                                          "%s", error->message);
 
