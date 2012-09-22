@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: giggle\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-03 01:08+0200\n"
-"PO-Revision-Date: 2012-09-03 01:09+0200\n"
+"POT-Creation-Date: 2012-09-22 11:33+0200\n"
+"PO-Revision-Date: 2012-09-22 11:34+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -317,7 +317,7 @@ msgid "Project"
 msgstr "Projekt"
 
 #: ../src/giggle-helpers.c:176
-msgid "An error ocurred:"
+msgid "An error occurred:"
 msgstr "Wystąpił błąd:"
 
 #: ../src/giggle-main.c:36
