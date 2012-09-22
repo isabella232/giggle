@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2012-04-25 21:37+0000\n"
-"PO-Revision-Date: 2012-05-19 13:17+0100\n"
+"POT-Creation-Date: 2012-09-21 13:20+0000\n"
+"PO-Revision-Date: 2012-09-21 22:25+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -157,7 +157,7 @@ msgstr ""
 "%s"
 
 #: ../src/giggle-branches-view.c:145
-#: ../src/giggle-revision-view.c:214
+#: ../src/giggle-revision-view.c:197
 msgid "Branches:"
 msgstr "Veje:"
 
@@ -323,7 +323,8 @@ msgid "Project"
 msgstr "Projekt"
 
 #: ../src/giggle-helpers.c:176
-msgid "An error ocurred:"
+#| msgid "An error ocurred:"
+msgid "An error occurred:"
 msgstr "Prišlo je do napake:"
 
 #: ../src/giggle-main.c:36
@@ -381,35 +382,35 @@ msgstr "Ime"
 msgid "Double click to add remote..."
 msgstr "Dvoklik za dodajanje oddaljenega ..."
 
-#: ../src/giggle-revision-view.c:206
+#: ../src/giggle-revision-view.c:183
 #: ../src/giggle-view-file.c:1216
 msgid "Author:"
 msgstr "Avtor:"
 
-#: ../src/giggle-revision-view.c:210
+#: ../src/giggle-revision-view.c:184
 #: ../src/giggle-view-file.c:1217
 msgid "Committer:"
 msgstr "Uveljavitelj:"
 
-#: ../src/giggle-revision-view.c:212
+#: ../src/giggle-revision-view.c:195
 #: ../src/giggle-view-file.c:1218
 msgid "Date:"
 msgstr "Datum:"
 
-#: ../src/giggle-revision-view.c:213
+#: ../src/giggle-revision-view.c:196
 #: ../src/giggle-view-file.c:1219
 msgid "SHA:"
 msgstr "SHA:"
 
-#: ../src/giggle-revision-view.c:232
+#: ../src/giggle-revision-view.c:216
 msgid "Change Log:"
 msgstr "Dnevnik sprememb:"
 
-#: ../src/giggle-revision-view.c:520
+#: ../src/giggle-revision-view.c:505
 msgid "_Details"
 msgstr "_Podrobnosti"
 
-#: ../src/giggle-revision-view.c:521
+#: ../src/giggle-revision-view.c:506
 msgid "Display revision details"
 msgstr "Prikaz podrobnosti predelave"
 
@@ -815,49 +816,3 @@ msgstr ""
 "Prišlo je do napake med shranjevanjem v datoteko:\n"
 "%s"
 
-#~ msgid "Run Giggle in a terminal?"
-#~ msgstr "Zagon programa v terminalu?"
-
-#~ msgid "Set it at TRUE if you want it activated"
-#~ msgstr "Izberite možnost, če jo želite omogočiti"
-
-#~ msgid "The handler for \"git://\" URLs"
-#~ msgstr "Upravljalnik naslovov URL \"git://\""
-
-#~ msgid "Find Previous"
-#~ msgstr "Najdi predhodno"
-
-#~ msgid "Find Next"
-#~ msgstr "Najdi naslednje"
-
-#~ msgid ""
-#~ "This program is free software; you can redistribute it and/or modify it "
-#~ "under the terms of the GNU General Public License as published by the "
-#~ "Free Software Foundation; either version 2 of the License, or (at your "
-#~ "option) any later version."
-#~ msgstr ""
-#~ "Ta program je prosta programska oprema. Program lahko uporabljate v "
-#~ "skladu s pogoji Splošnega Javnega Dovoljenja (GNU General Public "
-#~ "License); ali različico 2 Licence, ali (na vašo željo) katerakoli "
-#~ "kasnejša različica."
-
-#~ msgid ""
-#~ "This program is distributed in the hope that it will be useful, but "
-#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
-#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
-#~ "Public License for more details."
-#~ msgstr ""
-#~ "Ta program je distribuiran v upanju da bo uporaben, toda BREZ "
-#~ "KAKRŠNIHKOLI ZAGOTOVIL; tudi brez impliciranih zagotovila za PRODAJO ali "
-#~ "PRIMERNOST ZA DOLOČEN NAMEN. Oglejte si GNU General Public Licence za več "
-#~ "podrobnosti."
-
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with this program; if not, write to the Free Software Foundation, Inc., "
-#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
-#~ msgstr ""
-#~ "Skupaj s tem programom bi morali prejeti izvod Splošnega dovoljenja GNU "
-#~ "(GNU General Public License); če ga niste, pišite na Free Software "
-#~ "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, "
-#~ "USA."
