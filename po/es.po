@@ -11,14 +11,16 @@ msgstr ""
 "Project-Id-Version: giggle VERSION\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2012-04-24 00:18+0000\n"
-"PO-Revision-Date: 2012-04-25 12:12+0200\n"
+"POT-Creation-Date: 2012-09-21 13:20+0000\n"
+"PO-Revision-Date: 2012-09-30 12:23+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.5\n"
 
 #: ../data/giggle.desktop.in.h:1
 msgid "Giggle"
@@ -154,7 +156,7 @@ msgstr ""
 "Ha ocurrido un error extrayendo la lista de ramas de desarrollo:\n"
 "%s"
 
-#: ../src/giggle-branches-view.c:145 ../src/giggle-revision-view.c:214
+#: ../src/giggle-branches-view.c:145 ../src/giggle-revision-view.c:197
 msgid "Branches:"
 msgstr "Ramas de desarrollo:"
 
@@ -319,7 +321,8 @@ msgstr "Proyecto"
 
 # c-format
 #: ../src/giggle-helpers.c:176
-msgid "An error ocurred:"
+#| msgid "An error ocurred:"
+msgid "An error occurred:"
 msgstr "Ocurrió un error:"
 
 #: ../src/giggle-main.c:36
@@ -377,31 +380,31 @@ msgstr "Nombre"
 msgid "Double click to add remote..."
 msgstr "Pulsar dos veces para añadir un repositorio remoto…"
 
-#: ../src/giggle-revision-view.c:206 ../src/giggle-view-file.c:1216
+#: ../src/giggle-revision-view.c:183 ../src/giggle-view-file.c:1216
 msgid "Author:"
 msgstr "Autores:"
 
-#: ../src/giggle-revision-view.c:210 ../src/giggle-view-file.c:1217
+#: ../src/giggle-revision-view.c:184 ../src/giggle-view-file.c:1217
 msgid "Committer:"
 msgstr "Committer:"
 
-#: ../src/giggle-revision-view.c:212 ../src/giggle-view-file.c:1218
+#: ../src/giggle-revision-view.c:195 ../src/giggle-view-file.c:1218
 msgid "Date:"
 msgstr "Fecha:"
 
-#: ../src/giggle-revision-view.c:213 ../src/giggle-view-file.c:1219
+#: ../src/giggle-revision-view.c:196 ../src/giggle-view-file.c:1219
 msgid "SHA:"
 msgstr "SHA:"
 
-#: ../src/giggle-revision-view.c:232
+#: ../src/giggle-revision-view.c:216
 msgid "Change Log:"
 msgstr "Registro de cambios:"
 
-#: ../src/giggle-revision-view.c:520
+#: ../src/giggle-revision-view.c:505
 msgid "_Details"
 msgstr "_Detalles"
 
-#: ../src/giggle-revision-view.c:521
+#: ../src/giggle-revision-view.c:506
 msgid "Display revision details"
 msgstr "Mostrar detalles de la revisión"
 
@@ -637,10 +640,6 @@ msgid "Contributors:"
 msgstr "Colaboradores:"
 
 #: ../src/giggle-window.c:925
-#| msgid ""
-#| "Copyright © 2007 - 2008 Imendio AB\n"
-#| "Copyright © 2008 - 2009 Mathias Hasselmann\n"
-#| "Copyright © 2009 - 2011 The Giggle authors"
 msgid ""
 "Copyright © 2007 - 2008 Imendio AB\n"
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
