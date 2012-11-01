@@ -1,3 +1,36 @@
+Giggle 0.7, 2012-11-01
+======================
+Changes:
+
+ * Bump minimum GLib required version to 2.30
+ * build: Depends on gettext 0.18.1
+ * Use G_VALUE_INIT
+ * Use g_cclosure_marshal_generic for all signals
+ * Use g_clear_object() and g_list_free_full() convenience functions
+ * Use GtkGrid instead GtkTable
+ * Use GDK symbolic names
+ * Use gdk_event_triggers_context_menu() instead of check for event->button == 3
+ * Update FSF Address
+ * Do not use deprecated libebook api
+ * build: Use the gnulib manywarnings macros
+ * src/giggle-revision-view.c: Use a GtkLabel instead a GtkLinkButton
+
+Translations:
+
+ * Japanese         Jiro Matsuzawa
+ * Galician         Fran Diéguez
+ * Czech            Marek Černocký
+ * Spanish          Daniel Mustieles
+ * Swedish          Daniel Nylander
+ * Slovenian        Matej Urbančič
+ * French           Bruno Brouard
+ * German           Daniel Winzen
+ * Polish           Piotr Drąg
+ * Romanian         Daniel Șerbănescu
+ * British English  Chris Leonard
+ * Indonesian       Andika Triwidada
+
+
 Giggle 0.6, 2011-10-20
 ======================
 Changes:
