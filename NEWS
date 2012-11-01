@@ -1,3 +1,27 @@
+Giggle 0.6.2, 2012-11-1
+=======================
+Changes:
+
+ * build: Explicitly link to gmodule-2.0 (Vincent Untz)
+ * Use the giggle api instead g_object_get() (Javier Jardón)
+
+
+Giggle 0.6.1, 2011-10-20
+========================
+Changes:
+
+ * configure.ac: Declare gdk and gdk-pixbuf dependencies (Guilhem Bonnefille)
+ * Escape the commit message correctly	(Denis Jasselette)
+ * data/main-window.ui: Do not create another window in the remote dialog (Javier Jardón)
+ * plugins/giggle-view-terminal.c: Fix crash when opening a terminal (Javier Jardón)
+ * plugins/giggle-view-terminal.c: Set the child properties correctly (Javier Jardón)
+ * src/giggle-window.c: Use help: instead ghelp: (Javier Jardón)
+
+Translations:
+
+ * Update Polish translation (Łukasz Jernaś)
+
+
 Giggle 0.6, 2011-10-20
 ======================
 Changes:
