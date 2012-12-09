@@ -1078,7 +1078,7 @@ window_create_ui_manager (GiggleWindow *window)
 		  G_CALLBACK (window_action_help_index_cb)
 		},
 		{ "BugReport", NULL, N_("Report _Issue"),
-		  NULL, N_("Report an issue you've found in Giggle"),
+		  NULL, N_("Report an issue you’ve found in Giggle"),
 		  G_CALLBACK (window_action_bug_report_cb)
 		},
 		{ "About", GTK_STOCK_ABOUT, NULL,

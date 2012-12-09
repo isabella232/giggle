@@ -85,7 +85,7 @@ main (int    argc,
 		gchar *the_basename = g_filename_display_basename (argv[0]);
 
 		g_printerr ("%s: %s\n", the_basename, error->message);
-		g_printerr (_("Try `%s --help' for more information.\n"), the_basename);
+		g_printerr (_("Try '%s --help' for more information.\n"), the_basename);
 
 		result = EXIT_FAILURE;
 		g_free (the_basename);

@@ -186,7 +186,7 @@ giggle_remote_editor_init (GiggleRemoteEditor *remote_editor)
 
 	builder = gtk_builder_new ();
 	if(!gtk_builder_add_from_file (builder, GLADEDIR "/main-window.ui", &error)) {
-		g_warning ("Couldn't load biulder file: %s", error->message);
+		g_warning ("Couldn’t load biulder file: %s", error->message);
 		g_error_free (error);
 	}
 
