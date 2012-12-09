@@ -277,7 +277,7 @@ giggle_remotes_view_init (GiggleRemotesView *view)
 	renderer = giggle_spaning_renderer_new ();
 	g_object_set (renderer,
 		      "first-column", 1, "style", PANGO_STYLE_ITALIC,
-		      "text", _("Double click to add remote..."), NULL);
+		      "text", _("Double click to add remote…"), NULL);
 	gtk_tree_view_column_pack_start (column, renderer, FALSE);
 	gtk_tree_view_column_set_cell_data_func (column, renderer,
 						 remotes_view_last_data_func,

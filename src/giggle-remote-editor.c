@@ -143,7 +143,7 @@ remote_editor_tree_cell_data_func (GtkTreeViewColumn *tree_column,
 		g_object_unref (branch);
 	} else {
 		g_object_set (cell,
-			      "text", _("Click to add mapping..."),
+			      "text", _("Click to add mapping…"),
 			      "style", PANGO_STYLE_ITALIC, NULL);
 	}
 }

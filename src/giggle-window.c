@@ -1004,8 +1004,8 @@ static void
 window_create_ui_manager (GiggleWindow *window)
 {
 	static const GtkActionEntry find_action_entries[] = {
-		{ "Find", GTK_STOCK_FIND, N_("_Find..."),
-		  "<control>F", N_("Find..."),
+		{ "Find", GTK_STOCK_FIND, N_("_Find…"),
+		  "<control>F", N_("Find…"),
 		  G_CALLBACK (window_action_find_cb)
 		},
 		{ "FindSlash", NULL, NULL, "slash", NULL,
