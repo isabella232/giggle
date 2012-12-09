@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: giggle\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-22 11:33+0200\n"
-"PO-Revision-Date: 2012-09-22 11:34+0200\n"
+"POT-Creation-Date: 2012-12-09 19:08+0100\n"
+"PO-Revision-Date: 2012-12-09 19:09+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -352,12 +352,12 @@ msgstr "Program Giggle jest graficznym interfejsem dla git."
 
 #: ../src/giggle-main.c:88
 #, c-format
-msgid "Try `%s --help' for more information.\n"
+msgid "Try '%s --help' for more information.\n"
 msgstr "Polecenie \"%s --help\" wyświetla więcej informacji.\n"
 
 #: ../src/giggle-remote-editor.c:146
-msgid "Click to add mapping..."
-msgstr "Kliknięcie dodaje mapowanie..."
+msgid "Click to add mapping…"
+msgstr "Kliknięcie dodaje mapowanie…"
 
 #: ../src/giggle-remote-editor.c:365
 msgid "Unnamed"
@@ -372,7 +372,7 @@ msgid "Name"
 msgstr "Nazwa"
 
 #: ../src/giggle-remotes-view.c:280
-msgid "Double click to add remote..."
+msgid "Double click to add remote…"
 msgstr "Dwukrotne kliknięcie dodaje zdalne repozytorium…"
 
 #: ../src/giggle-revision-view.c:183 ../src/giggle-view-file.c:1216
@@ -496,8 +496,8 @@ msgid "Details"
 msgstr "Szczegóły"
 
 #: ../src/giggle-short-list.c:416
-msgid "Show A_ll..."
-msgstr "Wyświet_l wszystko..."
+msgid "Show A_ll…"
+msgstr "Wyświet_l wszystko…"
 
 #: ../src/giggle-view-diff.c:107
 #, c-format
@@ -671,12 +671,12 @@ msgid "Giggle Website"
 msgstr "Witryna programu Giggle"
 
 #: ../src/giggle-window.c:1007
-msgid "_Find..."
-msgstr "_Znajdź..."
+msgid "_Find…"
+msgstr "_Znajdź…"
 
 #: ../src/giggle-window.c:1008
-msgid "Find..."
-msgstr "Znajdź..."
+msgid "Find…"
+msgstr "Znajdź…"
 
 #: ../src/giggle-window.c:1015
 msgid "Find next match"
@@ -759,8 +759,8 @@ msgid "Report _Issue"
 msgstr "_Zgłoś błąd w programie"
 
 #: ../src/giggle-window.c:1081
-msgid "Report an issue you've found in Giggle"
-msgstr "Pozwala zgłosić błąd znaleziony w Giggle"
+msgid "Report an issue you’ve found in Giggle"
+msgstr "Pozwala zgłosić błąd znaleziony w programie Giggle"
 
 #: ../src/giggle-window.c:1085
 msgid "About this application"
