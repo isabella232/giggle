@@ -7,19 +7,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2012-09-21 13:20+0000\n"
-"PO-Revision-Date: 2012-09-21 22:25+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=giggle&keywords=I18N+L10N\n"
+"POT-Creation-Date: 2012-12-09 19:51+0000\n"
+"PO-Revision-Date: 2012-12-19 11:31+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
-"X-Poedit-Language: Slovenian\n"
-"X-Poedit-Country: SLOVENIA\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../data/giggle.desktop.in.h:1
 msgid "Giggle"
@@ -37,8 +38,7 @@ msgstr "Naslov URL:"
 msgid "Name:"
 msgstr "Ime:"
 
-#: ../data/main-window.ui.h:3
-#: ../src/giggle-remote-editor.c:172
+#: ../data/main-window.ui.h:3 ../src/giggle-remote-editor.c:172
 msgid "Branches"
 msgstr "Veje"
 
@@ -108,8 +108,7 @@ msgstr "Ustvarjanje novega zavihka v terminalu git"
 msgid "Find:"
 msgstr "Najdi:"
 
-#: ../src/eggfindbar.c:312
-#: ../src/giggle-window.c:1018
+#: ../src/eggfindbar.c:312 ../src/giggle-window.c:1018
 msgid "Find Pre_vious"
 msgstr "Najdi pre_dhodno"
 
@@ -117,8 +116,7 @@ msgstr "Najdi pre_dhodno"
 msgid "Find previous occurrence of the search string"
 msgstr "Najde predhodno pojavljanje iskanega niza"
 
-#: ../src/eggfindbar.c:320
-#: ../src/giggle-window.c:1014
+#: ../src/eggfindbar.c:320 ../src/giggle-window.c:1014
 msgid "Find Ne_xt"
 msgstr "Najdi na_slednje"
 
@@ -156,8 +154,7 @@ msgstr ""
 "Prišlo je do napake med pridobivanjem seznama vej:\n"
 "%s"
 
-#: ../src/giggle-branches-view.c:145
-#: ../src/giggle-revision-view.c:197
+#: ../src/giggle-branches-view.c:145 ../src/giggle-revision-view.c:197
 msgid "Branches:"
 msgstr "Veje:"
 
@@ -185,8 +182,7 @@ msgstr "Izberite mesto klonirane veje"
 msgid "Clone in _folder:"
 msgstr "Kloniraj v _mapo:"
 
-#: ../src/giggle-diff-tree-view.c:140
-#: ../src/giggle-file-list.c:1660
+#: ../src/giggle-diff-tree-view.c:140 ../src/giggle-file-list.c:1660
 #, c-format
 msgid ""
 "An error occurred when retrieving different files list:\n"
@@ -247,41 +243,33 @@ msgstr ""
 "Prišlo je do napake med dodajanem datoteke v git:\n"
 "%s"
 
-#: ../src/giggle-file-list.c:816
-#: ../src/giggle-file-list.c:842
-#: ../src/giggle-rev-list-view.c:1173
-#: ../src/giggle-rev-list-view.c:1204
+#: ../src/giggle-file-list.c:816 ../src/giggle-file-list.c:842
+#: ../src/giggle-rev-list-view.c:1173 ../src/giggle-rev-list-view.c:1204
 #, c-format
 msgid "Could not save the patch as %s"
 msgstr "Popravka ni mogoče shraniti kot %s"
 
-#: ../src/giggle-file-list.c:821
-#: ../src/giggle-file-list.c:847
-#: ../src/giggle-rev-list-view.c:1181
-#: ../src/giggle-rev-list-view.c:1209
+#: ../src/giggle-file-list.c:821 ../src/giggle-file-list.c:847
+#: ../src/giggle-rev-list-view.c:1181 ../src/giggle-rev-list-view.c:1209
 msgid "No error was given"
 msgstr "Napaka ni bila podana"
 
-#: ../src/giggle-file-list.c:868
-#: ../src/giggle-rev-list-view.c:1235
+#: ../src/giggle-file-list.c:868 ../src/giggle-rev-list-view.c:1235
 #, c-format
 msgid "Patch saved as %s"
 msgstr "Popravek shranjen kot %s"
 
-#: ../src/giggle-file-list.c:872
-#: ../src/giggle-rev-list-view.c:1239
+#: ../src/giggle-file-list.c:872 ../src/giggle-rev-list-view.c:1239
 #, c-format
 msgid "Created in project directory"
 msgstr "Ustvarjeno v mapi projekta"
 
-#: ../src/giggle-file-list.c:875
-#: ../src/giggle-rev-list-view.c:1242
+#: ../src/giggle-file-list.c:875 ../src/giggle-rev-list-view.c:1242
 #, c-format
 msgid "Created in directory %s"
 msgstr "Ustvarjeno v mapi %s"
 
-#: ../src/giggle-file-list.c:910
-#: ../src/giggle-rev-list-view.c:1293
+#: ../src/giggle-file-list.c:910 ../src/giggle-rev-list-view.c:1293
 msgid "Create Patch"
 msgstr "Ustvari popravek"
 
@@ -290,8 +278,12 @@ msgid "Delete glob pattern?"
 msgstr "Ali naj se izbriše splošni vzorec?"
 
 #: ../src/giggle-file-list.c:1016
-msgid "The selected file was shadowed by a glob pattern that may be hiding other files, delete it?"
-msgstr "Izbrano datoteko je zasenčil splošni vzorec, ki morda skriva druge datoteke. Ali naj bo izbrisan?"
+msgid ""
+"The selected file was shadowed by a glob pattern that may be hiding other "
+"files, delete it?"
+msgstr ""
+"Izbrano datoteko je zasenčil splošni vzorec, ki morda skriva druge datoteke. "
+"Ali naj bo izbrisan?"
 
 #: ../src/giggle-file-list.c:1411
 msgid "_Commit Changes"
@@ -301,8 +293,7 @@ msgstr "_Uveljavi spremembe"
 msgid "A_dd file to repository"
 msgstr "_Dodaj datoteko v skladišče"
 
-#: ../src/giggle-file-list.c:1414
-#: ../src/giggle-rev-list-view.c:1638
+#: ../src/giggle-file-list.c:1414 ../src/giggle-rev-list-view.c:1638
 msgid "Create _Patch"
 msgstr "Ustvari pop_ravek"
 
@@ -323,7 +314,6 @@ msgid "Project"
 msgstr "Projekt"
 
 #: ../src/giggle-helpers.c:176
-#| msgid "An error ocurred:"
 msgid "An error occurred:"
 msgstr "Prišlo je do napake:"
 
@@ -331,8 +321,7 @@ msgstr "Prišlo je do napake:"
 msgid "Clone a repository"
 msgstr "Kloniraj skladišče"
 
-#: ../src/giggle-main.c:37
-#: ../src/giggle-remotes-view.c:267
+#: ../src/giggle-main.c:37 ../src/giggle-remotes-view.c:267
 msgid "URL"
 msgstr "Naslov URL"
 
@@ -359,11 +348,11 @@ msgstr "Giggle je grafično začelje za sledilnik vsebine git."
 
 #: ../src/giggle-main.c:88
 #, c-format
-msgid "Try `%s --help' for more information.\n"
-msgstr "Poskusite `%s --help` za več podrobnosti.\n"
+msgid "Try '%s --help' for more information.\n"
+msgstr "Poskusite '%s --help' za več podrobnosti.\n"
 
 #: ../src/giggle-remote-editor.c:146
-msgid "Click to add mapping..."
+msgid "Click to add mapping…"
 msgstr "Kliknite za dodajanje preslikave ..."
 
 #: ../src/giggle-remote-editor.c:365
@@ -379,26 +368,22 @@ msgid "Name"
 msgstr "Ime"
 
 #: ../src/giggle-remotes-view.c:280
-msgid "Double click to add remote..."
-msgstr "Dvoklik za dodajanje oddaljenega ..."
+msgid "Double click to add remote…"
+msgstr "Kliknite dvoklik za dodajanje oddaljenega ..."
 
-#: ../src/giggle-revision-view.c:183
-#: ../src/giggle-view-file.c:1216
+#: ../src/giggle-revision-view.c:183 ../src/giggle-view-file.c:1216
 msgid "Author:"
 msgstr "Avtor:"
 
-#: ../src/giggle-revision-view.c:184
-#: ../src/giggle-view-file.c:1217
+#: ../src/giggle-revision-view.c:184 ../src/giggle-view-file.c:1217
 msgid "Committer:"
 msgstr "Uveljavitelj:"
 
-#: ../src/giggle-revision-view.c:195
-#: ../src/giggle-view-file.c:1218
+#: ../src/giggle-revision-view.c:195 ../src/giggle-view-file.c:1218
 msgid "Date:"
 msgstr "Datum:"
 
-#: ../src/giggle-revision-view.c:196
-#: ../src/giggle-view-file.c:1219
+#: ../src/giggle-revision-view.c:196 ../src/giggle-view-file.c:1219
 msgid "SHA:"
 msgstr "SHA:"
 
@@ -507,7 +492,7 @@ msgid "Details"
 msgstr "Podrobnosti"
 
 #: ../src/giggle-short-list.c:416
-msgid "Show A_ll..."
+msgid "Show A_ll…"
 msgstr "Pokaži _vse ..."
 
 #: ../src/giggle-view-diff.c:107
@@ -572,8 +557,7 @@ msgstr ""
 "Med pridobivanjem reference datoteke je prišlo do napake:\n"
 "%s"
 
-#: ../src/giggle-view-file.c:969
-#: ../src/giggle-view-history.c:248
+#: ../src/giggle-view-file.c:969 ../src/giggle-view-history.c:248
 #: ../src/giggle-view-history.c:342
 #, c-format
 msgid ""
@@ -680,11 +664,11 @@ msgid "Giggle Website"
 msgstr "Spletna stran Giggle"
 
 #: ../src/giggle-window.c:1007
-msgid "_Find..."
+msgid "_Find…"
 msgstr "_Najdi ..."
 
 #: ../src/giggle-window.c:1008
-msgid "Find..."
+msgid "Find…"
 msgstr "Najdi ..."
 
 #: ../src/giggle-window.c:1015
@@ -768,8 +752,8 @@ msgid "Report _Issue"
 msgstr "Poročaj _težavo"
 
 #: ../src/giggle-window.c:1081
-msgid "Report an issue you've found in Giggle"
-msgstr "Poročilo o napaki, ki ste jo našli v Giggle"
+msgid "Report an issue you’ve found in Giggle"
+msgstr "Pošljite poročilo o napaki v programu Giggle"
 
 #: ../src/giggle-window.c:1085
 msgid "About this application"
@@ -816,3 +800,5 @@ msgstr ""
 "Prišlo je do napake med shranjevanjem v datoteko:\n"
 "%s"
 
+#~ msgid "Find..."
+#~ msgstr "Najdi ..."
