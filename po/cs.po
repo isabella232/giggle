@@ -2,15 +2,15 @@
 # Copyright (C) 2010 giggle's COPYRIGHT HOLDER
 # This file is distributed under the same license as the giggle package.
 #
-# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012.
+# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2012-09-21 13:20+0000\n"
-"PO-Revision-Date: 2012-10-07 11:10+0200\n"
+"POT-Creation-Date: 2012-12-09 13:31+0000\n"
+"PO-Revision-Date: 2013-01-23 07:11+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -345,11 +345,11 @@ msgstr "Giggle je grafické rozhraní ke správci obsahu git."
 
 #: ../src/giggle-main.c:88
 #, c-format
-msgid "Try `%s --help' for more information.\n"
+msgid "Try '%s --help' for more information.\n"
 msgstr "Pokud chcete více informací, zkuste „%s --help“.\n"
 
 #: ../src/giggle-remote-editor.c:146
-msgid "Click to add mapping..."
+msgid "Click to add mapping…"
 msgstr "Kliknutím přidáte mapování…"
 
 #: ../src/giggle-remote-editor.c:365
@@ -365,7 +365,7 @@ msgid "Name"
 msgstr "Název"
 
 #: ../src/giggle-remotes-view.c:280
-msgid "Double click to add remote..."
+msgid "Double click to add remote…"
 msgstr "Dvojitým kliknutím přidáte vzdálenou větev…"
 
 #: ../src/giggle-revision-view.c:183 ../src/giggle-view-file.c:1216
@@ -489,7 +489,7 @@ msgid "Details"
 msgstr "Podrobnosti"
 
 #: ../src/giggle-short-list.c:416
-msgid "Show A_ll..."
+msgid "Show A_ll…"
 msgstr "Zobrazit _všechny…"
 
 #: ../src/giggle-view-diff.c:107
@@ -661,11 +661,11 @@ msgid "Giggle Website"
 msgstr "Webové stránky Giggle"
 
 #: ../src/giggle-window.c:1007
-msgid "_Find..."
+msgid "_Find…"
 msgstr "_Najít…"
 
 #: ../src/giggle-window.c:1008
-msgid "Find..."
+msgid "Find…"
 msgstr "Najít…"
 
 #: ../src/giggle-window.c:1015
@@ -749,7 +749,7 @@ msgid "Report _Issue"
 msgstr "Nahlásit _problém"
 
 #: ../src/giggle-window.c:1081
-msgid "Report an issue you've found in Giggle"
+msgid "Report an issue you’ve found in Giggle"
 msgstr "Nahlásit problém, který jste našli v aplikaci Giggle"
 
 #: ../src/giggle-window.c:1085
