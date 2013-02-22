@@ -1,0 +1,801 @@
+# Serbian translation for giggle.
+# Copyright (C) 2013 giggle's COPYRIGHT HOLDER
+# This file is distributed under the same license as the giggle package.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: giggle master\n"
+"Report-Msgid-Bugs-To: "
+"http://bugzilla.gnome.org/enter_bug.cgi?product=giggle&keywords=I18N+L10N\n"
+"POT-Creation-Date: 2013-02-16 21:27+0000\n"
+"PO-Revision-Date: 2013-02-22 11:38+0200\n"
+"Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/giggle.desktop.in.h:1
+msgid "Giggle"
+msgstr "Gitorko"
+
+#: ../data/giggle.desktop.in.h:2
+msgid "Git repository viewer"
+msgstr "Preglednik riznice gita"
+
+#: ../data/main-window.ui.h:1
+msgid "URL:"
+msgstr "Adresa:"
+
+#: ../data/main-window.ui.h:2
+msgid "Name:"
+msgstr "Naziv:"
+
+#: ../data/main-window.ui.h:3 ../src/giggle-remote-editor.c:172
+msgid "Branches"
+msgstr "Grane"
+
+#: ../libgiggle/giggle-plugin.c:526
+#, c-format
+msgid "Cannot find plugin description in '%s'"
+msgstr "Ne mogu da pronađem opis priključka u „%s“"
+
+#: ../plugins/hello-world.xml.h:1
+msgid "Demonstration of Giggle's Plugin System"
+msgstr "Predstavljanje Gitorkovog sistema priključaka"
+
+#: ../plugins/hello-world.xml.h:2
+msgid "Hello World"
+msgstr "Pozdrav narode"
+
+#: ../plugins/hello-world.xml.h:3
+msgid "Check if the plugin system works"
+msgstr "Proveri da li radi sistem priključaka"
+
+#: ../plugins/giggle-personal-details-window.c:80
+msgid "There was an error setting the configuration"
+msgstr "Došlo je do greške postavljanja podešavanja"
+
+#: ../plugins/giggle-personal-details-window.c:182
+msgid "There was an error getting the configuration"
+msgstr "Došlo je do greške dobavljanja podešavanja"
+
+#: ../plugins/giggle-personal-details-window.c:246
+msgid "_Name:"
+msgstr "_Ime:"
+
+#: ../plugins/giggle-personal-details-window.c:256
+msgid "_Email:"
+msgstr "_El. pošta:"
+
+#: ../plugins/giggle-personal-details-window.c:269
+#: ../plugins/personal-details.xml.h:2
+msgid "Personal Details"
+msgstr "Lični podaci"
+
+#: ../plugins/giggle-view-terminal.c:95
+msgid "_Terminal"
+msgstr "_Terminal"
+
+#: ../plugins/giggle-view-terminal.c:96
+msgid "Issue git commands via terminal"
+msgstr "Zadajte naredbe gita putem terminala"
+
+#: ../plugins/personal-details.xml.h:1
+msgid "Edit personal details"
+msgstr "Uredite lične podatke"
+
+#: ../plugins/terminal-view.xml.h:1
+msgid "Terminal window"
+msgstr "Prozor terminala"
+
+#: ../plugins/terminal-view.xml.h:2
+msgid "Create _Terminal"
+msgstr "Napravi _terminal"
+
+#: ../plugins/terminal-view.xml.h:3
+msgid "Create new tab in git terminal"
+msgstr "Napravite novi jezičak u terminalu gita"
+
+#: ../src/eggfindbar.c:303
+msgid "Find:"
+msgstr "Nađi:"
+
+#: ../src/eggfindbar.c:312 ../src/giggle-window.c:1018
+msgid "Find Pre_vious"
+msgstr "Nađi _prethodno"
+
+#: ../src/eggfindbar.c:316
+msgid "Find previous occurrence of the search string"
+msgstr "Pronađite prethodni izraz zadate niske pretrage"
+
+#: ../src/eggfindbar.c:320 ../src/giggle-window.c:1014
+msgid "Find Ne_xt"
+msgstr "Nađi _sledeće"
+
+#: ../src/eggfindbar.c:324
+msgid "Find next occurrence of the search string"
+msgstr "Pronađite sledeći izraz zadate niske pretrage"
+
+#: ../src/eggfindbar.c:331
+msgid "C_ase Sensitive"
+msgstr "Razlikuj _veličinu slova"
+
+#: ../src/eggfindbar.c:335
+msgid "Toggle case sensitive search"
+msgstr "Uključite pretragu osetljivu na veličinu slova"
+
+#: ../src/giggle-authors-view.c:78
+#, c-format
+msgid ""
+"An error occurred when retrieving authors list:\n"
+"%s"
+msgstr ""
+"Došlo je do greške prilikom dovlačenja spiska autora:\n"
+"%s"
+
+#: ../src/giggle-authors-view.c:144
+msgid "Authors:"
+msgstr "Autori:"
+
+#: ../src/giggle-branches-view.c:79
+#, c-format
+msgid ""
+"An error occurred when retrieving branches list:\n"
+"%s"
+msgstr ""
+"Došlo je do greške prilikom dovlačenja spiska grana:\n"
+"%s"
+
+#: ../src/giggle-branches-view.c:145 ../src/giggle-revision-view.c:197
+msgid "Branches:"
+msgstr "Grane:"
+
+#: ../src/giggle-clone-dialog.c:246
+msgid "Clone Repository"
+msgstr "Preslikaj riznicu"
+
+#: ../src/giggle-clone-dialog.c:254
+msgid "Cl_one"
+msgstr "_Preslikaj"
+
+#: ../src/giggle-clone-dialog.c:278
+msgid "_Repository:"
+msgstr "_Riznica:"
+
+#: ../src/giggle-clone-dialog.c:290
+msgid "_Local name:"
+msgstr "_Naziv mesta:"
+
+#: ../src/giggle-clone-dialog.c:295
+msgid "Please select a location for the clone"
+msgstr "Izaberite mesto za smeštaj klona"
+
+#: ../src/giggle-clone-dialog.c:298
+msgid "Clone in _folder:"
+msgstr "Preslikaj u _fasciklu:"
+
+#: ../src/giggle-diff-tree-view.c:140 ../src/giggle-file-list.c:1660
+#, c-format
+msgid ""
+"An error occurred when retrieving different files list:\n"
+"%s"
+msgstr ""
+"Došlo je do greške prilikom dovlačenja spiska različitih datoteka:\n"
+"%s"
+
+#: ../src/giggle-diff-tree-view.c:207
+msgid "Changed files"
+msgstr "Izmenjene datoteke"
+
+#: ../src/giggle-diff-view.c:709
+#, c-format
+msgid ""
+"An error occurred when retrieving a diff:\n"
+"%s"
+msgstr ""
+"Došlo je do greške prilikom dovlačenja razlike:\n"
+"%s"
+
+#: ../src/giggle-diff-window.c:80
+msgid "Commit changes"
+msgstr "Ugradi izmene"
+
+#: ../src/giggle-diff-window.c:102
+msgid "Revision log:"
+msgstr "Dnevnik prerade:"
+
+#: ../src/giggle-diff-window.c:130
+msgid "Co_mmit"
+msgstr "U_gradi"
+
+#: ../src/giggle-diff-window.c:202
+#, c-format
+msgid ""
+"An error occurred when committing:\n"
+"%s"
+msgstr ""
+"Došlo je do greške prilikom ugradnje:\n"
+"%s"
+
+#: ../src/giggle-file-list.c:387
+#, c-format
+msgid ""
+"An error occurred when retrieving the file list:\n"
+"%s"
+msgstr ""
+"Došlo je do greške prilikom dovlačenja spiska datoteke:\n"
+"%s"
+
+#: ../src/giggle-file-list.c:756
+#, c-format
+msgid ""
+"An error occurred when adding a file to git:\n"
+"%s"
+msgstr ""
+"Došlo je do greške prilikom dodavanja datoteke u git:\n"
+"%s"
+
+#: ../src/giggle-file-list.c:816 ../src/giggle-file-list.c:842
+#: ../src/giggle-rev-list-view.c:1173 ../src/giggle-rev-list-view.c:1204
+#, c-format
+msgid "Could not save the patch as %s"
+msgstr "Ne mogu da sačuvam zakrpu kao „%s“"
+
+#: ../src/giggle-file-list.c:821 ../src/giggle-file-list.c:847
+#: ../src/giggle-rev-list-view.c:1181 ../src/giggle-rev-list-view.c:1209
+msgid "No error was given"
+msgstr "Nema poruka o greškama"
+
+#: ../src/giggle-file-list.c:868 ../src/giggle-rev-list-view.c:1235
+#, c-format
+msgid "Patch saved as %s"
+msgstr "Zakrpa je sačuvana kao „%s“"
+
+#: ../src/giggle-file-list.c:872 ../src/giggle-rev-list-view.c:1239
+#, c-format
+msgid "Created in project directory"
+msgstr "Napravljeno u direktorijumu projekta"
+
+#: ../src/giggle-file-list.c:875 ../src/giggle-rev-list-view.c:1242
+#, c-format
+msgid "Created in directory %s"
+msgstr "Napravljeno u direktorijumu „%s“"
+
+#: ../src/giggle-file-list.c:910 ../src/giggle-rev-list-view.c:1293
+msgid "Create Patch"
+msgstr "Izradi zakrpu"
+
+#: ../src/giggle-file-list.c:1013
+msgid "Delete glob pattern?"
+msgstr "Da obrišem opšti šablon?"
+
+#: ../src/giggle-file-list.c:1016
+msgid ""
+"The selected file was shadowed by a glob pattern that may be hiding other "
+"files, delete it?"
+msgstr ""
+"Izabrana datoteka je zasenčena opštim šablonom koji možda krije ostale "
+"datoteke, da je obrišem?"
+
+#: ../src/giggle-file-list.c:1411
+msgid "_Commit Changes"
+msgstr "_Ugradi izmene"
+
+#: ../src/giggle-file-list.c:1413
+msgid "A_dd file to repository"
+msgstr "Do_daj datoteku u riznicu"
+
+#: ../src/giggle-file-list.c:1414 ../src/giggle-rev-list-view.c:1638
+msgid "Create _Patch"
+msgstr "Izradi _zakrpu"
+
+#: ../src/giggle-file-list.c:1415
+msgid "_Add to .gitignore"
+msgstr "_Dodaj u „.gitignore“"
+
+#: ../src/giggle-file-list.c:1416
+msgid "_Remove from .gitignore"
+msgstr "_Ukloni iz „.gitignore“"
+
+#: ../src/giggle-file-list.c:1420
+msgid "_Show all files"
+msgstr "_Prikaži sve datoteke"
+
+#: ../src/giggle-file-list.c:1459
+msgid "Project"
+msgstr "Projekat"
+
+#: ../src/giggle-helpers.c:176
+msgid "An error occurred:"
+msgstr "Došlo je do greške:"
+
+#: ../src/giggle-main.c:36
+msgid "Clone a repository"
+msgstr "Preslikajte riznicu"
+
+#: ../src/giggle-main.c:37 ../src/giggle-remotes-view.c:267
+msgid "URL"
+msgstr "Adresa"
+
+#: ../src/giggle-main.c:40
+msgid "Show the diff window"
+msgstr "Prikazuje prozor razlika"
+
+#: ../src/giggle-main.c:44
+msgid "Show version information and exit"
+msgstr "Prikazuje podatke o izdanju i izlazi"
+
+#: ../src/giggle-main.c:47
+msgid "[DIRECTORY]"
+msgstr "[DIREKTORIJUM]"
+
+#: ../src/giggle-main.c:79
+#, c-format
+msgid "Report errors (in English, with LC_ALL=C) to <%s>."
+msgstr "Prijavite greške (na engleskom, sa „LC_ALL=C“) na <%s>."
+
+#: ../src/giggle-main.c:80
+msgid "Giggle is a graphical frontend for the git content tracker."
+msgstr "Gitorko je grafički čelnik za pratioca sadržaja gita."
+
+#: ../src/giggle-main.c:88
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "Probajte „%s --help“ za više podataka.\n"
+
+#: ../src/giggle-remote-editor.c:146
+msgid "Click to add mapping…"
+msgstr "Klikni da dodaš mapiranje…"
+
+#: ../src/giggle-remote-editor.c:365
+msgid "Unnamed"
+msgstr "Neimanovano"
+
+#: ../src/giggle-remotes-view.c:256
+msgid "Icon"
+msgstr "Ikonica"
+
+#: ../src/giggle-remotes-view.c:262
+msgid "Name"
+msgstr "Naziv"
+
+#: ../src/giggle-remotes-view.c:280
+msgid "Double click to add remote…"
+msgstr "Dvoklik za dodavanje udaljenog…"
+
+#: ../src/giggle-revision-view.c:183 ../src/giggle-view-file.c:1216
+msgid "Author:"
+msgstr "Autor:"
+
+#: ../src/giggle-revision-view.c:184 ../src/giggle-view-file.c:1217
+msgid "Committer:"
+msgstr "Pošiljalac:"
+
+#: ../src/giggle-revision-view.c:195 ../src/giggle-view-file.c:1218
+msgid "Date:"
+msgstr "Datum:"
+
+#: ../src/giggle-revision-view.c:196 ../src/giggle-view-file.c:1219
+msgid "SHA:"
+msgstr "SHA:"
+
+#: ../src/giggle-revision-view.c:216
+msgid "Change Log:"
+msgstr "Dnevnik izmena:"
+
+#: ../src/giggle-revision-view.c:505
+msgid "_Details"
+msgstr "_Pojedinosti"
+
+#: ../src/giggle-revision-view.c:506
+msgid "Display revision details"
+msgstr "Prikažite pojedinosti prerade"
+
+#: ../src/giggle-rev-list-view.c:331
+#, c-format
+msgid "Delete branch \"%s\""
+msgstr "Obriši granu „%s“"
+
+#: ../src/giggle-rev-list-view.c:334
+#, c-format
+msgid "Delete tag \"%s\""
+msgstr "Obriši oznaku „%s“"
+
+#: ../src/giggle-rev-list-view.c:504
+msgid "Branch"
+msgstr "Grana"
+
+#: ../src/giggle-rev-list-view.c:507
+msgid "Tag"
+msgstr "Oznaka"
+
+#: ../src/giggle-rev-list-view.c:510
+msgid "Remote"
+msgstr "Udaljeni"
+
+#: ../src/giggle-rev-list-view.c:1063
+msgid "Enter branch name:"
+msgstr "Unesite naziv grane:"
+
+#: ../src/giggle-rev-list-view.c:1114
+msgid "Enter tag name:"
+msgstr "Unesite naziv oznake:"
+
+#: ../src/giggle-rev-list-view.c:1175
+#, c-format
+msgid "Could not create patch"
+msgstr "Ne mogoh da napravim zakrpu"
+
+#: ../src/giggle-rev-list-view.c:1429
+msgid "Uncommitted changes"
+msgstr "Neugrađene izmene"
+
+#. TRANSLATORS: it's a strftime format string
+#: ../src/giggle-rev-list-view.c:1483
+msgid "%I:%M %p"
+msgstr "%I:%M %p"
+
+#. TRANSLATORS: it's a strftime format string
+#: ../src/giggle-rev-list-view.c:1496
+msgid "%a %I:%M %p"
+msgstr "%a u %I:%M %p"
+
+#. TRANSLATORS: it's a strftime format string
+#: ../src/giggle-rev-list-view.c:1508
+msgid "%b %d %I:%M %p"
+msgstr "%d %b. u %I:%M %p"
+
+#. it's older
+#. TRANSLATORS: it's a strftime format string
+#: ../src/giggle-rev-list-view.c:1513
+msgid "%b %d %Y"
+msgstr "%d. %b %Y."
+
+#: ../src/giggle-rev-list-view.c:1635
+msgid "Commit"
+msgstr "Ugradi"
+
+#: ../src/giggle-rev-list-view.c:1636
+msgid "Create _Branch"
+msgstr "Napravi _granu"
+
+#: ../src/giggle-rev-list-view.c:1637
+msgid "Create _Tag"
+msgstr "Napravi _oznaku"
+
+#: ../src/giggle-rev-list-view.c:1703
+msgid "Graph"
+msgstr "Dijagram"
+
+#: ../src/giggle-rev-list-view.c:1721
+msgid "Short Log"
+msgstr "Kratak dnevnik"
+
+#: ../src/giggle-rev-list-view.c:1740
+msgid "Author"
+msgstr "Autor"
+
+#: ../src/giggle-rev-list-view.c:1757
+msgid "Date"
+msgstr "Datum"
+
+#: ../src/giggle-short-list.c:300
+msgid "Details"
+msgstr "Pojedinosti"
+
+#: ../src/giggle-short-list.c:416
+msgid "Show A_ll…"
+msgstr "Prikaži _sve…"
+
+#: ../src/giggle-view-diff.c:107
+#, c-format
+msgid "Change %d of %d"
+msgstr "Ukupno izmena: %d od %d"
+
+#: ../src/giggle-view-diff.c:182
+msgid "_Previous Change"
+msgstr "_Prethodna izmena"
+
+#: ../src/giggle-view-diff.c:182
+msgid "View previous change"
+msgstr "Pregledajte prethodnu izmenu"
+
+#: ../src/giggle-view-diff.c:186
+msgid "_Next Change"
+msgstr "_Sledeća izmena"
+
+#: ../src/giggle-view-diff.c:186
+msgid "View next change"
+msgstr "Pregledajte sledeću izmenu"
+
+#: ../src/giggle-view-diff.c:348
+msgid "_Changes"
+msgstr "_Izmene"
+
+#: ../src/giggle-view-diff.c:349
+msgid "Browse a revision's changes"
+msgstr "Pregledajte izmene prerade"
+
+#: ../src/giggle-view-file.c:325
+msgid "_Goto Line Number"
+msgstr "_Idi na red"
+
+#: ../src/giggle-view-file.c:326
+msgid "Highlight specified line number"
+msgstr "Istaknite broj navedenog reda"
+
+#: ../src/giggle-view-file.c:330
+msgid "Show _Changes"
+msgstr "Prikaži _izmene"
+
+#: ../src/giggle-view-file.c:331
+msgid "Show changes for selected revision"
+msgstr "Prikažite izmene za izabranu preradu"
+
+#: ../src/giggle-view-file.c:335
+msgid "Select _Revision"
+msgstr "Izaberi _preradu"
+
+#: ../src/giggle-view-file.c:336
+msgid "Select revision of selected line"
+msgstr "Izaberite preradu izabranog reda"
+
+#: ../src/giggle-view-file.c:898
+#, c-format
+msgid ""
+"An error occurred when getting file ref:\n"
+"%s"
+msgstr ""
+"Došlo je do greške prilikom dovlačenja upute datoteke:\n"
+"%s"
+
+#: ../src/giggle-view-file.c:969 ../src/giggle-view-history.c:248
+#: ../src/giggle-view-history.c:342
+#, c-format
+msgid ""
+"An error occurred when getting the revisions list:\n"
+"%s"
+msgstr ""
+"Došlo je do greške prilikom dovlačenja spiska prerada:\n"
+"%s"
+
+#: ../src/giggle-view-file.c:1129
+msgid "Line Number:"
+msgstr "Broj reda:"
+
+#: ../src/giggle-view-file.c:1567
+msgid "_Browse"
+msgstr "_Razgledaj"
+
+#: ../src/giggle-view-file.c:1568
+msgid "Browse the files of this project"
+msgstr "Razgledajte datoteke ovog projekta"
+
+#: ../src/giggle-view-history.c:842
+msgid "_History"
+msgstr "_Istorijat"
+
+#: ../src/giggle-view-history.c:843
+msgid "Browse the history of this project"
+msgstr "Razgledajte istorijat ovog projekta"
+
+#: ../src/giggle-view-summary.c:117
+msgid "Description:"
+msgstr "Opis:"
+
+#: ../src/giggle-view-summary.c:167
+msgid "Remotes:"
+msgstr "Udaljeni:"
+
+#: ../src/giggle-view-summary.c:195
+msgid "_Summary"
+msgstr "_Sažetak"
+
+#: ../src/giggle-view-summary.c:198
+msgid "_Branches"
+msgstr "_Grane"
+
+#: ../src/giggle-view-summary.c:201
+msgid "_Authors"
+msgstr "_Autori"
+
+#: ../src/giggle-view-summary.c:204
+msgid "_Remotes"
+msgstr "_Udaljeni"
+
+#: ../src/giggle-window.c:546
+#, c-format
+msgid "The directory '%s' does not look like a git repository."
+msgstr "Direktorijum „%s“ ne izgleda da je riznica gita."
+
+#: ../src/giggle-window.c:629
+msgid "Select git repository"
+msgstr "Izaberite riznicu gita"
+
+#: ../src/giggle-window.c:682
+#, c-format
+msgid "Properties of %s"
+msgstr "Svojstva za %s"
+
+#: ../src/giggle-window.c:912
+msgid "Contributors:"
+msgstr "Doprinosioci:"
+
+#: ../src/giggle-window.c:925
+msgid ""
+"Copyright © 2007 - 2008 Imendio AB\n"
+"Copyright © 2008 - 2009 Mathias Hasselmann\n"
+"Copyright © 2009 - 2012 The Giggle authors"
+msgstr ""
+"Autorska prava © 2007 — 2008 Imendio AB\n"
+"Autorska prava © 2008 — 2009 Matijas Haselman\n"
+"Autorska prava © 2009 — 2012 Autori Gitorka"
+
+#. Translators: This is a special message that shouldn't be translated
+#. * literally. It is used in the about box to give credits to
+#. * the translators.
+#. * Thus, you should translate it to your name and email address.
+#. * You should also include other translators who have contributed to
+#. * this translation; in that case, please write each of them on a separate
+#. * line seperated by newlines (\n).
+#.
+#: ../src/giggle-window.c:937
+msgid "translator-credits"
+msgstr ""
+"  Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
+"\n"
+"http://prevod.org — prevod na srpski jezik"
+
+#: ../src/giggle-window.c:942
+msgid "A graphical frontend for Git"
+msgstr "Grafički čelnik za Git"
+
+#: ../src/giggle-window.c:947
+msgid "About Giggle"
+msgstr "O Gitorku"
+
+#: ../src/giggle-window.c:951
+msgid "Giggle Website"
+msgstr "Veb sajt Gitorka"
+
+#: ../src/giggle-window.c:1007
+msgid "_Find…"
+msgstr "_Nađi…"
+
+#: ../src/giggle-window.c:1008
+msgid "Find…"
+msgstr "Nađi…"
+
+#: ../src/giggle-window.c:1015
+msgid "Find next match"
+msgstr "Pronađite sledeće poklapanje"
+
+#: ../src/giggle-window.c:1019
+msgid "Find previous match"
+msgstr "Pronađite prethodno poklapanje"
+
+#: ../src/giggle-window.c:1025
+msgid "_Project"
+msgstr "_Projekat"
+
+#: ../src/giggle-window.c:1026
+msgid "_Edit"
+msgstr "_Uređivanje"
+
+#: ../src/giggle-window.c:1027
+msgid "_Go"
+msgstr "_Idi"
+
+#: ../src/giggle-window.c:1028
+msgid "_View"
+msgstr "_Pregled"
+
+#: ../src/giggle-window.c:1029
+msgid "_Help"
+msgstr "Po_moć"
+
+#: ../src/giggle-window.c:1032
+msgid "Open a git repository"
+msgstr "Otvorite riznicu gita"
+
+#: ../src/giggle-window.c:1036
+msgid "Clone _location"
+msgstr "Preslikaj _mesto"
+
+#: ../src/giggle-window.c:1036
+msgid "Clone a location"
+msgstr "Preslikajte mesto"
+
+#: ../src/giggle-window.c:1041
+msgid "_Save patch"
+msgstr "_Sačuvaj zakrpu"
+
+#: ../src/giggle-window.c:1041
+msgid "Save a patch"
+msgstr "Sačuvajte zakrpu"
+
+#: ../src/giggle-window.c:1045
+msgid "_Diff current changes"
+msgstr "_Uporedi razlike tekućih izmena"
+
+#: ../src/giggle-window.c:1045
+msgid "Diff current changes"
+msgstr "Uporedite razlike tekućih izmena"
+
+#: ../src/giggle-window.c:1050
+msgid "Quit the application"
+msgstr "Izađite iz programa"
+
+#: ../src/giggle-window.c:1068
+msgid "Go backward in history"
+msgstr "Idite nazad u istorijatu"
+
+#: ../src/giggle-window.c:1072
+msgid "Go forward in history"
+msgstr "Idi napred u istorijatu"
+
+#: ../src/giggle-window.c:1076
+msgid "_Contents"
+msgstr "_Sadržaj"
+
+#: ../src/giggle-window.c:1077
+msgid "Show user guide for Giggle"
+msgstr "Prikažite Gitorkov vodič za korisnike"
+
+#: ../src/giggle-window.c:1080
+msgid "Report _Issue"
+msgstr "Prijavi _problem"
+
+#: ../src/giggle-window.c:1081
+msgid "Report an issue you’ve found in Giggle"
+msgstr "Izvestite o problemu koji ste našli u Gitorku"
+
+#: ../src/giggle-window.c:1085
+msgid "About this application"
+msgstr "O ovom programu"
+
+#: ../src/giggle-window.c:1092
+msgid "Show revision tree"
+msgstr "Prikaži stablo prerade"
+
+#: ../src/giggle-window.c:1099
+msgid "Show diffs by chunk"
+msgstr "Prikaži razlike prema delu"
+
+#: ../src/giggle-window.c:1102
+msgid "Show diffs by file"
+msgstr "Prikaži razlike prema datoteci"
+
+#: ../src/giggle-window.c:1105
+msgid "Show all diffs"
+msgstr "Prikaži sve razlike"
+
+#: ../src/giggle-window.c:1111
+msgid "Show and edit project properties"
+msgstr "Prikažite i uredite svojstva projekta"
+
+#: ../src/giggle-window.c:1115
+msgid "Refresh current view"
+msgstr "Osvežite tekući pregled"
+
+#: ../src/giggle-window.c:1454
+msgid "Search Inside _Patches"
+msgstr "Traži u _zakrpama"
+
+#: ../src/giggle-window.c:1723
+msgid "Save patch file"
+msgstr "Sačuvajte datoteku zakrpe"
+
+#: ../src/giggle-window.c:1743
+#, c-format
+msgid ""
+"An error occurred when saving to file:\n"
+"%s"
+msgstr ""
+"Došlo je do greške prilikom čuvanja u datoteku:\n"
+"%s"
