@@ -2,15 +2,16 @@
 # Copyright (C) 2010 giggle's COPYRIGHT HOLDER
 # This file is distributed under the same license as the giggle package.
 # Taylon Silmer <taylonsilva@gmail.com>, 2010.
+# Enrico Nicoletto <liverig@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2013-01-23 07:12+0000\n"
-"PO-Revision-Date: 2013-02-14 20:04-0300\n"
-"Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
+"POT-Creation-Date: 2013-02-22 10:42+0000\n"
+"PO-Revision-Date: 2013-02-28 21:29-0300\n"
+"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +38,7 @@ msgstr "Nome:"
 
 #: ../data/main-window.ui.h:3 ../src/giggle-remote-editor.c:172
 msgid "Branches"
-msgstr "Branches"
+msgstr "Ramos"
 
 #: ../libgiggle/giggle-plugin.c:526
 #, c-format
@@ -148,12 +149,12 @@ msgid ""
 "An error occurred when retrieving branches list:\n"
 "%s"
 msgstr ""
-"Ocorreu um erro ao obter a lista de branches:\n"
+"Ocorreu um erro ao obter a lista de ramos:\n"
 "%s"
 
 #: ../src/giggle-branches-view.c:145 ../src/giggle-revision-view.c:197
 msgid "Branches:"
-msgstr "Branches:"
+msgstr "Ramos:"
 
 #: ../src/giggle-clone-dialog.c:246
 msgid "Clone Repository"
@@ -399,20 +400,20 @@ msgstr "Exibe detalhes da revisão"
 #: ../src/giggle-rev-list-view.c:331
 #, c-format
 msgid "Delete branch \"%s\""
-msgstr "Excluir o branch \"%s\""
+msgstr "Excluir o ramo \"%s\""
 
 #: ../src/giggle-rev-list-view.c:334
 #, c-format
 msgid "Delete tag \"%s\""
-msgstr "Excluir a tag \"%s\""
+msgstr "Excluir o marcador (tag) \"%s\""
 
 #: ../src/giggle-rev-list-view.c:504
 msgid "Branch"
-msgstr "Branch"
+msgstr "Ramo"
 
 #: ../src/giggle-rev-list-view.c:507
 msgid "Tag"
-msgstr "Tag"
+msgstr "Marcador (tag)"
 
 #: ../src/giggle-rev-list-view.c:510
 msgid "Remote"
@@ -420,11 +421,11 @@ msgstr "Remoto"
 
 #: ../src/giggle-rev-list-view.c:1063
 msgid "Enter branch name:"
-msgstr "Digite o nome do branch:"
+msgstr "Digite o nome do ramo:"
 
 #: ../src/giggle-rev-list-view.c:1114
 msgid "Enter tag name:"
-msgstr "Digite o nome da tag:"
+msgstr "Digite o nome do marcador (tag):"
 
 #: ../src/giggle-rev-list-view.c:1175
 #, c-format
@@ -462,11 +463,11 @@ msgstr "Commit"
 
 #: ../src/giggle-rev-list-view.c:1636
 msgid "Create _Branch"
-msgstr "Criar _branch"
+msgstr "Criar _ramo"
 
 #: ../src/giggle-rev-list-view.c:1637
 msgid "Create _Tag"
-msgstr "Criar _tag"
+msgstr "Criar marcador (_tag)"
 
 #: ../src/giggle-rev-list-view.c:1703
 msgid "Graph"
@@ -598,7 +599,7 @@ msgstr "Re_sumo"
 
 #: ../src/giggle-view-summary.c:198
 msgid "_Branches"
-msgstr "_Branches"
+msgstr "_Ramos"
 
 #: ../src/giggle-view-summary.c:201
 msgid "_Authors"
@@ -648,7 +649,8 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Taylon Silmer <taylonsilva@gmail.com>.\n"
-"Rafael Ferreira <rafael.f.f1@gmail.com>."
+"Rafael Ferreira <rafael.f.f1@gmail.com>.\n"
+"Enrico Nicoletto <liverig@gmail.com>."
 
 #: ../src/giggle-window.c:942
 msgid "A graphical frontend for Git"
