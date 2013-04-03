@@ -40,6 +40,7 @@
 
 #include <gtksourceview/gtksourcelanguagemanager.h>
 #include <gtksourceview/gtksourceview.h>
+#include <gtksourceview/gtksourcebuffer.h>
 
 #define GIGGLE_TYPE_VIEW_FILE_SNAPSHOT            (giggle_view_file_snapshot_get_type ())
 #define GIGGLE_VIEW_FILE_SNAPSHOT(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), GIGGLE_TYPE_VIEW_FILE_SNAPSHOT, GiggleViewFileSnapshot))

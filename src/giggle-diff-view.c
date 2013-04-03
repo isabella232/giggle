@@ -29,6 +29,8 @@
 #include <glib/gi18n.h>
 #include <string.h>
 
+#include <gtksourceview/gtksourcebuffer.h>
+
 typedef struct GiggleDiffViewPriv GiggleDiffViewPriv;
 typedef struct GiggleDiffViewFile GiggleDiffViewFile;
 typedef struct GiggleDiffViewHunk GiggleDiffViewHunk;
