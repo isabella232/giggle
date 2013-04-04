@@ -665,6 +665,11 @@ diff_view_parse_patch (GiggleDiffView *view)
 			}
 		} else if (g_str_has_prefix (line, "--- a/") || g_str_has_prefix (line, "+++ b/")) {
 			g_free (filename); filename = g_strdup (line + 6);
+			if (strchr(filename, ' ')) {
+				/* Remove trailing TAB added by git for GNU patch compatibility */
+				size_t len = strlen (filename);
+				filename[len-1] = '\0';
+			}
 		}
 
 		g_free (line);
