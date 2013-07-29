@@ -21,7 +21,7 @@ AM_SILENT_RULES([yes])
 AC_PROG_CC
 AC_PROG_CC_C_O
 AC_PROG_CC_C99
-AC_GNU_SOURCE
+AC_USE_SYSTEM_EXTENSIONS
 gl_EARLY
 
 # For gnulib.
@@ -39,7 +39,7 @@ AC_C_INLINE
 
 # Checks for library functions.
 AC_FUNC_MKTIME
-AC_CHECK_FUNCS([localtime_r setlocale strchr strrchr strstr])
+AC_CHECK_FUNCS([strptime])
 
 
 AC_PATH_PROG(GLIB_MKENUMS, glib-mkenums)
@@ -123,19 +123,6 @@ AM_CONDITIONAL([USE_VTE], [test "x$have_vte" = "xyes"])
 dnl  ----------------------
 dnl | library requirements |-----------------------------------
 dnl  ----------------------
-
-dnl Make sure that strptime can be used (read: has gnu extensions)
-AC_MSG_CHECKING([for GNU extensions of strptime()])
-AC_RUN_IFELSE(
-  [AC_LANG_PROGRAM(
-    [[#include <time.h>]],
-    [[const char* date = "1168635922 +0100"; struct tm tm;
-      char const* returned = strptime(date, "%s %z", &tm);
-      return (!returned || *returned ? 1 : 0);]])],
-  [AC_MSG_RESULT(available)
-   AC_DEFINE([STRPTIME_HAS_GNU], [1],
-             [strptime() has GNU extensions %s and %z])],
-  [AC_MSG_RESULT(not available)])
 
 dnl Figure out which format string to use for time_t
 AC_MSG_CHECKING([size of time_t type])

@@ -130,7 +130,7 @@ git_revisions_get_command_line (GiggleJob  *job,
 static struct tm *
 git_revisions_get_time (const gchar *date)
 {
-#if STRPTIME_HAS_GNU
+#if HAVE_STRPTIME
 	const gchar *returned;
 	struct tm   *tm;
 
