@@ -31,9 +31,6 @@ gl_INIT
 LT_PREREQ([2.2.6])
 LT_INIT([disable-static win32-dll])
 
-# Checks for header files.
-AC_CHECK_HEADERS([fcntl.h locale.h stdlib.h string.h unistd.h])
-
 # Checks for typedefs, structures, and compiler characteristics.
 AC_C_INLINE
 
