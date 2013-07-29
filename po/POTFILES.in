@@ -1,11 +1,10 @@
-data/giggle.desktop.in
-[type: gettext/glade]data/main-window.ui
+data/main-window.ui
 libgiggle/giggle-plugin.c
-[type: gettext/glade]plugins/hello-world.xml
+plugins/hello-world.ui
 plugins/giggle-personal-details-window.c
 plugins/giggle-view-terminal.c
-[type: gettext/glade]plugins/personal-details.xml
-[type: gettext/glade]plugins/terminal-view.xml
+plugins/personal-details.ui
+plugins/terminal-view.ui
 src/eggfindbar.c
 src/giggle-authors-view.c
 src/giggle-branches-view.c

@@ -17,12 +17,12 @@ AM_LDFLAGS = \
 plugin_LTLIBRARIES = \
 	libpersonal-details.la
 dist_plugin_DATA = \
-	personal-details.xml
+	personal-details.ui
 
 noinst_LTLIBRARIES = \
 	libhello-world.la
 dist_noinst_DATA = \
-	hello-world.xml	    
+	hello-world.ui
 
 libhello_world_la_SOURCES = \
 	giggle-hello-world-plugin.c
@@ -46,7 +46,7 @@ if USE_VTE
 plugin_LTLIBRARIES += \
 	libterminal-view.la
 dist_plugin_DATA += \
-	terminal-view.xml
+	terminal-view.ui
 libterminal_view_la_SOURCES = \
 	giggle-view-terminal-plugin.c \
 	giggle-view-terminal.c \
