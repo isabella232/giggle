@@ -38,7 +38,18 @@ AC_DEFUN([gl_EARLY],
   m4_pattern_allow([^gl_LIBOBJS$])dnl a variable
   m4_pattern_allow([^gl_LTLIBOBJS$])dnl a variable
   AC_REQUIRE([gl_PROG_AR_RANLIB])
+  # Code from module extensions:
+  AC_REQUIRE([gl_USE_SYSTEM_EXTENSIONS])
+  # Code from module include_next:
   # Code from module manywarnings:
+  # Code from module mktime:
+  # Code from module multiarch:
+  # Code from module snippet/arg-nonnull:
+  # Code from module snippet/c++defs:
+  # Code from module snippet/warn-on-use:
+  # Code from module stddef:
+  # Code from module time:
+  # Code from module time_r:
   # Code from module warnings:
 ])
 
@@ -58,6 +69,21 @@ AC_DEFUN([gl_INIT],
   m4_pushdef([gl_LIBSOURCES_DIR], [])
   gl_COMMON
   gl_source_base='lib'
+  gl_FUNC_MKTIME
+  if test $REPLACE_MKTIME = 1; then
+    AC_LIBOBJ([mktime])
+    gl_PREREQ_MKTIME
+  fi
+  gl_TIME_MODULE_INDICATOR([mktime])
+  gl_MULTIARCH
+  gl_STDDEF_H
+  gl_HEADER_TIME_H
+  gl_TIME_R
+  if test $HAVE_LOCALTIME_R = 0 || test $REPLACE_LOCALTIME_R = 1; then
+    AC_LIBOBJ([time_r])
+    gl_PREREQ_TIME_R
+  fi
+  gl_TIME_MODULE_INDICATOR([time_r])
   # End of code from modules
   m4_ifval(gl_LIBSOURCES_LIST, [
     m4_syscmd([test ! -d ]m4_defn([gl_LIBSOURCES_DIR])[ ||
@@ -198,9 +224,26 @@ AC_DEFUN([gltests_LIBSOURCES], [
 # This macro records the list of files which have been installed by
 # gnulib-tool and may be removed by future gnulib-tool invocations.
 AC_DEFUN([gl_FILE_LIST], [
+  build-aux/snippet/arg-nonnull.h
+  build-aux/snippet/c++defs.h
+  build-aux/snippet/warn-on-use.h
   lib/dummy.c
+  lib/mktime-internal.h
+  lib/mktime.c
+  lib/stddef.in.h
+  lib/time.in.h
+  lib/time_r.c
   m4/00gnulib.m4
+  m4/extensions.m4
   m4/gnulib-common.m4
+  m4/include_next.m4
   m4/manywarnings.m4
+  m4/mktime.m4
+  m4/multiarch.m4
+  m4/stddef_h.m4
+  m4/time_h.m4
+  m4/time_r.m4
+  m4/warn-on-use.m4
   m4/warnings.m4
+  m4/wchar_t.m4
 ])

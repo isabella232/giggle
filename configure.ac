@@ -38,7 +38,6 @@ AC_CHECK_HEADERS([fcntl.h locale.h stdlib.h string.h unistd.h])
 AC_C_INLINE
 
 # Checks for library functions.
-AC_FUNC_MKTIME
 AC_CHECK_FUNCS([strptime])
 
 
