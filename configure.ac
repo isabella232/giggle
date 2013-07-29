@@ -21,6 +21,7 @@ AM_SILENT_RULES([yes])
 AC_PROG_CC
 AC_PROG_CC_C_O
 AC_PROG_CC_C99
+AC_GNU_SOURCE
 gl_EARLY
 
 # For gnulib.
@@ -122,8 +123,6 @@ AM_CONDITIONAL([USE_VTE], [test "x$have_vte" = "xyes"])
 dnl  ----------------------
 dnl | library requirements |-----------------------------------
 dnl  ----------------------
-
-AC_DEFINE(_GNU_SOURCE, 1, [Enable GNU Extensions])
 
 dnl Make sure that strptime can be used (read: has gnu extensions)
 AC_MSG_CHECKING([for GNU extensions of strptime()])
