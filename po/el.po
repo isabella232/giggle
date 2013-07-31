@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
-"Report-Msgid-Bugs-To: "
-"http://bugzilla.gnome.org/enter_bug.cgi?product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2013-04-18 19:13+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=giggle\n"
+"POT-Creation-Date: 2013-07-31 02:07+0100\n"
 "PO-Revision-Date: 2013-06-17 08:42+0300\n"
 "Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
 "Language-Team: team@gnome.gr\n"
@@ -21,117 +21,100 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/giggle.desktop.in.h:1
-msgid "Giggle"
-msgstr "Giggle"
-
-#: ../data/giggle.desktop.in.h:2
-msgid "Git repository viewer"
-msgstr "Προβολέας αποθετηρίου Git"
-
-#: ../data/main-window.ui.h:1
+#: data/main-window.ui:46
 msgid "URL:"
 msgstr "URL:"
 
-#: ../data/main-window.ui.h:2
+#: data/main-window.ui:60
 msgid "Name:"
 msgstr "Όνομα:"
 
-#: ../data/main-window.ui.h:3 ../src/giggle-remote-editor.c:172
+#: data/main-window.ui:85 src/giggle-remote-editor.c:172
 msgid "Branches"
 msgstr "Κλάδοι"
 
-#: ../libgiggle/giggle-plugin.c:526
+#: libgiggle/giggle-plugin.c:526
 #, c-format
 msgid "Cannot find plugin description in '%s'"
 msgstr "Αδύνατη η εύρεση περιγραφής προσθέτου στο '%s'"
 
-#: ../plugins/hello-world.xml.h:1
+#: plugins/hello-world.ui:3
 msgid "Demonstration of Giggle's Plugin System"
 msgstr "Επίδειξη του συστήματος προσθέτου Giggle"
 
-#: ../plugins/hello-world.xml.h:2
+#: plugins/hello-world.ui:9
 msgid "Hello World"
 msgstr "Hello World"
 
-#: ../plugins/hello-world.xml.h:3
+#: plugins/hello-world.ui:10
 msgid "Check if the plugin system works"
 msgstr "Ελέγξετε αν το σύστημα προσθέτου δουλεύει"
 
-#: ../plugins/giggle-personal-details-window.c:80
+#: plugins/giggle-personal-details-window.c:80
 msgid "There was an error setting the configuration"
 msgstr "Παρουσιάστηκε σφάλμα κατά τον ορισμό της διαμόρφωσης"
 
-#: ../plugins/giggle-personal-details-window.c:182
+#: plugins/giggle-personal-details-window.c:182
 msgid "There was an error getting the configuration"
 msgstr "Παρουσιάστηκε σφάλμα κατά τη λήψη της διαμόρφωσης"
 
-#: ../plugins/giggle-personal-details-window.c:246
+#: plugins/giggle-personal-details-window.c:246
 msgid "_Name:"
 msgstr "Ό_νομα:"
 
-#: ../plugins/giggle-personal-details-window.c:256
+#: plugins/giggle-personal-details-window.c:256
 msgid "_Email:"
 msgstr "Ηλ. _Διεύθυνση:"
 
-#: ../plugins/giggle-personal-details-window.c:269
-#: ../plugins/personal-details.xml.h:2
+#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:9
 msgid "Personal Details"
 msgstr "Προσωπικές λεπτομέρειες"
 
-#: ../plugins/giggle-view-terminal.c:95
+#: plugins/giggle-view-terminal.c:95
 msgid "_Terminal"
 msgstr "_Τερματικό"
 
-#: ../plugins/giggle-view-terminal.c:96
+#: plugins/giggle-view-terminal.c:96
 msgid "Issue git commands via terminal"
 msgstr "Έκδοση εντολών git μέσα από τερματικό"
 
-#: ../plugins/personal-details.xml.h:1
+#: plugins/personal-details.ui:3 plugins/personal-details.ui:10
 msgid "Edit personal details"
 msgstr "Επεξεργασία προσωπικών λεπτομερειών"
 
-#: ../plugins/terminal-view.xml.h:1
+#: plugins/terminal-view.ui:3
 msgid "Terminal window"
 msgstr "Παράθυρο τερματικού"
 
-#: ../plugins/terminal-view.xml.h:2
+#: plugins/terminal-view.ui:9
 msgid "Create _Terminal"
 msgstr "Δημιουργία _τερματικού"
 
-#: ../plugins/terminal-view.xml.h:3
+#: plugins/terminal-view.ui:10
 msgid "Create new tab in git terminal"
 msgstr "Δημιουργία νέας καρτέλας σε τερματικό git"
 
-#: ../src/eggfindbar.c:303
+#: src/eggfindbar.c:303
 msgid "Find:"
 msgstr "Εύρεση:"
 
-#: ../src/eggfindbar.c:312 ../src/giggle-window.c:1018
-msgid "Find Pre_vious"
-msgstr "Εύρεση προη_γούμενου"
-
-#: ../src/eggfindbar.c:316
+#: src/eggfindbar.c:316
 msgid "Find previous occurrence of the search string"
 msgstr "Εύρεση της προηγούμενης εμφάνισης της συμβολοσειράς αναζήτησης"
 
-#: ../src/eggfindbar.c:320 ../src/giggle-window.c:1014
-msgid "Find Ne_xt"
-msgstr "Εύρεση επό_μενου"
-
-#: ../src/eggfindbar.c:324
+#: src/eggfindbar.c:324
 msgid "Find next occurrence of the search string"
 msgstr "Εύρεση της επόμενης εμφάνισης της συμβολοσειράς αναζήτησης"
 
-#: ../src/eggfindbar.c:331
+#: src/eggfindbar.c:331
 msgid "C_ase Sensitive"
 msgstr "_Διάκριση πεζών/κεφαλαίων"
 
-#: ../src/eggfindbar.c:335
+#: src/eggfindbar.c:335
 msgid "Toggle case sensitive search"
 msgstr "Εναλλαγή διάκρισης πεζών/κεφαλαίων κατά την αναζήτηση"
 
-#: ../src/giggle-authors-view.c:78
+#: src/giggle-authors-view.c:78
 #, c-format
 msgid ""
 "An error occurred when retrieving authors list:\n"
@@ -140,11 +123,11 @@ msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την ανάκτηση της λίστας συγγραφέων:\n"
 "%s"
 
-#: ../src/giggle-authors-view.c:144
+#: src/giggle-authors-view.c:144
 msgid "Authors:"
 msgstr "Συγγραφείς:"
 
-#: ../src/giggle-branches-view.c:79
+#: src/giggle-branches-view.c:79
 #, c-format
 msgid ""
 "An error occurred when retrieving branches list:\n"
@@ -153,35 +136,35 @@ msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την ανάκτηση της λίστας κλάδων:\n"
 "%s"
 
-#: ../src/giggle-branches-view.c:145 ../src/giggle-revision-view.c:197
+#: src/giggle-branches-view.c:145 src/giggle-revision-view.c:197
 msgid "Branches:"
 msgstr "Κλάδοι:"
 
-#: ../src/giggle-clone-dialog.c:246
+#: src/giggle-clone-dialog.c:246
 msgid "Clone Repository"
 msgstr "Κλωνοποίηση αποθετηρίου"
 
-#: ../src/giggle-clone-dialog.c:254
+#: src/giggle-clone-dialog.c:254
 msgid "Cl_one"
 msgstr "Κ_λωνοποίηση"
 
-#: ../src/giggle-clone-dialog.c:278
+#: src/giggle-clone-dialog.c:278
 msgid "_Repository:"
 msgstr "_Αποθετήριο:"
 
-#: ../src/giggle-clone-dialog.c:290
+#: src/giggle-clone-dialog.c:290
 msgid "_Local name:"
 msgstr "_Τοπικό όνομα:"
 
-#: ../src/giggle-clone-dialog.c:295
+#: src/giggle-clone-dialog.c:295
 msgid "Please select a location for the clone"
 msgstr "Παρακαλούμε επιλέξτε μια τοποθεσία για τον κλώνο"
 
-#: ../src/giggle-clone-dialog.c:298
+#: src/giggle-clone-dialog.c:298
 msgid "Clone in _folder:"
 msgstr "Κλωνοποίηση στον _φάκελο:"
 
-#: ../src/giggle-diff-tree-view.c:140 ../src/giggle-file-list.c:1660
+#: src/giggle-diff-tree-view.c:140 src/giggle-file-list.c:1660
 #, c-format
 msgid ""
 "An error occurred when retrieving different files list:\n"
@@ -190,11 +173,11 @@ msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την ανάκτηση της λίστας διαφορετικών αρχείων:\n"
 "%s"
 
-#: ../src/giggle-diff-tree-view.c:207
+#: src/giggle-diff-tree-view.c:207
 msgid "Changed files"
 msgstr "Αλλαγμένα αρχεία"
 
-#: ../src/giggle-diff-view.c:714
+#: src/giggle-diff-view.c:714
 #, c-format
 msgid ""
 "An error occurred when retrieving a diff:\n"
@@ -203,19 +186,19 @@ msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την ανάκτηση διαφορών:\n"
 "%s"
 
-#: ../src/giggle-diff-window.c:80
+#: src/giggle-diff-window.c:80
 msgid "Commit changes"
 msgstr "Υποβολή αλλαγών"
 
-#: ../src/giggle-diff-window.c:102
+#: src/giggle-diff-window.c:102
 msgid "Revision log:"
 msgstr "Καταγραφή αναθεώρησης:"
 
-#: ../src/giggle-diff-window.c:130
+#: src/giggle-diff-window.c:130
 msgid "Co_mmit"
 msgstr "_Καταχώριση"
 
-#: ../src/giggle-diff-window.c:202
+#: src/giggle-diff-window.c:202
 #, c-format
 msgid ""
 "An error occurred when committing:\n"
@@ -224,7 +207,7 @@ msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την υποβολή:\n"
 "%s"
 
-#: ../src/giggle-file-list.c:387
+#: src/giggle-file-list.c:387
 #, c-format
 msgid ""
 "An error occurred when retrieving the file list:\n"
@@ -233,7 +216,7 @@ msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την ανάκτηση της λίστας αρχείων:\n"
 "%s"
 
-#: ../src/giggle-file-list.c:756
+#: src/giggle-file-list.c:756
 #, c-format
 msgid ""
 "An error occurred when adding a file to git:\n"
@@ -242,41 +225,40 @@ msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την προσθήκη αρχείου στο git:\n"
 "%s"
 
-#: ../src/giggle-file-list.c:816 ../src/giggle-file-list.c:842
-#: ../src/giggle-rev-list-view.c:1173 ../src/giggle-rev-list-view.c:1204
+#: src/giggle-file-list.c:816 src/giggle-file-list.c:842
+#: src/giggle-rev-list-view.c:1173 src/giggle-rev-list-view.c:1204
 #, c-format
 msgid "Could not save the patch as %s"
 msgstr "Αδύνατη η αποθήκευση του μπαλώματος ως %s"
 
-#: ../src/giggle-file-list.c:821 ../src/giggle-file-list.c:847
-#: ../src/giggle-rev-list-view.c:1181 ../src/giggle-rev-list-view.c:1209
+#: src/giggle-file-list.c:821 src/giggle-file-list.c:847
+#: src/giggle-rev-list-view.c:1181 src/giggle-rev-list-view.c:1209
 msgid "No error was given"
 msgstr "Δεν βρέθηκαν σφάλματα"
 
-#: ../src/giggle-file-list.c:868 ../src/giggle-rev-list-view.c:1235
+#: src/giggle-file-list.c:868 src/giggle-rev-list-view.c:1235
 #, c-format
 msgid "Patch saved as %s"
 msgstr "Το μπάλωμα αποθηκεύτηκε ως %s"
 
-#: ../src/giggle-file-list.c:872 ../src/giggle-rev-list-view.c:1239
-#, c-format
+#: src/giggle-file-list.c:872 src/giggle-rev-list-view.c:1239
 msgid "Created in project directory"
 msgstr "Δημιουργήθηκε στον κατάλογο του έργου"
 
-#: ../src/giggle-file-list.c:875 ../src/giggle-rev-list-view.c:1242
+#: src/giggle-file-list.c:875 src/giggle-rev-list-view.c:1242
 #, c-format
 msgid "Created in directory %s"
 msgstr "Δημιουργήθηκε στον κατάλογο %s"
 
-#: ../src/giggle-file-list.c:910 ../src/giggle-rev-list-view.c:1293
+#: src/giggle-file-list.c:910 src/giggle-rev-list-view.c:1293
 msgid "Create Patch"
 msgstr "Δημιουργία μπαλώματος"
 
-#: ../src/giggle-file-list.c:1013
+#: src/giggle-file-list.c:1013
 msgid "Delete glob pattern?"
 msgstr "Διαγραφή υποδείγματος glob;"
 
-#: ../src/giggle-file-list.c:1016
+#: src/giggle-file-list.c:1016
 msgid ""
 "The selected file was shadowed by a glob pattern that may be hiding other "
 "files, delete it?"
@@ -284,272 +266,270 @@ msgstr ""
 "Το επιλεγμένο αρχείο σκιάστηκε από ένα υπόδειγμα glob που μπορεί να κρύβει "
 "άλλα αρχεία, να διαγραφεί;"
 
-#: ../src/giggle-file-list.c:1411
+#: src/giggle-file-list.c:1411
 msgid "_Commit Changes"
 msgstr "_Υποβολή αλλαγών"
 
-#: ../src/giggle-file-list.c:1413
+#: src/giggle-file-list.c:1413
 msgid "A_dd file to repository"
 msgstr "Π_ροσθήκη αρχείου στο αποθετήριο"
 
-#: ../src/giggle-file-list.c:1414 ../src/giggle-rev-list-view.c:1638
+#: src/giggle-file-list.c:1414 src/giggle-rev-list-view.c:1638
 msgid "Create _Patch"
 msgstr "Δημιουργία _μπαλώματος"
 
-#: ../src/giggle-file-list.c:1415
+#: src/giggle-file-list.c:1415
 msgid "_Add to .gitignore"
 msgstr "_Προσθήκη στο .gitignore"
 
-#: ../src/giggle-file-list.c:1416
+#: src/giggle-file-list.c:1416
 msgid "_Remove from .gitignore"
 msgstr "_Αφαίρεση από το .gitignore"
 
-#: ../src/giggle-file-list.c:1420
+#: src/giggle-file-list.c:1420
 msgid "_Show all files"
 msgstr "Ε_μφάνιση όλων των αρχείων"
 
-#: ../src/giggle-file-list.c:1459
+#: src/giggle-file-list.c:1459
 msgid "Project"
 msgstr "Έργο"
 
-#: ../src/giggle-helpers.c:176
+#: src/giggle-helpers.c:176
 msgid "An error occurred:"
 msgstr "Παρουσιάστηκε ένα σφάλμα:"
 
-#: ../src/giggle-main.c:36
+#: src/giggle-main.c:36
 msgid "Clone a repository"
 msgstr "Κλωνοποίηση αποθετηρίου"
 
-#: ../src/giggle-main.c:37 ../src/giggle-remotes-view.c:267
+#: src/giggle-main.c:37 src/giggle-remotes-view.c:267
 msgid "URL"
 msgstr "URL"
 
-#: ../src/giggle-main.c:40
+#: src/giggle-main.c:40
 msgid "Show the diff window"
 msgstr "Εμφάνιση του παραθύρου διαφορών"
 
-#: ../src/giggle-main.c:44
+#: src/giggle-main.c:44
 msgid "Show version information and exit"
 msgstr "Εμφάνιση πληροφοριών έκδοσης και έξοδος"
 
-#: ../src/giggle-main.c:47
+#: src/giggle-main.c:47
 msgid "[DIRECTORY]"
 msgstr "[ΚΑΤΑΛΟΓΟΣ]"
 
-#: ../src/giggle-main.c:79
+#: src/giggle-main.c:79
 #, c-format
 msgid "Report errors (in English, with LC_ALL=C) to <%s>."
 msgstr "Αναφορά σφαλμάτων (στα αγγλικά, με LC_ALL=C) στο <%s>."
 
-#: ../src/giggle-main.c:80
+#: src/giggle-main.c:80
 msgid "Giggle is a graphical frontend for the git content tracker."
 msgstr ""
 "Το Giggle είναι μια γραφική διεπαφή χρήστη για τον εντοπιστή περιεχομένου "
 "git."
 
-#: ../src/giggle-main.c:88
+#: src/giggle-main.c:88
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Δοκιμάστε '%s --help' για περισσότερες πληροφορίες.\n"
 
-#: ../src/giggle-remote-editor.c:146
+#: src/giggle-remote-editor.c:146
 msgid "Click to add mapping…"
 msgstr "Πατήστε για προσθήκη απεικόνισης…"
 
-#: ../src/giggle-remote-editor.c:365
+#: src/giggle-remote-editor.c:365
 msgid "Unnamed"
 msgstr "Ανώνυμο"
 
-#: ../src/giggle-remotes-view.c:256
+#: src/giggle-remotes-view.c:256
 msgid "Icon"
 msgstr "Εικονίδιο"
 
-#: ../src/giggle-remotes-view.c:262
+#: src/giggle-remotes-view.c:262
 msgid "Name"
 msgstr "Όνομα"
 
-#: ../src/giggle-remotes-view.c:280
+#: src/giggle-remotes-view.c:280
 msgid "Double click to add remote…"
 msgstr "Διπλοπατήστε για τη προσθήκη απομακρυσμένου…"
 
-#: ../src/giggle-revision-view.c:183 ../src/giggle-view-file.c:1215
+#: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
 msgid "Author:"
 msgstr "Συγγραφέας:"
 
-#: ../src/giggle-revision-view.c:184 ../src/giggle-view-file.c:1216
+#: src/giggle-revision-view.c:184 src/giggle-view-file.c:1216
 msgid "Committer:"
 msgstr "Καταχωριστής:"
 
-#: ../src/giggle-revision-view.c:195 ../src/giggle-view-file.c:1217
+#: src/giggle-revision-view.c:195 src/giggle-view-file.c:1217
 msgid "Date:"
 msgstr "Ημερομηνία:"
 
-#: ../src/giggle-revision-view.c:196 ../src/giggle-view-file.c:1218
+#: src/giggle-revision-view.c:196 src/giggle-view-file.c:1218
 msgid "SHA:"
 msgstr "SHA:"
 
-#: ../src/giggle-revision-view.c:216
+#: src/giggle-revision-view.c:216
 msgid "Change Log:"
 msgstr "Αλλαγή καταγραφής:"
 
-#: ../src/giggle-revision-view.c:505
+#: src/giggle-revision-view.c:505
 msgid "_Details"
 msgstr "_Λεπτομέρειες"
 
-#: ../src/giggle-revision-view.c:506
+#: src/giggle-revision-view.c:506
 msgid "Display revision details"
 msgstr "Εμφάνιση λεπτομερειών αναθεώρησης"
 
-#: ../src/giggle-rev-list-view.c:331
+#: src/giggle-rev-list-view.c:331
 #, c-format
 msgid "Delete branch \"%s\""
 msgstr "Διαγραφή κλάδου \"%s\""
 
-#: ../src/giggle-rev-list-view.c:334
+#: src/giggle-rev-list-view.c:334
 #, c-format
 msgid "Delete tag \"%s\""
 msgstr "Διαγραφή ετικέτας \"%s\""
 
-#: ../src/giggle-rev-list-view.c:504
+#: src/giggle-rev-list-view.c:504
 msgid "Branch"
 msgstr "Κλάδος"
 
-#: ../src/giggle-rev-list-view.c:507
+#: src/giggle-rev-list-view.c:507
 msgid "Tag"
 msgstr "Ετικέτα"
 
-#: ../src/giggle-rev-list-view.c:510
+#: src/giggle-rev-list-view.c:510
 msgid "Remote"
 msgstr "Απομακρυσμένος"
 
-#: ../src/giggle-rev-list-view.c:1063
+#: src/giggle-rev-list-view.c:1063
 msgid "Enter branch name:"
 msgstr "Εισαγωγή ονόματος κλάδου:"
 
-#: ../src/giggle-rev-list-view.c:1114
+#: src/giggle-rev-list-view.c:1114
 msgid "Enter tag name:"
 msgstr "Εισαγωγή ονόματος ετικέτας:"
 
-#: ../src/giggle-rev-list-view.c:1175
-#, c-format
+#: src/giggle-rev-list-view.c:1175
 msgid "Could not create patch"
 msgstr "Αδύνατη η δημιουργία μπαλώματος"
 
-#: ../src/giggle-rev-list-view.c:1429
+#: src/giggle-rev-list-view.c:1429
 msgid "Uncommitted changes"
 msgstr "Ακαταχώριστες αλλαγές"
 
 #. TRANSLATORS: it's a strftime format string
-#: ../src/giggle-rev-list-view.c:1483
+#: src/giggle-rev-list-view.c:1483
 msgid "%I:%M %p"
 msgstr "%I:%M %p"
 
 #. TRANSLATORS: it's a strftime format string
-#: ../src/giggle-rev-list-view.c:1496
+#: src/giggle-rev-list-view.c:1496
 msgid "%a %I:%M %p"
 msgstr "%a %I:%M %p"
 
 #. TRANSLATORS: it's a strftime format string
-#: ../src/giggle-rev-list-view.c:1508
+#: src/giggle-rev-list-view.c:1508
 msgid "%b %d %I:%M %p"
 msgstr "%d %b %I:%M %p"
 
-#. it's older
 #. TRANSLATORS: it's a strftime format string
-#: ../src/giggle-rev-list-view.c:1513
+#: src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
 msgstr "%d %b %Y"
 
-#: ../src/giggle-rev-list-view.c:1635
+#: src/giggle-rev-list-view.c:1635
 msgid "Commit"
 msgstr "Υποβολή"
 
-#: ../src/giggle-rev-list-view.c:1636
+#: src/giggle-rev-list-view.c:1636
 msgid "Create _Branch"
 msgstr "Δημιουργία _κλάδου"
 
-#: ../src/giggle-rev-list-view.c:1637
+#: src/giggle-rev-list-view.c:1637
 msgid "Create _Tag"
 msgstr "Δημιουργία _ετικέτας"
 
-#: ../src/giggle-rev-list-view.c:1703
+#: src/giggle-rev-list-view.c:1703
 msgid "Graph"
 msgstr "Γράφημα"
 
-#: ../src/giggle-rev-list-view.c:1721
+#: src/giggle-rev-list-view.c:1721
 msgid "Short Log"
 msgstr "Συνοπτική καταγραφή"
 
-#: ../src/giggle-rev-list-view.c:1740
+#: src/giggle-rev-list-view.c:1740
 msgid "Author"
 msgstr "Συγγραφέας"
 
-#: ../src/giggle-rev-list-view.c:1757
+#: src/giggle-rev-list-view.c:1757
 msgid "Date"
 msgstr "Ημερομηνία"
 
-#: ../src/giggle-short-list.c:300
+#: src/giggle-short-list.c:300
 msgid "Details"
 msgstr "Λεπτομέρειες"
 
-#: ../src/giggle-short-list.c:416
+#: src/giggle-short-list.c:416
 msgid "Show A_ll…"
 msgstr "Εμφάνιση ό_λων…"
 
-#: ../src/giggle-view-diff.c:107
+#: src/giggle-view-diff.c:107
 #, c-format
 msgid "Change %d of %d"
 msgstr "Αλλαγή του %d από %d"
 
-#: ../src/giggle-view-diff.c:182
+#: src/giggle-view-diff.c:182
 msgid "_Previous Change"
 msgstr "_Προηγούμενη αλλαγή"
 
-#: ../src/giggle-view-diff.c:182
+#: src/giggle-view-diff.c:182
 msgid "View previous change"
 msgstr "Προβολή προηγούμενης αλλαγής"
 
-#: ../src/giggle-view-diff.c:186
+#: src/giggle-view-diff.c:186
 msgid "_Next Change"
 msgstr "_Επόμενη αλλαγή"
 
-#: ../src/giggle-view-diff.c:186
+#: src/giggle-view-diff.c:186
 msgid "View next change"
 msgstr "Προβολή επόμενης αλλαγής"
 
-#: ../src/giggle-view-diff.c:348
+#: src/giggle-view-diff.c:348
 msgid "_Changes"
 msgstr "_Αλλαγές"
 
-#: ../src/giggle-view-diff.c:349
+#: src/giggle-view-diff.c:349
 msgid "Browse a revision's changes"
 msgstr "Περιήγηση των αλλαγών αναθεώρησης"
 
-#: ../src/giggle-view-file.c:324
+#: src/giggle-view-file.c:324
 msgid "_Goto Line Number"
 msgstr "_Μετάβαση στον αριθμό γραμμής"
 
-#: ../src/giggle-view-file.c:325
+#: src/giggle-view-file.c:325
 msgid "Highlight specified line number"
 msgstr "Επισήμανση συγκεκριμένου αριθμού γραμμής"
 
-#: ../src/giggle-view-file.c:329
+#: src/giggle-view-file.c:329
 msgid "Show _Changes"
 msgstr "Εμφάνιση _αλλαγών"
 
-#: ../src/giggle-view-file.c:330
+#: src/giggle-view-file.c:330
 msgid "Show changes for selected revision"
 msgstr "Εμφάνιση αλλαγών για την επιλεγμένη αναθεώρηση"
 
-#: ../src/giggle-view-file.c:334
+#: src/giggle-view-file.c:334
 msgid "Select _Revision"
 msgstr "Επιλογή _αναθεώρησης"
 
-#: ../src/giggle-view-file.c:335
+#: src/giggle-view-file.c:335
 msgid "Select revision of selected line"
 msgstr "Επιλογή αναθεώρησης της επιλεγμένης γραμμής"
 
-#: ../src/giggle-view-file.c:897
+#: src/giggle-view-file.c:897
 #, c-format
 msgid ""
 "An error occurred when getting file ref:\n"
@@ -558,8 +538,8 @@ msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την λήψη αρχείου αναφοράς:\n"
 "%s"
 
-#: ../src/giggle-view-file.c:968 ../src/giggle-view-history.c:248
-#: ../src/giggle-view-history.c:342
+#: src/giggle-view-file.c:968 src/giggle-view-history.c:248
+#: src/giggle-view-history.c:342
 #, c-format
 msgid ""
 "An error occurred when getting the revisions list:\n"
@@ -568,69 +548,69 @@ msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την λήψη της λίστας αναθεωρήσεων:\n"
 "%s"
 
-#: ../src/giggle-view-file.c:1128
+#: src/giggle-view-file.c:1128
 msgid "Line Number:"
 msgstr "Αριθμός γραμμής:"
 
-#: ../src/giggle-view-file.c:1566
+#: src/giggle-view-file.c:1566
 msgid "_Browse"
 msgstr "_Περιήγηση"
 
-#: ../src/giggle-view-file.c:1567
+#: src/giggle-view-file.c:1567
 msgid "Browse the files of this project"
 msgstr "Περιήγηση στα αρχεία αυτού του έργου"
 
-#: ../src/giggle-view-history.c:842
+#: src/giggle-view-history.c:842
 msgid "_History"
 msgstr "_Ιστορικό"
 
-#: ../src/giggle-view-history.c:843
+#: src/giggle-view-history.c:843
 msgid "Browse the history of this project"
 msgstr "Περιήγηση στο ιστορικό αυτού του έργου"
 
-#: ../src/giggle-view-summary.c:117
+#: src/giggle-view-summary.c:117
 msgid "Description:"
 msgstr "Περιγραφή:"
 
-#: ../src/giggle-view-summary.c:167
+#: src/giggle-view-summary.c:167
 msgid "Remotes:"
 msgstr "Απομακρυσμένοι:"
 
-#: ../src/giggle-view-summary.c:195
+#: src/giggle-view-summary.c:195
 msgid "_Summary"
 msgstr "_Περίληψη"
 
-#: ../src/giggle-view-summary.c:198
+#: src/giggle-view-summary.c:198
 msgid "_Branches"
 msgstr "_Κλάδοι"
 
-#: ../src/giggle-view-summary.c:201
+#: src/giggle-view-summary.c:201
 msgid "_Authors"
 msgstr "_Συγγραφείς"
 
-#: ../src/giggle-view-summary.c:204
+#: src/giggle-view-summary.c:204
 msgid "_Remotes"
 msgstr "_Απομακρυσμένοι"
 
-#: ../src/giggle-window.c:546
+#: src/giggle-window.c:546
 #, c-format
 msgid "The directory '%s' does not look like a git repository."
 msgstr "Ο κατάλογος '%s' δεν μοιάζει με αποθετήριο git."
 
-#: ../src/giggle-window.c:629
+#: src/giggle-window.c:629
 msgid "Select git repository"
 msgstr "Επιλέξτε αποθετήριο git"
 
-#: ../src/giggle-window.c:682
+#: src/giggle-window.c:682
 #, c-format
 msgid "Properties of %s"
 msgstr "Ιδιότητες του %s"
 
-#: ../src/giggle-window.c:912
+#: src/giggle-window.c:912
 msgid "Contributors:"
 msgstr "Συντελεστές:"
 
-#: ../src/giggle-window.c:925
+#: src/giggle-window.c:925
 msgid ""
 "Copyright © 2007 - 2008 Imendio AB\n"
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
@@ -640,162 +620,162 @@ msgstr ""
 "Πνευματικά δικαιώματα © 2008 - 2009 Mathias Hasselmann\n"
 "Πνευματικά δικαιώματα © 2009 - 2012 The Giggle authors"
 
-#. Translators: This is a special message that shouldn't be translated
-#. * literally. It is used in the about box to give credits to
-#. * the translators.
-#. * Thus, you should translate it to your name and email address.
-#. * You should also include other translators who have contributed to
-#. * this translation; in that case, please write each of them on a separate
-#. * line seperated by newlines (\n).
-#.
-#: ../src/giggle-window.c:937
+#: src/giggle-window.c:937
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα Gnome \n"
 " Δημήτρης Σπίγγος <dmtrs32@gmail.com>\n"
 "Για περισσότερες πληροφορίες http://gnome.gr"
 
-#: ../src/giggle-window.c:942
+#: src/giggle-window.c:942
 msgid "A graphical frontend for Git"
 msgstr "Μια γραφική διεπαφή χρήστη για Git"
 
-#: ../src/giggle-window.c:947
+#: src/giggle-window.c:947
 msgid "About Giggle"
 msgstr "Περί του Giggle"
 
-#: ../src/giggle-window.c:951
+#: src/giggle-window.c:951
 msgid "Giggle Website"
 msgstr "Ιστότοπος Giggle"
 
-#: ../src/giggle-window.c:1007
+#: src/giggle-window.c:1007
 msgid "_Find…"
 msgstr "_Εύρεση…"
 
-#: ../src/giggle-window.c:1008
+#: src/giggle-window.c:1008
 msgid "Find…"
 msgstr "Εύρεση…"
 
-#: ../src/giggle-window.c:1015
+#: src/giggle-window.c:1014
+msgid "Find Ne_xt"
+msgstr "Εύρεση επό_μενου"
+
+#: src/giggle-window.c:1015
 msgid "Find next match"
 msgstr "Εύρεση της επόμενης συμφωνίας"
 
-#: ../src/giggle-window.c:1019
+#: src/giggle-window.c:1018
+msgid "Find Pre_vious"
+msgstr "Εύρεση προη_γούμενου"
+
+#: src/giggle-window.c:1019
 msgid "Find previous match"
 msgstr "Εύρεση της προηγούμενης συμφωνίας"
 
-#: ../src/giggle-window.c:1025
+#: src/giggle-window.c:1025
 msgid "_Project"
 msgstr "Έ_ργο"
 
-#: ../src/giggle-window.c:1026
+#: src/giggle-window.c:1026
 msgid "_Edit"
 msgstr "_Επεξεργασία"
 
-#: ../src/giggle-window.c:1027
+#: src/giggle-window.c:1027
 msgid "_Go"
 msgstr "_Μετάβαση"
 
-#: ../src/giggle-window.c:1028
+#: src/giggle-window.c:1028
 msgid "_View"
 msgstr "_Προβολή"
 
-#: ../src/giggle-window.c:1029
+#: src/giggle-window.c:1029
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: ../src/giggle-window.c:1032
+#: src/giggle-window.c:1032
 msgid "Open a git repository"
 msgstr "Άνοιγμα αποθετηρίου git"
 
-#: ../src/giggle-window.c:1036
+#: src/giggle-window.c:1036
 msgid "Clone _location"
 msgstr "Κλωνοποίηση _τοποθεσίας"
 
-#: ../src/giggle-window.c:1036
+#: src/giggle-window.c:1036
 msgid "Clone a location"
 msgstr "Κλωνοποίηση μιας τοποθεσίας"
 
-#: ../src/giggle-window.c:1041
+#: src/giggle-window.c:1041
 msgid "_Save patch"
 msgstr "_Αποθήκευση μπαλώματος"
 
-#: ../src/giggle-window.c:1041
+#: src/giggle-window.c:1041
 msgid "Save a patch"
 msgstr "Αποθήκευση μπαλώματος"
 
-#: ../src/giggle-window.c:1045
+#: src/giggle-window.c:1045
 msgid "_Diff current changes"
 msgstr "Τρέχουσες αλλαγές _διαφορών"
 
-#: ../src/giggle-window.c:1045
+#: src/giggle-window.c:1045
 msgid "Diff current changes"
 msgstr "Τρέχουσες αλλαγές διαφορών"
 
-#: ../src/giggle-window.c:1050
+#: src/giggle-window.c:1050
 msgid "Quit the application"
 msgstr "Έξοδος από την εφαρμογή"
 
-#: ../src/giggle-window.c:1068
+#: src/giggle-window.c:1068
 msgid "Go backward in history"
 msgstr "Οπισθοχώρηση στο ιστορικό"
 
-#: ../src/giggle-window.c:1072
+#: src/giggle-window.c:1072
 msgid "Go forward in history"
 msgstr "Προώθηση στο ιστορικό"
 
-#: ../src/giggle-window.c:1076
+#: src/giggle-window.c:1076
 msgid "_Contents"
 msgstr "_Περιεχόμενα"
 
-#: ../src/giggle-window.c:1077
+#: src/giggle-window.c:1077
 msgid "Show user guide for Giggle"
 msgstr "Εμφάνιση οδηγού χρήστη για το Giggle"
 
-#: ../src/giggle-window.c:1080
+#: src/giggle-window.c:1080
 msgid "Report _Issue"
 msgstr "Αναφορά _προβλήματος"
 
-#: ../src/giggle-window.c:1081
+#: src/giggle-window.c:1081
 msgid "Report an issue you’ve found in Giggle"
 msgstr "Αναφορά προβλήματος που έχετε βρει στο Giggle"
 
-#: ../src/giggle-window.c:1085
+#: src/giggle-window.c:1085
 msgid "About this application"
 msgstr "Σχετικά με αυτήν την εφαρμογή"
 
-#: ../src/giggle-window.c:1092
+#: src/giggle-window.c:1092
 msgid "Show revision tree"
 msgstr "Εμφάνιση δένδρου αναθεώρησης"
 
-#: ../src/giggle-window.c:1099
+#: src/giggle-window.c:1099
 msgid "Show diffs by chunk"
 msgstr "Εμφάνιση διαφορών ανά τμήμα"
 
-#: ../src/giggle-window.c:1102
+#: src/giggle-window.c:1102
 msgid "Show diffs by file"
 msgstr "Εμφάνιση διαφορών ανά αρχείο"
 
-#: ../src/giggle-window.c:1105
+#: src/giggle-window.c:1105
 msgid "Show all diffs"
 msgstr "Εμφάνιση όλων των διαφορών"
 
-#: ../src/giggle-window.c:1111
+#: src/giggle-window.c:1111
 msgid "Show and edit project properties"
 msgstr "Εμφάνιση και επεξεργασία ιδιοτήτων του έργου"
 
-#: ../src/giggle-window.c:1115
+#: src/giggle-window.c:1115
 msgid "Refresh current view"
 msgstr "Ανανέωση της τρέχουσας προβολής"
 
-#: ../src/giggle-window.c:1454
+#: src/giggle-window.c:1454
 msgid "Search Inside _Patches"
 msgstr "Αναζήτηση μέσα στα _μπαλώματα"
 
-#: ../src/giggle-window.c:1723
+#: src/giggle-window.c:1723
 msgid "Save patch file"
 msgstr "Αποθήκευση αρχείου μπαλώματος"
 
-#: ../src/giggle-window.c:1743
+#: src/giggle-window.c:1743
 #, c-format
 msgid ""
 "An error occurred when saving to file:\n"
@@ -803,3 +783,9 @@ msgid ""
 msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την αποθήκευση σε αρχείο:\n"
 "%s"
+
+#~ msgid "Giggle"
+#~ msgstr "Giggle"
+
+#~ msgid "Git repository viewer"
+#~ msgstr "Προβολέας αποθετηρίου Git"
