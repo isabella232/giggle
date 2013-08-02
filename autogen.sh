@@ -20,7 +20,7 @@ if test -z $GNOMEDOC; then
         exit 1
 fi
 
-autoreconf --force --install --verbose
+autoreconf --force --install --verbose || exit $?
 
 cd $olddir
 test -n "$NOCONFIGURE" || "$srcdir/configure" "$@"
