@@ -206,6 +206,7 @@ AC_CONFIG_FILES([
         Makefile
         data/Makefile
         help/Makefile
+        lib/Makefile
         libgiggle/Makefile
         libgiggle-git/Makefile
         pixmaps/Makefile
