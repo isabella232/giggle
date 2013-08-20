@@ -5,15 +5,15 @@
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Łukasz Jernaś <deejay1@srem.org>, 2007-2011.
-# Piotr Drąg <piotrdrag@gmail.com>, 2011-2012.
-# Aviary.pl <gnomepl@aviary.pl>, 2010-2012.
+# Piotr Drąg <piotrdrag@gmail.com>, 2011-2013.
+# Aviary.pl <gnomepl@aviary.pl>, 2010-2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle\n"
 "POT-Creation-Date: 2013-08-20 01:55+0100\n"
-"PO-Revision-Date: 2012-12-09 19:09+0100\n"
+"PO-Revision-Date: 2013-08-20 23:24+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -427,17 +427,17 @@ msgstr "Niezatwierdzone zmiany"
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1483
 msgid "%I:%M %p"
-msgstr "%H:%M"
+msgstr "%H∶%M"
 
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1496
 msgid "%a %I:%M %p"
-msgstr "%a, %H:%M"
+msgstr "%a, %H∶%M"
 
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1508
 msgid "%b %d %I:%M %p"
-msgstr "%d %b, %H:%M"
+msgstr "%d %b, %H∶%M"
 
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1513
@@ -628,8 +628,8 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Łukasz Jernaś <deejay1@srem.org>, 2007-2011\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2011-2012\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2010-2012"
+"Piotr Drąg <piotrdrag@gmail.com>, 2011-2013\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2010-2013"
 
 #: src/giggle-window.c:942
 msgid "A graphical frontend for Git"
