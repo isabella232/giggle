@@ -326,14 +326,13 @@ msgid "Giggle is a graphical frontend for the git content tracker."
 msgstr "Giggle é unha interface gráfica para o traceador de contido git."
 
 #: src/giggle-main.c:88
-#, fuzzy, c-format
+#, c-format
 msgid "Try '%s --help' for more information.\n"
-msgstr "TEnte `%s --help' para máis información.\n"
+msgstr "Tente `%s --help' para máis información.\n"
 
 #: src/giggle-remote-editor.c:146
-#, fuzzy
 msgid "Click to add mapping…"
-msgstr "Prema para engadir un \"mapping\"..."
+msgstr "Prema para engadir un \"mapping\"…"
 
 #: src/giggle-remote-editor.c:365
 msgid "Unnamed"
@@ -348,9 +347,8 @@ msgid "Name"
 msgstr "Nome"
 
 #: src/giggle-remotes-view.c:280
-#, fuzzy
 msgid "Double click to add remote…"
-msgstr "Prema dúas veces para engadir un servidor remoto..."
+msgstr "Prema dúas veces para engadir un servidor remoto…"
 
 #: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
 msgid "Author:"
@@ -471,9 +469,8 @@ msgid "Details"
 msgstr "Detalles"
 
 #: src/giggle-short-list.c:416
-#, fuzzy
 msgid "Show A_ll…"
-msgstr "Mostrar _todo..."
+msgstr "Mostrar _todo…"
 
 #: src/giggle-view-diff.c:107
 #, c-format
@@ -636,14 +633,12 @@ msgid "Giggle Website"
 msgstr "Sitio web de Giggle"
 
 #: src/giggle-window.c:1007
-#, fuzzy
 msgid "_Find…"
-msgstr "_Buscar..."
+msgstr "_Buscar…"
 
 #: src/giggle-window.c:1008
-#, fuzzy
 msgid "Find…"
-msgstr "Buscar:"
+msgstr "Buscar…"
 
 #: src/giggle-window.c:1014
 msgid "Find Ne_xt"
@@ -734,7 +729,6 @@ msgid "Report _Issue"
 msgstr "Informar dun _problema"
 
 #: src/giggle-window.c:1081
-#, fuzzy
 msgid "Report an issue you’ve found in Giggle"
 msgstr "Informar dun problema que encontrou no Giggle"
 
