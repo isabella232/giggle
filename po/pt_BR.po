@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle\n"
-"POT-Creation-Date: 2013-07-31 02:07+0100\n"
+"POT-Creation-Date: 2013-08-20 01:55+0100\n"
 "PO-Revision-Date: 2013-02-28 21:29-0300\n"
 "Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
@@ -37,15 +37,15 @@ msgstr "Ramos"
 msgid "Cannot find plugin description in '%s'"
 msgstr "Não foi possível encontrar a descrição do plug-in em \"%s\""
 
-#: plugins/hello-world.ui:3
+#: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
 msgstr "Demonstração do sistema de plug-ins do Giggle"
 
-#: plugins/hello-world.ui:9
+#: plugins/hello-world.ui:11
 msgid "Hello World"
 msgstr "Olá mundo"
 
-#: plugins/hello-world.ui:10
+#: plugins/hello-world.ui:12
 msgid "Check if the plugin system works"
 msgstr "Verifica se o sistema de plug-ins funciona"
 
@@ -65,7 +65,7 @@ msgstr "_Nome:"
 msgid "_Email:"
 msgstr "_E-mail:"
 
-#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:9
+#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:11
 msgid "Personal Details"
 msgstr "Detalhes pessoais"
 
@@ -77,19 +77,19 @@ msgstr "_Terminal"
 msgid "Issue git commands via terminal"
 msgstr "Editar comandos do git via terminal"
 
-#: plugins/personal-details.ui:3 plugins/personal-details.ui:10
+#: plugins/personal-details.ui:5 plugins/personal-details.ui:12
 msgid "Edit personal details"
 msgstr "Edita detalhes pessoais"
 
-#: plugins/terminal-view.ui:3
+#: plugins/terminal-view.ui:5
 msgid "Terminal window"
 msgstr "Janela de terminal"
 
-#: plugins/terminal-view.ui:9
+#: plugins/terminal-view.ui:11
 msgid "Create _Terminal"
 msgstr "Criar _terminal"
 
-#: plugins/terminal-view.ui:10
+#: plugins/terminal-view.ui:12
 msgid "Create new tab in git terminal"
 msgstr "Cria uma nova aba no terminal git"
 

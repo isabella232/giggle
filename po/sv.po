@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Giggle 0.1\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle\n"
-"POT-Creation-Date: 2013-07-31 02:07+0100\n"
+"POT-Creation-Date: 2013-08-20 01:55+0100\n"
 "PO-Revision-Date: 2012-07-01 23:07+0100\n"
 "Last-Translator: Andreas Rönnquist <gusnan@gusnan.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -39,15 +39,15 @@ msgstr "Grenar"
 msgid "Cannot find plugin description in '%s'"
 msgstr "Kan inte hitta plugin-beskrivning i '%s'"
 
-#: plugins/hello-world.ui:3
+#: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
 msgstr "Demonstration av Giggles Plugin-system"
 
-#: plugins/hello-world.ui:9
+#: plugins/hello-world.ui:11
 msgid "Hello World"
 msgstr "Hej Världen"
 
-#: plugins/hello-world.ui:10
+#: plugins/hello-world.ui:12
 msgid "Check if the plugin system works"
 msgstr "Kontrollera om plugin-systemet fungerar"
 
@@ -67,7 +67,7 @@ msgstr "_Namn:"
 msgid "_Email:"
 msgstr "_E-post:"
 
-#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:9
+#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:11
 msgid "Personal Details"
 msgstr "Personliga uppgifter"
 
@@ -79,19 +79,19 @@ msgstr "_Terminal"
 msgid "Issue git commands via terminal"
 msgstr "Kör git-kommandon via terminal"
 
-#: plugins/personal-details.ui:3 plugins/personal-details.ui:10
+#: plugins/personal-details.ui:5 plugins/personal-details.ui:12
 msgid "Edit personal details"
 msgstr "Redigera personliga uppgifter"
 
-#: plugins/terminal-view.ui:3
+#: plugins/terminal-view.ui:5
 msgid "Terminal window"
 msgstr "Terminalfönster"
 
-#: plugins/terminal-view.ui:9
+#: plugins/terminal-view.ui:11
 msgid "Create _Terminal"
 msgstr "Skapa _Terminal"
 
-#: plugins/terminal-view.ui:10
+#: plugins/terminal-view.ui:12
 msgid "Create new tab in git terminal"
 msgstr "Skapa ny flik i git-terminalen"
 

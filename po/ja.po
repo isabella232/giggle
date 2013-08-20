@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle\n"
-"POT-Creation-Date: 2013-07-31 02:07+0100\n"
+"POT-Creation-Date: 2013-08-20 01:55+0100\n"
 "PO-Revision-Date: 2012-08-11 00:15+0900\n"
 "Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -41,15 +41,15 @@ msgstr "ブランチ"
 msgid "Cannot find plugin description in '%s'"
 msgstr "'%s' にプラグインの説明を見つけることができません"
 
-#: plugins/hello-world.ui:3
+#: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
 msgstr "Giggle のプラグインシステムのデモ"
 
-#: plugins/hello-world.ui:9
+#: plugins/hello-world.ui:11
 msgid "Hello World"
 msgstr "Hello World"
 
-#: plugins/hello-world.ui:10
+#: plugins/hello-world.ui:12
 msgid "Check if the plugin system works"
 msgstr "プラグインシステムが動作するか確認"
 
@@ -69,7 +69,7 @@ msgstr "名前(_N):"
 msgid "_Email:"
 msgstr "電子メール(_E):"
 
-#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:9
+#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:11
 msgid "Personal Details"
 msgstr "個人情報"
 
@@ -81,19 +81,19 @@ msgstr "端末(_T)"
 msgid "Issue git commands via terminal"
 msgstr "端末で git コマンドを実行"
 
-#: plugins/personal-details.ui:3 plugins/personal-details.ui:10
+#: plugins/personal-details.ui:5 plugins/personal-details.ui:12
 msgid "Edit personal details"
 msgstr "個人情報を編集"
 
-#: plugins/terminal-view.ui:3
+#: plugins/terminal-view.ui:5
 msgid "Terminal window"
 msgstr "端末ウィンドウ"
 
-#: plugins/terminal-view.ui:9
+#: plugins/terminal-view.ui:11
 msgid "Create _Terminal"
 msgstr "端末を作成(_T)"
 
-#: plugins/terminal-view.ui:10
+#: plugins/terminal-view.ui:12
 msgid "Create new tab in git terminal"
 msgstr "git 端末に新しいタブを作成"
 

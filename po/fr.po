@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle\n"
-"POT-Creation-Date: 2013-07-31 02:07+0100\n"
+"POT-Creation-Date: 2013-08-20 01:55+0100\n"
 "PO-Revision-Date: 2011-09-01 15:15+0100\n"
 "Last-Translator: Alexandre Franke <alexandre.franke@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -39,15 +39,15 @@ msgstr "Branches"
 msgid "Cannot find plugin description in '%s'"
 msgstr "Impossible de trouver la description du greffon dans « %s »"
 
-#: plugins/hello-world.ui:3
+#: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
 msgstr "Démonstration du système de greffons de Giggle"
 
-#: plugins/hello-world.ui:9
+#: plugins/hello-world.ui:11
 msgid "Hello World"
 msgstr "Bonjour le monde"
 
-#: plugins/hello-world.ui:10
+#: plugins/hello-world.ui:12
 msgid "Check if the plugin system works"
 msgstr "Vérifier si le système de greffons fonctionne"
 
@@ -67,7 +67,7 @@ msgstr "_Nom :"
 msgid "_Email:"
 msgstr "_Adresse électronique :"
 
-#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:9
+#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:11
 msgid "Personal Details"
 msgstr "Informations personnelles"
 
@@ -79,19 +79,19 @@ msgstr "_Terminal"
 msgid "Issue git commands via terminal"
 msgstr "Exécuter des commandes git via le terminal"
 
-#: plugins/personal-details.ui:3 plugins/personal-details.ui:10
+#: plugins/personal-details.ui:5 plugins/personal-details.ui:12
 msgid "Edit personal details"
 msgstr "Modifier ses informations personnelles"
 
-#: plugins/terminal-view.ui:3
+#: plugins/terminal-view.ui:5
 msgid "Terminal window"
 msgstr "Fenêtre du terminal"
 
-#: plugins/terminal-view.ui:9
+#: plugins/terminal-view.ui:11
 msgid "Create _Terminal"
 msgstr "Créer un _terminal"
 
-#: plugins/terminal-view.ui:10
+#: plugins/terminal-view.ui:12
 msgid "Create new tab in git terminal"
 msgstr "Crée un nouvel onglet dans le terminal git"
 

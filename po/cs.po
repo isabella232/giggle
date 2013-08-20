@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle\n"
-"POT-Creation-Date: 2013-07-31 02:07+0100\n"
+"POT-Creation-Date: 2013-08-20 01:55+0100\n"
 "PO-Revision-Date: 2013-01-23 07:11+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -36,15 +36,15 @@ msgstr "Větve"
 msgid "Cannot find plugin description in '%s'"
 msgstr "Nelze najít popis zásuvného modulu v „%s“"
 
-#: plugins/hello-world.ui:3
+#: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
 msgstr "Ukázka systému zásuvných modulů Giggle"
 
-#: plugins/hello-world.ui:9
+#: plugins/hello-world.ui:11
 msgid "Hello World"
 msgstr "Ukázka „Hello World“"
 
-#: plugins/hello-world.ui:10
+#: plugins/hello-world.ui:12
 msgid "Check if the plugin system works"
 msgstr "Zkontrolovat, zda pracuje systém zásuvných modulů"
 
@@ -64,7 +64,7 @@ msgstr "Jmé_no:"
 msgid "_Email:"
 msgstr "_E-mail:"
 
-#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:9
+#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:11
 msgid "Personal Details"
 msgstr "Osobní údaje"
 
@@ -76,19 +76,19 @@ msgstr "_Terminál"
 msgid "Issue git commands via terminal"
 msgstr "Zadat příkazy git přes terminál"
 
-#: plugins/personal-details.ui:3 plugins/personal-details.ui:10
+#: plugins/personal-details.ui:5 plugins/personal-details.ui:12
 msgid "Edit personal details"
 msgstr "Upravit osobní údaje"
 
-#: plugins/terminal-view.ui:3
+#: plugins/terminal-view.ui:5
 msgid "Terminal window"
 msgstr "Terminálové okno"
 
-#: plugins/terminal-view.ui:9
+#: plugins/terminal-view.ui:11
 msgid "Create _Terminal"
 msgstr "Vytvořit _terminál"
 
-#: plugins/terminal-view.ui:10
+#: plugins/terminal-view.ui:12
 msgid "Create new tab in git terminal"
 msgstr "Vytvořit novou kartu v terminálu git"
 

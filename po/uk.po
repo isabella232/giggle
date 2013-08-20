@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Giggle\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle\n"
-"POT-Creation-Date: 2013-07-31 02:07+0100\n"
+"POT-Creation-Date: 2013-08-20 01:55+0100\n"
 "PO-Revision-Date: 2010-12-26 11:15+0300\n"
 "Last-Translator: Serhij Dubyk <serhijdubyk@gmail.com>\n"
 "Language-Team: Ukrainian Linux Translators <translate@linux.org.ua>\n"
@@ -42,17 +42,17 @@ msgid "Cannot find plugin description in '%s'"
 msgstr "Не вдалося знайти опис додатку у „%s“"
 
 # Демонстрація Giggle плагіном системи
-#: plugins/hello-world.ui:3
+#: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
 msgstr "Демонстрація системи додатків Giggle"
 
 # Привіт світ
-#: plugins/hello-world.ui:9
+#: plugins/hello-world.ui:11
 msgid "Hello World"
 msgstr "Привіт світ"
 
 # Перевірте, якщо плагін працює система
-#: plugins/hello-world.ui:10
+#: plugins/hello-world.ui:12
 msgid "Check if the plugin system works"
 msgstr "Перевірте, чи працює система додатків"
 
@@ -77,7 +77,7 @@ msgid "_Email:"
 msgstr "_Електронна пошта:"
 
 # Особисті дані
-#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:9
+#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:11
 msgid "Personal Details"
 msgstr "Персональна інформація"
 
@@ -92,22 +92,22 @@ msgid "Issue git commands via terminal"
 msgstr "Запускати git-команди через термінал"
 
 # Змінити особисті дані
-#: plugins/personal-details.ui:3 plugins/personal-details.ui:10
+#: plugins/personal-details.ui:5 plugins/personal-details.ui:12
 msgid "Edit personal details"
 msgstr "Змінити персональну інформацію"
 
 # Термінал вікна
-#: plugins/terminal-view.ui:3
+#: plugins/terminal-view.ui:5
 msgid "Terminal window"
 msgstr "Вікно терміналу"
 
 # Створення терміналу
-#: plugins/terminal-view.ui:9
+#: plugins/terminal-view.ui:11
 msgid "Create _Terminal"
 msgstr "Створити вікно _терміналу"
 
 # Створити нову вкладку у Git термінал
-#: plugins/terminal-view.ui:10
+#: plugins/terminal-view.ui:12
 msgid "Create new tab in git terminal"
 msgstr "Створити нову вкладку у вікні терміналу"
 
