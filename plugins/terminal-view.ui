@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <interface>
+  <!-- interface-requires gtk+ 3.0 -->
   <object class="GigglePlugin" id="plugin">
     <property name="description" translatable="yes">Terminal window</property>
 
@@ -6,7 +8,7 @@
       <object class="GtkActionGroup" id="GigglePlugin-Terminal">
         <child>
           <object class="GtkAction" id="ShowTerminalView">
-            <property name="label"   translatable="yes">Create _Terminal</property>
+            <property name="label" translatable="yes">Create _Terminal</property>
             <property name="tooltip" translatable="yes">Create new tab in git terminal</property>
             <property name="icon-name">gnome-terminal</property>
             <property name="icon-name">gnome-terminal</property>
@@ -20,7 +22,7 @@
       <menubar name="MainMenubar">
         <menu action="ViewMenu">
           <separator/>
-          <menuitem action="ShowTerminalView" />
+          <menuitem action="ShowTerminalView"/>
         </menu>
       </menubar>
     </ui>

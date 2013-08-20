@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <interface>
+  <!-- interface-requires gtk+ 3.0 -->
   <object class="GigglePlugin" id="plugin">
     <property name="description" translatable="yes">Demonstration of Giggle's Plugin System</property>
 
@@ -6,7 +8,7 @@
       <object class="GtkActionGroup" id="GigglePlugin-HelloWorld">
         <child>
           <object class="GtkAction" id="HelloWorld">
-            <property name="label"   translatable="yes">Hello World</property>
+            <property name="label" translatable="yes">Hello World</property>
             <property name="tooltip" translatable="yes">Check if the plugin system works</property>
             <property name="stock-id">gtk-about</property>
           </object>
@@ -18,14 +20,14 @@
       <menubar name="MainMenubar">
         <menu action="EditMenu">
           <placeholder name="EditMenuActions">
-            <menuitem action="HelloWorld" />
+            <menuitem action="HelloWorld"/>
           </placeholder>
         </menu>
       </menubar>
 
       <toolbar name="MainToolbar">
         <placeholder name="Actions">
-          <toolitem action="HelloWorld" />
+          <toolitem action="HelloWorld"/>
         </placeholder>
       </toolbar>
     </ui>

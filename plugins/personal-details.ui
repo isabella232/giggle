@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <interface>
+  <!-- interface-requires gtk+ 3.0 -->
   <object class="GigglePlugin" id="plugin">
     <property name="description" translatable="yes">Edit personal details</property>
 
@@ -6,7 +8,7 @@
       <object class="GtkActionGroup" id="GigglePlugin-PersonalDetails">
         <child>
           <object class="GtkAction" id="PersonalDetails">
-            <property name="label"   translatable="yes">Personal Details</property>
+            <property name="label" translatable="yes">Personal Details</property>
             <property name="tooltip" translatable="yes">Edit personal details</property>
             <property name="stock-id">gtk-preferences</property>
           </object>
@@ -17,8 +19,8 @@
     <ui>
       <menubar name="MainMenubar">
         <menu action="EditMenu">
-          <placeholder name='EditMenuPreferences'>
-            <menuitem action="PersonalDetails" />
+          <placeholder name="EditMenuPreferences">
+            <menuitem action="PersonalDetails"/>
           </placeholder>
         </menu>
       </menubar>
