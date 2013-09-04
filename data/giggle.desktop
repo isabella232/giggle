@@ -5,5 +5,5 @@ Name=Giggle
 Exec=giggle %F
 Icon=giggle
 StartupNotify=true
-Categories=Development;RevisionControl;
+Categories=GTK;Development;RevisionControl;
 MimeType=x-scheme-handler/git;
