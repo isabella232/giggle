@@ -1,0 +1,435 @@
+# Danish translation for giggle.
+# Copyright (C) 2011 giggle og nedenstående oversættere.
+# This file is distributed under the same license as the giggle package.
+# Joe Hansen <joedalton2@yahoo.dk>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: giggle master\n"
+"POT-Creation-Date: 2011-04-04 01:44+0000\n"
+"PO-Revision-Date: 2013-08-10 01:44+0000\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: C/tagging-commits.page:6(desc) C/tagging-commits.page:26(title)
+msgid "Tagging commits"
+msgstr "Mærkning af integrationer (commits)"
+
+#: C/tagging-commits.page:11(name) C/opening-repositories.page:11(name)
+#: C/introduction.page:11(name) C/index.page:7(name)
+#: C/history-view.page:11(name) C/browse-view.page:11(name)
+msgid "Łukasz Jernaś"
+msgstr "Łukasz Jernaś"
+
+#: C/tagging-commits.page:12(email) C/opening-repositories.page:12(email)
+#: C/introduction.page:12(email) C/index.page:8(email)
+#: C/history-view.page:12(email) C/browse-view.page:12(email)
+msgid "deejay1@srem.org"
+msgstr "deejay1@srem.org"
+
+#: C/tagging-commits.page:22(p) C/opening-repositories.page:22(p)
+#: C/introduction.page:22(p) C/index.page:18(p) C/history-view.page:22(p)
+#: C/browse-view.page:22(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#: C/tagging-commits.page:27(p)
+msgid ""
+"To make a new tag open the context menu by right clicking on a commit in the "
+"revision window (it doesn't matter if it's the Browse or History view), then "
+"click <gui>Create tag</gui> and enter a name in the just opened dialog "
+"window."
+msgstr ""
+"For at oprette et nyt mærke så åbn kontekstmenuen ved at højreklikke på en "
+"integrering (commit) i revisionsvinduet (det gør ingen forskel om det er "
+"i gennemse- eller historikvisningen), og klik så på <gui>Opret mærke</gui> "
+"og indtast et navn i det netop åbnede vindue."
+
+#: C/tagging-commits.page:28(p)
+msgid ""
+"You will notice that near the revision you have selected a new icon has "
+"appeared - it's your newly created tag."
+msgstr ""
+"Du vil bemærke, at ved den revision du har valgt bliver et nyt ikon vist "
+"- det er dit netop oprettede mærke."
+
+#: C/opening-repositories.page:6(desc)
+msgid "Opening GIT repositories"
+msgstr "Åbner GIT-arkiver"
+
+#: C/opening-repositories.page:26(title)
+msgid "Opening a repository"
+msgstr "Åbning af et arkiv"
+
+#: C/opening-repositories.page:27(p)
+msgid "You can open a git repository in the following ways:"
+msgstr "Du kan åbne et gitarkiv på de følgende måder:"
+
+#: C/opening-repositories.page:30(p)
+msgid ""
+"using <guiseq><gui>Project</gui><gui>Open</gui></guiseq>, and selecting the "
+"directory with your repository,"
+msgstr ""
+"ved at bruge <guiseq><gui>Projekt</gui><gui>Åbn</gui></guiseq>, og vælge "
+"mappen med dit arkiv,"
+
+#: C/opening-repositories.page:33(p)
+msgid "running <cmd>giggle</cmd> in your project's directory,"
+msgstr "køre <cmd>giggle</cmd> i dit projekts mappe,"
+
+#: C/opening-repositories.page:36(p)
+msgid ""
+"running <cmd>giggle</cmd> with the repository path specified as an argument."
+msgstr ""
+"køre <cmd>giggle</cmd> med arkivstien angivet som et argument."
+
+#: C/license.page:7(desc)
+msgid "Legal information."
+msgstr "Juridisk information."
+
+#: C/license.page:10(title)
+msgid "License"
+msgstr "Licens"
+
+#: C/license.page:11(p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Dette værk distribueres under licensen Creative Commons Navngivelse/"
+"Del på samme vilkår 3.0 Unported."
+
+#: C/license.page:19(p)
+msgid "You are free:"
+msgstr "Du må frit:"
+
+#: C/license.page:24(em)
+msgid "To share"
+msgstr "dele"
+
+#: C/license.page:25(p)
+msgid "To copy, distribute and transmit the work."
+msgstr "kopiere, distribuere og overføre værket."
+
+#: C/license.page:28(em)
+msgid "To remix"
+msgstr "sammensætte på anden vis"
+
+#: C/license.page:29(p)
+msgid "To adapt the work."
+msgstr "tilpasse værket"
+
+#: C/license.page:32(p)
+msgid "Under the following conditions:"
+msgstr "Under de følgende betingelser:"
+
+#: C/license.page:37(em)
+msgid "Attribution"
+msgstr "Navngivelse"
+
+#: C/license.page:38(p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Du skal angive værkets ophavsmand på den måde, som er angivet af forfatteren "
+"eller licensindehaveren (men ikke på en måde som antyder, at disse "
+"nødvendigvis støtter dig og din brug af værket)."
+
+#: C/license.page:45(em)
+msgid "Share Alike"
+msgstr "Del på samme vilkår"
+
+#: C/license.page:46(p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Hvis du ændrer, omdanner eller bygger videre på dette værk, kan du "
+"distribuere resultatet under den samme, en lignende eller en kompatibel "
+"licens."
+
+#: C/license.page:52(p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"For den fulde licenstekst, se <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/legalcode\">CreativeCommons internetside</link>, eller "
+"læs den fulde <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+"\">Commons-erklæring</link>."
+
+#: C/introduction.page:6(desc)
+msgid "Introduction to the <app>Giggle</app> GIT repository viewer"
+msgstr "Introduktion til <app>Giggle</app> - GIT-arkivfremviser"
+
+#: C/introduction.page:26(title)
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: C/introduction.page:27(p)
+msgid ""
+"The <app>Giggle</app> application enables you to graphically browse and "
+"manipulate the contents of a git directory tree."
+msgstr ""
+"Programmet <app>Giggle</app> lader dig grafisk gennemse og manipulere "
+"indholdet af en git-mappevisning."
+
+#: C/introduction.page:30(title)
+msgid "Starting <app>giggle</app>"
+msgstr "Start af <app>giggle</app>"
+
+#: C/introduction.page:31(p)
+msgid "You can start <app>giggle</app> in the following ways:"
+msgstr "Du kan starte <app>giggle</app> på følgende måder:"
+
+#: C/introduction.page:34(p)
+msgid ""
+"Choose <guiseq><gui>Programming</gui><gui>Giggle</gui></guiseq> from the "
+"<gui>Applications</gui> menu."
+msgstr ""
+"Vælg <guiseq><gui>Programmering</gui><gui>Giggle</gui></guiseq> fra "
+"menuen <gui>Programmer</gui>."
+
+# engelsk fejl?
+#: C/introduction.page:37(p)
+msgid ""
+"Run <cmd>giggle</cmd> at the prompt in a terminal such or from the <gui>Run "
+"Application</gui> dialog."
+msgstr ""
+"Kør <cmd>giggle</cmd> ved prompten i en terminal eller fra dialogen "
+"<gui>Kør program</gui>."
+
+#: C/introduction.page:43(title)
+msgid "Closing <app>giggle</app>"
+msgstr "Lukning af <app>giggle</app>"
+
+#: C/introduction.page:44(p)
+msgid ""
+"To close <app>giggle</app> choose <guiseq><gui>Project</gui><gui>Quit</gui></"
+"guiseq>, or press <keyseq><key>Ctrl</key><key>Q</key></keyseq>."
+msgstr ""
+"For at lukke <app>giggle</app> vælg <guiseq><gui>Projekt</gui><gui>Afslut</gui></"
+"guiseq>, eller tryk <keyseq><key>Ctrl</key><key>Q</key></keyseq>."
+
+#: C/index.page:22(title)
+msgid "Giggle Help"
+msgstr "Gigglehjælp"
+
+#: C/index.page:25(title)
+msgid "Working with <app>Giggle</app>"
+msgstr "Arbejde med <app>Giggle</app>"
+
+#: C/index.page:28(title)
+msgid "Working with GIT repositories"
+msgstr "Arbejde med GIT-arkiver"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/history-view.page:30(None)
+msgid ""
+"@@image: 'figures/giggle-history_view_sections.png'; "
+"md5=3b487583a028a4d087e3d6a5bcd589b8"
+msgstr ""
+"@@image: 'figures/giggle-history_view_sections.png'; "
+"md5=3b487583a028a4d087e3d6a5bcd589b8"
+
+#: C/history-view.page:6(desc)
+msgid "Viewing the history of a repository"
+msgstr "Viser historikken af et arkiv"
+
+#: C/history-view.page:25(title)
+msgid "History view"
+msgstr "Historikvisning"
+
+#: C/history-view.page:27(title) C/browse-view.page:28(title)
+msgid "Overview"
+msgstr "Overblik"
+
+#: C/history-view.page:29(desc)
+msgid "Giggle in History view mode"
+msgstr "Giggle i tilstanden historikvisning"
+
+#: C/history-view.page:32(p)
+msgid "<app>Giggle</app>'s history view is set up in three main parts:"
+msgstr "<app>Giggles</app> historikvisning er opsat i tre hoveddele:"
+
+#: C/history-view.page:35(p) C/browse-view.page:44(p)
+msgid "History graph"
+msgstr "Historikgraf"
+
+#: C/history-view.page:36(p)
+msgid ""
+"Displays a visual representation of the current repository history, "
+"including all the branches be it remote or local. By hovering the mouse "
+"cursor over the icons you can display additional information, such as branch "
+"and tag names. Moving through history is accomplished either by using the "
+"mouse or the <key>Up</key> and <key>Down</key> keys."
+msgstr ""
+"Viser en visuel repræsentation af den aktuelle arkivhistorik inklusive "
+"alle grene, det være sig eksternt eller lokalt. Ved at føre musemarkøren "
+"over ikonerne kan du se yderligere information, såsom gren og mærkenavne. "
+"Bevægelse igennem historikken opnås ved enten at bruge musen eller tasterne "
+"<key>Op</key> og <key>Ned</key>."
+
+#: C/history-view.page:39(p)
+msgid "Changed files"
+msgstr "Ændrede filer"
+
+#: C/history-view.page:40(p)
+msgid "Displays files changed in the currently selected revision"
+msgstr "Viser filer som blev ændret i den aktuelt valgte revision"
+
+#: C/history-view.page:43(p)
+msgid "Diff"
+msgstr "Forskel"
+
+#: C/history-view.page:44(p)
+msgid "Displays the differences for the selected file and revision."
+msgstr "Viser forskellene for den valgte fil og revision."
+
+#: C/history-view.page:46(p)
+msgid ""
+"<app>Giggle</app> displays the differences as individual chunks, you can "
+"move between them either by using the Up and Down icons above the list of "
+"changed files, or by pressing <keyseq><key>Alt</key><key>Up</key></keyseq> "
+"and <keyseq><key>Alt</key><key>Down</key></keyseq> keys. Doing so will also "
+"move you through the list of changed files as the diff progresses."
+msgstr ""
+"<app>Giggle</app> viser forskellene som individuelle klumper, du kan "
+"bevæge dig imellem dem enten ved at bruge ikonerne for Op og Ned over listen "
+"af ændrede filer eller ved at trykke på <keyseq><key>Alt</key><key>Op</key></keyseq> "
+"og <keyseq><key>Alt</key><key>Ned</key></keyseq>. Dette vil også gøre, at du "
+"bevæger dig igennem listen af ændrede filer efterhånden som forskellen går "
+"frem."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/browse-view.page:31(None)
+msgid ""
+"@@image: 'figures/giggle-browse_view_sections.png'; "
+"md5=390225c079a94ec75fd1c172f90c6b3c"
+msgstr ""
+"@@image: 'figures/giggle-browse_view_sections.png'; "
+"md5=390225c079a94ec75fd1c172f90c6b3c"
+
+#: C/browse-view.page:6(desc)
+msgid "Viewing the contents of the repository"
+msgstr "Viser indholdet af arkivet"
+
+#: C/browse-view.page:26(title)
+msgid "Browse view"
+msgstr "Tilstanden gennemse"
+
+#: C/browse-view.page:30(desc)
+msgid "Giggle in Browse view mode"
+msgstr "Giggle i tilstanden gennemse"
+
+#: C/browse-view.page:33(p)
+msgid "<app>Giggle</app>'s browse view is set up in three main parts:"
+msgstr "<app>Giggles</app> tilstand gennemse er opsat i tre hoveddele:"
+
+#: C/browse-view.page:36(p)
+msgid "Project tree"
+msgstr "Projekttræ"
+
+#: C/browse-view.page:37(p)
+msgid "Displays all the files included in the current repository."
+msgstr "Viser alle filerne inkluderet i det aktuelle arkiv."
+
+#: C/browse-view.page:40(p)
+msgid "File preview"
+msgstr "Filforhåndsvisning"
+
+# engelsk fejl?
+#: C/browse-view.page:41(p)
+msgid ""
+"Displays the contents of the currently selected file according as of the "
+"selected revision."
+msgstr ""
+"Viser indeholdet af den aktuelt valgte fil jævnfør den valgte revision."
+
+#: C/browse-view.page:45(p)
+msgid ""
+"Displays a visual representation of the currently selected file's history"
+msgstr ""
+"Viser en visuel repræsentation af den aktuelt valgte fils historik"
+
+#: C/browse-view.page:50(title)
+msgid "About the Project tree"
+msgstr "Om projekttræet"
+
+#: C/browse-view.page:51(p)
+msgid ""
+"The Project tree is a powerful part of Giggle's interface, of course if you "
+"know about it. By default it doesn't display files hidden by <file>."
+"gitignore</file>. You can change this behaviour by using the right-click "
+"context menu option <gui>Show all files</gui>. Files which are not part of "
+"your repository are greyed out."
+msgstr ""
+"Projekttræet er en funktionsrig del af Giggles brugerflade, såfremt du kender "
+"til den. Som standard viser den ikke filer skjult af <file>.gitignore</file>. "
+"Du kan ændre denne opførsel ved at bruge indstillingen i kontekstmenuen, som "
+"kommer frem med højreklik <gui>Vis alle filer</gui>. Filer, som ikke er en del "
+"af dit arkiv, bliver markeret med gråt."
+
+#: C/browse-view.page:52(p)
+msgid "The Project tree offers you the following:"
+msgstr "Projekttræet tilbyder dig følgende:"
+
+#: C/browse-view.page:55(p)
+msgid "Adding files to the repository."
+msgstr "Tilføjelse af filer til arkivet."
+
+#: C/browse-view.page:56(p)
+msgid "By using the <gui>Add file to repository</gui> context menu option."
+msgstr "Ved at bruge indstillingen <gui>Tilføj fil til arkivet</gui> i kontekstmenuen."
+
+#: C/browse-view.page:59(p)
+msgid "Adding/removing files to <file>.gitignore</file>."
+msgstr "Tilføje filer til eller fjerne filer fra <file>.gitignore</file>."
+
+#: C/browse-view.page:60(p)
+msgid ""
+"By using the <gui>Add to .gitignore</gui> or <gui>Remove from .gitignore</"
+"gui> context menu options."
+msgstr ""
+"Ved at bruge indstillingerne <gui>Tilføj til .gitignore</gui> eller <gui>"
+"Fjern fra .gitignore</gui> i kontekstmenuen."
+
+#: C/browse-view.page:63(p)
+msgid "Editing files"
+msgstr "Redigere filer"
+
+#: C/browse-view.page:66(p)
+msgid "Committing"
+msgstr "Integrere (committing)"
+
+#: C/browse-view.page:69(p)
+msgid "Creating patches"
+msgstr "Oprette rettelser (patches)"
+
+#: C/browse-view.page:70(p)
+msgid ""
+"When there are any unstaged changes in the file list, you can create a patch "
+"by using the <gui>Create patch</gui> context menu option."
+msgstr ""
+"Når der er »fjern ændringer« i fillisten kan du oprette en rettelse (patch) "
+"ved at bruge indstillingen <gui>Lav rettelse</gui> i kontekstmenuen."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr ""
+"Joe Hansen, 2011.\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
