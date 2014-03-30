@@ -8,10 +8,10 @@
   <name xml:lang="en">Giggle</name>
   <shortdesc xml:lang="en">Git repository viewer</shortdesc>
   <shortdesc xml:lang="pl">Przeglądarka repozytoriów git</shortdesc>
-  <homepage rdf:resource="http://live.gnome.org/giggle" />
+  <homepage rdf:resource="https://wiki.gnome.org/Apps/giggle" />
   <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/giggle-list" />
   <download-page rdf:resource="http://download.gnome.org/sources/giggle/" />
-  <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=giggle" />
+  <bug-database rdf:resource="https://bugzilla.gnome.org/browse.cgi?product=giggle" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#development" />
 
   <maintainer>
