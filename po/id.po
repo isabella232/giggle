@@ -1,118 +1,78 @@
 # Indonesian translation for giggle.
 # Copyright (C) 2012 giggle's COPYRIGHT HOLDER
 # This file is distributed under the same license as the giggle package.
-# Andika Triwidada <andika@gmail.com>, 2012.
+# Andika Triwidada <andika@gmail.com>, 2012, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle\n"
-"POT-Creation-Date: 2013-08-20 01:55+0100\n"
-"PO-Revision-Date: 2012-10-20 23:04+0700\n"
+"product=giggle&keywords=I18N+L10N\n"
+"POT-Creation-Date: 2013-12-18 18:59+0000\n"
+"PO-Revision-Date: 2014-03-30 19:43+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: data/main-window.ui:46
-msgid "URL:"
-msgstr "URL:"
-
-#: data/main-window.ui:60
-msgid "Name:"
-msgstr "Nama:"
-
-#: data/main-window.ui:85 src/giggle-remote-editor.c:172
-msgid "Branches"
-msgstr "Branch"
-
-#: libgiggle/giggle-plugin.c:526
+#: ../libgiggle/giggle-plugin.c:526
 #, c-format
 msgid "Cannot find plugin description in '%s'"
 msgstr "Tak bisa temukan deskripsi pengaya dalam '%s'"
 
-#: plugins/hello-world.ui:5
-msgid "Demonstration of Giggle's Plugin System"
-msgstr "Demonstrasi tentang Sistem Pengaya Giggle"
-
-#: plugins/hello-world.ui:11
-msgid "Hello World"
-msgstr "Hello World"
-
-#: plugins/hello-world.ui:12
-msgid "Check if the plugin system works"
-msgstr "Periksa apakah sistem pengaya bekerja"
-
-#: plugins/giggle-personal-details-window.c:80
+#: ../plugins/giggle-personal-details-window.c:80
 msgid "There was an error setting the configuration"
 msgstr "Ada galat saat mengatur konfigurasi"
 
-#: plugins/giggle-personal-details-window.c:182
+#: ../plugins/giggle-personal-details-window.c:182
 msgid "There was an error getting the configuration"
 msgstr "Ada galat saat mengambil konfigurasi"
 
-#: plugins/giggle-personal-details-window.c:246
+#: ../plugins/giggle-personal-details-window.c:246
 msgid "_Name:"
 msgstr "_Nama:"
 
-#: plugins/giggle-personal-details-window.c:256
+#: ../plugins/giggle-personal-details-window.c:256
 msgid "_Email:"
 msgstr "Sur_el:"
 
-#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:11
+#: ../plugins/giggle-personal-details-window.c:269
 msgid "Personal Details"
 msgstr "Rincian Pribadi"
 
-#: plugins/giggle-view-terminal.c:95
+#: ../plugins/giggle-view-terminal.c:95
 msgid "_Terminal"
 msgstr "_Terminal"
 
-#: plugins/giggle-view-terminal.c:96
+#: ../plugins/giggle-view-terminal.c:96
 msgid "Issue git commands via terminal"
 msgstr "Berikan perintah git melalui terminal"
 
-#: plugins/personal-details.ui:5 plugins/personal-details.ui:12
-msgid "Edit personal details"
-msgstr "Sunting rincian pribadi"
-
-#: plugins/terminal-view.ui:5
-msgid "Terminal window"
-msgstr "Jendela terminal"
-
-#: plugins/terminal-view.ui:11
-msgid "Create _Terminal"
-msgstr "Buat _Terminal"
-
-#: plugins/terminal-view.ui:12
-msgid "Create new tab in git terminal"
-msgstr "Buat tab baru dalam terminal git"
-
-#: src/eggfindbar.c:303
+#: ../src/eggfindbar.c:303
 msgid "Find:"
 msgstr "Cari:"
 
-#: src/eggfindbar.c:316
+#: ../src/eggfindbar.c:316
 msgid "Find previous occurrence of the search string"
 msgstr "Temukan kemunculan string pencarian sebelumnya"
 
-#: src/eggfindbar.c:324
+#: ../src/eggfindbar.c:324
 msgid "Find next occurrence of the search string"
 msgstr "Temukan kemunculan string pencarian selanjutnya"
 
-#: src/eggfindbar.c:331
+#: ../src/eggfindbar.c:331
 msgid "C_ase Sensitive"
 msgstr "Peka Ka_pitalisasi"
 
-#: src/eggfindbar.c:335
+#: ../src/eggfindbar.c:335
 msgid "Toggle case sensitive search"
 msgstr "Jungkitkan modus pencarian peka kapitalisasi"
 
-#: src/giggle-authors-view.c:78
+#: ../src/giggle-authors-view.c:78
 #, c-format
 msgid ""
 "An error occurred when retrieving authors list:\n"
@@ -121,11 +81,11 @@ msgstr ""
 "Terjadi galat ketika mengambil daftar penulis:\n"
 "%s"
 
-#: src/giggle-authors-view.c:144
+#: ../src/giggle-authors-view.c:144
 msgid "Authors:"
 msgstr "Penulis:"
 
-#: src/giggle-branches-view.c:79
+#: ../src/giggle-branches-view.c:79
 #, c-format
 msgid ""
 "An error occurred when retrieving branches list:\n"
@@ -134,35 +94,35 @@ msgstr ""
 "Terjadi galat ketika mengambil daftar branch:\n"
 "%s"
 
-#: src/giggle-branches-view.c:145 src/giggle-revision-view.c:197
+#: ../src/giggle-branches-view.c:145 ../src/giggle-revision-view.c:197
 msgid "Branches:"
 msgstr "Branch:"
 
-#: src/giggle-clone-dialog.c:246
+#: ../src/giggle-clone-dialog.c:246
 msgid "Clone Repository"
 msgstr "Clone Repositori"
 
-#: src/giggle-clone-dialog.c:254
+#: ../src/giggle-clone-dialog.c:254
 msgid "Cl_one"
 msgstr "Cl_one"
 
-#: src/giggle-clone-dialog.c:278
+#: ../src/giggle-clone-dialog.c:278
 msgid "_Repository:"
 msgstr "_Repositori:"
 
-#: src/giggle-clone-dialog.c:290
+#: ../src/giggle-clone-dialog.c:290
 msgid "_Local name:"
 msgstr "Nama _lokal:"
 
-#: src/giggle-clone-dialog.c:295
+#: ../src/giggle-clone-dialog.c:295
 msgid "Please select a location for the clone"
 msgstr "Harap pilih suatu lokasi untuk clone"
 
-#: src/giggle-clone-dialog.c:298
+#: ../src/giggle-clone-dialog.c:298
 msgid "Clone in _folder:"
 msgstr "Clone dalam _folder:"
 
-#: src/giggle-diff-tree-view.c:140 src/giggle-file-list.c:1660
+#: ../src/giggle-diff-tree-view.c:140 ../src/giggle-file-list.c:1660
 #, c-format
 msgid ""
 "An error occurred when retrieving different files list:\n"
@@ -171,11 +131,11 @@ msgstr ""
 "Terjadi galat ketika mengambil daftar berkas lain:\n"
 "%s"
 
-#: src/giggle-diff-tree-view.c:207
+#: ../src/giggle-diff-tree-view.c:207
 msgid "Changed files"
 msgstr "Berkas yang berubah"
 
-#: src/giggle-diff-view.c:714
+#: ../src/giggle-diff-view.c:714
 #, c-format
 msgid ""
 "An error occurred when retrieving a diff:\n"
@@ -184,19 +144,19 @@ msgstr ""
 "Terjadi galat ketika mengambil suatu diff:\n"
 "%s"
 
-#: src/giggle-diff-window.c:80
+#: ../src/giggle-diff-window.c:80
 msgid "Commit changes"
 msgstr "Komit perubahan"
 
-#: src/giggle-diff-window.c:102
+#: ../src/giggle-diff-window.c:102
 msgid "Revision log:"
 msgstr "Log revisi:"
 
-#: src/giggle-diff-window.c:130
+#: ../src/giggle-diff-window.c:130
 msgid "Co_mmit"
 msgstr "Ko_mit"
 
-#: src/giggle-diff-window.c:202
+#: ../src/giggle-diff-window.c:202
 #, c-format
 msgid ""
 "An error occurred when committing:\n"
@@ -205,7 +165,7 @@ msgstr ""
 "Terjadi galat ketika mengomit:\n"
 "%s"
 
-#: src/giggle-file-list.c:387
+#: ../src/giggle-file-list.c:387
 #, c-format
 msgid ""
 "An error occurred when retrieving the file list:\n"
@@ -214,7 +174,7 @@ msgstr ""
 "Terjadi galat ketika mengambil daftar berkas:\n"
 "%s"
 
-#: src/giggle-file-list.c:756
+#: ../src/giggle-file-list.c:756
 #, c-format
 msgid ""
 "An error occurred when adding a file to git:\n"
@@ -223,40 +183,41 @@ msgstr ""
 "Terjadi galat ketika menambah berkas ke git:\n"
 "%s"
 
-#: src/giggle-file-list.c:816 src/giggle-file-list.c:842
-#: src/giggle-rev-list-view.c:1173 src/giggle-rev-list-view.c:1204
+#: ../src/giggle-file-list.c:816 ../src/giggle-file-list.c:842
+#: ../src/giggle-rev-list-view.c:1173 ../src/giggle-rev-list-view.c:1204
 #, c-format
 msgid "Could not save the patch as %s"
 msgstr "Tak bisa menyimpan patch sebagai %s"
 
-#: src/giggle-file-list.c:821 src/giggle-file-list.c:847
-#: src/giggle-rev-list-view.c:1181 src/giggle-rev-list-view.c:1209
+#: ../src/giggle-file-list.c:821 ../src/giggle-file-list.c:847
+#: ../src/giggle-rev-list-view.c:1181 ../src/giggle-rev-list-view.c:1209
 msgid "No error was given"
 msgstr "Tak ada galat yang diberikan"
 
-#: src/giggle-file-list.c:868 src/giggle-rev-list-view.c:1235
+#: ../src/giggle-file-list.c:868 ../src/giggle-rev-list-view.c:1235
 #, c-format
 msgid "Patch saved as %s"
 msgstr "Patch disimpan sebagai %s"
 
-#: src/giggle-file-list.c:872 src/giggle-rev-list-view.c:1239
+#: ../src/giggle-file-list.c:872 ../src/giggle-rev-list-view.c:1239
+#, c-format
 msgid "Created in project directory"
 msgstr "Dibuat di direktori projek"
 
-#: src/giggle-file-list.c:875 src/giggle-rev-list-view.c:1242
+#: ../src/giggle-file-list.c:875 ../src/giggle-rev-list-view.c:1242
 #, c-format
 msgid "Created in directory %s"
 msgstr "Dibuat dalam direktori %s"
 
-#: src/giggle-file-list.c:910 src/giggle-rev-list-view.c:1293
+#: ../src/giggle-file-list.c:910 ../src/giggle-rev-list-view.c:1293
 msgid "Create Patch"
 msgstr "Buat Patch"
 
-#: src/giggle-file-list.c:1013
+#: ../src/giggle-file-list.c:1013
 msgid "Delete glob pattern?"
 msgstr "Hapus pola glob?"
 
-#: src/giggle-file-list.c:1016
+#: ../src/giggle-file-list.c:1016
 msgid ""
 "The selected file was shadowed by a glob pattern that may be hiding other "
 "files, delete it?"
@@ -264,271 +225,274 @@ msgstr ""
 "Berkas yang dipilih dibayangi oleh suatu pola glob yang mungkin "
 "menyembunyikan berkas lain, hapus saja?"
 
-#: src/giggle-file-list.c:1411
+#: ../src/giggle-file-list.c:1411
 msgid "_Commit Changes"
 msgstr "_Komit perubahan"
 
-#: src/giggle-file-list.c:1413
+#: ../src/giggle-file-list.c:1413
 msgid "A_dd file to repository"
 msgstr "_Tambah berkas ke repositori"
 
-#: src/giggle-file-list.c:1414 src/giggle-rev-list-view.c:1638
+#: ../src/giggle-file-list.c:1414 ../src/giggle-rev-list-view.c:1638
 msgid "Create _Patch"
 msgstr "Buat _Patch"
 
-#: src/giggle-file-list.c:1415
+#: ../src/giggle-file-list.c:1415
 msgid "_Add to .gitignore"
 msgstr "_Tambah ke .gitignore"
 
-#: src/giggle-file-list.c:1416
+#: ../src/giggle-file-list.c:1416
 msgid "_Remove from .gitignore"
 msgstr "Hapus da_ri .gitignore"
 
-#: src/giggle-file-list.c:1420
+#: ../src/giggle-file-list.c:1420
 msgid "_Show all files"
 msgstr "Tampilkan _semua berkas"
 
-#: src/giggle-file-list.c:1459
+#: ../src/giggle-file-list.c:1459
 msgid "Project"
 msgstr "Projek"
 
-#: src/giggle-helpers.c:176
+#: ../src/giggle-helpers.c:176
 msgid "An error occurred:"
 msgstr "Terjadi galat:"
 
-#: src/giggle-main.c:36
+#: ../src/giggle-main.c:36
 msgid "Clone a repository"
 msgstr "Clone suatu repositori"
 
-#: src/giggle-main.c:37 src/giggle-remotes-view.c:267
+#: ../src/giggle-main.c:37 ../src/giggle-remotes-view.c:267
 msgid "URL"
 msgstr "URL"
 
-#: src/giggle-main.c:40
+#: ../src/giggle-main.c:40
 msgid "Show the diff window"
 msgstr "Tampilkan jendela diff"
 
-#: src/giggle-main.c:44
+#: ../src/giggle-main.c:44
 msgid "Show version information and exit"
 msgstr "Tampilkan informasi versi dan keluar"
 
-#: src/giggle-main.c:47
+#: ../src/giggle-main.c:47
 msgid "[DIRECTORY]"
 msgstr "[DIREKTORI]"
 
-#: src/giggle-main.c:79
+#: ../src/giggle-main.c:79
 #, c-format
 msgid "Report errors (in English, with LC_ALL=C) to <%s>."
 msgstr "Laporkan galat (dalam bahasa Inggris, dengan LC_ALL=C) ke <%s>."
 
-#: src/giggle-main.c:80
+#: ../src/giggle-main.c:80
 msgid "Giggle is a graphical frontend for the git content tracker."
 msgstr "Giggle adalah frontend grafis bagi pelacak isi git."
 
-#: src/giggle-main.c:88
-#, fuzzy, c-format
+#: ../src/giggle-main.c:88
+#, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Coba '%s --help' untuk informasi lebih banyak.\n"
 
-#: src/giggle-remote-editor.c:146
-#, fuzzy
+#: ../src/giggle-remote-editor.c:146
 msgid "Click to add mapping…"
 msgstr "Klik untuk menambah pemetaan…"
 
-#: src/giggle-remote-editor.c:365
+#: ../src/giggle-remote-editor.c:172
+msgid "Branches"
+msgstr "Branch"
+
+#: ../src/giggle-remote-editor.c:365
 msgid "Unnamed"
 msgstr "Tanpa nama"
 
-#: src/giggle-remotes-view.c:256
+#: ../src/giggle-remotes-view.c:256
 msgid "Icon"
 msgstr "Ikon"
 
-#: src/giggle-remotes-view.c:262
+#: ../src/giggle-remotes-view.c:262
 msgid "Name"
 msgstr "Nama"
 
-#: src/giggle-remotes-view.c:280
-#, fuzzy
+#: ../src/giggle-remotes-view.c:280
 msgid "Double click to add remote…"
 msgstr "Klik ganda untuk menambah remote…"
 
-#: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
+#: ../src/giggle-revision-view.c:183 ../src/giggle-view-file.c:1215
 msgid "Author:"
 msgstr "Penulis:"
 
-#: src/giggle-revision-view.c:184 src/giggle-view-file.c:1216
+#: ../src/giggle-revision-view.c:184 ../src/giggle-view-file.c:1216
 msgid "Committer:"
 msgstr "Pengomit:"
 
-#: src/giggle-revision-view.c:195 src/giggle-view-file.c:1217
+#: ../src/giggle-revision-view.c:195 ../src/giggle-view-file.c:1217
 msgid "Date:"
 msgstr "Tanggal:"
 
-#: src/giggle-revision-view.c:196 src/giggle-view-file.c:1218
+#: ../src/giggle-revision-view.c:196 ../src/giggle-view-file.c:1218
 msgid "SHA:"
 msgstr "SHA:"
 
-#: src/giggle-revision-view.c:216
+#: ../src/giggle-revision-view.c:216
 msgid "Change Log:"
 msgstr "Log Perubahan:"
 
-#: src/giggle-revision-view.c:505
+#: ../src/giggle-revision-view.c:505
 msgid "_Details"
 msgstr "_Detail"
 
-#: src/giggle-revision-view.c:506
+#: ../src/giggle-revision-view.c:506
 msgid "Display revision details"
 msgstr "Tampilkan rincian revisi"
 
-#: src/giggle-rev-list-view.c:331
+#: ../src/giggle-rev-list-view.c:331
 #, c-format
 msgid "Delete branch \"%s\""
 msgstr "Hapus branch \"%s\""
 
-#: src/giggle-rev-list-view.c:334
+#: ../src/giggle-rev-list-view.c:334
 #, c-format
 msgid "Delete tag \"%s\""
 msgstr "Hapus tag \"%s\""
 
-#: src/giggle-rev-list-view.c:504
+#: ../src/giggle-rev-list-view.c:504
 msgid "Branch"
 msgstr "Branch"
 
-#: src/giggle-rev-list-view.c:507
+#: ../src/giggle-rev-list-view.c:507
 msgid "Tag"
 msgstr "Tag"
 
-#: src/giggle-rev-list-view.c:510
+#: ../src/giggle-rev-list-view.c:510
 msgid "Remote"
 msgstr "Remote"
 
-#: src/giggle-rev-list-view.c:1063
+#: ../src/giggle-rev-list-view.c:1063
 msgid "Enter branch name:"
 msgstr "Masukkan nama branch:"
 
-#: src/giggle-rev-list-view.c:1114
+#: ../src/giggle-rev-list-view.c:1114
 msgid "Enter tag name:"
 msgstr "Masukkan nama tag:"
 
-#: src/giggle-rev-list-view.c:1175
+#: ../src/giggle-rev-list-view.c:1175
+#, c-format
 msgid "Could not create patch"
 msgstr "Tak bisa membuat patch"
 
-#: src/giggle-rev-list-view.c:1429
+#: ../src/giggle-rev-list-view.c:1429
 msgid "Uncommitted changes"
 msgstr "Perubahan yang belum dikomit"
 
 #. TRANSLATORS: it's a strftime format string
-#: src/giggle-rev-list-view.c:1483
+#: ../src/giggle-rev-list-view.c:1483
 msgid "%I:%M %p"
 msgstr "%H:%M"
 
 #. TRANSLATORS: it's a strftime format string
-#: src/giggle-rev-list-view.c:1496
+#: ../src/giggle-rev-list-view.c:1496
 msgid "%a %I:%M %p"
 msgstr "%a %H:%M"
 
 #. TRANSLATORS: it's a strftime format string
-#: src/giggle-rev-list-view.c:1508
+#: ../src/giggle-rev-list-view.c:1508
 msgid "%b %d %I:%M %p"
 msgstr "%d %b %H:%M"
 
+#. it's older
 #. TRANSLATORS: it's a strftime format string
-#: src/giggle-rev-list-view.c:1513
+#: ../src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
 msgstr "%d %b %Y"
 
-#: src/giggle-rev-list-view.c:1635
+#: ../src/giggle-rev-list-view.c:1635
 msgid "Commit"
 msgstr "Komit"
 
-#: src/giggle-rev-list-view.c:1636
+#: ../src/giggle-rev-list-view.c:1636
 msgid "Create _Branch"
 msgstr "Buat _Branch"
 
-#: src/giggle-rev-list-view.c:1637
+#: ../src/giggle-rev-list-view.c:1637
 msgid "Create _Tag"
 msgstr "Buat _Tag"
 
-#: src/giggle-rev-list-view.c:1703
+#: ../src/giggle-rev-list-view.c:1703
 msgid "Graph"
 msgstr "Graf"
 
-#: src/giggle-rev-list-view.c:1721
+#: ../src/giggle-rev-list-view.c:1721
 msgid "Short Log"
 msgstr "Log Singkat"
 
-#: src/giggle-rev-list-view.c:1740
+#: ../src/giggle-rev-list-view.c:1740
 msgid "Author"
 msgstr "Penulis"
 
-#: src/giggle-rev-list-view.c:1757
+#: ../src/giggle-rev-list-view.c:1757
 msgid "Date"
 msgstr "Tanggal"
 
-#: src/giggle-short-list.c:300
+#: ../src/giggle-short-list.c:300
 msgid "Details"
 msgstr "Detail"
 
-#: src/giggle-short-list.c:416
-#, fuzzy
+#: ../src/giggle-short-list.c:416
 msgid "Show A_ll…"
 msgstr "Tampi_lkan Semua…"
 
-#: src/giggle-view-diff.c:107
+#: ../src/giggle-view-diff.c:107
 #, c-format
 msgid "Change %d of %d"
 msgstr "Perubahan %d dari %d"
 
-#: src/giggle-view-diff.c:182
+#: ../src/giggle-view-diff.c:182
 msgid "_Previous Change"
 msgstr "_Perubahan Sebelumnya"
 
-#: src/giggle-view-diff.c:182
+#: ../src/giggle-view-diff.c:182
 msgid "View previous change"
 msgstr "Lihat perubahan sebelumnya"
 
-#: src/giggle-view-diff.c:186
+#: ../src/giggle-view-diff.c:186
 msgid "_Next Change"
 msgstr "Perubahan Sela_njutnya:"
 
-#: src/giggle-view-diff.c:186
+#: ../src/giggle-view-diff.c:186
 msgid "View next change"
 msgstr "Lihat perubahan selanjutnya"
 
-#: src/giggle-view-diff.c:348
+#: ../src/giggle-view-diff.c:348
 msgid "_Changes"
 msgstr "_Perubahan"
 
-#: src/giggle-view-diff.c:349
+#: ../src/giggle-view-diff.c:349
 msgid "Browse a revision's changes"
 msgstr "Ramban perubahan suatu revisi"
 
-#: src/giggle-view-file.c:324
+#: ../src/giggle-view-file.c:324
 msgid "_Goto Line Number"
 msgstr "_Ke Nomor Baris"
 
-#: src/giggle-view-file.c:325
+#: ../src/giggle-view-file.c:325
 msgid "Highlight specified line number"
 msgstr "Sorot nomor baris yang dinyatakan"
 
-#: src/giggle-view-file.c:329
+#: ../src/giggle-view-file.c:329
 msgid "Show _Changes"
 msgstr "_Tampilkan Perubahan"
 
-#: src/giggle-view-file.c:330
+#: ../src/giggle-view-file.c:330
 msgid "Show changes for selected revision"
 msgstr "Tampilkan perubahan untuk revisi yang dipilih"
 
-#: src/giggle-view-file.c:334
+#: ../src/giggle-view-file.c:334
 msgid "Select _Revision"
 msgstr "Pilih _Revisi"
 
-#: src/giggle-view-file.c:335
+#: ../src/giggle-view-file.c:335
 msgid "Select revision of selected line"
 msgstr "Pilih revisi dari baris yang dipilih"
 
-#: src/giggle-view-file.c:897
+#: ../src/giggle-view-file.c:897
 #, c-format
 msgid ""
 "An error occurred when getting file ref:\n"
@@ -537,8 +501,8 @@ msgstr ""
 "Terjadi galat ketika mendapat ref berkas:\n"
 "%s"
 
-#: src/giggle-view-file.c:968 src/giggle-view-history.c:248
-#: src/giggle-view-history.c:342
+#: ../src/giggle-view-file.c:968 ../src/giggle-view-history.c:248
+#: ../src/giggle-view-history.c:342
 #, c-format
 msgid ""
 "An error occurred when getting the revisions list:\n"
@@ -547,69 +511,69 @@ msgstr ""
 "Terjadi galat ketika mendapat daftar revisi:\n"
 "%s"
 
-#: src/giggle-view-file.c:1128
+#: ../src/giggle-view-file.c:1128
 msgid "Line Number:"
 msgstr "Nomor Baris:"
 
-#: src/giggle-view-file.c:1566
+#: ../src/giggle-view-file.c:1566
 msgid "_Browse"
 msgstr "Ram_ban"
 
-#: src/giggle-view-file.c:1567
+#: ../src/giggle-view-file.c:1567
 msgid "Browse the files of this project"
 msgstr "Ramban berkas-berkas projek ini"
 
-#: src/giggle-view-history.c:842
+#: ../src/giggle-view-history.c:842
 msgid "_History"
 msgstr "R_iwayat"
 
-#: src/giggle-view-history.c:843
+#: ../src/giggle-view-history.c:843
 msgid "Browse the history of this project"
 msgstr "Ramban riwayat projek ini"
 
-#: src/giggle-view-summary.c:117
+#: ../src/giggle-view-summary.c:117
 msgid "Description:"
 msgstr "Deskripsi:"
 
-#: src/giggle-view-summary.c:167
+#: ../src/giggle-view-summary.c:167
 msgid "Remotes:"
 msgstr "Remote:"
 
-#: src/giggle-view-summary.c:195
+#: ../src/giggle-view-summary.c:195
 msgid "_Summary"
 msgstr "Ringka_san"
 
-#: src/giggle-view-summary.c:198
+#: ../src/giggle-view-summary.c:198
 msgid "_Branches"
 msgstr "_Branch"
 
-#: src/giggle-view-summary.c:201
+#: ../src/giggle-view-summary.c:201
 msgid "_Authors"
 msgstr "_Penulis"
 
-#: src/giggle-view-summary.c:204
+#: ../src/giggle-view-summary.c:204
 msgid "_Remotes"
 msgstr "_Remote"
 
-#: src/giggle-window.c:546
+#: ../src/giggle-window.c:546
 #, c-format
 msgid "The directory '%s' does not look like a git repository."
 msgstr "Direktori '%s' nampaknya bukan suatu repositori git."
 
-#: src/giggle-window.c:629
+#: ../src/giggle-window.c:629
 msgid "Select git repository"
 msgstr "Pilih repositori git"
 
-#: src/giggle-window.c:682
+#: ../src/giggle-window.c:682
 #, c-format
 msgid "Properties of %s"
 msgstr "Properti dari %s"
 
-#: src/giggle-window.c:912
+#: ../src/giggle-window.c:912
 msgid "Contributors:"
 msgstr "Penyumbang:"
 
-#: src/giggle-window.c:925
+#: ../src/giggle-window.c:925
 msgid ""
 "Copyright © 2007 - 2008 Imendio AB\n"
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
@@ -619,162 +583,167 @@ msgstr ""
 "Hak Cipta © 2008 - 2009 Mathias Hasselmann\n"
 "Hak Cipta © 2009 - 2012 Para penulis Giggle"
 
-#: src/giggle-window.c:937
+#. Translators: This is a special message that shouldn't be translated
+#. * literally. It is used in the about box to give credits to
+#. * the translators.
+#. * Thus, you should translate it to your name and email address.
+#. * You should also include other translators who have contributed to
+#. * this translation; in that case, please write each of them on a separate
+#. * line seperated by newlines (\n).
+#.
+#: ../src/giggle-window.c:937
 msgid "translator-credits"
-msgstr "Andika Triwidada <andika@gmail.com>, 2012"
+msgstr "Andika Triwidada <andika@gmail.com>, 2012, 2014"
 
-#: src/giggle-window.c:942
+#: ../src/giggle-window.c:942
 msgid "A graphical frontend for Git"
 msgstr "Suatu frontend grafis bagi Git"
 
-#: src/giggle-window.c:947
+#: ../src/giggle-window.c:947
 msgid "About Giggle"
 msgstr "Tentang Giggle"
 
-#: src/giggle-window.c:951
+#: ../src/giggle-window.c:951
 msgid "Giggle Website"
 msgstr "Situs Web Giggle"
 
-#: src/giggle-window.c:1007
-#, fuzzy
+#: ../src/giggle-window.c:1007
 msgid "_Find…"
 msgstr "_Cari…"
 
-#: src/giggle-window.c:1008
-#, fuzzy
+#: ../src/giggle-window.c:1008
 msgid "Find…"
-msgstr "Cari:"
+msgstr "Cari…"
 
-#: src/giggle-window.c:1014
+#: ../src/giggle-window.c:1014
 msgid "Find Ne_xt"
 msgstr "Cari Sela_njutnya"
 
-#: src/giggle-window.c:1015
+#: ../src/giggle-window.c:1015
 msgid "Find next match"
 msgstr "Cari kecocokan selanjutnya"
 
-#: src/giggle-window.c:1018
+#: ../src/giggle-window.c:1018
 msgid "Find Pre_vious"
 msgstr "Cari Se_belumnya"
 
-#: src/giggle-window.c:1019
+#: ../src/giggle-window.c:1019
 msgid "Find previous match"
 msgstr "Cari kecocokan sebelumnya"
 
-#: src/giggle-window.c:1025
+#: ../src/giggle-window.c:1025
 msgid "_Project"
 msgstr "_Projek"
 
-#: src/giggle-window.c:1026
+#: ../src/giggle-window.c:1026
 msgid "_Edit"
 msgstr "_Sunting"
 
-#: src/giggle-window.c:1027
+#: ../src/giggle-window.c:1027
 msgid "_Go"
 msgstr "_Pergi"
 
-#: src/giggle-window.c:1028
+#: ../src/giggle-window.c:1028
 msgid "_View"
 msgstr "_Tampilan"
 
-#: src/giggle-window.c:1029
+#: ../src/giggle-window.c:1029
 msgid "_Help"
 msgstr "Ba_ntuan"
 
-#: src/giggle-window.c:1032
+#: ../src/giggle-window.c:1032
 msgid "Open a git repository"
 msgstr "Buka suatu repositori git"
 
-#: src/giggle-window.c:1036
+#: ../src/giggle-window.c:1036
 msgid "Clone _location"
 msgstr "Clone _lokasi"
 
-#: src/giggle-window.c:1036
+#: ../src/giggle-window.c:1036
 msgid "Clone a location"
 msgstr "Clone suatu lokasi"
 
-#: src/giggle-window.c:1041
+#: ../src/giggle-window.c:1041
 msgid "_Save patch"
 msgstr "_Simpan patch"
 
-#: src/giggle-window.c:1041
+#: ../src/giggle-window.c:1041
 msgid "Save a patch"
 msgstr "Simpan suatu patch"
 
-#: src/giggle-window.c:1045
+#: ../src/giggle-window.c:1045
 msgid "_Diff current changes"
 msgstr "_Diff perubahan kini"
 
-#: src/giggle-window.c:1045
+#: ../src/giggle-window.c:1045
 msgid "Diff current changes"
 msgstr "Diff perubahan kini"
 
-#: src/giggle-window.c:1050
+#: ../src/giggle-window.c:1050
 msgid "Quit the application"
 msgstr "Keluar aplikasi"
 
-#: src/giggle-window.c:1068
+#: ../src/giggle-window.c:1068
 msgid "Go backward in history"
 msgstr "Mundur dalam riwayat"
 
-#: src/giggle-window.c:1072
+#: ../src/giggle-window.c:1072
 msgid "Go forward in history"
 msgstr "Maju dalam riwayat"
 
-#: src/giggle-window.c:1076
+#: ../src/giggle-window.c:1076
 msgid "_Contents"
 msgstr "_Isi"
 
-#: src/giggle-window.c:1077
+#: ../src/giggle-window.c:1077
 msgid "Show user guide for Giggle"
 msgstr "Tampilkan panduan pengguna bagi Giggle"
 
-#: src/giggle-window.c:1080
+#: ../src/giggle-window.c:1080
 msgid "Report _Issue"
 msgstr "Laporkan _Masalah"
 
-#: src/giggle-window.c:1081
-#, fuzzy
+#: ../src/giggle-window.c:1081
 msgid "Report an issue you’ve found in Giggle"
 msgstr "Laporkan suatu persoalan yang Anda temukan dalam Giggle"
 
-#: src/giggle-window.c:1085
+#: ../src/giggle-window.c:1085
 msgid "About this application"
 msgstr "Tentang aplikasi ini"
 
-#: src/giggle-window.c:1092
+#: ../src/giggle-window.c:1092
 msgid "Show revision tree"
 msgstr "Tampilkan pohon revisi"
 
-#: src/giggle-window.c:1099
+#: ../src/giggle-window.c:1099
 msgid "Show diffs by chunk"
 msgstr "Tampilkan diff per chunk"
 
-#: src/giggle-window.c:1102
+#: ../src/giggle-window.c:1102
 msgid "Show diffs by file"
 msgstr "Tampilkan diff per berkas"
 
-#: src/giggle-window.c:1105
+#: ../src/giggle-window.c:1105
 msgid "Show all diffs"
 msgstr "Tampilkan semua diff"
 
-#: src/giggle-window.c:1111
+#: ../src/giggle-window.c:1111
 msgid "Show and edit project properties"
 msgstr "Tampilkan dan sunting properti projek"
 
-#: src/giggle-window.c:1115
+#: ../src/giggle-window.c:1115
 msgid "Refresh current view"
 msgstr "Segarkan tampilan kini"
 
-#: src/giggle-window.c:1454
+#: ../src/giggle-window.c:1454
 msgid "Search Inside _Patches"
 msgstr "Cari Di Dalam _Patch"
 
-#: src/giggle-window.c:1723
+#: ../src/giggle-window.c:1723
 msgid "Save patch file"
 msgstr "Simpan berkas patch"
 
-#: src/giggle-window.c:1743
+#: ../src/giggle-window.c:1743
 #, c-format
 msgid ""
 "An error occurred when saving to file:\n"
@@ -782,12 +751,3 @@ msgid ""
 msgstr ""
 "Terjadi galat ketika menyimpan ke berkas:\n"
 "%s"
-
-#~ msgid "Giggle"
-#~ msgstr "Giggle"
-
-#~ msgid "Git repository viewer"
-#~ msgstr "Penampil repositori Git"
-
-#~ msgid "Find..."
-#~ msgstr "Cari…"
