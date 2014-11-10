@@ -13,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle\n"
 "POT-Creation-Date: 2013-08-20 01:55+0100\n"
-"PO-Revision-Date: 2012-07-01 23:07+0100\n"
+"PO-Revision-Date: 2014-10-19 22:25+0100\n"
 "Last-Translator: Andreas Rönnquist <gusnan@gusnan.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -21,6 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #: data/main-window.ui:46
 msgid "URL:"
@@ -37,7 +38,7 @@ msgstr "Grenar"
 #: libgiggle/giggle-plugin.c:526
 #, c-format
 msgid "Cannot find plugin description in '%s'"
-msgstr "Kan inte hitta plugin-beskrivning i '%s'"
+msgstr "Kan inte hitta plugin-beskrivning i “%s“"
 
 #: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
@@ -116,7 +117,6 @@ msgid "Toggle case sensitive search"
 msgstr "Växla skiftlägeskänslig sökning"
 
 #: src/giggle-authors-view.c:78
-#, c-format
 msgid ""
 "An error occurred when retrieving authors list:\n"
 "%s"
@@ -164,7 +164,7 @@ msgstr "Välj en plats för klonen"
 
 #: src/giggle-clone-dialog.c:298
 msgid "Clone in _folder:"
-msgstr "Klona i mapp:"
+msgstr "Klona i _mapp:"
 
 #: src/giggle-diff-tree-view.c:140 src/giggle-file-list.c:1660
 #, c-format
@@ -297,7 +297,6 @@ msgid "Project"
 msgstr "Projekt"
 
 #: src/giggle-helpers.c:176
-#, fuzzy
 msgid "An error occurred:"
 msgstr "Ett fel inträffade:"
 
@@ -324,21 +323,20 @@ msgstr "[MAPP]"
 #: src/giggle-main.c:79
 #, c-format
 msgid "Report errors (in English, with LC_ALL=C) to <%s>."
-msgstr "Rapportera fel (på Engelska, med LC_ALL=C) till <%s>"
+msgstr "Rapportera fel (på engelska, med LC_ALL=C) till <%s>."
 
 #: src/giggle-main.c:80
 msgid "Giggle is a graphical frontend for the git content tracker."
 msgstr "Giggle är ett grafiskt gränssnitt för versionshanteraren git."
 
 #: src/giggle-main.c:88
-#, fuzzy, c-format
+#, c-format
 msgid "Try '%s --help' for more information.\n"
-msgstr "Använd '%s --help' för mer information.\n"
+msgstr "Använd “%s --help“ för mer information.\n"
 
 #: src/giggle-remote-editor.c:146
-#, fuzzy
 msgid "Click to add mapping…"
-msgstr "Klicka för att lägga till mappning..."
+msgstr "Klicka för att lägga till mappning…"
 
 #: src/giggle-remote-editor.c:365
 msgid "Unnamed"
@@ -352,11 +350,10 @@ msgstr "Ikon"
 msgid "Name"
 msgstr "Namn"
 
-# Vet inte vad vi ska kalla "remote".
+# Vet inte riktigt vad vi ska kalla "remote", kör på fjärrgren för närvarande. Bättre förslag?
 #: src/giggle-remotes-view.c:280
-#, fuzzy
 msgid "Double click to add remote…"
-msgstr "Dubbelklicka för att lägga till fjärr..."
+msgstr "Dubbelklicka för att lägga till fjärrgren…"
 
 #: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
 msgid "Author:"
@@ -389,16 +386,16 @@ msgstr "Visa detaljer för incheckning"
 #: src/giggle-rev-list-view.c:331
 #, c-format
 msgid "Delete branch \"%s\""
-msgstr "Ta bort gren \"%s\""
+msgstr "Ta bort gren “%s“"
 
 #: src/giggle-rev-list-view.c:334
 #, c-format
 msgid "Delete tag \"%s\""
-msgstr "Ta bort taggen \"%s\""
+msgstr "Ta bort taggen “%s“"
 
 #: src/giggle-rev-list-view.c:504
 msgid "Branch"
-msgstr "Branch"
+msgstr "Gren"
 
 #: src/giggle-rev-list-view.c:507
 msgid "Tag"
@@ -406,11 +403,11 @@ msgstr "Tagg"
 
 #: src/giggle-rev-list-view.c:510
 msgid "Remote"
-msgstr "Fjärr"
+msgstr "Fjärrgren"
 
 #: src/giggle-rev-list-view.c:1063
 msgid "Enter branch name:"
-msgstr "Ange branchnamn:"
+msgstr "Ange grennamn:"
 
 #: src/giggle-rev-list-view.c:1114
 msgid "Enter tag name:"
@@ -477,9 +474,8 @@ msgid "Details"
 msgstr "Information"
 
 #: src/giggle-short-list.c:416
-#, fuzzy
 msgid "Show A_ll…"
-msgstr "Visa a_lla..."
+msgstr "Visa A_lla…"
 
 #: src/giggle-view-diff.c:107
 #, c-format
@@ -488,7 +484,7 @@ msgstr "Ändring %d av %d"
 
 #: src/giggle-view-diff.c:182
 msgid "_Previous Change"
-msgstr "Föregående ändring"
+msgstr "_Föregående ändring"
 
 #: src/giggle-view-diff.c:182
 msgid "View previous change"
@@ -504,7 +500,7 @@ msgstr "Visa nästa ändring"
 
 #: src/giggle-view-diff.c:348
 msgid "_Changes"
-msgstr "Ändringar"
+msgstr "_Ändringar"
 
 #: src/giggle-view-diff.c:349
 msgid "Browse a revision's changes"
@@ -516,7 +512,7 @@ msgstr "_Gå till radnummer"
 
 #: src/giggle-view-file.c:325
 msgid "Highlight specified line number"
-msgstr "Markera radnummer"
+msgstr "Markera specificerat radnummer"
 
 #: src/giggle-view-file.c:329
 msgid "Show _Changes"
@@ -532,7 +528,7 @@ msgstr "Välj _revision"
 
 #: src/giggle-view-file.c:335
 msgid "Select revision of selected line"
-msgstr "Väl revisionen för vald rad"
+msgstr "Välj revision för vald rad"
 
 #: src/giggle-view-file.c:897
 #, c-format
@@ -559,7 +555,7 @@ msgstr "Radnummer:"
 
 #: src/giggle-view-file.c:1566
 msgid "_Browse"
-msgstr "Utforska"
+msgstr "_Utforska"
 
 #: src/giggle-view-file.c:1567
 msgid "Browse the files of this project"
@@ -583,7 +579,7 @@ msgstr "Fjärrgrenar:"
 
 #: src/giggle-view-summary.c:195
 msgid "_Summary"
-msgstr "Sammanfattning"
+msgstr "_Sammanfattning"
 
 #: src/giggle-view-summary.c:198
 msgid "_Branches"
@@ -591,7 +587,7 @@ msgstr "_Grenar"
 
 #: src/giggle-view-summary.c:201
 msgid "_Authors"
-msgstr "Upphovsmän:"
+msgstr "_Upphovsmän"
 
 #: src/giggle-view-summary.c:204
 msgid "_Remotes"
@@ -600,7 +596,7 @@ msgstr "Fjär_rgrenar"
 #: src/giggle-window.c:546
 #, c-format
 msgid "The directory '%s' does not look like a git repository."
-msgstr "Katalogen \"%s\" ser inte ut som ett git-förråd."
+msgstr "Katalogen “%s“ ser inte ut som ett git-förråd."
 
 #: src/giggle-window.c:629
 msgid "Select git repository"
@@ -623,7 +619,7 @@ msgid ""
 msgstr ""
 "Copyright © 2007 - 2008 Imendio AB\n"
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
-"Copyright © 2009 - 2012 The Giggle authors"
+"Copyright © 2009 - 2012 Giggle-författarna"
 
 #: src/giggle-window.c:937
 msgid "translator-credits"
@@ -641,17 +637,15 @@ msgstr "Om Giggle"
 
 #: src/giggle-window.c:951
 msgid "Giggle Website"
-msgstr "Giggles hemsida"
+msgstr "Giggles webbplats"
 
 #: src/giggle-window.c:1007
-#, fuzzy
 msgid "_Find…"
-msgstr "_Sök..."
+msgstr "_Sök…"
 
 #: src/giggle-window.c:1008
-#, fuzzy
 msgid "Find…"
-msgstr "Sök:"
+msgstr "Sök…"
 
 #: src/giggle-window.c:1014
 msgid "Find Ne_xt"
@@ -739,12 +733,11 @@ msgstr "Visa användarguiden för Giggle"
 
 #: src/giggle-window.c:1080
 msgid "Report _Issue"
-msgstr "Rapportera problem"
+msgstr "Rapportera _problem"
 
 #: src/giggle-window.c:1081
-#, fuzzy
 msgid "Report an issue you’ve found in Giggle"
-msgstr "Rapportera ett problem du har hittat i Giggle"
+msgstr "Rapportera ett problem som du har hittat i Giggle"
 
 #: src/giggle-window.c:1085
 msgid "About this application"
