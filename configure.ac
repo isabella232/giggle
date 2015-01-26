@@ -106,7 +106,7 @@ AC_ARG_ENABLE([terminal],
 AS_IF([test "x$enable_terminal" = "xyes"],
       [
         PKG_CHECK_MODULES([VTE],
-                          [vte-2.90 >= $VTE_REQUIRED_VERSION],
+                          [vte-2.91 >= $VTE_REQUIRED_VERSION],
                           [have_vte=yes
                            AC_DEFINE([HAVE_VTE], [1],
                                      [Use features from vte])

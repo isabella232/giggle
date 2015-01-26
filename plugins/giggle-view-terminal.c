@@ -186,15 +186,16 @@ giggle_view_terminal_append_tab (GiggleViewTerminal *view,
 	real_argv[1] = NULL;
 	spawn_flags = G_SPAWN_CHILD_INHERITS_STDIN | G_SPAWN_SEARCH_PATH | G_SPAWN_FILE_AND_ARGV_ZERO;
 
-	succes = vte_terminal_fork_command_full (VTE_TERMINAL (terminal),
-	                                         pty_flags,
-	                                         directory,
-	                                         real_argv,
-	                                         NULL,
-	                                         spawn_flags,
-	                                         NULL, NULL,
-	                                         NULL,
-	                                         &error);
+	succes = vte_terminal_spawn_sync (VTE_TERMINAL (terminal),
+	                                  pty_flags,
+	                                  directory,
+	                                  real_argv,
+	                                  NULL,
+	                                  spawn_flags,
+	                                  NULL, NULL,
+	                                  NULL,
+	                                  NULL,
+	                                  &error);
 	g_strfreev (real_argv);
 
 	if (succes == FALSE) {
