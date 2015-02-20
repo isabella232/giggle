@@ -5,6 +5,3 @@ SUBDIRS = data lib libgiggle libgiggle-git plugins src po pixmaps help test
 EXTRA_DIST = \
 	m4/gnulib-cache.m4 \
 	build-aux/config.rpath
-
-AM_DISTCHECK_CONFIGURE_FLAGS = \
-	--disable-scrollkeeper
