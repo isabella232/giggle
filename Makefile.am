@@ -2,20 +2,9 @@ ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 SUBDIRS = data lib libgiggle libgiggle-git plugins src po pixmaps help test
 
-INTLTOOL = \
-	intltool-extract.in \
-	intltool-merge.in \
-	intltool-update.in
-
 EXTRA_DIST = \
 	m4/gnulib-cache.m4 \
-	build-aux/config.rpath  \
-	$(INTLTOOL)
-
-DISTCLEANFILES = \
-	intltool-extract \
-	intltool-merge \
-	intltool-update
+	build-aux/config.rpath
 
 AM_DISTCHECK_CONFIGURE_FLAGS = \
 	--disable-scrollkeeper
