@@ -1,7 +1,0 @@
-/Makefile.am
-/dummy.c
-/mktime-internal.h
-/mktime.c
-/stddef.in.h
-/time.in.h
-/time_r.c

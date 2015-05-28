@@ -22,10 +22,6 @@ AC_PROG_CC
 AC_PROG_CC_C_O
 AC_PROG_CC_C99
 AC_USE_SYSTEM_EXTENSIONS
-gl_EARLY
-
-# For gnulib.
-gl_INIT
 
 # Initialize libtool
 LT_PREREQ([2.2.6])
@@ -167,46 +163,12 @@ else
   AC_DEFINE_UNQUOTED(GIT_COMMAND,"$GIT_COMMAND",[GIT command path])
 fi
 
-dnl ---------------------------------------------------------------------------
-dnl - Enable strict warnings (-Werror) (disabled by default)
-dnl ---------------------------------------------------------------------------
-AC_ARG_ENABLE([strict],
-              [AS_HELP_STRING([--enable-strict],
-                              [Enable strict compilation warnings '-Werror'])])
-AS_IF([test "x$enable_strict" = "xyes"],
-      [CPPFLAGS="$CPPFLAGS -Werror"])
-
-dnl ---------------------------------------------------------------------------
-dnl - Extra verbose warning switches
-dnl ---------------------------------------------------------------------------
-
-gl_MANYWARN_ALL_GCC([warnings])
-# Set up the list of the pointless, undesired warnings.
-nw=
-nw="$nw -Wsystem-headers"       # Don't let system headers trigger warnings
-nw="$nw -Wunused-macros"        # Unused macros are ok
-# g_clear_object & G_ATOMIC_OP_USE_GCC_BUILTINS causes
-# violations with this. XXX Fix glib ?
-nw="$nw -Wunused-local-typedefs"
-nw="$nw -Wbad-function-cast"
-
-
-# Enable all GCC warnings not in this list.
-gl_MANYWARN_COMPLEMENT([warnings], [$warnings], [$nw])
-for w in $warnings; do
-  gl_WARN_ADD([$w])
-done
-
-gl_WARN_ADD([-Wno-unused-parameter]) # Too many warnings for now
-
-dnl -----------------------------------------------------------
-
+AX_COMPILER_FLAGS([WARN_CFLAGS],[WARN_LDFLAGS])
 
 AC_CONFIG_FILES([
         Makefile
         data/Makefile
         help/Makefile
-        lib/Makefile
         libgiggle/Makefile
         libgiggle-git/Makefile
         pixmaps/Makefile
