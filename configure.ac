@@ -6,6 +6,8 @@ AC_INIT([Giggle],
         [giggle],
         [http://live.gnome.org/giggle])
 
+AX_IS_RELEASE([git-directory])
+
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_SRCDIR([configure.ac])
 AC_CONFIG_MACRO_DIR([m4])
