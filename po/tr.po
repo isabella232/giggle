@@ -1,0 +1,793 @@
+# Turkish translation for giggle.
+# Copyright (C) 2015 giggle's COPYRIGHT HOLDER
+# This file is distributed under the same license as the giggle package.
+# Simge Sezgin <simgesezgin88@gmail.com>, 2015.
+# Muhammet Kara <muhammetk@gmail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gigle master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=giggle&keywords=I18N+L10N\n"
+"POT-Creation-Date: 2015-10-03 13:11+0000\n"
+"PO-Revision-Date: 2015-12-06 01:57+0200\n"
+"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
+"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Gtranslator 2.91.7\n"
+"X-POOTLE-MTIME: 1428180702.000000\n"
+
+#: data/main-window.ui:46
+msgid "URL:"
+msgstr "URL:"
+
+#: data/main-window.ui:60
+#| msgid "_Name:"
+msgid "Name:"
+msgstr "Ad:"
+
+#: data/main-window.ui:85 src/giggle-remote-editor.c:172
+msgid "Branches"
+msgstr "Dallar"
+
+#: libgiggle/giggle-plugin.c:526
+#, c-format
+msgid "Cannot find plugin description in '%s'"
+msgstr "'%s' içinde eklenti tanımlaması bulunamıyor"
+
+#: plugins/hello-world.ui:5
+msgid "Demonstration of Giggle's Plugin System"
+msgstr "Giggle'ın Eklenti Sisteminin Tanıtımı"
+
+#: plugins/hello-world.ui:11
+msgid "Hello World"
+msgstr "Merhaba Dünya"
+
+#: plugins/hello-world.ui:12
+msgid "Check if the plugin system works"
+msgstr "Eklenti sisteminin çalışıp çalışmadığını denetle"
+
+#: plugins/giggle-personal-details-window.c:80
+msgid "There was an error setting the configuration"
+msgstr "Yapılandırma ayarlanırken bir hata oluştu"
+
+#: plugins/giggle-personal-details-window.c:182
+msgid "There was an error getting the configuration"
+msgstr "Yapılandırma alınırken bir hata oluştu"
+
+#: plugins/giggle-personal-details-window.c:246
+msgid "_Name:"
+msgstr "_Ad:"
+
+#: plugins/giggle-personal-details-window.c:256
+msgid "_Email:"
+msgstr "_Eposta:"
+
+#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:11
+msgid "Personal Details"
+msgstr "Kişisel Ayrıntılar"
+
+#: plugins/giggle-view-terminal.c:95
+msgid "_Terminal"
+msgstr "_Uçbirim"
+
+#: plugins/giggle-view-terminal.c:96
+msgid "Issue git commands via terminal"
+msgstr "Uçbirim ile git komutlarını ver"
+
+#: plugins/personal-details.ui:5 plugins/personal-details.ui:12
+#| msgid "Personal Details"
+msgid "Edit personal details"
+msgstr "Kişisel ayrıntıları düzenle"
+
+#: plugins/terminal-view.ui:5
+#| msgid "_Terminal"
+msgid "Terminal window"
+msgstr "Uçbirim penceresi"
+
+#: plugins/terminal-view.ui:11
+#| msgid "Create _Tag"
+msgid "Create _Terminal"
+msgstr "_Uçbirim Oluştur"
+
+#: plugins/terminal-view.ui:12
+msgid "Create new tab in git terminal"
+msgstr "Git uçbiriminde yeni sekme oluştur"
+
+#: src/eggfindbar.c:303
+msgid "Find:"
+msgstr "Bul:"
+
+#: src/eggfindbar.c:316
+msgid "Find previous occurrence of the search string"
+msgstr "Arama dizgisinin bulunduğu bir önceki yeri bul"
+
+#: src/eggfindbar.c:324
+msgid "Find next occurrence of the search string"
+msgstr "Arama dizgisinin bulunduğu bir sonraki yeri bul"
+
+#: src/eggfindbar.c:331
+msgid "C_ase Sensitive"
+msgstr "Bü_yük/Küçük Harf Duyarlı"
+
+#: src/eggfindbar.c:335
+msgid "Toggle case sensitive search"
+msgstr "Harf duyarlı aramayı aç ya da kapat"
+
+#: src/giggle-authors-view.c:78
+#, c-format
+msgid ""
+"An error occurred when retrieving authors list:\n"
+"%s"
+msgstr ""
+"Yazar listesi alınırken bir hata oluştu:\n"
+"%s"
+
+#: src/giggle-authors-view.c:144
+msgid "Authors:"
+msgstr "Yazarlar:"
+
+#: src/giggle-branches-view.c:79
+#, c-format
+msgid ""
+"An error occurred when retrieving branches list:\n"
+"%s"
+msgstr ""
+"Dal listesi alınırken bir hata oluştu:\n"
+"%s"
+
+#: src/giggle-branches-view.c:145 src/giggle-revision-view.c:197
+msgid "Branches:"
+msgstr "Dallar:"
+
+#: src/giggle-clone-dialog.c:246
+msgid "Clone Repository"
+msgstr "Depoyu Kopyala"
+
+#: src/giggle-clone-dialog.c:254
+msgid "Cl_one"
+msgstr "Ko_pyala"
+
+#: src/giggle-clone-dialog.c:278
+msgid "_Repository:"
+msgstr "_Depo:"
+
+#: src/giggle-clone-dialog.c:290
+msgid "_Local name:"
+msgstr "_Yerel ad:"
+
+#: src/giggle-clone-dialog.c:295
+msgid "Please select a location for the clone"
+msgstr "Lütfen kopyalama için bir konum seçin"
+
+#: src/giggle-clone-dialog.c:298
+msgid "Clone in _folder:"
+msgstr "_Klasör içinde kopyala:"
+
+#: src/giggle-diff-tree-view.c:140 src/giggle-file-list.c:1660
+#, c-format
+msgid ""
+"An error occurred when retrieving different files list:\n"
+"%s"
+msgstr ""
+"Farklı dosya listesi alınırken bir hata oluştu:\n"
+"%s"
+
+#: src/giggle-diff-tree-view.c:207
+msgid "Changed files"
+msgstr "Değiştirilmiş dosyalar"
+
+#: src/giggle-diff-view.c:714
+#, c-format
+msgid ""
+"An error occurred when retrieving a diff:\n"
+"%s"
+msgstr ""
+"Fark alınırken bir hata oluştu:\n"
+"%s"
+
+#: src/giggle-diff-window.c:80
+msgid "Commit changes"
+msgstr "Değişiklikleri depoya gönder"
+
+#: src/giggle-diff-window.c:102
+msgid "Revision log:"
+msgstr "Sürüm günlüğü:"
+
+#: src/giggle-diff-window.c:130
+msgid "Co_mmit"
+msgstr "Depoya Gö_nder"
+
+#: src/giggle-diff-window.c:202
+#, c-format
+msgid ""
+"An error occurred when committing:\n"
+"%s"
+msgstr ""
+"Depoya gönderilirken bir hata oluştu:\n"
+"%s"
+
+#: src/giggle-file-list.c:387
+#, c-format
+msgid ""
+"An error occurred when retrieving the file list:\n"
+"%s"
+msgstr ""
+"Dosya listesi alınırken bir hata oluştu:\n"
+"%s"
+
+#: src/giggle-file-list.c:756
+#, c-format
+msgid ""
+"An error occurred when adding a file to git:\n"
+"%s"
+msgstr ""
+"git ortamına dosya eklenirken bir hata oluştu:\n"
+"%s"
+
+#: src/giggle-file-list.c:816 src/giggle-file-list.c:842
+#: src/giggle-rev-list-view.c:1173 src/giggle-rev-list-view.c:1204
+#, c-format
+msgid "Could not save the patch as %s"
+msgstr "Yama %s olarak kaydedilemesi"
+
+#: src/giggle-file-list.c:821 src/giggle-file-list.c:847
+#: src/giggle-rev-list-view.c:1181 src/giggle-rev-list-view.c:1209
+msgid "No error was given"
+msgstr "Hiçbir hata yok"
+
+#: src/giggle-file-list.c:868 src/giggle-rev-list-view.c:1235
+#, c-format
+msgid "Patch saved as %s"
+msgstr "Yama %s olarak kaydedildi"
+
+#: src/giggle-file-list.c:872 src/giggle-rev-list-view.c:1239
+msgid "Created in project directory"
+msgstr "Proje dizininde oluşturuldu"
+
+#: src/giggle-file-list.c:875 src/giggle-rev-list-view.c:1242
+#, c-format
+msgid "Created in directory %s"
+msgstr "%s dizininde oluşturuldu"
+
+#: src/giggle-file-list.c:910 src/giggle-rev-list-view.c:1293
+msgid "Create Patch"
+msgstr "Yama oluştur"
+
+#: src/giggle-file-list.c:1013
+msgid "Delete glob pattern?"
+msgstr "Damla deseni silinsin mi?"
+
+#: src/giggle-file-list.c:1016
+msgid ""
+"The selected file was shadowed by a glob pattern that may be hiding other "
+"files, delete it?"
+msgstr ""
+"Seçilen dosya diğer dosyaları gizleyebilen bir damla deseni tarafından "
+"gölgelendi, silinsin mi?"
+
+#: src/giggle-file-list.c:1411
+msgid "_Commit Changes"
+msgstr "Değişiklikler _Gönder"
+
+#: src/giggle-file-list.c:1413
+msgid "A_dd file to repository"
+msgstr "Depoya dosya e_kle"
+
+#: src/giggle-file-list.c:1414 src/giggle-rev-list-view.c:1638
+msgid "Create _Patch"
+msgstr "_Yama Oluştur"
+
+#: src/giggle-file-list.c:1415
+msgid "_Add to .gitignore"
+msgstr ".gitignore dosyasına _ekle"
+
+#: src/giggle-file-list.c:1416
+msgid "_Remove from .gitignore"
+msgstr ".gitignore dosyasından _sil"
+
+#: src/giggle-file-list.c:1420
+msgid "_Show all files"
+msgstr "Bütün dosyaları _göster"
+
+#: src/giggle-file-list.c:1459
+msgid "Project"
+msgstr "Proje"
+
+#: src/giggle-helpers.c:176
+msgid "An error occurred:"
+msgstr "Bir hata oluştu:"
+
+#: src/giggle-main.c:36
+msgid "Clone a repository"
+msgstr "Depoyu kopyala"
+
+#: src/giggle-main.c:37 src/giggle-remotes-view.c:267
+msgid "URL"
+msgstr "URL"
+
+#: src/giggle-main.c:40
+msgid "Show the diff window"
+msgstr "Fark penceresini göster"
+
+#: src/giggle-main.c:44
+msgid "Show version information and exit"
+msgstr "Sürüm bilgisini göster ve çık"
+
+#: src/giggle-main.c:47
+msgid "[DIRECTORY]"
+msgstr "[DİZİN]"
+
+#: src/giggle-main.c:79
+#, c-format
+msgid "Report errors (in English, with LC_ALL=C) to <%s>."
+msgstr "Hataları bildir (LC_ALL=C ile İngilizce) <%s>."
+
+#: src/giggle-main.c:80
+msgid "Giggle is a graphical frontend for the git content tracker."
+msgstr "Giggle, git içerik takipçisi için bir grafiksel önuçtur."
+
+#: src/giggle-main.c:88
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "Daha fazla bilgi için '%s --help' deneyin.\n"
+
+#: src/giggle-remote-editor.c:146
+msgid "Click to add mapping…"
+msgstr "Eşleme eklemek için tıklayın…"
+
+#: src/giggle-remote-editor.c:365
+msgid "Unnamed"
+msgstr "Adlandırılmamış"
+
+#: src/giggle-remotes-view.c:256
+msgid "Icon"
+msgstr "Simge"
+
+#: src/giggle-remotes-view.c:262
+msgid "Name"
+msgstr "Ad"
+
+#: src/giggle-remotes-view.c:280
+msgid "Double click to add remote…"
+msgstr "Uzaktan eklemek için çift tıklayın…"
+
+#: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
+msgid "Author:"
+msgstr "Yazar:"
+
+#: src/giggle-revision-view.c:184 src/giggle-view-file.c:1216
+msgid "Committer:"
+msgstr "Gönderici:"
+
+#: src/giggle-revision-view.c:195 src/giggle-view-file.c:1217
+msgid "Date:"
+msgstr "Tarih:"
+
+#: src/giggle-revision-view.c:196 src/giggle-view-file.c:1218
+msgid "SHA:"
+msgstr "SHA:"
+
+#: src/giggle-revision-view.c:216
+msgid "Change Log:"
+msgstr "Değişiklik Günlüğü:"
+
+#: src/giggle-revision-view.c:505
+msgid "_Details"
+msgstr "_Ayrıntılar"
+
+#: src/giggle-revision-view.c:506
+msgid "Display revision details"
+msgstr "Uyarlama detaylarını görüntüle"
+
+#: src/giggle-rev-list-view.c:331
+#, c-format
+msgid "Delete branch \"%s\""
+msgstr "\"%s\" dalını sil"
+
+#: src/giggle-rev-list-view.c:334
+#, c-format
+msgid "Delete tag \"%s\""
+msgstr "\"%s\" etiketini sil"
+
+#: src/giggle-rev-list-view.c:504
+msgid "Branch"
+msgstr "Dal"
+
+#: src/giggle-rev-list-view.c:507
+msgid "Tag"
+msgstr "Etiket"
+
+#: src/giggle-rev-list-view.c:510
+msgid "Remote"
+msgstr "Uzak"
+
+#: src/giggle-rev-list-view.c:1063
+msgid "Enter branch name:"
+msgstr "Dal adı girin:"
+
+#: src/giggle-rev-list-view.c:1114
+msgid "Enter tag name:"
+msgstr "Etiket adı girin:"
+
+#: src/giggle-rev-list-view.c:1175
+msgid "Could not create patch"
+msgstr "Yama oluşturulamadı"
+
+#: src/giggle-rev-list-view.c:1429
+msgid "Uncommitted changes"
+msgstr "Depoya gönderilmemiş değişiklikler"
+
+#. TRANSLATORS: it's a strftime format string
+#: src/giggle-rev-list-view.c:1483
+msgid "%I:%M %p"
+msgstr "%I:%M %p"
+
+#. TRANSLATORS: it's a strftime format string
+#: src/giggle-rev-list-view.c:1496
+msgid "%a %I:%M %p"
+msgstr "%a %I:%M %p"
+
+#. TRANSLATORS: it's a strftime format string
+#: src/giggle-rev-list-view.c:1508
+msgid "%b %d %I:%M %p"
+msgstr "%b %d %I:%M %p"
+
+#. it's older
+#. TRANSLATORS: it's a strftime format string
+#: src/giggle-rev-list-view.c:1513
+msgid "%b %d %Y"
+msgstr "%b %d %Y"
+
+#: src/giggle-rev-list-view.c:1635
+msgid "Commit"
+msgstr "Depoya Gönder"
+
+#: src/giggle-rev-list-view.c:1636
+msgid "Create _Branch"
+msgstr "_Dal Oluştur"
+
+#: src/giggle-rev-list-view.c:1637
+msgid "Create _Tag"
+msgstr "_Etiket Oluştur"
+
+#: src/giggle-rev-list-view.c:1703
+msgid "Graph"
+msgstr "Grafik"
+
+#: src/giggle-rev-list-view.c:1721
+msgid "Short Log"
+msgstr "Kısa Günlük"
+
+#: src/giggle-rev-list-view.c:1740
+msgid "Author"
+msgstr "Yazar"
+
+#: src/giggle-rev-list-view.c:1757
+msgid "Date"
+msgstr "Tarih"
+
+#: src/giggle-short-list.c:300
+msgid "Details"
+msgstr "Ayrıntılar"
+
+#: src/giggle-short-list.c:416
+msgid "Show A_ll…"
+msgstr "T_ümünü Göster…"
+
+#: src/giggle-view-diff.c:107
+#, c-format
+msgid "Change %d of %d"
+msgstr "%d / %d değiştir"
+
+#: src/giggle-view-diff.c:182
+msgid "_Previous Change"
+msgstr "_Önceki Değişiklik"
+
+#: src/giggle-view-diff.c:182
+msgid "View previous change"
+msgstr "Önceki değişikliği görüntüle"
+
+#: src/giggle-view-diff.c:186
+msgid "_Next Change"
+msgstr "_Sonraki Değişiklik"
+
+#: src/giggle-view-diff.c:186
+msgid "View next change"
+msgstr "Sonraki değişikliği göster"
+
+#: src/giggle-view-diff.c:348
+msgid "_Changes"
+msgstr "_Değişiklikler"
+
+#: src/giggle-view-diff.c:349
+msgid "Browse a revision's changes"
+msgstr "Sürümün değişikliklerine gözat"
+
+#: src/giggle-view-file.c:324
+msgid "_Goto Line Number"
+msgstr "Satır Numarasına _Git"
+
+#: src/giggle-view-file.c:325
+msgid "Highlight specified line number"
+msgstr "Belirtilen satır numaralarını vurgula"
+
+#: src/giggle-view-file.c:329
+msgid "Show _Changes"
+msgstr "_Değişiklikeri Göster"
+
+#: src/giggle-view-file.c:330
+msgid "Show changes for selected revision"
+msgstr "Seçilen sürümün değişikliklerini göster"
+
+#: src/giggle-view-file.c:334
+msgid "Select _Revision"
+msgstr "_Sürüm Seç"
+
+#: src/giggle-view-file.c:335
+msgid "Select revision of selected line"
+msgstr "Seçilen satırın sürümünü seç"
+
+#: src/giggle-view-file.c:897
+#, c-format
+msgid ""
+"An error occurred when getting file ref:\n"
+"%s"
+msgstr ""
+"Dosya referansı alınırken bir hata oluştu:\n"
+"%s"
+
+#: src/giggle-view-file.c:968 src/giggle-view-history.c:248
+#: src/giggle-view-history.c:342
+#, c-format
+msgid ""
+"An error occurred when getting the revisions list:\n"
+"%s"
+msgstr ""
+"Sürümlerin listesi alınırken bir hata oluştu:\n"
+"%s"
+
+#: src/giggle-view-file.c:1128
+msgid "Line Number:"
+msgstr "Satır Numarası:"
+
+#: src/giggle-view-file.c:1566
+msgid "_Browse"
+msgstr "_Gözat"
+
+#: src/giggle-view-file.c:1567
+msgid "Browse the files of this project"
+msgstr "Bu projenin dosyalarına gözat"
+
+#: src/giggle-view-history.c:842
+msgid "_History"
+msgstr "_Geçmiş"
+
+#: src/giggle-view-history.c:843
+msgid "Browse the history of this project"
+msgstr "Bu projenin geçmişine gözat"
+
+#: src/giggle-view-summary.c:117
+msgid "Description:"
+msgstr "Açıklama:"
+
+#: src/giggle-view-summary.c:167
+msgid "Remotes:"
+msgstr "Uzaktan:"
+
+#: src/giggle-view-summary.c:195
+msgid "_Summary"
+msgstr "_Özet"
+
+#: src/giggle-view-summary.c:198
+msgid "_Branches"
+msgstr "_Dallar"
+
+#: src/giggle-view-summary.c:201
+msgid "_Authors"
+msgstr "_Yazarlar"
+
+#: src/giggle-view-summary.c:204
+msgid "_Remotes"
+msgstr "_Uzaktan"
+
+#: src/giggle-window.c:546
+#, c-format
+msgid "The directory '%s' does not look like a git repository."
+msgstr "'%s' dizini bir git deposu gibi görünmüyor."
+
+#: src/giggle-window.c:629
+msgid "Select git repository"
+msgstr "Git deposu seç"
+
+#: src/giggle-window.c:682
+#, c-format
+msgid "Properties of %s"
+msgstr "%s özellikleri"
+
+#: src/giggle-window.c:912
+msgid "Contributors:"
+msgstr "Katkıcılar:"
+
+#: src/giggle-window.c:925
+msgid ""
+"Copyright © 2007 - 2008 Imendio AB\n"
+"Copyright © 2008 - 2009 Mathias Hasselmann\n"
+"Copyright © 2009 - 2012 The Giggle authors"
+msgstr ""
+"Telif Hakkı © 2007 - 2008 Imendio AB\n"
+"Telif Hakkı © 2008 - 2009 Mathias Hasselmann\n"
+"Telif Hakkı © 2009 - 2012 The Giggle yazarları"
+
+#. Translators: This is a special message that shouldn't be translated
+#. * literally. It is used in the about box to give credits to
+#. * the translators.
+#. * Thus, you should translate it to your name and email address.
+#. * You should also include other translators who have contributed to
+#. * this translation; in that case, please write each of them on a separate
+#. * line seperated by newlines (\n).
+#.
+#: src/giggle-window.c:937
+msgid "translator-credits"
+msgstr "Simge Sezgin <simgeszgn@gmail.com>"
+
+#: src/giggle-window.c:942
+msgid "A graphical frontend for Git"
+msgstr "Git için grafiksel önyüz"
+
+#: src/giggle-window.c:947
+msgid "About Giggle"
+msgstr "Giggle Hakkında"
+
+#: src/giggle-window.c:951
+msgid "Giggle Website"
+msgstr "Giggle Web Sitesi"
+
+#: src/giggle-window.c:1007
+msgid "_Find…"
+msgstr "_Bul…"
+
+#: src/giggle-window.c:1008
+msgid "Find…"
+msgstr "Bul…"
+
+#: src/giggle-window.c:1014
+msgid "Find Ne_xt"
+msgstr "Son_rakini Bul"
+
+#: src/giggle-window.c:1015
+msgid "Find next match"
+msgstr "Sonraki eşleşmeyi bul"
+
+#: src/giggle-window.c:1018
+msgid "Find Pre_vious"
+msgstr "Ön_cekini Bul"
+
+#: src/giggle-window.c:1019
+msgid "Find previous match"
+msgstr "Önceki eşleşmeyi bul"
+
+#: src/giggle-window.c:1025
+msgid "_Project"
+msgstr "_Proje"
+
+#: src/giggle-window.c:1026
+msgid "_Edit"
+msgstr "_Düzenle"
+
+#: src/giggle-window.c:1027
+msgid "_Go"
+msgstr "_Git"
+
+#: src/giggle-window.c:1028
+msgid "_View"
+msgstr "_Görünüm"
+
+#: src/giggle-window.c:1029
+msgid "_Help"
+msgstr "_Yardım"
+
+#: src/giggle-window.c:1032
+msgid "Open a git repository"
+msgstr "Git deposu aç"
+
+#: src/giggle-window.c:1036
+msgid "Clone _location"
+msgstr "_Konumu kopyala"
+
+#: src/giggle-window.c:1036
+msgid "Clone a location"
+msgstr "Bir konum kopyala"
+
+#: src/giggle-window.c:1041
+msgid "_Save patch"
+msgstr "Yamayı _kaydet"
+
+#: src/giggle-window.c:1041
+msgid "Save a patch"
+msgstr "Bir yama kaydet"
+
+#: src/giggle-window.c:1045
+msgid "_Diff current changes"
+msgstr "Mevcut değişikliklerin _farkını bul"
+
+#: src/giggle-window.c:1045
+msgid "Diff current changes"
+msgstr "Mevcut değişikliklerin farkını bul"
+
+#: src/giggle-window.c:1050
+msgid "Quit the application"
+msgstr "Uygulamadan çık"
+
+#: src/giggle-window.c:1068
+msgid "Go backward in history"
+msgstr "Geçmişte geriye git"
+
+#: src/giggle-window.c:1072
+msgid "Go forward in history"
+msgstr "Geçmişinde ileriye git"
+
+#: src/giggle-window.c:1076
+msgid "_Contents"
+msgstr "_İçindekiler"
+
+#: src/giggle-window.c:1077
+msgid "Show user guide for Giggle"
+msgstr "Giggle için kullanıcı klavuzunu göster"
+
+#: src/giggle-window.c:1080
+msgid "Report _Issue"
+msgstr "_Sorun Bildir"
+
+#: src/giggle-window.c:1081
+msgid "Report an issue you’ve found in Giggle"
+msgstr "Giggle uygulamasında bir sorun bulduğunda bildir"
+
+#: src/giggle-window.c:1085
+msgid "About this application"
+msgstr "Uygulama Hakkında"
+
+#: src/giggle-window.c:1092
+msgid "Show revision tree"
+msgstr "Sürüm ağacını göster"
+
+#: src/giggle-window.c:1099
+msgid "Show diffs by chunk"
+msgstr "Öbek ile farkları göster"
+
+#: src/giggle-window.c:1102
+msgid "Show diffs by file"
+msgstr "Dosya ile farkları göster"
+
+#: src/giggle-window.c:1105
+msgid "Show all diffs"
+msgstr "Bütün farkları göster"
+
+#: src/giggle-window.c:1111
+msgid "Show and edit project properties"
+msgstr "Proje özelliklerini düzenle ve göster"
+
+#: src/giggle-window.c:1115
+msgid "Refresh current view"
+msgstr "Mevcut görünümü tazele"
+
+#: src/giggle-window.c:1454
+msgid "Search Inside _Patches"
+msgstr "İç _Yamaları Ara"
+
+#: src/giggle-window.c:1723
+msgid "Save patch file"
+msgstr "Yama dosyasını kaydet"
+
+#: src/giggle-window.c:1743
+#, c-format
+msgid ""
+"An error occurred when saving to file:\n"
+"%s"
+msgstr ""
+"Dosyaya kaydedilirken bir hata oluştu:\n"
+"%s"
