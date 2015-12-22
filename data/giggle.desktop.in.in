@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Giggle
-Exec=giggle %F
+Exec=@bindir@/giggle %F
 Icon=giggle
 StartupNotify=true
 Categories=GTK;Development;RevisionControl;
