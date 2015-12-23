@@ -2,15 +2,15 @@
 # Copyright (C) 2010 giggle's COPYRIGHT HOLDER
 # This file is distributed under the same license as the giggle package.
 #
-# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013.
+# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle\n"
-"POT-Creation-Date: 2013-08-20 01:55+0100\n"
-"PO-Revision-Date: 2013-01-23 07:11+0100\n"
+"product=giggle&keywords=I18N+L10N\n"
+"POT-Creation-Date: 2015-12-22 14:46+0000\n"
+"PO-Revision-Date: 2015-12-23 10:31+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -18,6 +18,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: data/giggle.desktop.in.in:5
+msgid "Giggle"
+msgstr "Giggle"
+
+#: data/giggle.desktop.in.in:7
+msgid "giggle"
+msgstr "giggle"
 
 #: data/main-window.ui:46
 msgid "URL:"
@@ -431,6 +439,7 @@ msgstr "%s %H:%M"
 msgid "%b %d %I:%M %p"
 msgstr "%e. %b, %H:%M"
 
+#. it's older
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
@@ -616,6 +625,14 @@ msgstr ""
 "Copyright © 2008 – 2009 Mathias Hasselmann\n"
 "Copyright © 2009 – 2012 Autoři projektu Giggle"
 
+#. Translators: This is a special message that shouldn't be translated
+#. * literally. It is used in the about box to give credits to
+#. * the translators.
+#. * Thus, you should translate it to your name and email address.
+#. * You should also include other translators who have contributed to
+#. * this translation; in that case, please write each of them on a separate
+#. * line seperated by newlines (\n).
+#.
 #: src/giggle-window.c:937
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
@@ -776,9 +793,3 @@ msgid ""
 msgstr ""
 "Vyskytla se chyba při ukládání do souboru:\n"
 "%s"
-
-#~ msgid "Giggle"
-#~ msgstr "Giggle"
-
-#~ msgid "Git repository viewer"
-#~ msgstr "Prohlížeč repozitářů git"
