@@ -3,25 +3,33 @@
 # This file is distributed under the same license as the giggle package.
 # Sven Herzberg <sven@imendio.com>, 2007.
 # Mathias Hasselmann <hasselmm@gnome.org>, 2009.
-# Mario Blättermann <mariobl@freenet.de>, 2010, 2011.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2010, 2011, 2015.
 # Christian Kirbach  <Christian.Kirbach@googlemail.com>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle\n"
-"POT-Creation-Date: 2013-08-20 01:55+0100\n"
-"PO-Revision-Date: 2012-05-12 11:00+0100\n"
-"Last-Translator: Daniel Winzen <d@winzen4.de>\n"
+"product=giggle&keywords=I18N+L10N\n"
+"POT-Creation-Date: 2015-12-22 14:46+0000\n"
+"PO-Revision-Date: 2015-12-30 18:04+0100\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
+"X-Generator: Poedit 1.8.5\n"
+
+#: data/giggle.desktop.in.in:5
+msgid "Giggle"
+msgstr "Giggle"
+
+#: data/giggle.desktop.in.in:7
+#| msgid "Giggle"
+msgid "giggle"
+msgstr "giggle"
 
 #: data/main-window.ui:46
 msgid "URL:"
@@ -298,7 +306,6 @@ msgid "Project"
 msgstr "Projekt"
 
 #: src/giggle-helpers.c:176
-#, fuzzy
 msgid "An error occurred:"
 msgstr "Ein Fehler ist aufgetreten:"
 
@@ -332,13 +339,12 @@ msgid "Giggle is a graphical frontend for the git content tracker."
 msgstr "Giggle ist eine graphische Schnittstelle für git"
 
 #: src/giggle-main.c:88
-#, fuzzy, c-format
+#, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "»%s --help« gibt weitere Informationen aus.\n"
 
 # CHECK
 #: src/giggle-remote-editor.c:146
-#, fuzzy
 msgid "Click to add mapping…"
 msgstr "Klicken, um Zuordnung hinzuzufügen …"
 
@@ -355,7 +361,6 @@ msgid "Name"
 msgstr "Name"
 
 #: src/giggle-remotes-view.c:280
-#, fuzzy
 msgid "Double click to add remote…"
 msgstr "Doppelklicken, um entfernten Bestand hinzuzufügen …"
 
@@ -440,6 +445,7 @@ msgstr "%a %H:%M"
 msgid "%b %d %I:%M %p"
 msgstr "%b %d %H:%M"
 
+#. it's older
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
@@ -478,7 +484,6 @@ msgid "Details"
 msgstr "Details"
 
 #: src/giggle-short-list.c:416
-#, fuzzy
 msgid "Show A_ll…"
 msgstr "_Alles anzeigen …"
 
@@ -626,12 +631,20 @@ msgstr ""
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
 "Copyright © 2009 - 2012 Die Giggle-Autoren"
 
+#. Translators: This is a special message that shouldn't be translated
+#. * literally. It is used in the about box to give credits to
+#. * the translators.
+#. * Thus, you should translate it to your name and email address.
+#. * You should also include other translators who have contributed to
+#. * this translation; in that case, please write each of them on a separate
+#. * line seperated by newlines (\n).
+#.
 #: src/giggle-window.c:937
 msgid "translator-credits"
 msgstr ""
 "Sven Herzberg <sven@imendio.com>\n"
 "Mathias Hasselmann <hasselmm@gnome.org>\n"
-"Mario Blättermann <mariobl@freenet.de>\n"
+"Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Christian Kirbach <Christian.Kirbach@googlemail.com>"
 
 #: src/giggle-window.c:942
@@ -647,14 +660,12 @@ msgid "Giggle Website"
 msgstr "Giggle-Webseite"
 
 #: src/giggle-window.c:1007
-#, fuzzy
 msgid "_Find…"
 msgstr "_Suchen …"
 
 #: src/giggle-window.c:1008
-#, fuzzy
 msgid "Find…"
-msgstr "Suche:"
+msgstr "Suchen …"
 
 #: src/giggle-window.c:1014
 msgid "Find Ne_xt"
@@ -745,7 +756,6 @@ msgid "Report _Issue"
 msgstr "_Problem berichten"
 
 #: src/giggle-window.c:1081
-#, fuzzy
 msgid "Report an issue you’ve found in Giggle"
 msgstr "Ein Problem in Giggle berichten"
 
@@ -794,109 +804,3 @@ msgstr ""
 "Beim Speichern der Datei trat ein Fehler auf:\n"
 "%s"
 
-#~ msgid "Giggle"
-#~ msgstr "Giggle"
-
-#~ msgid "Git repository viewer"
-#~ msgstr "Ansicht für Git-Softwarebestände"
-
-#~ msgid "Find..."
-#~ msgstr "Suchen …"
-
-#~ msgid "Run Giggle in a terminal?"
-#~ msgstr "Giggle im Terminal ausführen?"
-
-#~ msgid "Set it at TRUE if you want it activated"
-#~ msgstr "Auf »wahr« setzen, wenn Sie dies aktivieren wollen"
-
-#~ msgid "The handler for \"git://\" URLs"
-#~ msgstr "Der Handler für »git://«-Adressen"
-
-#~ msgid "Find Previous"
-#~ msgstr "Rückwärts suchen"
-
-#~ msgid "Find Next"
-#~ msgstr "Weitersuchen"
-
-#~ msgid ""
-#~ "This program is free software; you can redistribute it and/or modify it "
-#~ "under the terms of the GNU General Public License as published by the "
-#~ "Free Software Foundation; either version 2 of the License, or (at your "
-#~ "option) any later version."
-#~ msgstr ""
-#~ "Dieses Programm ist freie Software. Sie können es unter den Bedingungen "
-#~ "der GNU General Public License, wie von der Free Software Foundation "
-#~ "veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version "
-#~ "2 der Lizenz oder (nach Ihrer Option) jeder späteren Version. "
-
-#~ msgid ""
-#~ "This program is distributed in the hope that it will be useful, but "
-#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
-#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
-#~ "Public License for more details."
-#~ msgstr ""
-#~ "Die Veröffentlichung von diesem Programm erfolgt in der Hoffnung, dass es "
-#~ "Ihnen von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die "
-#~ "implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN "
-#~ "BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License."
-
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with this program; if not, write to the Free Software Foundation, Inc., "
-#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
-#~ msgstr ""
-#~ "Sie sollten ein Exemplar der GNU General Public License zusammen mit "
-#~ "diesem Programm erhalten haben. Falls nicht, schreiben Sie an die Free "
-#~ "Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA "
-#~ "02110-1301, USA."
-
-#~ msgid "<b>Branches</b>"
-#~ msgstr "<b>Zweige</b>"
-
-#~ msgid "<b>Remotes:</b>"
-#~ msgstr "<b>Entfernte Bestände:</b>"
-
-#~ msgid "Visit _Homepage"
-#~ msgstr "_Homepage besuchen"
-
-#~ msgid "Visit the homepage of Giggle"
-#~ msgstr "Die Homepage von Giggle besuchen"
-
-#~ msgid "Search string"
-#~ msgstr "Suchmuster"
-
-#~ msgid "Highlight color"
-#~ msgstr "Hervorhebungsfarbe"
-
-#~ msgid "Current color"
-#~ msgstr "Aktuelle Farbe"
-
-#~ msgid "_Differences"
-#~ msgstr "_Unterschiede"
-
-#~ msgid "_Compact Mode"
-#~ msgstr "_Kompakt"
-
-#~ msgid "_Open"
-#~ msgstr "Ö_ffnen"
-
-#~ msgid "_Quit"
-#~ msgstr "_Beenden"
-
-#~ msgid "Edit Personal _Details"
-#~ msgstr "Persönliche Angaben _bearbeiten"
-
-#~ msgid "_About"
-#~ msgstr "_Info"
-
-#~ msgid "_Back"
-#~ msgstr "_Zurück"
-
-#~ msgid "_Forward"
-#~ msgstr "_Weiter"
-
-#~ msgid "<b>Branches:</b>"
-#~ msgstr "<b>Zweige:</b>"
-
-#~ msgid "<b>Authors:</b>"
-#~ msgstr "<b>Autoren:</b>"
