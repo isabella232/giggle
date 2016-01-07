@@ -4,15 +4,15 @@
 # Carlos Garnacho <carlosg@gnome.org>, 2007.
 # Javier Jardón <jjardon@gnome.org>, 2010.
 # Jorge González <jorgegonz@svn.gnome.org>, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle VERSION\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle\n"
-"POT-Creation-Date: 2013-08-20 01:55+0100\n"
-"PO-Revision-Date: 2012-12-09 20:28+0100\n"
+"product=giggle&keywords=I18N+L10N\n"
+"POT-Creation-Date: 2015-12-22 14:46+0000\n"
+"PO-Revision-Date: 2016-01-07 10:38+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -20,7 +20,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.5\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: data/giggle.desktop.in.in:5
+msgid "Giggle"
+msgstr "Giggle"
+
+#: data/giggle.desktop.in.in:7
+#| msgid "Giggle"
+msgid "giggle"
+msgstr "giggle"
 
 #: data/main-window.ui:46
 msgid "URL:"
@@ -442,6 +451,7 @@ msgstr "%a %H:%M"
 msgid "%b %d %I:%M %p"
 msgstr "%d de %b %H:%M"
 
+#. it's older
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
@@ -628,6 +638,14 @@ msgstr ""
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
 "Copyright © 2009 - 2012 Los autores de Giggle"
 
+#. Translators: This is a special message that shouldn't be translated
+#. * literally. It is used in the about box to give credits to
+#. * the translators.
+#. * Thus, you should translate it to your name and email address.
+#. * You should also include other translators who have contributed to
+#. * this translation; in that case, please write each of them on a separate
+#. * line seperated by newlines (\n).
+#.
 #: src/giggle-window.c:937
 msgid "translator-credits"
 msgstr ""
@@ -790,9 +808,6 @@ msgid ""
 msgstr ""
 "Ocurrió un error al guardar al archivo:\n"
 "%s"
-
-#~ msgid "Giggle"
-#~ msgstr "Giggle"
 
 #~ msgid "Git repository viewer"
 #~ msgstr "Visor de repositorios Git"
