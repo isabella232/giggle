@@ -2,6 +2,7 @@
 <component type="desktop">
   <id>giggle.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
   <description>
     <p>
       Giggle is a graphical frontend for the git directory tracker.
@@ -13,25 +14,14 @@
   <screenshots>
     <screenshot height="742" width="1034" type="default">
       <image>https://wiki.gnome.org/Apps/giggle?action=AttachFile&amp;do=get&amp;target=giggle-history.png</image>
-      <caption><!-- Describe this screenshot in less than ~10 words --></caption>
+      <caption>Giggle history view</caption>
     </screenshot>
   </screenshots>
   <url type="homepage">https://wiki.gnome.org/Apps/giggle</url>
   <update_contact>jjardon_at_gnome.org</update_contact>
   <project_group>GNOME</project_group>
-
-  <!--FIXME: Use https://spdx.org/licenses/-->
-  <project_license><!-- Insert SPDX ID Here --></project_license>
-
-  <!--FIXME: this is a translatable version of project_group-->
   <developer_name>The GNOME Project</developer_name>
-
-  <!--FIXME: where to report bugs for the application-->
-  <url type="bugtracker"><!-- https://bugzilla.gnome.org/enter_bug.cgi?product=FIXME --></url>
-
-  <!--GNOME Projects usually have no per-app donation page-->
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=giggle</url>
   <url type="donation">http://www.gnome.org/friends/</url>
-
-  <!--FIXME: where on the internet users can find help-->
-  <url type="help"><!-- https://help.gnome.org/users/FIXME/stable/ --></url>
+  <url type="help">https://wiki.gnome.org/Apps/giggle/</url>
 </component>
