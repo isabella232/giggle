@@ -6,4 +6,5 @@ Exec=@bindir@/giggle %F
 Icon=giggle
 StartupNotify=true
 Categories=GTK;Development;RevisionControl;
+Keywords=Git;
 MimeType=x-scheme-handler/git;
