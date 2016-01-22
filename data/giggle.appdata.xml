@@ -24,4 +24,9 @@
   <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=giggle</url>
   <url type="donation">http://www.gnome.org/friends/</url>
   <url type="help">https://wiki.gnome.org/Apps/giggle/</url>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
 </component>
