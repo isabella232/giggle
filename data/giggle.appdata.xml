@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
-  <id type="desktop">giggle.desktop</id>
+<component type="desktop">
+  <id>giggle.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <description>
     <p>
@@ -11,9 +11,27 @@
     </p>
   </description>
   <screenshots>
-    <screenshot type="default" width="1034" height="742">https://wiki.gnome.org/Apps/giggle?action=AttachFile&amp;do=get&amp;target=giggle-history.png</screenshot>
+    <screenshot height="742" width="1034" type="default">
+      <image>https://wiki.gnome.org/Apps/giggle?action=AttachFile&amp;do=get&amp;target=giggle-history.png</image>
+      <caption><!-- Describe this screenshot in less than ~10 words --></caption>
+    </screenshot>
   </screenshots>
   <url type="homepage">https://wiki.gnome.org/Apps/giggle</url>
-  <updatecontact>jjardon_at_gnome.org</updatecontact>
+  <update_contact>jjardon_at_gnome.org</update_contact>
   <project_group>GNOME</project_group>
-</application>
+
+  <!--FIXME: Use https://spdx.org/licenses/-->
+  <project_license><!-- Insert SPDX ID Here --></project_license>
+
+  <!--FIXME: this is a translatable version of project_group-->
+  <developer_name>The GNOME Project</developer_name>
+
+  <!--FIXME: where to report bugs for the application-->
+  <url type="bugtracker"><!-- https://bugzilla.gnome.org/enter_bug.cgi?product=FIXME --></url>
+
+  <!--GNOME Projects usually have no per-app donation page-->
+  <url type="donation">http://www.gnome.org/friends/</url>
+
+  <!--FIXME: where on the internet users can find help-->
+  <url type="help"><!-- https://help.gnome.org/users/FIXME/stable/ --></url>
+</component>
