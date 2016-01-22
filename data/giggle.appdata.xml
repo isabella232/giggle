@@ -15,4 +15,5 @@
   </screenshots>
   <url type="homepage">https://wiki.gnome.org/Apps/giggle</url>
   <updatecontact>jjardon_at_gnome.org</updatecontact>
+  <project_group>GNOME</project_group>
 </application>
