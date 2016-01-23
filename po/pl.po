@@ -5,14 +5,14 @@
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Łukasz Jernaś <deejay1@srem.org>, 2007-2011.
-# Piotr Drąg <piotrdrag@gmail.com>, 2011-2015.
-# Aviary.pl <gnomepl@aviary.pl>, 2010-2015.
+# Piotr Drąg <piotrdrag@gmail.com>, 2011-2016.
+# Aviary.pl <gnomepl@aviary.pl>, 2010-2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-22 14:46+0000\n"
-"PO-Revision-Date: 2015-12-22 17:49+0100\n"
+"POT-Creation-Date: 2016-01-23 16:51+0000\n"
+"PO-Revision-Date: 2016-01-23 17:55+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -24,6 +24,18 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
+#: data/giggle.appdata.xml:7
+msgid "Giggle is a graphical frontend for the git directory tracker."
+msgstr "Program Giggle jest graficznym interfejsem dla git."
+
+#: data/giggle.appdata.xml:10
+msgid ""
+"It currently features a history viewer much like gitk and a commit GUI like "
+"git gui."
+msgstr ""
+"Obecnie zawiera on przeglądarkę historii podobną do programu gitk oraz "
+"graficzny interfejs zatwierdzania podobny do interfejsu programu git."
+
 #: data/giggle.desktop.in.in:5
 msgid "Giggle"
 msgstr "Giggle"
@@ -31,6 +43,10 @@ msgstr "Giggle"
 #: data/giggle.desktop.in.in:7
 msgid "giggle"
 msgstr "giggle"
+
+#: data/giggle.desktop.in.in:10
+msgid "Git;"
+msgstr "Git;"
 
 #: data/main-window.ui:46
 msgid "URL:"
@@ -645,8 +661,8 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Łukasz Jernaś <deejay1@srem.org>, 2007-2011\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2011-2015\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2010-2015"
+"Piotr Drąg <piotrdrag@gmail.com>, 2011-2016\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2010-2016"
 
 #: src/giggle-window.c:942
 msgid "A graphical frontend for Git"
