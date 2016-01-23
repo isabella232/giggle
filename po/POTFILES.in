@@ -1,3 +1,4 @@
+data/giggle.appdata.xml
 data/giggle.desktop.in.in
 data/main-window.ui
 libgiggle/giggle-plugin.c
