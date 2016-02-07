@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: giggle VERSION\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2015-12-22 14:46+0000\n"
-"PO-Revision-Date: 2016-01-07 10:38+0100\n"
+"POT-Creation-Date: 2016-01-23 16:51+0000\n"
+"PO-Revision-Date: 2016-02-01 15:48+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -22,14 +22,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
+#: data/giggle.appdata.xml:7
+#| msgid "Giggle is a graphical frontend for the git content tracker."
+msgid "Giggle is a graphical frontend for the git directory tracker."
+msgstr ""
+"Giggle es un visor gráfico para el sistema de control de versiones Git."
+
+#: data/giggle.appdata.xml:10
+msgid ""
+"It currently features a history viewer much like gitk and a commit GUI like "
+"git gui."
+msgstr ""
+"Actualmente tiene características como un visor del histórico similar a gitk "
+"y una interfaz para commits similar a git gui."
+
 #: data/giggle.desktop.in.in:5
 msgid "Giggle"
 msgstr "Giggle"
 
 #: data/giggle.desktop.in.in:7
-#| msgid "Giggle"
 msgid "giggle"
 msgstr "giggle"
+
+#: data/giggle.desktop.in.in:10
+msgid "Git;"
+msgstr "Git;"
 
 #: data/main-window.ui:46
 msgid "URL:"
