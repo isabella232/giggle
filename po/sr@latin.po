@@ -1,15 +1,15 @@
 # Serbian translation for giggle.
-# Courtesy of Prevod.org team (http://prevod.org/) -- 2013—2015.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2013—2016.
 # Copyright (C) 2013 giggle's COPYRIGHT HOLDER
 # This file is distributed under the same license as the giggle package.
-# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2013—2015.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2013—2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: "
 "http://bugzilla.gnome.org/enter_bug.cgi?product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2015-12-22 14:46+0000\n"
-"PO-Revision-Date: 2015-12-30 06:39+0200\n"
+"POT-Creation-Date: 2016-01-23 16:51+0000\n"
+"PO-Revision-Date: 2016-02-20 11:57+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -20,14 +20,30 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
+#: data/giggle.appdata.xml:7
+#| msgid "Giggle is a graphical frontend for the git content tracker."
+msgid "Giggle is a graphical frontend for the git directory tracker."
+msgstr "Gitorko je grafički čelnik za pratioca direktorijuma gita."
+
+#: data/giggle.appdata.xml:10
+msgid ""
+"It currently features a history viewer much like gitk and a commit GUI like "
+"git gui."
+msgstr ""
+"Trenutno ga odlikuje preglednik istorijata vrlo sličan gitk-u i GKS predaje "
+"slično gks git-a."
+
 #: data/giggle.desktop.in.in:5
 msgid "Giggle"
 msgstr "Gitorko"
 
 #: data/giggle.desktop.in.in:7
-#| msgid "Giggle"
 msgid "giggle"
 msgstr "gitorko"
+
+#: data/giggle.desktop.in.in:10
+msgid "Git;"
+msgstr "git;"
 
 #: data/main-window.ui:46
 msgid "URL:"
