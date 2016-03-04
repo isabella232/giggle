@@ -1,79 +1,149 @@
-# Hungarian translation of giggle
-# Copyright 2010 Free Software Foundation, Inc.
+# Hungarian translation of giggle.
+# Copyright (C) 2010-2016 Free Software Foundation, Inc.
 # This file is distributed under the same license as the giggle package.
 #
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2010, 2015.
 # Balázs Meskó <meskobalazs at gmail dot com>, 2015.
+# Balázs Úr <urbalazs at gmail dot com>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2015-06-25 17:29+0000\n"
-"PO-Revision-Date: 2015-06-26 00:19+0200\n"
-"Last-Translator: Gabor Kelemen <kelemeng at ubuntu dot com>\n"
+"POT-Creation-Date: 2016-01-23 16:51+0000\n"
+"PO-Revision-Date: 2016-03-04 22:32+0100\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libgiggle/giggle-plugin.c:526
+#: data/giggle.appdata.xml:7
+#| msgid "Giggle is a graphical frontend for the git content tracker."
+msgid "Giggle is a graphical frontend for the git directory tracker."
+msgstr "A Giggle egy grafikus előtétprogram a git tartalomkövetőhöz."
+
+#: data/giggle.appdata.xml:10
+msgid ""
+"It currently features a history viewer much like gitk and a commit GUI like "
+"git gui."
+msgstr ""
+"Jelenleg egy előzménymegtekintőt biztosít, akárcsak a gitk, és egy "
+"véglegesítő grafikus felhasználói felületet, mint a git gui."
+
+#: data/giggle.desktop.in.in:5
+#| msgid "About Giggle"
+msgid "Giggle"
+msgstr "Giggle"
+
+#: data/giggle.desktop.in.in:7
+msgid "giggle"
+msgstr "giggle"
+
+#: data/giggle.desktop.in.in:10
+msgid "Git;"
+msgstr "Git;"
+
+#: data/main-window.ui:46
+msgid "URL:"
+msgstr "URL:"
+
+#: data/main-window.ui:60
+msgid "Name:"
+msgstr "Név:"
+
+#: data/main-window.ui:85 src/giggle-remote-editor.c:172
+msgid "Branches"
+msgstr "Ágak"
+
+#: libgiggle/giggle-plugin.c:526
 #, c-format
 msgid "Cannot find plugin description in '%s'"
 msgstr "Nem található bővítményleírás itt: „%s”"
 
-#: ../plugins/giggle-personal-details-window.c:80
+#: plugins/hello-world.ui:5
+msgid "Demonstration of Giggle's Plugin System"
+msgstr "A Giggle bővítményrendszerének bemutatása"
+
+#: plugins/hello-world.ui:11
+msgid "Hello World"
+msgstr "Helló, világ"
+
+#: plugins/hello-world.ui:12
+msgid "Check if the plugin system works"
+msgstr "Annak ellenőrzése, hogy a bővítményrendszer működik-e"
+
+#: plugins/giggle-personal-details-window.c:80
 msgid "There was an error setting the configuration"
 msgstr "Hiba a beállítások megadásakor"
 
-#: ../plugins/giggle-personal-details-window.c:182
+#: plugins/giggle-personal-details-window.c:182
 msgid "There was an error getting the configuration"
 msgstr "Hiba a beállítások lekérésekor"
 
-#: ../plugins/giggle-personal-details-window.c:246
+#: plugins/giggle-personal-details-window.c:246
 msgid "_Name:"
 msgstr "_Név:"
 
-#: ../plugins/giggle-personal-details-window.c:256
+#: plugins/giggle-personal-details-window.c:256
 msgid "_Email:"
 msgstr "_E-mail:"
 
-#: ../plugins/giggle-personal-details-window.c:269
+#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:11
 msgid "Personal Details"
 msgstr "Személyes adatok"
 
-#: ../plugins/giggle-view-terminal.c:95
+#: plugins/giggle-view-terminal.c:95
 msgid "_Terminal"
 msgstr "_Terminál"
 
-#: ../plugins/giggle-view-terminal.c:96
+#: plugins/giggle-view-terminal.c:96
 msgid "Issue git commands via terminal"
 msgstr "git parancsok kiadása terminálból"
 
-#: ../src/eggfindbar.c:303
+#: plugins/personal-details.ui:5 plugins/personal-details.ui:12
+#| msgid "Personal Details"
+msgid "Edit personal details"
+msgstr "Személyes adatok szerkesztése"
+
+#: plugins/terminal-view.ui:5
+#| msgid "_Terminal"
+msgid "Terminal window"
+msgstr "Terminálablak"
+
+#: plugins/terminal-view.ui:11
+#| msgid "Create _Tag"
+msgid "Create _Terminal"
+msgstr "_Terminál létrehozása"
+
+#: plugins/terminal-view.ui:12
+msgid "Create new tab in git terminal"
+msgstr "Új lap létrehozása a git terminálban"
+
+#: src/eggfindbar.c:303
 msgid "Find:"
 msgstr "Keresés:"
 
-#: ../src/eggfindbar.c:316
+#: src/eggfindbar.c:316
 msgid "Find previous occurrence of the search string"
 msgstr "A keresendő karakterlánc előző előfordulásának keresése"
 
-#: ../src/eggfindbar.c:324
+#: src/eggfindbar.c:324
 msgid "Find next occurrence of the search string"
 msgstr "A keresendő karakterlánc következő előfordulásának keresése"
 
-#: ../src/eggfindbar.c:331
+#: src/eggfindbar.c:331
 msgid "C_ase Sensitive"
 msgstr "Na_gybetűérzékeny"
 
-#: ../src/eggfindbar.c:335
+#: src/eggfindbar.c:335
 msgid "Toggle case sensitive search"
 msgstr "Váltás a kis- és nagybetűérzékeny keresés között"
 
-#: ../src/giggle-authors-view.c:78
+#: src/giggle-authors-view.c:78
 #, c-format
 msgid ""
 "An error occurred when retrieving authors list:\n"
@@ -82,11 +152,11 @@ msgstr ""
 "Hiba történt a szerzőlista lekérése során:\n"
 "%s"
 
-#: ../src/giggle-authors-view.c:144
+#: src/giggle-authors-view.c:144
 msgid "Authors:"
 msgstr "Szerzők:"
 
-#: ../src/giggle-branches-view.c:79
+#: src/giggle-branches-view.c:79
 #, c-format
 msgid ""
 "An error occurred when retrieving branches list:\n"
@@ -95,35 +165,35 @@ msgstr ""
 "Hiba történt az áglista lekérése során:\n"
 "%s"
 
-#: ../src/giggle-branches-view.c:145 ../src/giggle-revision-view.c:197
+#: src/giggle-branches-view.c:145 src/giggle-revision-view.c:197
 msgid "Branches:"
 msgstr "Ágak:"
 
-#: ../src/giggle-clone-dialog.c:246
+#: src/giggle-clone-dialog.c:246
 msgid "Clone Repository"
 msgstr "Tároló klónozása"
 
-#: ../src/giggle-clone-dialog.c:254
+#: src/giggle-clone-dialog.c:254
 msgid "Cl_one"
 msgstr "_Klónozás"
 
-#: ../src/giggle-clone-dialog.c:278
+#: src/giggle-clone-dialog.c:278
 msgid "_Repository:"
 msgstr "_Tároló:"
 
-#: ../src/giggle-clone-dialog.c:290
+#: src/giggle-clone-dialog.c:290
 msgid "_Local name:"
 msgstr "_Helyi név:"
 
-#: ../src/giggle-clone-dialog.c:295
+#: src/giggle-clone-dialog.c:295
 msgid "Please select a location for the clone"
 msgstr "Válassza ki a tárolási helyet a klónozáshoz"
 
-#: ../src/giggle-clone-dialog.c:298
+#: src/giggle-clone-dialog.c:298
 msgid "Clone in _folder:"
 msgstr "Klónozás a _mappába:"
 
-#: ../src/giggle-diff-tree-view.c:140 ../src/giggle-file-list.c:1660
+#: src/giggle-diff-tree-view.c:140 src/giggle-file-list.c:1660
 #, c-format
 msgid ""
 "An error occurred when retrieving different files list:\n"
@@ -132,11 +202,11 @@ msgstr ""
 "Hiba történt a különbségfájlok lekérése során:\n"
 "%s"
 
-#: ../src/giggle-diff-tree-view.c:207
+#: src/giggle-diff-tree-view.c:207
 msgid "Changed files"
 msgstr "Megváltozott fájlok"
 
-#: ../src/giggle-diff-view.c:714
+#: src/giggle-diff-view.c:714
 #, c-format
 msgid ""
 "An error occurred when retrieving a diff:\n"
@@ -145,19 +215,19 @@ msgstr ""
 "Hiba történt a különbség lekérése során:\n"
 "%s"
 
-#: ../src/giggle-diff-window.c:80
+#: src/giggle-diff-window.c:80
 msgid "Commit changes"
 msgstr "Változtatások véglegesítése"
 
-#: ../src/giggle-diff-window.c:102
+#: src/giggle-diff-window.c:102
 msgid "Revision log:"
 msgstr "Revíziónapló:"
 
-#: ../src/giggle-diff-window.c:130
+#: src/giggle-diff-window.c:130
 msgid "Co_mmit"
 msgstr "Ko_mmit"
 
-#: ../src/giggle-diff-window.c:202
+#: src/giggle-diff-window.c:202
 #, c-format
 msgid ""
 "An error occurred when committing:\n"
@@ -166,7 +236,7 @@ msgstr ""
 "Hiba történt a kommit során:\n"
 "%s"
 
-#: ../src/giggle-file-list.c:387
+#: src/giggle-file-list.c:387
 #, c-format
 msgid ""
 "An error occurred when retrieving the file list:\n"
@@ -175,7 +245,7 @@ msgstr ""
 "Hiba történt a fájllista lekérése során:\n"
 "%s"
 
-#: ../src/giggle-file-list.c:756
+#: src/giggle-file-list.c:756
 #, c-format
 msgid ""
 "An error occurred when adding a file to git:\n"
@@ -184,41 +254,40 @@ msgstr ""
 "Hiba történt egy fájl git-hez adása során:\n"
 "%s"
 
-#: ../src/giggle-file-list.c:816 ../src/giggle-file-list.c:842
-#: ../src/giggle-rev-list-view.c:1173 ../src/giggle-rev-list-view.c:1204
+#: src/giggle-file-list.c:816 src/giggle-file-list.c:842
+#: src/giggle-rev-list-view.c:1173 src/giggle-rev-list-view.c:1204
 #, c-format
 msgid "Could not save the patch as %s"
 msgstr "Nem sikerült a folt mentése mint „%s”"
 
-#: ../src/giggle-file-list.c:821 ../src/giggle-file-list.c:847
-#: ../src/giggle-rev-list-view.c:1181 ../src/giggle-rev-list-view.c:1209
+#: src/giggle-file-list.c:821 src/giggle-file-list.c:847
+#: src/giggle-rev-list-view.c:1181 src/giggle-rev-list-view.c:1209
 msgid "No error was given"
 msgstr "Nincs megadva hiba"
 
-#: ../src/giggle-file-list.c:868 ../src/giggle-rev-list-view.c:1235
+#: src/giggle-file-list.c:868 src/giggle-rev-list-view.c:1235
 #, c-format
 msgid "Patch saved as %s"
 msgstr "Folt mentve mint „%s”"
 
-#: ../src/giggle-file-list.c:872 ../src/giggle-rev-list-view.c:1239
-#, c-format
+#: src/giggle-file-list.c:872 src/giggle-rev-list-view.c:1239
 msgid "Created in project directory"
 msgstr "Létrehozva a projektkönyvtárban"
 
-#: ../src/giggle-file-list.c:875 ../src/giggle-rev-list-view.c:1242
+#: src/giggle-file-list.c:875 src/giggle-rev-list-view.c:1242
 #, c-format
 msgid "Created in directory %s"
 msgstr "Létrehozva a(z) „%s” könyvtárban"
 
-#: ../src/giggle-file-list.c:910 ../src/giggle-rev-list-view.c:1293
+#: src/giggle-file-list.c:910 src/giggle-rev-list-view.c:1293
 msgid "Create Patch"
 msgstr "Folt létrehozása"
 
-#: ../src/giggle-file-list.c:1013
+#: src/giggle-file-list.c:1013
 msgid "Delete glob pattern?"
 msgstr "Törli a glob mintát?"
 
-#: ../src/giggle-file-list.c:1016
+#: src/giggle-file-list.c:1016
 msgid ""
 "The selected file was shadowed by a glob pattern that may be hiding other "
 "files, delete it?"
@@ -226,274 +295,269 @@ msgstr ""
 "A kiválasztott fájlt egy glob minta rejti el, amely más fájlokat is rejthet, "
 "törli?"
 
-#: ../src/giggle-file-list.c:1411
+#: src/giggle-file-list.c:1411
 msgid "_Commit Changes"
 msgstr "Változtatások _kommitolása"
 
-#: ../src/giggle-file-list.c:1413
+#: src/giggle-file-list.c:1413
 msgid "A_dd file to repository"
 msgstr "Fájl hozzáa_dása a tárolóhoz"
 
-#: ../src/giggle-file-list.c:1414 ../src/giggle-rev-list-view.c:1638
+#: src/giggle-file-list.c:1414 src/giggle-rev-list-view.c:1638
 msgid "Create _Patch"
 msgstr "Folt _létrehozása"
 
-#: ../src/giggle-file-list.c:1415
+#: src/giggle-file-list.c:1415
 msgid "_Add to .gitignore"
 msgstr "_Hozzáadás a .gitignore-hoz"
 
-#: ../src/giggle-file-list.c:1416
+#: src/giggle-file-list.c:1416
 msgid "_Remove from .gitignore"
 msgstr "_Eltávolítás a .gitignore-ból"
 
-#: ../src/giggle-file-list.c:1420
+#: src/giggle-file-list.c:1420
 msgid "_Show all files"
 msgstr "_Minden fájl mutatása"
 
-#: ../src/giggle-file-list.c:1459
+#: src/giggle-file-list.c:1459
 msgid "Project"
 msgstr "Projekt"
 
-#: ../src/giggle-helpers.c:176
+#: src/giggle-helpers.c:176
 msgid "An error occurred:"
 msgstr "Hiba történt:"
 
-#: ../src/giggle-main.c:36
+#: src/giggle-main.c:36
 msgid "Clone a repository"
 msgstr "Tároló klónozása"
 
-#: ../src/giggle-main.c:37 ../src/giggle-remotes-view.c:267
+#: src/giggle-main.c:37 src/giggle-remotes-view.c:267
 msgid "URL"
 msgstr "URL"
 
-#: ../src/giggle-main.c:40
+#: src/giggle-main.c:40
 msgid "Show the diff window"
 msgstr "A diff ablak megjelenítése"
 
-#: ../src/giggle-main.c:44
+#: src/giggle-main.c:44
 msgid "Show version information and exit"
 msgstr "Verzióinformáció megjelenítése, majd kilépés"
 
-#: ../src/giggle-main.c:47
+#: src/giggle-main.c:47
 msgid "[DIRECTORY]"
 msgstr "[KÖNYVTÁR]"
 
-#: ../src/giggle-main.c:79
+#: src/giggle-main.c:79
 #, c-format
 msgid "Report errors (in English, with LC_ALL=C) to <%s>."
 msgstr "Hibákat (angolul, LC_ALL=C beállítással) itt jelenthet be: <%s>."
 
-#: ../src/giggle-main.c:80
+#: src/giggle-main.c:80
 msgid "Giggle is a graphical frontend for the git content tracker."
 msgstr "A Giggle egy grafikus előtétprogram a git tartalomkövetőhöz."
 
-#: ../src/giggle-main.c:88
+#: src/giggle-main.c:88
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "További információkért adja ki a(z) „%s --help” parancsot.\n"
 
-#: ../src/giggle-remote-editor.c:146
+#: src/giggle-remote-editor.c:146
 msgid "Click to add mapping…"
 msgstr "Kattintson ide új hozzárendeléshez…"
 
-#: ../src/giggle-remote-editor.c:172
-msgid "Branches"
-msgstr "Ágak"
-
-#: ../src/giggle-remote-editor.c:365
+#: src/giggle-remote-editor.c:365
 msgid "Unnamed"
 msgstr "Névtelen"
 
-#: ../src/giggle-remotes-view.c:256
+#: src/giggle-remotes-view.c:256
 msgid "Icon"
 msgstr "Ikon"
 
-#: ../src/giggle-remotes-view.c:262
+#: src/giggle-remotes-view.c:262
 msgid "Name"
 msgstr "Név"
 
-#: ../src/giggle-remotes-view.c:280
+#: src/giggle-remotes-view.c:280
 msgid "Double click to add remote…"
 msgstr "Kattintson duplán egy távoli ág hozzáadásához…"
 
-#: ../src/giggle-revision-view.c:183 ../src/giggle-view-file.c:1215
+#: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
 msgid "Author:"
 msgstr "Szerző:"
 
-#: ../src/giggle-revision-view.c:184 ../src/giggle-view-file.c:1216
+#: src/giggle-revision-view.c:184 src/giggle-view-file.c:1216
 msgid "Committer:"
 msgstr "Kommitáló:"
 
-#: ../src/giggle-revision-view.c:195 ../src/giggle-view-file.c:1217
+#: src/giggle-revision-view.c:195 src/giggle-view-file.c:1217
 msgid "Date:"
 msgstr "Dátum:"
 
-#: ../src/giggle-revision-view.c:196 ../src/giggle-view-file.c:1218
+#: src/giggle-revision-view.c:196 src/giggle-view-file.c:1218
 msgid "SHA:"
 msgstr "SHA:"
 
-#: ../src/giggle-revision-view.c:216
+#: src/giggle-revision-view.c:216
 msgid "Change Log:"
 msgstr "Változásnapló:"
 
-#: ../src/giggle-revision-view.c:505
+#: src/giggle-revision-view.c:505
 msgid "_Details"
 msgstr "_Részletek"
 
-#: ../src/giggle-revision-view.c:506
+#: src/giggle-revision-view.c:506
 msgid "Display revision details"
 msgstr "Revízió részleteinek megtekintése"
 
-#: ../src/giggle-rev-list-view.c:331
+#: src/giggle-rev-list-view.c:331
 #, c-format
 msgid "Delete branch \"%s\""
 msgstr "A(z) „%s” ág törlése"
 
-#: ../src/giggle-rev-list-view.c:334
+#: src/giggle-rev-list-view.c:334
 #, c-format
 msgid "Delete tag \"%s\""
 msgstr "A(z) „%s” címke törlése"
 
-#: ../src/giggle-rev-list-view.c:504
+#: src/giggle-rev-list-view.c:504
 msgid "Branch"
 msgstr "Ág"
 
-#: ../src/giggle-rev-list-view.c:507
+#: src/giggle-rev-list-view.c:507
 msgid "Tag"
 msgstr "Tag"
 
-#: ../src/giggle-rev-list-view.c:510
+#: src/giggle-rev-list-view.c:510
 msgid "Remote"
 msgstr "Távoli"
 
-#: ../src/giggle-rev-list-view.c:1063
+#: src/giggle-rev-list-view.c:1063
 msgid "Enter branch name:"
 msgstr "Adja meg az ág nevét:"
 
-#: ../src/giggle-rev-list-view.c:1114
+#: src/giggle-rev-list-view.c:1114
 msgid "Enter tag name:"
 msgstr "Adja meg a címkenevet:"
 
-#: ../src/giggle-rev-list-view.c:1175
-#, c-format
+#: src/giggle-rev-list-view.c:1175
 msgid "Could not create patch"
 msgstr "Nem sikerült a foltot létrehozni"
 
-#: ../src/giggle-rev-list-view.c:1429
+#: src/giggle-rev-list-view.c:1429
 msgid "Uncommitted changes"
 msgstr "Nem kommitolt változtatások"
 
 #. TRANSLATORS: it's a strftime format string
-#: ../src/giggle-rev-list-view.c:1483
+#: src/giggle-rev-list-view.c:1483
 msgid "%I:%M %p"
 msgstr "%l.%M %P"
 
 #. TRANSLATORS: it's a strftime format string
-#: ../src/giggle-rev-list-view.c:1496
+#: src/giggle-rev-list-view.c:1496
 msgid "%a %I:%M %p"
 msgstr "%a %l.%M %p"
 
 #. TRANSLATORS: it's a strftime format string
-#: ../src/giggle-rev-list-view.c:1508
+#: src/giggle-rev-list-view.c:1508
 msgid "%b %d %I:%M %p"
 msgstr "%b %e %l.%M %p"
 
 #. it's older
 #. TRANSLATORS: it's a strftime format string
-#: ../src/giggle-rev-list-view.c:1513
+#: src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
 msgstr "%Y %b. %d"
 
-#: ../src/giggle-rev-list-view.c:1635
+#: src/giggle-rev-list-view.c:1635
 msgid "Commit"
 msgstr "Véglegesítés"
 
-#: ../src/giggle-rev-list-view.c:1636
+#: src/giggle-rev-list-view.c:1636
 msgid "Create _Branch"
 msgstr "Á_g létrehozása"
 
-#: ../src/giggle-rev-list-view.c:1637
+#: src/giggle-rev-list-view.c:1637
 msgid "Create _Tag"
 msgstr "_Címke létrehozása"
 
-#: ../src/giggle-rev-list-view.c:1703
+#: src/giggle-rev-list-view.c:1703
 msgid "Graph"
 msgstr "Grafikon"
 
-#: ../src/giggle-rev-list-view.c:1721
+#: src/giggle-rev-list-view.c:1721
 msgid "Short Log"
 msgstr "Rövid napló"
 
-#: ../src/giggle-rev-list-view.c:1740
+#: src/giggle-rev-list-view.c:1740
 msgid "Author"
 msgstr "Szerző"
 
-#: ../src/giggle-rev-list-view.c:1757
+#: src/giggle-rev-list-view.c:1757
 msgid "Date"
 msgstr "Dátum"
 
-#: ../src/giggle-short-list.c:300
+#: src/giggle-short-list.c:300
 msgid "Details"
 msgstr "Részletek"
 
-#: ../src/giggle-short-list.c:416
+#: src/giggle-short-list.c:416
 msgid "Show A_ll…"
 msgstr "_Minden mutatása…"
 
-#: ../src/giggle-view-diff.c:107
+#: src/giggle-view-diff.c:107
 #, c-format
 msgid "Change %d of %d"
 msgstr "Változtatás %d / %d"
 
-#: ../src/giggle-view-diff.c:182
+#: src/giggle-view-diff.c:182
 msgid "_Previous Change"
 msgstr "_Előző változtatás"
 
-#: ../src/giggle-view-diff.c:182
+#: src/giggle-view-diff.c:182
 msgid "View previous change"
 msgstr "Az előző változtatás megtekintése"
 
-#: ../src/giggle-view-diff.c:186
+#: src/giggle-view-diff.c:186
 msgid "_Next Change"
 msgstr "_Következő változtatás"
 
-#: ../src/giggle-view-diff.c:186
+#: src/giggle-view-diff.c:186
 msgid "View next change"
 msgstr "A következő változtatás megtekintése"
 
-#: ../src/giggle-view-diff.c:348
+#: src/giggle-view-diff.c:348
 msgid "_Changes"
 msgstr "Válto_ztatások"
 
-#: ../src/giggle-view-diff.c:349
+#: src/giggle-view-diff.c:349
 msgid "Browse a revision's changes"
 msgstr "A revízió változtatásainak tallózása"
 
-#: ../src/giggle-view-file.c:324
+#: src/giggle-view-file.c:324
 msgid "_Goto Line Number"
 msgstr "Sorhoz _ugrás"
 
-#: ../src/giggle-view-file.c:325
+#: src/giggle-view-file.c:325
 msgid "Highlight specified line number"
 msgstr "Megadott sor kiemelése"
 
-#: ../src/giggle-view-file.c:329
+#: src/giggle-view-file.c:329
 msgid "Show _Changes"
 msgstr "Változtatások _megjelenítése"
 
-#: ../src/giggle-view-file.c:330
+#: src/giggle-view-file.c:330
 msgid "Show changes for selected revision"
 msgstr "A kiválasztott revízió változtatásainak megjelenítése"
 
-#: ../src/giggle-view-file.c:334
+#: src/giggle-view-file.c:334
 msgid "Select _Revision"
 msgstr "_Revízió kiválasztása"
 
-#: ../src/giggle-view-file.c:335
+#: src/giggle-view-file.c:335
 msgid "Select revision of selected line"
 msgstr "A kiválasztott sor revíziójának megjelenítése"
 
-#: ../src/giggle-view-file.c:897
+#: src/giggle-view-file.c:897
 #, c-format
 msgid ""
 "An error occurred when getting file ref:\n"
@@ -502,8 +566,8 @@ msgstr ""
 "Hiba a fájlreferencia lekérésekor:\n"
 "%s"
 
-#: ../src/giggle-view-file.c:968 ../src/giggle-view-history.c:248
-#: ../src/giggle-view-history.c:342
+#: src/giggle-view-file.c:968 src/giggle-view-history.c:248
+#: src/giggle-view-history.c:342
 #, c-format
 msgid ""
 "An error occurred when getting the revisions list:\n"
@@ -512,69 +576,69 @@ msgstr ""
 "Hiba történt a revíziólista lekérése során:\n"
 "%s"
 
-#: ../src/giggle-view-file.c:1128
+#: src/giggle-view-file.c:1128
 msgid "Line Number:"
 msgstr "Sorszám:"
 
-#: ../src/giggle-view-file.c:1566
+#: src/giggle-view-file.c:1566
 msgid "_Browse"
 msgstr "_Tallózás"
 
-#: ../src/giggle-view-file.c:1567
+#: src/giggle-view-file.c:1567
 msgid "Browse the files of this project"
 msgstr "A projekt fájljainak tallózása"
 
-#: ../src/giggle-view-history.c:842
+#: src/giggle-view-history.c:842
 msgid "_History"
 msgstr "_Előzmények"
 
-#: ../src/giggle-view-history.c:843
+#: src/giggle-view-history.c:843
 msgid "Browse the history of this project"
 msgstr "A projekt előzményeinek tallózása"
 
-#: ../src/giggle-view-summary.c:117
+#: src/giggle-view-summary.c:117
 msgid "Description:"
 msgstr "Leírás:"
 
-#: ../src/giggle-view-summary.c:167
+#: src/giggle-view-summary.c:167
 msgid "Remotes:"
 msgstr "Távoli ágak:"
 
-#: ../src/giggle-view-summary.c:195
+#: src/giggle-view-summary.c:195
 msgid "_Summary"
 msgstr "Ö_sszegzés"
 
-#: ../src/giggle-view-summary.c:198
+#: src/giggle-view-summary.c:198
 msgid "_Branches"
 msgstr "Ága_k"
 
-#: ../src/giggle-view-summary.c:201
+#: src/giggle-view-summary.c:201
 msgid "_Authors"
 msgstr "_Szerzők"
 
-#: ../src/giggle-view-summary.c:204
+#: src/giggle-view-summary.c:204
 msgid "_Remotes"
 msgstr "_Távoli ágak"
 
-#: ../src/giggle-window.c:546
+#: src/giggle-window.c:546
 #, c-format
 msgid "The directory '%s' does not look like a git repository."
 msgstr "A(z) „%s” könyvtár nem tűnik git tárolónak."
 
-#: ../src/giggle-window.c:629
+#: src/giggle-window.c:629
 msgid "Select git repository"
 msgstr "Válasszon ki egy git tárolót"
 
-#: ../src/giggle-window.c:682
+#: src/giggle-window.c:682
 #, c-format
 msgid "Properties of %s"
 msgstr "%s tulajdonságai"
 
-#: ../src/giggle-window.c:912
+#: src/giggle-window.c:912
 msgid "Contributors:"
 msgstr "Hozzájárultak:"
 
-#: ../src/giggle-window.c:925
+#: src/giggle-window.c:925
 msgid ""
 "Copyright © 2007 - 2008 Imendio AB\n"
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
@@ -592,161 +656,161 @@ msgstr ""
 #. * this translation; in that case, please write each of them on a separate
 #. * line seperated by newlines (\n).
 #.
-#: ../src/giggle-window.c:937
+#: src/giggle-window.c:937
 msgid "translator-credits"
 msgstr ""
 "Kelemen Gábor <kelemeng@ubuntu.com>\n"
 "Meskó Balázs <meskobalazs@gmail.com>"
 
-#: ../src/giggle-window.c:942
+#: src/giggle-window.c:942
 msgid "A graphical frontend for Git"
 msgstr "Grafikus előtétprogram a Git-hez"
 
-#: ../src/giggle-window.c:947
+#: src/giggle-window.c:947
 msgid "About Giggle"
 msgstr "A Giggle névjegye"
 
-#: ../src/giggle-window.c:951
+#: src/giggle-window.c:951
 msgid "Giggle Website"
 msgstr "A Giggle weboldala"
 
-#: ../src/giggle-window.c:1007
+#: src/giggle-window.c:1007
 msgid "_Find…"
 msgstr "_Keresés…"
 
-#: ../src/giggle-window.c:1008
+#: src/giggle-window.c:1008
 msgid "Find…"
 msgstr "Keresés…"
 
-#: ../src/giggle-window.c:1014
+#: src/giggle-window.c:1014
 msgid "Find Ne_xt"
 msgstr "Kö_vetkező találat"
 
-#: ../src/giggle-window.c:1015
+#: src/giggle-window.c:1015
 msgid "Find next match"
 msgstr "Következő találat keresése"
 
-#: ../src/giggle-window.c:1018
+#: src/giggle-window.c:1018
 msgid "Find Pre_vious"
 msgstr "Elő_ző találat"
 
-#: ../src/giggle-window.c:1019
+#: src/giggle-window.c:1019
 msgid "Find previous match"
 msgstr "Előző találat keresése"
 
-#: ../src/giggle-window.c:1025
+#: src/giggle-window.c:1025
 msgid "_Project"
 msgstr "_Projekt"
 
-#: ../src/giggle-window.c:1026
+#: src/giggle-window.c:1026
 msgid "_Edit"
 msgstr "S_zerkesztés"
 
-#: ../src/giggle-window.c:1027
+#: src/giggle-window.c:1027
 msgid "_Go"
 msgstr "_Ugrás"
 
-#: ../src/giggle-window.c:1028
+#: src/giggle-window.c:1028
 msgid "_View"
 msgstr "_Nézet"
 
-#: ../src/giggle-window.c:1029
+#: src/giggle-window.c:1029
 msgid "_Help"
 msgstr "_Súgó"
 
-#: ../src/giggle-window.c:1032
+#: src/giggle-window.c:1032
 msgid "Open a git repository"
 msgstr "Git tároló megnyitása"
 
-#: ../src/giggle-window.c:1036
+#: src/giggle-window.c:1036
 msgid "Clone _location"
 msgstr "Hely k_lónozása"
 
-#: ../src/giggle-window.c:1036
+#: src/giggle-window.c:1036
 msgid "Clone a location"
 msgstr "Egy hely klónozása"
 
-#: ../src/giggle-window.c:1041
+#: src/giggle-window.c:1041
 msgid "_Save patch"
 msgstr "_Folt mentése"
 
-#: ../src/giggle-window.c:1041
+#: src/giggle-window.c:1041
 msgid "Save a patch"
 msgstr "Folt mentése"
 
-#: ../src/giggle-window.c:1045
+#: src/giggle-window.c:1045
 msgid "_Diff current changes"
 msgstr "Jelenlegi változások diffelése"
 
-#: ../src/giggle-window.c:1045
+#: src/giggle-window.c:1045
 msgid "Diff current changes"
 msgstr "Jelenlegi változások eltérésének megjelenítése"
 
-#: ../src/giggle-window.c:1050
+#: src/giggle-window.c:1050
 msgid "Quit the application"
 msgstr "Kilépés az alkalmazásból"
 
-#: ../src/giggle-window.c:1068
+#: src/giggle-window.c:1068
 msgid "Go backward in history"
 msgstr "Ugrás az előző előzményre"
 
-#: ../src/giggle-window.c:1072
+#: src/giggle-window.c:1072
 msgid "Go forward in history"
 msgstr "Ugrás a következő előzményre"
 
-#: ../src/giggle-window.c:1076
+#: src/giggle-window.c:1076
 msgid "_Contents"
 msgstr "_Tartalom"
 
-#: ../src/giggle-window.c:1077
+#: src/giggle-window.c:1077
 msgid "Show user guide for Giggle"
 msgstr "A Giggle felhasználói kézikönyvének megnyitása"
 
-#: ../src/giggle-window.c:1080
+#: src/giggle-window.c:1080
 msgid "Report _Issue"
 msgstr "_Hiba jelentése"
 
-#: ../src/giggle-window.c:1081
+#: src/giggle-window.c:1081
 msgid "Report an issue you’ve found in Giggle"
 msgstr "A Giggle-ben talált hiba jelentése"
 
-#: ../src/giggle-window.c:1085
+#: src/giggle-window.c:1085
 msgid "About this application"
 msgstr "Az alkalmazás névjegye"
 
-#: ../src/giggle-window.c:1092
+#: src/giggle-window.c:1092
 msgid "Show revision tree"
 msgstr "A revíziófa megjelenítése"
 
-#: ../src/giggle-window.c:1099
+#: src/giggle-window.c:1099
 msgid "Show diffs by chunk"
 msgstr "A különbségek megjelenítése szeletenként"
 
-#: ../src/giggle-window.c:1102
+#: src/giggle-window.c:1102
 msgid "Show diffs by file"
 msgstr "A különbségek megjelenítése fájlonként"
 
-#: ../src/giggle-window.c:1105
+#: src/giggle-window.c:1105
 msgid "Show all diffs"
 msgstr "Minden különbség megjelenítése"
 
-#: ../src/giggle-window.c:1111
+#: src/giggle-window.c:1111
 msgid "Show and edit project properties"
 msgstr "Projekttulajdonságok megjelenítése és szerkesztése"
 
-#: ../src/giggle-window.c:1115
+#: src/giggle-window.c:1115
 msgid "Refresh current view"
 msgstr "Jelenlegi nézet frissítése"
 
-#: ../src/giggle-window.c:1454
+#: src/giggle-window.c:1454
 msgid "Search Inside _Patches"
 msgstr "Keresés a _foltokon belül"
 
-#: ../src/giggle-window.c:1723
+#: src/giggle-window.c:1723
 msgid "Save patch file"
 msgstr "Foltfájl mentése"
 
-#: ../src/giggle-window.c:1743
+#: src/giggle-window.c:1743
 #, c-format
 msgid ""
 "An error occurred when saving to file:\n"
@@ -754,12 +818,6 @@ msgid ""
 msgstr ""
 "Hiba történt a fájl mentése során:\n"
 "%s"
-
-#~ msgid "URL:"
-#~ msgstr "URL:"
-
-#~ msgid "Name:"
-#~ msgstr "Név:"
 
 #~ msgid "Git repository viewer"
 #~ msgstr "Git tárolómegjelenítő"
