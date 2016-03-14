@@ -1,16 +1,15 @@
 # Czech translation for giggle.
 # Copyright (C) 2010 giggle's COPYRIGHT HOLDER
 # This file is distributed under the same license as the giggle package.
-#
-# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013, 2015.
+# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2015-12-22 14:46+0000\n"
-"PO-Revision-Date: 2015-12-23 10:31+0100\n"
+"POT-Creation-Date: 2016-01-23 16:51+0000\n"
+"PO-Revision-Date: 2016-03-14 04:34+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -18,6 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#: data/giggle.appdata.xml:7
+msgid "Giggle is a graphical frontend for the git directory tracker."
+msgstr "Giggle je grafické rozhraní pro procházení složek git."
+
+#: data/giggle.appdata.xml:10
+msgid ""
+"It currently features a history viewer much like gitk and a commit GUI like "
+"git gui."
+msgstr ""
+"V současnosti nabízí zobrazení historie, podobně jako gitk, a grafické "
+"rozhraní pro procházení zařazení, podobně jako git-gui."
 
 #: data/giggle.desktop.in.in:5
 msgid "Giggle"
@@ -26,6 +38,10 @@ msgstr "Giggle"
 #: data/giggle.desktop.in.in:7
 msgid "giggle"
 msgstr "giggle"
+
+#: data/giggle.desktop.in.in:10
+msgid "Git;"
+msgstr "Git;"
 
 #: data/main-window.ui:46
 msgid "URL:"
