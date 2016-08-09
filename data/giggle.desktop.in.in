@@ -3,8 +3,10 @@ Version=1.0
 Type=Application
 Name=Giggle
 Exec=@bindir@/giggle %F
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=giggle
 StartupNotify=true
 Categories=GTK;Development;RevisionControl;
+# Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 Keywords=Git;
 MimeType=x-scheme-handler/git;
