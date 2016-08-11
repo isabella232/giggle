@@ -170,10 +170,10 @@ AX_COMPILER_FLAGS([WARN_CFLAGS],[WARN_LDFLAGS])
 AC_CONFIG_FILES([
         Makefile
         data/Makefile
+        data/icons/Makefile
         help/Makefile
         libgiggle/Makefile
         libgiggle-git/Makefile
-        pixmaps/Makefile
         plugins/Makefile
         po/Makefile.in
         src/Makefile

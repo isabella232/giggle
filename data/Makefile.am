@@ -1,3 +1,5 @@
+SUBDIRS = icons
+
 gladedir = $(datadir)/giggle/glade
 dist_glade_DATA = \
 	main-window.ui
