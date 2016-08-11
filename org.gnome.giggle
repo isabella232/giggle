@@ -35,7 +35,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://git.gnome.org/giggle"
+                    "url": "git://git.gnome.org/giggle",
+                    "branch": "jjardon/flatpak"
                 }
             ]
         }

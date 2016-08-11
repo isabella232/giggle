@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Giggle
-Exec=@bindir@/giggle %F
+Exec=giggle
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=giggle
 StartupNotify=true
