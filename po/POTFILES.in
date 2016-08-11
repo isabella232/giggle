@@ -1,5 +1,5 @@
 data/giggle.appdata.xml
-data/giggle.desktop.in.in
+data/org.gnome.Giggle.desktop.in.in
 data/main-window.ui
 libgiggle/giggle-plugin.c
 plugins/hello-world.ui
