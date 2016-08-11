@@ -1,0 +1,61 @@
+{
+    "app-id": "org.gnome.Giggle",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.20",
+    "sdk": "org.gnome.Sdk",
+    "command": "giggle",
+    "rename-desktop-file": "giggle.desktop",
+    "rename-icon": "giggle",
+    "finish-args": [
+        /* X11 + XShm access */
+        "--share=ipc", "--socket=x11",
+        /* Wayland access */
+        "--socket=wayland",
+        /* We want full fs access */
+        "--filesystem=host",
+        /* Needs to talk to the network to get currency data */
+        "--share=network"
+    ],
+    "build-options" : {
+        "cflags": "-O2 -g",
+        "cxxflags": "-O2 -g"
+    },
+    "cleanup": ["/include", "/lib/pkgconfig", "/lib/*.a", "/lib/*.la"],
+    "modules": [
+        {
+            "name": "gtksourceview",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gtksourceview/3.20/gtksourceview-3.20.1.tar.xz",
+                    "sha256": "322d95c0eaba768a47956ccf1af732ea9377ab7a8afc145b1a34a04012ae8c4c"
+                }
+            ]
+        },
+        {
+            "name": "git",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "git://git.baserock.org/delta/git.git",
+                    "branch": "v2.9.2"
+                },
+                {
+                    "type": "script",
+                    "commands": ["make configure"],
+                    "dest-filename": "autogen.sh"
+                }
+            ]
+        },
+        {
+            "name": "giggle",
+            "config-opts": ["--disable-Werror" ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "git://git.gnome.org/giggle"
+                }
+            ]
+        }
+    ]
+}
