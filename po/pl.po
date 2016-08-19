@@ -1,28 +1,24 @@
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Aviary.pl
-# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
-# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
-# gnomepl@aviary.pl
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Polish translation for giggle.
+# Copyright © 2007-2016 the giggle authors.
+# This file is distributed under the same license as the giggle package.
 # Łukasz Jernaś <deejay1@srem.org>, 2007-2011.
 # Piotr Drąg <piotrdrag@gmail.com>, 2011-2016.
-# Aviary.pl <gnomepl@aviary.pl>, 2010-2016.
+# Aviary.pl <community-poland@mozilla.org>, 2010-2016.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-23 16:51+0000\n"
-"PO-Revision-Date: 2016-01-23 17:55+0100\n"
+"POT-Creation-Date: 2016-01-23 19:08+0000\n"
+"PO-Revision-Date: 2016-08-19 19:25+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: Poland\n"
 
 #: data/giggle.appdata.xml:7
 msgid "Giggle is a graphical frontend for the git directory tracker."
@@ -63,7 +59,7 @@ msgstr "Gałęzie"
 #: libgiggle/giggle-plugin.c:526
 #, c-format
 msgid "Cannot find plugin description in '%s'"
-msgstr "Nie można odnaleźć opisu wtyczki w „%s”"
+msgstr "Nie można odnaleźć opisu wtyczki w „%s”"
 
 #: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
@@ -104,7 +100,7 @@ msgstr "_Terminal"
 # to jest tooltip pod ikoną
 #: plugins/giggle-view-terminal.c:96
 msgid "Issue git commands via terminal"
-msgstr "Pozwala na wydawanie poleceń git w oknie terminala"
+msgstr "Pozwala na wydawanie poleceń git w oknie terminala"
 
 #: plugins/personal-details.ui:5 plugins/personal-details.ui:12
 msgid "Edit personal details"
@@ -120,7 +116,7 @@ msgstr "Utwórz okno _terminala"
 
 #: plugins/terminal-view.ui:12
 msgid "Create new tab in git terminal"
-msgstr "Tworzy nową kartę w oknie terminala git"
+msgstr "Tworzy nową kartę w oknie terminala git"
 
 #: src/eggfindbar.c:303
 msgid "Find:"
@@ -136,11 +132,11 @@ msgstr "Znajduje następne wystąpienie poszukiwanego ciągu"
 
 #: src/eggfindbar.c:331
 msgid "C_ase Sensitive"
-msgstr "_Rozróżnianie małych i wielkich liter"
+msgstr "_Rozróżnianie małych i wielkich liter"
 
 #: src/eggfindbar.c:335
 msgid "Toggle case sensitive search"
-msgstr "Przełącza rozróżnianie małych i wielkich liter"
+msgstr "Przełącza rozróżnianie małych i wielkich liter"
 
 #: src/giggle-authors-view.c:78
 #, c-format
@@ -271,12 +267,12 @@ msgstr "Poprawka została zapisana jako %s"
 
 #: src/giggle-file-list.c:872 src/giggle-rev-list-view.c:1239
 msgid "Created in project directory"
-msgstr "Utworzono w katalogu projektu"
+msgstr "Utworzono w katalogu projektu"
 
 #: src/giggle-file-list.c:875 src/giggle-rev-list-view.c:1242
 #, c-format
 msgid "Created in directory %s"
-msgstr "Utworzono w katalogu %s"
+msgstr "Utworzono w katalogu %s"
 
 #: src/giggle-file-list.c:910 src/giggle-rev-list-view.c:1293
 msgid "Create Patch"
@@ -312,7 +308,7 @@ msgstr "D_odaj do pliku .gitignore"
 
 #: src/giggle-file-list.c:1416
 msgid "_Remove from .gitignore"
-msgstr "_Usuń z pliku .gitignore"
+msgstr "_Usuń z pliku .gitignore"
 
 #: src/giggle-file-list.c:1420
 msgid "_Show all files"
@@ -340,7 +336,7 @@ msgstr "Wyświetla okno różnic"
 
 #: src/giggle-main.c:44
 msgid "Show version information and exit"
-msgstr "Wyświetla informacje o wersji i kończy działanie"
+msgstr "Wyświetla informacje o wersji i kończy działanie"
 
 #: src/giggle-main.c:47
 msgid "[DIRECTORY]"
@@ -408,7 +404,7 @@ msgstr "_Szczegóły"
 
 #: src/giggle-revision-view.c:506
 msgid "Display revision details"
-msgstr "Wyświetla informacje o rewizji"
+msgstr "Wyświetla informacje o rewizji"
 
 #: src/giggle-rev-list-view.c:331
 #, c-format
@@ -508,7 +504,7 @@ msgstr "Wyświet_l wszystko…"
 #: src/giggle-view-diff.c:107
 #, c-format
 msgid "Change %d of %d"
-msgstr "Zmiana %d z %d"
+msgstr "Zmiana %d z %d"
 
 #: src/giggle-view-diff.c:182
 msgid "_Previous Change"
@@ -532,7 +528,7 @@ msgstr "_Zmiany"
 
 #: src/giggle-view-diff.c:349
 msgid "Browse a revision's changes"
-msgstr "Przegląda zmiany zawarte w rewizji"
+msgstr "Przegląda zmiany zawarte w rewizji"
 
 #: src/giggle-view-file.c:324
 msgid "_Goto Line Number"
@@ -556,7 +552,7 @@ msgstr "Wybierz _rewizję"
 
 #: src/giggle-view-file.c:335
 msgid "Select revision of selected line"
-msgstr "Wyświetla rewizję, w której został wprowadzony zaznaczony wiersz"
+msgstr "Wyświetla rewizję, w której został wprowadzony zaznaczony wiersz"
 
 #: src/giggle-view-file.c:897
 #, c-format
@@ -662,7 +658,7 @@ msgid "translator-credits"
 msgstr ""
 "Łukasz Jernaś <deejay1@srem.org>, 2007-2011\n"
 "Piotr Drąg <piotrdrag@gmail.com>, 2011-2016\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2010-2016"
+"Aviary.pl <community-poland@mozilla.org>, 2010-2016"
 
 #: src/giggle-window.c:942
 msgid "A graphical frontend for Git"
@@ -670,7 +666,7 @@ msgstr "Graficzny interfejs dla systemu śledzenia zmian git"
 
 #: src/giggle-window.c:947
 msgid "About Giggle"
-msgstr "O programie Giggle"
+msgstr "O programie Giggle"
 
 #: src/giggle-window.c:951
 msgid "Giggle Website"
@@ -754,11 +750,11 @@ msgstr "Kończy działanie programu"
 
 #: src/giggle-window.c:1068
 msgid "Go backward in history"
-msgstr "Przechodzi wstecz w historii"
+msgstr "Przechodzi wstecz w historii"
 
 #: src/giggle-window.c:1072
 msgid "Go forward in history"
-msgstr "Przesuwa naprzód w historii"
+msgstr "Przesuwa naprzód w historii"
 
 #: src/giggle-window.c:1076
 msgid "_Contents"
@@ -770,15 +766,15 @@ msgstr "Wyświetla podręcznik użytkownika programu Giggle"
 
 #: src/giggle-window.c:1080
 msgid "Report _Issue"
-msgstr "_Zgłoś błąd w programie"
+msgstr "_Zgłoś błąd w programie"
 
 #: src/giggle-window.c:1081
 msgid "Report an issue you’ve found in Giggle"
-msgstr "Pozwala zgłosić błąd znaleziony w programie Giggle"
+msgstr "Pozwala zgłosić błąd znaleziony w programie Giggle"
 
 #: src/giggle-window.c:1085
 msgid "About this application"
-msgstr "Wyświetla informacje o programie"
+msgstr "Wyświetla informacje o programie"
 
 #: src/giggle-window.c:1092
 msgid "Show revision tree"
@@ -798,7 +794,7 @@ msgstr "Wyświetlanie wszystkich zmian"
 
 #: src/giggle-window.c:1111
 msgid "Show and edit project properties"
-msgstr "Wyświetla i modyfikuje właściwości projektu"
+msgstr "Wyświetla i modyfikuje właściwości projektu"
 
 #: src/giggle-window.c:1115
 msgid "Refresh current view"
