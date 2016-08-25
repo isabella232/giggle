@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the giggle package.
 #
 # Andrej Žnidaršič <andrej.znidarsic@gmail.com>, 2010.
+# Matej Urbančič <mateju@svn.gnome.org>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle\n"
-"POT-Creation-Date: 2013-08-20 01:55+0100\n"
-"PO-Revision-Date: 2012-12-19 11:31+0100\n"
+"product=giggle&keywords=I18N+L10N&component=UI: General\n"
+"POT-Creation-Date: 2016-08-25 22:31+0200\n"
+"PO-Revision-Date: 2016-08-25 22:32+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -20,7 +21,33 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: data/giggle.appdata.xml:7
+msgid "Giggle is a graphical frontend for the git directory tracker."
+msgstr "Program Giggle je grafični vmesnik sledilnika map git."
+
+#: data/giggle.appdata.xml:10
+msgid ""
+"It currently features a history viewer much like gitk and a commit GUI like "
+"git gui."
+msgstr ""
+"Trenutno podpira zgodovino pregledovalnika, kot je gitk in vmesnik "
+"uveljavljanja, kot ga ima program git-gui."
+
+#: data/org.gnome.Giggle.desktop.in.in:5
+msgid "Giggle"
+msgstr "Giggle"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Giggle.desktop.in.in:8
+msgid "giggle"
+msgstr "giggle"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Giggle.desktop.in.in:12
+msgid "Git;"
+msgstr "Git;"
 
 #: data/main-window.ui:46
 msgid "URL:"
@@ -434,6 +461,7 @@ msgstr "%a %H.%M"
 msgid "%b %d %I:%M %p"
 msgstr "%d. %m %H.%M"
 
+#. it's older
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
@@ -619,6 +647,14 @@ msgstr ""
 "Avtorske pravice © 2008 - 2009 Mathias Hasselmann\n"
 "Avtorske pravice © 2009 - 2012 Avtorji Giggle"
 
+#. Translators: This is a special message that shouldn't be translated
+#. * literally. It is used in the about box to give credits to
+#. * the translators.
+#. * Thus, you should translate it to your name and email address.
+#. * You should also include other translators who have contributed to
+#. * this translation; in that case, please write each of them on a separate
+#. * line seperated by newlines (\n).
+#.
 #: src/giggle-window.c:937
 msgid "translator-credits"
 msgstr "Andrej Žnidaršič <andrej.znidarsic@gmail.com>"
@@ -779,9 +815,6 @@ msgid ""
 msgstr ""
 "Prišlo je do napake med shranjevanjem v datoteko:\n"
 "%s"
-
-#~ msgid "Giggle"
-#~ msgstr "Giggle"
 
 #~ msgid "Git repository viewer"
 #~ msgstr "Pregledovalnik skladišč Git"
