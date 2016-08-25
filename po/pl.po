@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: giggle\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-23 19:08+0000\n"
-"PO-Revision-Date: 2016-08-19 19:25+0200\n"
+"POT-Creation-Date: 2016-08-25 18:05+0200\n"
+"PO-Revision-Date: 2016-08-25 18:07+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -32,15 +32,21 @@ msgstr ""
 "Obecnie zawiera on przeglądarkę historii podobną do programu gitk oraz "
 "graficzny interfejs zatwierdzania podobny do interfejsu programu git."
 
-#: data/giggle.desktop.in.in:5
+#: data/giggle.appdata.xml:17
+msgid "Giggle history view"
+msgstr "Widok historii w programie Giggle"
+
+#: data/org.gnome.Giggle.desktop.in.in:5
 msgid "Giggle"
 msgstr "Giggle"
 
-#: data/giggle.desktop.in.in:7
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Giggle.desktop.in.in:8
 msgid "giggle"
 msgstr "giggle"
 
-#: data/giggle.desktop.in.in:10
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Giggle.desktop.in.in:12
 msgid "Git;"
 msgstr "Git;"
 
@@ -74,10 +80,12 @@ msgid "Check if the plugin system works"
 msgstr "Sprawdza, czy system wtyczek działa poprawnie"
 
 #: plugins/giggle-personal-details-window.c:80
+#, c-format
 msgid "There was an error setting the configuration"
 msgstr "Wystąpił błąd podczas ustawiania konfiguracji"
 
 #: plugins/giggle-personal-details-window.c:182
+#, c-format
 msgid "There was an error getting the configuration"
 msgstr "Wystąpił błąd podczas pobierania konfiguracji"
 
@@ -266,6 +274,7 @@ msgid "Patch saved as %s"
 msgstr "Poprawka została zapisana jako %s"
 
 #: src/giggle-file-list.c:872 src/giggle-rev-list-view.c:1239
+#, c-format
 msgid "Created in project directory"
 msgstr "Utworzono w katalogu projektu"
 
@@ -279,10 +288,12 @@ msgid "Create Patch"
 msgstr "Utwórz poprawkę"
 
 #: src/giggle-file-list.c:1013
+#, c-format
 msgid "Delete glob pattern?"
 msgstr "Usunąć wzorzec globalny?"
 
 #: src/giggle-file-list.c:1016
+#, c-format
 msgid ""
 "The selected file was shadowed by a glob pattern that may be hiding other "
 "files, delete it?"
@@ -437,6 +448,7 @@ msgid "Enter tag name:"
 msgstr "Nazwa etykiety:"
 
 #: src/giggle-rev-list-view.c:1175
+#, c-format
 msgid "Could not create patch"
 msgstr "Nie można utworzyć poprawki"
 
