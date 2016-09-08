@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle-help\n"
-"POT-Creation-Date: 2015-10-03 13:11+0000\n"
-"PO-Revision-Date: 2016-08-19 19:22+0200\n"
+"POT-Creation-Date: 2016-09-06 21:14+0000\n"
+"PO-Revision-Date: 2016-09-08 22:22+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -130,11 +130,11 @@ msgid ""
 "your repository are greyed out."
 msgstr ""
 "Drzewo projektu jest ważną częścią interfejsu użytkownika programu Giggle, "
-"oczywiście tylko jeśli jest się tego w pełni świadomym. Domyślnie nie "
+"oczywiście tylko, jeśli jest się tego w pełni świadomym. Domyślnie nie "
 "wyświetla ono plików ukrytych za pomocą pliku <file>.gitignore</file>. "
 "Zachowanie to można zmienić, klikając prawym przyciskiem myszy i wybierając "
 "z menu podręcznego polecenie <gui>Wyświetlaj wszystkie pliki</gui>. Pliki, "
-"które nie są częścią repozytorium są wyświetlane jako wyszarzone."
+"które nie są częścią repozytorium, są wyświetlane jako wyszarzone."
 
 #. (itstool) path: section/p
 #: C/browse-view.page:52
@@ -273,11 +273,11 @@ msgid ""
 msgstr ""
 "Program <app>Giggle</app> wyświetla różnice w plikach jako pojedyncze "
 "fragmenty, między którymi można się przemieszczać za pomocą ikon strzałek "
-"w górę i w dół znajdujących się nad listą zmienionych plików, lub przy użyciu "
-"skrótów klawiszowych <keyseq><key>Alt</key><key>strzałka w górę</key></"
-"keyseq> i <keyseq><key>Alt</key><key>strzałka w dół</key></keyseq>. Czynność "
-"ta spowoduje także przesuwanie się po liście zmienionych plików wraz "
-"z przebiegiem różnic."
+"w górę i w dół znajdujących się nad listą zmienionych plików, lub przy "
+"użyciu skrótów klawiszowych <keyseq><key>Alt</key><key>strzałka w górę</"
+"key></keyseq> i <keyseq><key>Alt</key><key>strzałka w dół</key></keyseq>. "
+"Czynność ta spowoduje także przesuwanie się po liście zmienionych plików "
+"wraz z przebiegiem różnic."
 
 #. (itstool) path: page/title
 #: C/index.page:22
@@ -339,7 +339,7 @@ msgid ""
 "Run <cmd>giggle</cmd> at the prompt in a terminal such or from the <gui>Run "
 "Application</gui> dialog."
 msgstr ""
-"Wpisując z oknie terminala lub oknie <gui>Uruchom program</gui> polecenie "
+"Wpisując w oknie terminala lub oknie <gui>Uruchom program</gui> polecenie "
 "<cmd>giggle</cmd>."
 
 #. (itstool) path: section/title
@@ -445,10 +445,10 @@ msgid ""
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
 "sa/3.0/\">Commons Deed</link>."
 msgstr ""
-"Aby otrzymać pełny tekst licencji udaj się na stronę <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/pl/legalcode\">CreativeCommons</link> "
-"lub przeczytaj <link href=\"http://creativecommons.org/licenses/by-sa/3.0/pl/"
-"\">przystępne podsumowanie</link>."
+"Pełny tekst licencji znajduje się na stronie <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/pl/legalcode\">CreativeCommons</"
+"link>. Dostępne jest też <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/pl/\">przystępne podsumowanie</link>."
 
 #. (itstool) path: info/desc
 #: C/opening-repositories.page:6
@@ -486,7 +486,7 @@ msgid ""
 "running <cmd>giggle</cmd> with the repository path specified as an argument."
 msgstr ""
 "Wykonując polecenie <cmd>giggle</cmd> ze ścieżką do repozytorium podaną jako "
-"argument."
+"parametr."
 
 #. (itstool) path: info/desc
 #. (itstool) path: page/title

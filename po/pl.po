@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: giggle\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-25 18:05+0200\n"
-"PO-Revision-Date: 2016-08-25 18:07+0200\n"
+"POT-Creation-Date: 2016-09-06 21:14+0000\n"
+"PO-Revision-Date: 2016-09-08 22:22+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -80,12 +80,10 @@ msgid "Check if the plugin system works"
 msgstr "Sprawdza, czy system wtyczek działa poprawnie"
 
 #: plugins/giggle-personal-details-window.c:80
-#, c-format
 msgid "There was an error setting the configuration"
 msgstr "Wystąpił błąd podczas ustawiania konfiguracji"
 
 #: plugins/giggle-personal-details-window.c:182
-#, c-format
 msgid "There was an error getting the configuration"
 msgstr "Wystąpił błąd podczas pobierania konfiguracji"
 
@@ -274,7 +272,6 @@ msgid "Patch saved as %s"
 msgstr "Poprawka została zapisana jako %s"
 
 #: src/giggle-file-list.c:872 src/giggle-rev-list-view.c:1239
-#, c-format
 msgid "Created in project directory"
 msgstr "Utworzono w katalogu projektu"
 
@@ -288,12 +285,10 @@ msgid "Create Patch"
 msgstr "Utwórz poprawkę"
 
 #: src/giggle-file-list.c:1013
-#, c-format
 msgid "Delete glob pattern?"
 msgstr "Usunąć wzorzec globalny?"
 
 #: src/giggle-file-list.c:1016
-#, c-format
 msgid ""
 "The selected file was shadowed by a glob pattern that may be hiding other "
 "files, delete it?"
@@ -357,7 +352,7 @@ msgstr "[KATALOG]"
 #, c-format
 msgid "Report errors (in English, with LC_ALL=C) to <%s>."
 msgstr ""
-"Zgłaszanie błędów (w języku angielskim, za pomocą LC_ALL=C) dostępne pod "
+"Zgłaszanie błędów (w języku angielskim, za pomocą LC_ALL=C) dostępne pod "
 "adresem <%s>."
 
 #: src/giggle-main.c:80
@@ -367,7 +362,7 @@ msgstr "Program Giggle jest graficznym interfejsem dla git."
 #: src/giggle-main.c:88
 #, c-format
 msgid "Try '%s --help' for more information.\n"
-msgstr "Polecenie \"%s --help\" wyświetla więcej informacji.\n"
+msgstr "Polecenie „%s --help” wyświetla więcej informacji.\n"
 
 #: src/giggle-remote-editor.c:146
 msgid "Click to add mapping…"
@@ -448,7 +443,6 @@ msgid "Enter tag name:"
 msgstr "Nazwa etykiety:"
 
 #: src/giggle-rev-list-view.c:1175
-#, c-format
 msgid "Could not create patch"
 msgstr "Nie można utworzyć poprawki"
 
