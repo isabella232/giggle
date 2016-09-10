@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2016-01-23 16:51+0000\n"
-"PO-Revision-Date: 2016-03-14 04:34+0100\n"
+"product=giggle&keywords=I18N+L10N&component=UI: General\n"
+"POT-Creation-Date: 2016-09-06 21:14+0000\n"
+"PO-Revision-Date: 2016-09-10 08:52+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -31,15 +31,21 @@ msgstr ""
 "V současnosti nabízí zobrazení historie, podobně jako gitk, a grafické "
 "rozhraní pro procházení zařazení, podobně jako git-gui."
 
-#: data/giggle.desktop.in.in:5
+#: data/giggle.appdata.xml:17
+msgid "Giggle history view"
+msgstr "Zobrazení historie v aplikaci Giggle"
+
+#: data/org.gnome.Giggle.desktop.in.in:5
 msgid "Giggle"
 msgstr "Giggle"
 
-#: data/giggle.desktop.in.in:7
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Giggle.desktop.in.in:8
 msgid "giggle"
 msgstr "giggle"
 
-#: data/giggle.desktop.in.in:10
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Giggle.desktop.in.in:12
 msgid "Git;"
 msgstr "Git;"
 
