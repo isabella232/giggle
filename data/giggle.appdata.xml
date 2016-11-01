@@ -12,7 +12,7 @@
     </p>
   </description>
   <screenshots>
-    <screenshot type="default" width="1034" height="742">
+    <screenshot type="default" height="742" width="1034">
       <image>https://wiki.gnome.org/Apps/giggle?action=AttachFile&amp;do=get&amp;target=giggle-history.png</image>
       <caption>Giggle history view</caption>
     </screenshot>
@@ -30,6 +30,7 @@
     <kudo>UserDocs</kudo>
   </kudos>
   <translation type="gettext">giggle</translation>
-
   <developer_name>The GNOME Project</developer_name>
+
+  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
 </component>
