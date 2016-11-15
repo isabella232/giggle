@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2016-01-23 16:51+0000\n"
-"PO-Revision-Date: 2016-01-25 13:49+0100\n"
+"product=giggle&keywords=I18N+L10N&component=UI: General\n"
+"POT-Creation-Date: 2016-09-06 21:14+0000\n"
+"PO-Revision-Date: 2016-11-15 11:42+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: data/giggle.appdata.xml:7
 msgid "Giggle is a graphical frontend for the git directory tracker."
@@ -35,15 +35,21 @@ msgstr ""
 "Derzeit bietet es eine Chronikansicht ähnlich wie gitk und eine "
 "Einspielschnittstelle ähnlich wie git gui."
 
-#: data/giggle.desktop.in.in:5
+#: data/giggle.appdata.xml:17
+msgid "Giggle history view"
+msgstr "Giggle-Verlaufsansicht"
+
+#: data/org.gnome.Giggle.desktop.in.in:5
 msgid "Giggle"
 msgstr "Giggle"
 
-#: data/giggle.desktop.in.in:7
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Giggle.desktop.in.in:8
 msgid "giggle"
 msgstr "giggle"
 
-#: data/giggle.desktop.in.in:10
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Giggle.desktop.in.in:12
 msgid "Git;"
 msgstr "Git;"
 
