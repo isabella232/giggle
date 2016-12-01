@@ -2,15 +2,15 @@
 # Copyright (C) 2015 giggle's COPYRIGHT HOLDER
 # This file is distributed under the same license as the giggle package.
 # Simge Sezgin <simgesezgin88@gmail.com>, 2015.
-# Muhammet Kara <muhammetk@gmail.com>, 2015.
+# Muhammet Kara <muhammetk@gmail.com>, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gigle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2015-10-03 13:11+0000\n"
-"PO-Revision-Date: 2015-12-06 01:57+0200\n"
+"product=giggle&keywords=I18N+L10N&component=UI: General\n"
+"POT-Creation-Date: 2016-09-06 21:14+0000\n"
+"PO-Revision-Date: 2016-12-01 23:35+0300\n"
 "Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -21,12 +21,44 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.7\n"
 "X-POOTLE-MTIME: 1428180702.000000\n"
 
+#: data/giggle.appdata.xml:7
+#| msgid "Giggle is a graphical frontend for the git content tracker."
+msgid "Giggle is a graphical frontend for the git directory tracker."
+msgstr "Giggle, git dizin takipçisi için bir grafiksel önuçtur."
+
+#: data/giggle.appdata.xml:10
+msgid ""
+"It currently features a history viewer much like gitk and a commit GUI like "
+"git gui."
+msgstr ""
+"Büyük oranda gitk'ya benzer bir geçmiş görüntüleyici ve git gui'ye benzer "
+"bir kod işleme görsel arayüzüne sahiptir."
+
+#: data/giggle.appdata.xml:17
+#| msgid "Giggle Website"
+msgid "Giggle history view"
+msgstr "Giggle geçmiş gösterici"
+
+#: data/org.gnome.Giggle.desktop.in.in:5
+#| msgid "About Giggle"
+msgid "Giggle"
+msgstr "Giggle"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Giggle.desktop.in.in:8
+msgid "giggle"
+msgstr "giggle"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Giggle.desktop.in.in:12
+msgid "Git;"
+msgstr "Git;"
+
 #: data/main-window.ui:46
 msgid "URL:"
 msgstr "URL:"
 
 #: data/main-window.ui:60
-#| msgid "_Name:"
 msgid "Name:"
 msgstr "Ad:"
 
@@ -80,17 +112,14 @@ msgid "Issue git commands via terminal"
 msgstr "Uçbirim ile git komutlarını ver"
 
 #: plugins/personal-details.ui:5 plugins/personal-details.ui:12
-#| msgid "Personal Details"
 msgid "Edit personal details"
 msgstr "Kişisel ayrıntıları düzenle"
 
 #: plugins/terminal-view.ui:5
-#| msgid "_Terminal"
 msgid "Terminal window"
 msgstr "Uçbirim penceresi"
 
 #: plugins/terminal-view.ui:11
-#| msgid "Create _Tag"
 msgid "Create _Terminal"
 msgstr "_Uçbirim Oluştur"
 
@@ -633,7 +662,9 @@ msgstr ""
 #.
 #: src/giggle-window.c:937
 msgid "translator-credits"
-msgstr "Simge Sezgin <simgeszgn@gmail.com>"
+msgstr ""
+"Simge Sezgin <simgeszgn@gmail.com>\n"
+"Muhammet Kara <muhammetk@gmail.com"
 
 #: src/giggle-window.c:942
 msgid "A graphical frontend for Git"
