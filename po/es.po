@@ -10,11 +10,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: giggle VERSION\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2016-01-23 16:51+0000\n"
-"PO-Revision-Date: 2016-02-01 15:48+0100\n"
+"product=giggle&keywords=I18N+L10N&component=UI: General\n"
+"POT-Creation-Date: 2016-09-06 21:14+0000\n"
+"PO-Revision-Date: 2016-12-22 12:27+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
+"Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,6 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 
 #: data/giggle.appdata.xml:7
-#| msgid "Giggle is a graphical frontend for the git content tracker."
 msgid "Giggle is a graphical frontend for the git directory tracker."
 msgstr ""
 "Giggle es un visor gráfico para el sistema de control de versiones Git."
@@ -36,15 +35,22 @@ msgstr ""
 "Actualmente tiene características como un visor del histórico similar a gitk "
 "y una interfaz para commits similar a git gui."
 
-#: data/giggle.desktop.in.in:5
+#: data/giggle.appdata.xml:17
+#| msgid "Git repository viewer"
+msgid "Giggle history view"
+msgstr "Vista del histórico de Giggle"
+
+#: data/org.gnome.Giggle.desktop.in.in:5
 msgid "Giggle"
 msgstr "Giggle"
 
-#: data/giggle.desktop.in.in:7
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Giggle.desktop.in.in:8
 msgid "giggle"
 msgstr "giggle"
 
-#: data/giggle.desktop.in.in:10
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Giggle.desktop.in.in:12
 msgid "Git;"
 msgstr "Git;"
 
@@ -825,9 +831,6 @@ msgid ""
 msgstr ""
 "Ocurrió un error al guardar al archivo:\n"
 "%s"
-
-#~ msgid "Git repository viewer"
-#~ msgstr "Visor de repositorios Git"
 
 #~ msgid "Find..."
 #~ msgstr "Buscar…"
