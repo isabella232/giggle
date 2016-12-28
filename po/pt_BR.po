@@ -3,23 +3,23 @@
 # This file is distributed under the same license as the giggle package.
 # Taylon Silmer <taylonsilva@gmail.com>, 2010.
 # Enrico Nicoletto <liverig@gmail.com>, 2013.
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2013, 2016.
-#
+# Rafael Fontenelle <rafaelff@gnome.org>, 2013, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2016-01-23 16:51+0000\n"
-"PO-Revision-Date: 2016-02-29 06:56-0300\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
+"product=giggle&keywords=I18N+L10N&component=UI: General\n"
+"POT-Creation-Date: 2016-09-06 21:14+0000\n"
+"PO-Revision-Date: 2016-12-28 11:33-0200\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Virtaal 1.0.0-beta1\n"
+"X-Project-Style: gnome\n"
 
 #: data/giggle.appdata.xml:7
 msgid "Giggle is a graphical frontend for the git directory tracker."
@@ -33,16 +33,21 @@ msgstr ""
 "Ele atualmente possui uma funcionalidade de visualização de histórico muito "
 "parecido com gitk e uma interface gráfica de commit parecida com o Git GUI."
 
-#: data/giggle.desktop.in.in:5
+#: data/giggle.appdata.xml:17
+msgid "Giggle history view"
+msgstr "Visualizador de histórico Giggle"
+
+#: data/org.gnome.Giggle.desktop.in.in:5
 msgid "Giggle"
 msgstr "Giggle"
 
-#: data/giggle.desktop.in.in:7
-#| msgid "Giggle"
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Giggle.desktop.in.in:8
 msgid "giggle"
 msgstr "giggle"
 
-#: data/giggle.desktop.in.in:10
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Giggle.desktop.in.in:12
 msgid "Git;"
 msgstr "Git;"
 
@@ -61,7 +66,7 @@ msgstr "Ramos"
 #: libgiggle/giggle-plugin.c:526
 #, c-format
 msgid "Cannot find plugin description in '%s'"
-msgstr "Não foi possível encontrar a descrição do plug-in em \"%s\""
+msgstr "Não foi possível encontrar a descrição do plug-in em “%s”"
 
 #: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
@@ -254,7 +259,7 @@ msgstr ""
 #: src/giggle-rev-list-view.c:1173 src/giggle-rev-list-view.c:1204
 #, c-format
 msgid "Could not save the patch as %s"
-msgstr "Não foi possível salvar o patch (correção) como %s"
+msgstr "Não foi possível salvar o patch como %s"
 
 #: src/giggle-file-list.c:821 src/giggle-file-list.c:847
 #: src/giggle-rev-list-view.c:1181 src/giggle-rev-list-view.c:1209
@@ -264,7 +269,7 @@ msgstr "Nenhum erro foi dado"
 #: src/giggle-file-list.c:868 src/giggle-rev-list-view.c:1235
 #, c-format
 msgid "Patch saved as %s"
-msgstr "O patch (correção) foi salvo como %s"
+msgstr "O patch foi salvo como %s"
 
 #: src/giggle-file-list.c:872 src/giggle-rev-list-view.c:1239
 msgid "Created in project directory"
@@ -277,7 +282,7 @@ msgstr "Criado no diretório %s"
 
 #: src/giggle-file-list.c:910 src/giggle-rev-list-view.c:1293
 msgid "Create Patch"
-msgstr "Criar patch (correção)"
+msgstr "Criar patch"
 
 #: src/giggle-file-list.c:1013
 msgid "Delete glob pattern?"
@@ -301,7 +306,7 @@ msgstr "A_dicionar arquivo ao repositório"
 
 #: src/giggle-file-list.c:1414 src/giggle-rev-list-view.c:1638
 msgid "Create _Patch"
-msgstr "Criar _patch (correção)"
+msgstr "Criar _patch"
 
 #: src/giggle-file-list.c:1415
 msgid "_Add to .gitignore"
@@ -355,11 +360,11 @@ msgstr "Giggle é uma interface gráfica para o gerenciador de conteúdo git."
 #: src/giggle-main.c:88
 #, c-format
 msgid "Try '%s --help' for more information.\n"
-msgstr "Tente \"%s --help\" para mais informações.\n"
+msgstr "Tente “%s --help” para mais informações.\n"
 
 #: src/giggle-remote-editor.c:146
 msgid "Click to add mapping…"
-msgstr "Clique para adicionar um mapeamento..."
+msgstr "Clique para adicionar um mapeamento…"
 
 #: src/giggle-remote-editor.c:365
 msgid "Unnamed"
@@ -375,7 +380,7 @@ msgstr "Nome"
 
 #: src/giggle-remotes-view.c:280
 msgid "Double click to add remote…"
-msgstr "Clique duas vezes para adicionar remoto..."
+msgstr "Clique duas vezes para adicionar remoto…"
 
 #: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
 msgid "Author:"
@@ -408,12 +413,12 @@ msgstr "Exibe detalhes da revisão"
 #: src/giggle-rev-list-view.c:331
 #, c-format
 msgid "Delete branch \"%s\""
-msgstr "Excluir o ramo \"%s\""
+msgstr "Excluir o ramo “%s”"
 
 #: src/giggle-rev-list-view.c:334
 #, c-format
 msgid "Delete tag \"%s\""
-msgstr "Excluir o marcador (tag) \"%s\""
+msgstr "Excluir o marcador (tag) “%s”"
 
 #: src/giggle-rev-list-view.c:504
 msgid "Branch"
@@ -437,7 +442,7 @@ msgstr "Digite o nome do marcador (tag):"
 
 #: src/giggle-rev-list-view.c:1175
 msgid "Could not create patch"
-msgstr "Não foi possível criar o patch (correção)"
+msgstr "Não foi possível criar o patch"
 
 #: src/giggle-rev-list-view.c:1429
 msgid "Uncommitted changes"
@@ -498,7 +503,7 @@ msgstr "Detalhes"
 
 #: src/giggle-short-list.c:416
 msgid "Show A_ll…"
-msgstr "_Mostrar todos..."
+msgstr "_Mostrar todos…"
 
 #: src/giggle-view-diff.c:107
 #, c-format
@@ -619,7 +624,7 @@ msgstr "_Remotos"
 #: src/giggle-window.c:546
 #, c-format
 msgid "The directory '%s' does not look like a git repository."
-msgstr "O diretório \"%s\" não se parece com um repositório git."
+msgstr "O diretório “%s” não se parece com um repositório git."
 
 #: src/giggle-window.c:629
 msgid "Select git repository"
@@ -656,7 +661,7 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Taylon Silmer <taylonsilva@gmail.com>.\n"
-"Rafael Ferreira <rafael.f.f1@gmail.com>.\n"
+"Rafael Fontenelle <rafaelff@gnome.org>.\n"
 "Enrico Nicoletto <liverig@gmail.com>."
 
 #: src/giggle-window.c:942
@@ -673,7 +678,7 @@ msgstr "Página web do Giggle"
 
 #: src/giggle-window.c:1007
 msgid "_Find…"
-msgstr "_Localizar..."
+msgstr "_Localizar…"
 
 #: src/giggle-window.c:1008
 msgid "Find…"
@@ -729,11 +734,11 @@ msgstr "Clona uma localização"
 
 #: src/giggle-window.c:1041
 msgid "_Save patch"
-msgstr "_Salvar patch (correção)"
+msgstr "_Salvar patch"
 
 #: src/giggle-window.c:1041
 msgid "Save a patch"
-msgstr "Salva um patch (correção)"
+msgstr "Salva um patch"
 
 #: src/giggle-window.c:1045
 msgid "_Diff current changes"
@@ -801,11 +806,11 @@ msgstr "Atualizar a visão atual"
 
 #: src/giggle-window.c:1454
 msgid "Search Inside _Patches"
-msgstr "Pesquisa dentro dos _patches (correções)"
+msgstr "Pesquisa dentro dos _patches"
 
 #: src/giggle-window.c:1723
 msgid "Save patch file"
-msgstr "Salvar o arquivo patch (correção)"
+msgstr "Salvar o arquivo patch"
 
 #: src/giggle-window.c:1743
 #, c-format
@@ -815,9 +820,6 @@ msgid ""
 msgstr ""
 "Ocorreu um erro ao salvar o arquivo:\n"
 "%s"
-
-#~ msgid "Git repository viewer"
-#~ msgstr "Visualizador de repositório Git"
 
 #~ msgid "Run Giggle in a terminal?"
 #~ msgstr "Executar o Giggle em um terminal?"
