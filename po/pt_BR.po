@@ -1,16 +1,16 @@
 # Brazilian Portuguese translation for giggle.
-# Copyright (C) 2016 giggle's COPYRIGHT HOLDER
+# Copyright (C) 2017 giggle's COPYRIGHT HOLDER
 # This file is distributed under the same license as the giggle package.
 # Taylon Silmer <taylonsilva@gmail.com>, 2010.
 # Enrico Nicoletto <liverig@gmail.com>, 2013.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2013, 2016.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2013, 2016, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle&keywords=I18N+L10N&component=UI: General\n"
-"POT-Creation-Date: 2016-09-06 21:14+0000\n"
-"PO-Revision-Date: 2016-12-28 11:33-0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=giggle&"
+"keywords=I18N+L10N&component=UI: General\n"
+"POT-Creation-Date: 2017-01-18 21:49+0000\n"
+"PO-Revision-Date: 2017-01-29 18:32-0200\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -36,6 +36,10 @@ msgstr ""
 #: data/giggle.appdata.xml:17
 msgid "Giggle history view"
 msgstr "Visualizador de histórico Giggle"
+
+#: data/giggle.appdata.xml:23 data/giggle.appdata.xml:33
+msgid "The GNOME Project"
+msgstr "O Projeto GNOME"
 
 #: data/org.gnome.Giggle.desktop.in.in:5
 msgid "Giggle"
