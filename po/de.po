@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the giggle package.
 # Sven Herzberg <sven@imendio.com>, 2007.
 # Mathias Hasselmann <hasselmm@gnome.org>, 2009.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2010-2011, 2015-2016.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2010-2011, 2015-2017.
 # Christian Kirbach  <Christian.Kirbach@googlemail.com>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle&keywords=I18N+L10N&component=UI: General\n"
-"POT-Creation-Date: 2016-09-06 21:14+0000\n"
-"PO-Revision-Date: 2016-11-15 11:42+0100\n"
+"POT-Creation-Date: 2017-02-28 20:01+0000\n"
+"PO-Revision-Date: 2017-03-15 11:00+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 
 #: data/giggle.appdata.xml:7
 msgid "Giggle is a graphical frontend for the git directory tracker."
@@ -38,6 +38,10 @@ msgstr ""
 #: data/giggle.appdata.xml:17
 msgid "Giggle history view"
 msgstr "Giggle-Verlaufsansicht"
+
+#: data/giggle.appdata.xml:23 data/giggle.appdata.xml:33
+msgid "The GNOME Project"
+msgstr "Das GNOME-Projekt"
 
 #: data/org.gnome.Giggle.desktop.in.in:5
 msgid "Giggle"
