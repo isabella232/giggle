@@ -4,15 +4,15 @@
 # Carlos Garnacho <carlosg@gnome.org>, 2007.
 # Javier Jardón <jjardon@gnome.org>, 2010.
 # Jorge González <jorgegonz@svn.gnome.org>, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2016.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2016, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle VERSION\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle&keywords=I18N+L10N&component=UI: General\n"
-"POT-Creation-Date: 2016-09-06 21:14+0000\n"
-"PO-Revision-Date: 2016-12-22 12:27+0100\n"
+"POT-Creation-Date: 2017-02-28 20:01+0000\n"
+"PO-Revision-Date: 2017-06-20 12:20+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -36,9 +36,12 @@ msgstr ""
 "y una interfaz para commits similar a git gui."
 
 #: data/giggle.appdata.xml:17
-#| msgid "Git repository viewer"
 msgid "Giggle history view"
 msgstr "Vista del histórico de Giggle"
+
+#: data/giggle.appdata.xml:23 data/giggle.appdata.xml:33
+msgid "The GNOME Project"
+msgstr "El Proyecto GNOME"
 
 #: data/org.gnome.Giggle.desktop.in.in:5
 msgid "Giggle"
