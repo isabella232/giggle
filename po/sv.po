@@ -1,20 +1,26 @@
 # Giggle
-# Copyright © 2007 Imendio AB
+# Copyright giggle's COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Richard Hult <richard@imendio.com>, 2007.
 # Andreas Rönnquist <gusnan@gusnan.se>, 2014.
 # Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015, 2016.
+# Josef Andersson <l10nl18nsweja@gmail.com>, 2017.
 #
 # Vi översätter INTE utvecklartermer som branch, patch, commit, osv.
 # Det blir väldigt förvirrande om man gör det. Detta är inte ett
 # slutanvändarverktyg, punkt slut.
 #
+# Med några undantag
+# commit översätts till incheckning i git
+# branch till gren
+# Se git för aktuell översättning av domänspråk https://github.com/git/git/blob/master/po/sv.po
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Giggle 0.1\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=giggle&keywords=I18N+L10N&component=UI: General\n"
-"POT-Creation-Date: 2017-01-18 21:49+0000\n"
+"POT-Creation-Date: 2017-06-28 17:51+0000\n"
 "PO-Revision-Date: 2017-01-21 22:16+0100\n"
 "Last-Translator: Josef Andersson <josef.andersson@fripost.org>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -74,19 +80,19 @@ msgstr "Grenar"
 #: libgiggle/giggle-plugin.c:526
 #, c-format
 msgid "Cannot find plugin description in '%s'"
-msgstr "Kan inte hitta plugin-beskrivning i ”%s”"
+msgstr "Kan inte hitta insticks-beskrivning i ”%s”"
 
 #: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
-msgstr "Demonstration av Giggles Plugin-system"
+msgstr "Demonstration av Giggles instickssystem"
 
 #: plugins/hello-world.ui:11
 msgid "Hello World"
-msgstr "Hej Världen"
+msgstr "Hej världen"
 
 #: plugins/hello-world.ui:12
 msgid "Check if the plugin system works"
-msgstr "Kontrollera om plugin-systemet fungerar"
+msgstr "Kontrollera om instickssystemet fungerar"
 
 #: plugins/giggle-personal-details-window.c:80
 msgid "There was an error setting the configuration"
@@ -181,7 +187,7 @@ msgstr "Grenar:"
 
 #: src/giggle-clone-dialog.c:246
 msgid "Clone Repository"
-msgstr "Klona förråd"
+msgstr "Klona arkiv"
 
 #: src/giggle-clone-dialog.c:254
 msgid "Cl_one"
@@ -189,7 +195,7 @@ msgstr "Kl_ona"
 
 #: src/giggle-clone-dialog.c:278
 msgid "_Repository:"
-msgstr "Fö_rråd:"
+msgstr "Arki_v:"
 
 #: src/giggle-clone-dialog.c:290
 msgid "_Local name:"
@@ -243,7 +249,7 @@ msgid ""
 "An error occurred when committing:\n"
 "%s"
 msgstr ""
-"Ett fel inträffade under commit:\n"
+"Ett fel inträffade under incheckning:\n"
 "%s"
 
 #: src/giggle-file-list.c:387
@@ -268,7 +274,7 @@ msgstr ""
 #: src/giggle-rev-list-view.c:1173 src/giggle-rev-list-view.c:1204
 #, c-format
 msgid "Could not save the patch as %s"
-msgstr "Kunde inte spara patchen som %s"
+msgstr "Kunde inte spara patch som %s"
 
 #: src/giggle-file-list.c:821 src/giggle-file-list.c:847
 #: src/giggle-rev-list-view.c:1181 src/giggle-rev-list-view.c:1209
@@ -282,16 +288,16 @@ msgstr "Patch sparad som %s"
 
 #: src/giggle-file-list.c:872 src/giggle-rev-list-view.c:1239
 msgid "Created in project directory"
-msgstr "Skapad i projekt-mapp"
+msgstr "Skapad i projektkatalog"
 
 #: src/giggle-file-list.c:875 src/giggle-rev-list-view.c:1242
 #, c-format
 msgid "Created in directory %s"
-msgstr "Skapad i mapp %s"
+msgstr "Skapad i katalogen %s"
 
 #: src/giggle-file-list.c:910 src/giggle-rev-list-view.c:1293
 msgid "Create Patch"
-msgstr "Skapa Patch"
+msgstr "Skapa patch"
 
 #: src/giggle-file-list.c:1013
 msgid "Delete glob pattern?"
@@ -311,11 +317,11 @@ msgstr "_Checka in ändringar"
 
 #: src/giggle-file-list.c:1413
 msgid "A_dd file to repository"
-msgstr "_Lägg till fil i förrådet"
+msgstr "_Lägg till fil i arkiv"
 
 #: src/giggle-file-list.c:1414 src/giggle-rev-list-view.c:1638
 msgid "Create _Patch"
-msgstr "Skapa _Patch"
+msgstr "Skapa _patch"
 
 #: src/giggle-file-list.c:1415
 msgid "_Add to .gitignore"
@@ -339,7 +345,7 @@ msgstr "Ett fel inträffade:"
 
 #: src/giggle-main.c:36
 msgid "Clone a repository"
-msgstr "Klona ett förråd"
+msgstr "Klona ett arkiv"
 
 #: src/giggle-main.c:37 src/giggle-remotes-view.c:267
 msgid "URL"
@@ -634,11 +640,11 @@ msgstr "Fjär_rgrenar"
 #: src/giggle-window.c:546
 #, c-format
 msgid "The directory '%s' does not look like a git repository."
-msgstr "Katalogen ”%s” ser inte ut som ett git-förråd."
+msgstr "Katalogen ”%s” ser inte ut som ett git-arkiv."
 
 #: src/giggle-window.c:629
 msgid "Select git repository"
-msgstr "Välj git-förråd"
+msgstr "Välj git-arkiv"
 
 #: src/giggle-window.c:682
 #, c-format
@@ -731,7 +737,7 @@ msgstr "_Hjälp"
 
 #: src/giggle-window.c:1032
 msgid "Open a git repository"
-msgstr "Öppna ett git-förråd"
+msgstr "Öppna ett git-arkiv"
 
 #: src/giggle-window.c:1036
 msgid "Clone _location"
@@ -751,11 +757,11 @@ msgstr "Spara en patch"
 
 #: src/giggle-window.c:1045
 msgid "_Diff current changes"
-msgstr "_Diffa aktuella ändringar"
+msgstr "_Diff för aktuella ändringar"
 
 #: src/giggle-window.c:1045
 msgid "Diff current changes"
-msgstr "Diffa aktuella ändringar"
+msgstr "Diff för aktuella ändringar"
 
 #: src/giggle-window.c:1050
 msgid "Quit the application"
