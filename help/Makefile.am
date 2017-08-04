@@ -2,7 +2,7 @@
 
 HELP_ID = giggle
 
-HELP_LINGUAS = cs da de el es fr pl pt_BR ro sl
+HELP_LINGUAS = cs da de el es fr pl pt_BR ro sl sv
 
 HELP_FILES = \
 	browse-view.page \
