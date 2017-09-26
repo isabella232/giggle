@@ -28,7 +28,9 @@
    <title>Overview</title>
    <figure>
     <desc>Giggle in Browse view mode</desc>
-    <media type="image" src="figures/giggle-browse_view_sections.png" alt="Giggle main window in Browse mode"/>
+    <media type="image" src="figures/giggle-browse_view_sections.png">
+     <p>Giggle main window in Browse mode</p>
+    </media>
    </figure>
     <p><app>Giggle</app>'s browse view is set up in three main parts:</p>
      <list type="numbered">

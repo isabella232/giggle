@@ -27,7 +27,9 @@
    <title>Overview</title>
    <figure>
     <desc>Giggle in History view mode</desc>
-    <media type="image" src="figures/giggle-history_view_sections.png" alt="Giggle main window in History mode"/>
+    <media type="image" src="figures/giggle-history_view_sections.png">
+     <p>Giggle main window in History mode"</p>
+    </media>
    </figure>
     <p><app>Giggle</app>'s history view is set up in three main parts: </p>
      <list type="numbered">
