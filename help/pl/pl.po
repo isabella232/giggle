@@ -1,15 +1,15 @@
 # Polish translation for giggle help.
-# Copyright © 2010-2016 the giggle authors.
+# Copyright © 2010-2017 the giggle authors.
 # This file is distributed under the same license as the giggle package.
 # Łukasz Jernaś <deejay1@srem.org>, 2010.
-# Piotr Drąg <piotrdrag@gmail.com>, 2012-2016.
-# Aviary.pl <community-poland@mozilla.org>, 2010-2016.
+# Piotr Drąg <piotrdrag@gmail.com>, 2012-2017.
+# Aviary.pl <community-poland@mozilla.org>, 2010-2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle-help\n"
-"POT-Creation-Date: 2016-09-06 21:14+0000\n"
-"PO-Revision-Date: 2016-09-08 22:22+0200\n"
+"POT-Creation-Date: 2017-09-26 16:19+0000\n"
+"PO-Revision-Date: 2017-09-27 12:33+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -24,22 +24,8 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Łukasz Jernaś <deejay1@srem.org>, 2010\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2012-2016\n"
-"Aviary.pl <community-poland@mozilla.org>, 2010-2016"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/browse-view.page:31
-msgctxt "_"
-msgid ""
-"external ref='figures/giggle-browse_view_sections.png' "
-"md5='390225c079a94ec75fd1c172f90c6b3c'"
-msgstr ""
-"external ref='figures/giggle-browse_view_sections.png' "
-"md5='390225c079a94ec75fd1c172f90c6b3c'"
+"Piotr Drąg <piotrdrag@gmail.com>, 2012-2017\n"
+"Aviary.pl <community-poland@mozilla.org>, 2010-2017"
 
 #. (itstool) path: info/desc
 #: C/browse-view.page:6
@@ -58,7 +44,7 @@ msgstr "Łukasz Jernaś"
 #: C/introduction.page:22 C/opening-repositories.page:22
 #: C/tagging-commits.page:22
 msgid "Creative Commons Share Alike 3.0"
-msgstr "Creative Commons Uznanie autorstwa-Na tych samych warunkach 3.0 Polska"
+msgstr "Creative Commons Share Alike 3.0"
 
 #. (itstool) path: page/title
 #: C/browse-view.page:26
@@ -73,55 +59,74 @@ msgstr "Przegląd"
 #. (itstool) path: figure/desc
 #: C/browse-view.page:30
 msgid "Giggle in Browse view mode"
-msgstr "Program giggle w widoku przeglądania"
+msgstr "Program Giggle w widoku przeglądania"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/browse-view.page:31
+msgctxt "_"
+msgid ""
+"external ref='figures/giggle-browse_view_sections.png' "
+"md5='390225c079a94ec75fd1c172f90c6b3c'"
+msgstr ""
+"external ref='figures/giggle-browse_view_sections.png' "
+"md5='390225c079a94ec75fd1c172f90c6b3c'"
+
+#. (itstool) path: media/p
+#: C/browse-view.page:32
+msgid "Giggle main window in Browse mode"
+msgstr "Główne okno programu Giggle w widoku przeglądania"
 
 #. (itstool) path: section/p
-#: C/browse-view.page:33
+#: C/browse-view.page:35
 msgid "<app>Giggle</app>'s browse view is set up in three main parts:"
 msgstr ""
 "Widok przeglądania programu <app>Giggle</app> składa się z trzech głównych "
 "części:"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:36
+#: C/browse-view.page:38
 msgid "Project tree"
 msgstr "Drzewo projektów"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:37
+#: C/browse-view.page:39
 msgid "Displays all the files included in the current repository."
 msgstr "Wyświetla wszystkie pliki zawarte w bieżącym repozytorium."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:40
+#: C/browse-view.page:42
 msgid "File preview"
 msgstr "Podglądu pliku"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:41
+#: C/browse-view.page:43
 msgid ""
 "Displays the contents of the currently selected file according as of the "
 "selected revision."
 msgstr "Wyświetla zawartość bieżącego pliku, zgodnie z wybraną rewizją."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:44 C/history-view.page:35
+#: C/browse-view.page:46 C/history-view.page:37
 msgid "History graph"
 msgstr "Wykres historii"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:45
+#: C/browse-view.page:47
 msgid ""
 "Displays a visual representation of the currently selected file's history"
 msgstr "Wyświetla graficzne odwzorowanie historii bieżącego pliku."
 
 #. (itstool) path: section/title
-#: C/browse-view.page:50
+#: C/browse-view.page:52
 msgid "About the Project tree"
 msgstr "Informacje o drzewie projektu"
 
 #. (itstool) path: section/p
-#: C/browse-view.page:51
+#: C/browse-view.page:53
 msgid ""
 "The Project tree is a powerful part of Giggle's interface, of course if you "
 "know about it. By default it doesn't display files hidden by <file>."
@@ -134,31 +139,31 @@ msgstr ""
 "wyświetla ono plików ukrytych za pomocą pliku <file>.gitignore</file>. "
 "Zachowanie to można zmienić, klikając prawym przyciskiem myszy i wybierając "
 "z menu podręcznego polecenie <gui>Wyświetlaj wszystkie pliki</gui>. Pliki, "
-"które nie są częścią repozytorium, są wyświetlane jako wyszarzone."
+"które nie są częścią repozytorium, są wyświetlane na szaro."
 
 #. (itstool) path: section/p
-#: C/browse-view.page:52
+#: C/browse-view.page:54
 msgid "The Project tree offers you the following:"
-msgstr "Drzewo projektów pozwala na:"
+msgstr "Drzewo projektów umożliwia:"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:55
+#: C/browse-view.page:57
 msgid "Adding files to the repository."
 msgstr "Dodawanie plików do repozytorium."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:56
+#: C/browse-view.page:58
 msgid "By using the <gui>Add file to repository</gui> context menu option."
 msgstr ""
 "Przy użyciu polecenia menu podręcznego <gui>Dodaj plik do repozytorium</gui>."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:59
+#: C/browse-view.page:61
 msgid "Adding/removing files to <file>.gitignore</file>."
 msgstr "Dodawanie i usuwanie plików z <file>.gitignore</file>."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:60
+#: C/browse-view.page:62
 msgid ""
 "By using the <gui>Add to .gitignore</gui> or <gui>Remove from .gitignore</"
 "gui> context menu options."
@@ -167,42 +172,28 @@ msgstr ""
 "i <gui>Usuń z pliku .gitignore</gui>."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:63
+#: C/browse-view.page:65
 msgid "Editing files"
-msgstr "Edytowanie plików"
+msgstr "Modyfikowanie plików"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:66
+#: C/browse-view.page:68
 msgid "Committing"
 msgstr "Zatwierdzanie"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:69
+#: C/browse-view.page:71
 msgid "Creating patches"
 msgstr "Tworzenie poprawek"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:70
+#: C/browse-view.page:72
 msgid ""
 "When there are any unstaged changes in the file list, you can create a patch "
 "by using the <gui>Create patch</gui> context menu option."
 msgstr ""
 "Jeśli istnieją niezatwierdzone zmiany w liście plików, można utworzyć łatkę "
 "korzystając z polecenia menu podręcznego <gui>Utwórz łatkę</gui>."
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/history-view.page:30
-msgctxt "_"
-msgid ""
-"external ref='figures/giggle-history_view_sections.png' "
-"md5='3b487583a028a4d087e3d6a5bcd589b8'"
-msgstr ""
-"external ref='figures/giggle-history_view_sections.png' "
-"md5='3b487583a028a4d087e3d6a5bcd589b8'"
 
 #. (itstool) path: info/desc
 #: C/history-view.page:6
@@ -219,15 +210,34 @@ msgstr "Widok historii"
 msgid "Giggle in History view mode"
 msgstr "Widok historii programu Giggle"
 
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/history-view.page:30
+msgctxt "_"
+msgid ""
+"external ref='figures/giggle-history_view_sections.png' "
+"md5='3b487583a028a4d087e3d6a5bcd589b8'"
+msgstr ""
+"external ref='figures/giggle-history_view_sections.png' "
+"md5='3b487583a028a4d087e3d6a5bcd589b8'"
+
+#. (itstool) path: media/p
+#: C/history-view.page:3
+msgid "Giggle main window in History mode"
+msgstr "Główne okno programu Giggle w widoku historii"
+
 #. (itstool) path: section/p
-#: C/history-view.page:32
+#: C/history-view.page:34
 msgid "<app>Giggle</app>'s history view is set up in three main parts:"
 msgstr ""
 "Widok historii programu <app>Giggle</app> składa się z trzech głównych "
 "części:"
 
 #. (itstool) path: item/p
-#: C/history-view.page:36
+#: C/history-view.page:38
 msgid ""
 "Displays a visual representation of the current repository history, "
 "including all the branches be it remote or local. By hovering the mouse "
@@ -237,33 +247,33 @@ msgid ""
 msgstr ""
 "Wyświetla graficzne wyobrażenie historii bieżącego repozytorium, zawierające "
 "informacje o wszystkich lokalnych i zdalnych gałęziach. Przytrzymując kursor "
-"myszy nad wyświetlonymi ikonami, można uzyskać dodatkowe informacje takie "
+"myszy nad wyświetlonymi ikonami, można uzyskać dodatkowe informacje, takie "
 "jak nazwy etykiet oraz gałęzi. Do poruszania się po historii repozytorium "
 "można używać zarówno klawiszy <key>strzałka w górę</key> i <key>strzałka "
 "w dół</key>, jak i myszy."
 
 #. (itstool) path: item/p
-#: C/history-view.page:39
+#: C/history-view.page:41
 msgid "Changed files"
 msgstr "Zmienione pliki"
 
 #. (itstool) path: item/p
-#: C/history-view.page:40
+#: C/history-view.page:42
 msgid "Displays files changed in the currently selected revision"
 msgstr "Wyświetla pliki zmienione w bieżącej rewizji."
 
 #. (itstool) path: item/p
-#: C/history-view.page:43
+#: C/history-view.page:45
 msgid "Diff"
 msgstr "Różnice"
 
 #. (itstool) path: item/p
-#: C/history-view.page:44
+#: C/history-view.page:46
 msgid "Displays the differences for the selected file and revision."
 msgstr "Wyświetla różnice dla bieżącego pliku i rewizji."
 
 #. (itstool) path: note/p
-#: C/history-view.page:46
+#: C/history-view.page:48
 msgid ""
 "<app>Giggle</app> displays the differences as individual chunks, you can "
 "move between them either by using the Up and Down icons above the list of "
@@ -282,7 +292,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/index.page:22
 msgid "Giggle Help"
-msgstr "Podręcznik użytkownika programu Giggle"
+msgstr "Pomoc programu Giggle"
 
 #. (itstool) path: section/title
 #: C/index.page:25
@@ -292,12 +302,12 @@ msgstr "Praca z programem <app>Giggle</app>"
 #. (itstool) path: section/title
 #: C/index.page:28
 msgid "Working with GIT repositories"
-msgstr "Praca z repozytoriami GIT"
+msgstr "Praca z repozytoriami Git"
 
 #. (itstool) path: info/desc
 #: C/introduction.page:6
 msgid "Introduction to the <app>Giggle</app> GIT repository viewer"
-msgstr "Wprowadzenie do przeglądarki repozytoriów GIT <app>Giggle</app>"
+msgstr "Wprowadzenie do przeglądarki repozytoriów Git <app>Giggle</app>"
 
 #. (itstool) path: page/title
 #: C/introduction.page:26
@@ -311,12 +321,12 @@ msgid ""
 "manipulate the contents of a git directory tree."
 msgstr ""
 "Program <app>Giggle</app> umożliwia graficzne przeglądanie oraz zmianę "
-"zawartości drzewa katalogów GIT."
+"zawartości drzewa katalogów Git."
 
 #. (itstool) path: section/title
 #: C/introduction.page:30
 msgid "Starting <app>giggle</app>"
-msgstr "Uruchamianie programu <app>giggle</app>"
+msgstr "Uruchamianie programu <app>Giggle</app>"
 
 #. (itstool) path: section/p
 #: C/introduction.page:31
@@ -345,7 +355,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/introduction.page:43
 msgid "Closing <app>giggle</app>"
-msgstr "Zamykanie programu <app>giggle</app>"
+msgstr "Zamykanie programu <app>Giggle</app>"
 
 #. (itstool) path: section/p
 #: C/introduction.page:44
@@ -353,7 +363,7 @@ msgid ""
 "To close <app>giggle</app> choose <guiseq><gui>Project</gui><gui>Quit</gui></"
 "guiseq>, or press <keyseq><key>Ctrl</key><key>Q</key></keyseq>."
 msgstr ""
-"Aby zamknąć program <app>giggle</app>, należy wybrać z menu polecenie "
+"Aby zamknąć program <app>Giggle</app>, należy wybrać z menu polecenie "
 "<guiseq><gui>Projekt</gui><gui>Zakończ</gui></guiseq> lub skorzystać ze "
 "skrótu klawiszowego <keyseq><key>Ctrl</key><key>Q</key></keyseq>."
 
@@ -373,35 +383,32 @@ msgid ""
 "This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
 "Unported license."
 msgstr ""
-"Dzieło to jest rozpowszechniane na warunkach licencji CreativeCommons "
-"Uznanie autorstwa-Na tych samych warunkach 3.0 Polska."
+"Na warunkach licencji Creative Commons Attribution-Share Alike 3.0 Unported."
 
 #. (itstool) path: page/p
 #: C/license.page:19
 msgid "You are free:"
-msgstr "Wolno:"
+msgstr "Można:"
 
-# LJ: specjalnie zostawione "puste" — brak tej części w polskiej licencji
 #. (itstool) path: item/title
 #: C/license.page:24
 msgid "<em>To share</em>"
-msgstr "<em> </em>"
+msgstr "<em>dzielić się</em>"
 
 #. (itstool) path: item/p
 #: C/license.page:25
 msgid "To copy, distribute and transmit the work."
-msgstr "kopiować, rozpowszechniać, odtwarzać i wykonywać utwór"
+msgstr ", czyli kopiować, rozpowszechniać, odtwarzać i wykonywać utwór."
 
-# LJ: specjalnie zostawione "puste" — brak tej części w polskiej licencji
 #. (itstool) path: item/title
 #: C/license.page:28
 msgid "<em>To remix</em>"
-msgstr "<em> </em>"
+msgstr "<em>remiksować</em>"
 
 #. (itstool) path: item/p
 #: C/license.page:29
 msgid "To adapt the work."
-msgstr "tworzyć utwory zależne"
+msgstr ", czyli tworzyć utwory zależne."
 
 #. (itstool) path: page/p
 #: C/license.page:32
@@ -435,7 +442,7 @@ msgid ""
 msgstr ""
 "Zmieniając utwór, przekształcając go lub tworząc na jego podstawie, wolno "
 "rozpowszechniać powstały utwór zależny jedynie na tej samej, podobnej lub "
-"kompatybilnej licencji."
+"zgodnej licencji."
 
 #. (itstool) path: page/p
 #: C/license.page:52
@@ -445,15 +452,15 @@ msgid ""
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
 "sa/3.0/\">Commons Deed</link>."
 msgstr ""
-"Pełny tekst licencji znajduje się na stronie <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/pl/legalcode\">CreativeCommons</"
-"link>. Dostępne jest też <link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/pl/\">przystępne podsumowanie</link>."
+"Pełny tekst licencji dostępny jest na stronie <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">Creative Commons</link>; "
+"można również przeczytać <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">podsumowanie</link>."
 
 #. (itstool) path: info/desc
 #: C/opening-repositories.page:6
 msgid "Opening GIT repositories"
-msgstr "Otwieranie repozytoriów systemu GIT"
+msgstr "Otwieranie repozytoriów systemu Git"
 
 #. (itstool) path: page/title
 #: C/opening-repositories.page:26
@@ -473,7 +480,7 @@ msgid ""
 "directory with your repository,"
 msgstr ""
 "Korzystając z polecenia menu <guiseq><gui>Projekt</gui><gui>Otwórz</gui></"
-"guiseq>, a następnie wskazując odpowiedni katalog z repozytorium."
+"guiseq>, a następnie wskazując odpowiedni katalog z repozytorium."
 
 #. (itstool) path: item/p
 #: C/opening-repositories.page:33
@@ -502,8 +509,8 @@ msgid ""
 "click <gui>Create tag</gui> and enter a name in the just opened dialog "
 "window."
 msgstr ""
-"W celu utworzenia nowej etykiety, należy kliknąć prawym przyciskiem myszy na "
-"zmianie w oknie rewizji (nie ma znaczenia czy aktywny jest widok historii, "
+"W celu utworzenia nowej etykiety, należy kliknąć zmianę w oknie rewizji "
+"prawym przyciskiem myszy (nie ma znaczenia, czy aktywny jest widok historii, "
 "czy widok przeglądania), a następnie z menu podręcznego wybrać polecenie "
 "<gui>Utwórz etykietę</gui> i wprowadzić nazwę etykiety w nowo otwartym oknie "
 "dialogowym."
