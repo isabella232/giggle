@@ -6,16 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
-"POT-Creation-Date: 2017-06-28 17:51+0000\n"
-"PO-Revision-Date: 2017-08-04 02:53+0200\n"
-"Last-Translator: Josef Andersson <l10nl18nsweja@gmail.com>\n"
+"POT-Creation-Date: 2017-09-26 16:19+0000\n"
+"PO-Revision-Date: 2017-09-28 22:37+0200\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Poedit 2.0.3\n"
 
 # Se git för aktuell översättning av domänspråk https://github.com/git/git/blob/master/po/sv.po
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -75,51 +75,56 @@ msgstr ""
 "external ref='figures/giggle-browse_view_sections.png' "
 "md5='390225c079a94ec75fd1c172f90c6b3c'"
 
+#. (itstool) path: media/p
+#: C/browse-view.page:32
+msgid "Giggle main window in Browse mode"
+msgstr "Giggles huvudfönster i visningsläge"
+
 #. (itstool) path: section/p
-#: C/browse-view.page:33
+#: C/browse-view.page:35
 msgid "<app>Giggle</app>'s browse view is set up in three main parts:"
 msgstr "<app>Giggle</app>s visningsvy är uppdelad i tre huvuddelar:"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:36
+#: C/browse-view.page:38
 msgid "Project tree"
 msgstr "Projektträd"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:37
+#: C/browse-view.page:39
 msgid "Displays all the files included in the current repository."
 msgstr "Visar alla filer i aktuellt arkiv."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:40
+#: C/browse-view.page:42
 msgid "File preview"
 msgstr "Filförhandsvisning"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:41
+#: C/browse-view.page:43
 msgid ""
 "Displays the contents of the currently selected file according as of the "
 "selected revision."
 msgstr "Visar innehållet för aktuell markerad fil utefter vald revision."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:44 C/history-view.page:35
+#: C/browse-view.page:46 C/history-view.page:37
 msgid "History graph"
 msgstr "Historikdiagram"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:45
+#: C/browse-view.page:47
 msgid ""
 "Displays a visual representation of the currently selected file's history"
 msgstr "Visar en överblick av den markerade filens historik"
 
 #. (itstool) path: section/title
-#: C/browse-view.page:50
+#: C/browse-view.page:52
 msgid "About the Project tree"
 msgstr "Om projektträdet"
 
 #. (itstool) path: section/p
-#: C/browse-view.page:51
+#: C/browse-view.page:53
 msgid ""
 "The Project tree is a powerful part of Giggle's interface, of course if you "
 "know about it. By default it doesn't display files hidden by <file>."
@@ -133,27 +138,27 @@ msgstr ""
 "filer</gui>. Filer som inte tillhör arkivet gråas ut."
 
 #. (itstool) path: section/p
-#: C/browse-view.page:52
+#: C/browse-view.page:54
 msgid "The Project tree offers you the following:"
 msgstr "Projektträdet erbjuder dig följande:"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:55
+#: C/browse-view.page:57
 msgid "Adding files to the repository."
 msgstr "Att lägga till filer till arkivet."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:56
+#: C/browse-view.page:58
 msgid "By using the <gui>Add file to repository</gui> context menu option."
 msgstr "Genom att använda snabbmenyvalet <gui>Lägg till fil i arkiv</gui>."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:59
+#: C/browse-view.page:61
 msgid "Adding/removing files to <file>.gitignore</file>."
 msgstr "Lägg till/ta bort filer i <file>.gitignore</file>."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:60
+#: C/browse-view.page:62
 msgid ""
 "By using the <gui>Add to .gitignore</gui> or <gui>Remove from .gitignore</"
 "gui> context menu options."
@@ -162,22 +167,22 @@ msgstr ""
 "<gui>Ta bort från .gitignore</gui>."
 
 #. (itstool) path: item/p
-#: C/browse-view.page:63
+#: C/browse-view.page:65
 msgid "Editing files"
 msgstr "Redigera filer"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:66
+#: C/browse-view.page:68
 msgid "Committing"
 msgstr "Incheckning"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:69
+#: C/browse-view.page:71
 msgid "Creating patches"
 msgstr "Skapa patch"
 
 #. (itstool) path: item/p
-#: C/browse-view.page:70
+#: C/browse-view.page:72
 msgid ""
 "When there are any unstaged changes in the file list, you can create a patch "
 "by using the <gui>Create patch</gui> context menu option."
@@ -214,13 +219,18 @@ msgstr ""
 "external ref='figures/giggle-history_view_sections.png' "
 "md5='3b487583a028a4d087e3d6a5bcd589b8'"
 
+#. (itstool) path: media/p
+#: C/history-view.page:31
+msgid "Giggle main window in History mode"
+msgstr "Giggles huvudfönster i historikläge"
+
 #. (itstool) path: section/p
-#: C/history-view.page:32
+#: C/history-view.page:34
 msgid "<app>Giggle</app>'s history view is set up in three main parts:"
 msgstr "<app>Giggle</app>s historikvy är uppdelad i tre delar:"
 
 #. (itstool) path: item/p
-#: C/history-view.page:36
+#: C/history-view.page:38
 msgid ""
 "Displays a visual representation of the current repository history, "
 "including all the branches be it remote or local. By hovering the mouse "
@@ -235,27 +245,27 @@ msgstr ""
 "<key>Ned</key>."
 
 #. (itstool) path: item/p
-#: C/history-view.page:39
+#: C/history-view.page:41
 msgid "Changed files"
 msgstr "Ändrade filer"
 
 #. (itstool) path: item/p
-#: C/history-view.page:40
+#: C/history-view.page:42
 msgid "Displays files changed in the currently selected revision"
 msgstr "Visar filer som ändrats i den valda revisionen"
 
 #. (itstool) path: item/p
-#: C/history-view.page:43
+#: C/history-view.page:45
 msgid "Diff"
 msgstr "Diff"
 
 #. (itstool) path: item/p
-#: C/history-view.page:44
+#: C/history-view.page:46
 msgid "Displays the differences for the selected file and revision."
 msgstr "Visar skillnaderna för den valda filen och revisionen."
 
 #. (itstool) path: note/p
-#: C/history-view.page:46
+#: C/history-view.page:48
 msgid ""
 "<app>Giggle</app> displays the differences as individual chunks, you can "
 "move between them either by using the Up and Down icons above the list of "
