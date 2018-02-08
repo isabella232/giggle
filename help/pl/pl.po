@@ -1,6 +1,6 @@
 # Polish translation for giggle help.
 # Copyright © 2010-2017 the giggle authors.
-# This file is distributed under the same license as the giggle package.
+# This file is distributed under the same license as the giggle help.
 # Łukasz Jernaś <deejay1@srem.org>, 2010.
 # Piotr Drąg <piotrdrag@gmail.com>, 2012-2017.
 # Aviary.pl <community-poland@mozilla.org>, 2010-2017.
@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle-help\n"
-"POT-Creation-Date: 2017-09-26 16:19+0000\n"
+"POT-Creation-Date: 2017-10-18 15:10+0000\n"
 "PO-Revision-Date: 2017-09-27 12:33+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -225,7 +225,7 @@ msgstr ""
 "md5='3b487583a028a4d087e3d6a5bcd589b8'"
 
 #. (itstool) path: media/p
-#: C/history-view.page:3
+#: C/history-view.page:31
 msgid "Giggle main window in History mode"
 msgstr "Główne okno programu Giggle w widoku historii"
 
