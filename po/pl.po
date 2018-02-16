@@ -1,17 +1,16 @@
 # Polish translation for giggle.
-# Copyright © 2007-2017 the giggle authors.
+# Copyright © 2007-2018 the giggle authors.
 # This file is distributed under the same license as the giggle package.
 # Łukasz Jernaś <deejay1@srem.org>, 2007-2011.
-# Piotr Drąg <piotrdrag@gmail.com>, 2011-2017.
-# Aviary.pl <community-poland@mozilla.org>, 2010-2017.
+# Piotr Drąg <piotrdrag@gmail.com>, 2011-2018.
+# Aviary.pl <community-poland@mozilla.org>, 2010-2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle&keywords=I18N+L10N&component=UI: General\n"
-"POT-Creation-Date: 2017-01-18 21:49+0000\n"
-"PO-Revision-Date: 2017-01-18 23:41+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/giggle/issues\n"
+"POT-Creation-Date: 2017-10-18 15:10+0000\n"
+"PO-Revision-Date: 2018-02-16 01:59+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -387,7 +386,7 @@ msgstr "Nazwa"
 
 #: src/giggle-remotes-view.c:280
 msgid "Double click to add remote…"
-msgstr "Dwukrotne kliknięcie dodaje zdalne repozytorium…"
+msgstr "Podwójne kliknięcie dodaje zdalne repozytorium…"
 
 #: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
 msgid "Author:"
@@ -515,7 +514,7 @@ msgstr "Wyświet_l wszystko…"
 #: src/giggle-view-diff.c:107
 #, c-format
 msgid "Change %d of %d"
-msgstr "Zmiana %d z %d"
+msgstr "%d. zmiana z %d"
 
 #: src/giggle-view-diff.c:182
 msgid "_Previous Change"
@@ -631,7 +630,7 @@ msgstr "_Zdalne gałęzie"
 #: src/giggle-window.c:546
 #, c-format
 msgid "The directory '%s' does not look like a git repository."
-msgstr "Katalog „%s” nie wygląda na repozytorium git."
+msgstr "Katalog „%s” nie jest repozytorium git."
 
 #: src/giggle-window.c:629
 msgid "Select git repository"
@@ -668,8 +667,8 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Łukasz Jernaś <deejay1@srem.org>, 2007-2011\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2011-2017\n"
-"Aviary.pl <community-poland@mozilla.org>, 2010-2017"
+"Piotr Drąg <piotrdrag@gmail.com>, 2011-2018\n"
+"Aviary.pl <community-poland@mozilla.org>, 2010-2018"
 
 #: src/giggle-window.c:942
 msgid "A graphical frontend for Git"
