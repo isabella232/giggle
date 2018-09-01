@@ -52,7 +52,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://git.gnome.org/giggle"
+                    "url": "https://gitlab.gnome.org/GNOME/giggle.git"
                 }
             ]
         }
