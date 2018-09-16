@@ -380,11 +380,11 @@ msgstr "Remot"
 
 #: ../src/giggle-rev-list-view.c:1063
 msgid "Enter branch name:"
-msgstr "Entreu el nom de la branca:"
+msgstr "Introduïu el nom de la branca:"
 
 #: ../src/giggle-rev-list-view.c:1114
 msgid "Enter tag name:"
-msgstr "Entreu el nom de l'etiqueta:"
+msgstr "Introduïu el nom de l'etiqueta:"
 
 #: ../src/giggle-rev-list-view.c:1175
 #, c-format
