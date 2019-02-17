@@ -10,17 +10,52 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle\n"
-"POT-Creation-Date: 2013-08-20 01:55+0100\n"
-"PO-Revision-Date: 2011-09-01 15:15+0100\n"
-"Last-Translator: Alexandre Franke <alexandre.franke@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/giggle/issues\n"
+"POT-Creation-Date: 2017-10-18 15:10+0000\n"
+"PO-Revision-Date: 2019-02-17 12:19+0100\n"
+"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
+
+#: data/giggle.appdata.xml:7
+msgid "Giggle is a graphical frontend for the git directory tracker."
+msgstr ""
+"Giggle est une interface graphique pour le système de contrôle de versions "
+"git."
+
+#: data/giggle.appdata.xml:10
+msgid ""
+"It currently features a history viewer much like gitk and a commit GUI like "
+"git gui."
+msgstr ""
+"Il présente actuellement un visionneur d’historique semblable à gitk et une "
+"interface graphique pour les commits comme git gui."
+
+#: data/giggle.appdata.xml:17
+msgid "Giggle history view"
+msgstr "Visionneur d’historique Giggle"
+
+#: data/giggle.appdata.xml:23 data/giggle.appdata.xml:33
+msgid "The GNOME Project"
+msgstr "Le projet GNOME"
+
+#: data/org.gnome.Giggle.desktop.in.in:5
+msgid "Giggle"
+msgstr "Giggle"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Giggle.desktop.in.in:8
+msgid "giggle"
+msgstr "giggle"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Giggle.desktop.in.in:12
+msgid "Git;"
+msgstr "Git;"
 
 #: data/main-window.ui:46
 msgid "URL:"
@@ -304,7 +339,6 @@ msgstr "Projet"
 
 # c-format
 #: src/giggle-helpers.c:176
-#, fuzzy
 msgid "An error occurred:"
 msgstr "Une erreur s'est produite :"
 
@@ -340,14 +374,13 @@ msgstr ""
 "git."
 
 #: src/giggle-main.c:88
-#, fuzzy, c-format
+#, c-format
 msgid "Try '%s --help' for more information.\n"
-msgstr "Saisissez « %s --help » pour plus d'informations.\n"
+msgstr "Essayez « %s --help » pour plus d'informations.\n"
 
 #: src/giggle-remote-editor.c:146
-#, fuzzy
 msgid "Click to add mapping…"
-msgstr "Cliquez pour ajouter une relation..."
+msgstr "Cliquez pour ajouter une relation…"
 
 #: src/giggle-remote-editor.c:365
 msgid "Unnamed"
@@ -362,9 +395,8 @@ msgid "Name"
 msgstr "Nom"
 
 #: src/giggle-remotes-view.c:280
-#, fuzzy
 msgid "Double click to add remote…"
-msgstr "Double-cliquez pour ajouter un site distant..."
+msgstr "Double-cliquez pour ajouter un dépôt distant…"
 
 #: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
 msgid "Author:"
@@ -447,6 +479,7 @@ msgstr "%a %H:%M"
 msgid "%b %d %I:%M %p"
 msgstr "%d %b %H:%M"
 
+#. it's older
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
@@ -485,9 +518,8 @@ msgid "Details"
 msgstr "Détails"
 
 #: src/giggle-short-list.c:416
-#, fuzzy
 msgid "Show A_ll…"
-msgstr "Tout a_fficher..."
+msgstr "Tout a_fficher…"
 
 #: src/giggle-view-diff.c:107
 #, c-format
@@ -634,6 +666,14 @@ msgstr ""
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
 "Copyright © 2009 - 2012 Les auteurs de Giggle"
 
+#. Translators: This is a special message that shouldn't be translated
+#. * literally. It is used in the about box to give credits to
+#. * the translators.
+#. * Thus, you should translate it to your name and email address.
+#. * You should also include other translators who have contributed to
+#. * this translation; in that case, please write each of them on a separate
+#. * line seperated by newlines (\n).
+#.
 #: src/giggle-window.c:937
 msgid "translator-credits"
 msgstr ""
@@ -655,14 +695,12 @@ msgid "Giggle Website"
 msgstr "Site Web de Giggle"
 
 #: src/giggle-window.c:1007
-#, fuzzy
 msgid "_Find…"
-msgstr "_Rechercher..."
+msgstr "_Rechercher…"
 
 #: src/giggle-window.c:1008
-#, fuzzy
 msgid "Find…"
-msgstr "Rechercher :"
+msgstr "Rechercher…"
 
 #: src/giggle-window.c:1014
 msgid "Find Ne_xt"
@@ -753,7 +791,6 @@ msgid "Report _Issue"
 msgstr "S_ignaler une anomalie"
 
 #: src/giggle-window.c:1081
-#, fuzzy
 msgid "Report an issue you’ve found in Giggle"
 msgstr "Signale une anomalie trouvée dans Giggle"
 
@@ -801,59 +838,3 @@ msgid ""
 msgstr ""
 "Une erreur est survenue lors de l'enregistrement du fichier :\n"
 "%s"
-
-#~ msgid "Giggle"
-#~ msgstr "Giggle"
-
-#~ msgid "Git repository viewer"
-#~ msgstr "Explorateur de dépôt git"
-
-#~ msgid "Find..."
-#~ msgstr "Rechercher..."
-
-#~ msgid "Run Giggle in a terminal?"
-#~ msgstr "Lancer Giggle dans un terminal ?"
-
-#~ msgid "Set it at TRUE if you want it activated"
-#~ msgstr "Mettre à VRAI si vous voulez l'activer"
-
-#~ msgid "The handler for \"git://\" URLs"
-#~ msgstr "Le gestionnaire d'URL « git:// »"
-
-#~ msgid "Find Previous"
-#~ msgstr "Rechercher le précédent"
-
-#~ msgid "Find Next"
-#~ msgstr "Rechercher le suivant"
-
-#~ msgid ""
-#~ "This program is free software; you can redistribute it and/or modify it "
-#~ "under the terms of the GNU General Public License as published by the "
-#~ "Free Software Foundation; either version 2 of the License, or (at your "
-#~ "option) any later version."
-#~ msgstr ""
-#~ "Ce programme est un logiciel libre ; vous pouvez le redistribuer et/ou le "
-#~ "modifier conformément aux dispositions de la Licence Publique Générale "
-#~ "GNU,telle que publiée par la Free Software Foundation ; version 2 de la "
-#~ "licence, ou (à votre choix) toute version ultérieure."
-
-#~ msgid ""
-#~ "This program is distributed in the hope that it will be useful, but "
-#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
-#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
-#~ "Public License for more details."
-#~ msgstr ""
-#~ "Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS "
-#~ "AUCUNE GARANTIE ; sans même la garantie implicite de COMMERCIALISATION ou "
-#~ "D'ADAPTATION À UN OBJET PARTICULIER. Pour plus de détails, voir la "
-#~ "Licence Publique Générale GNU."
-
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with this program; if not, write to the Free Software Foundation, Inc., "
-#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
-#~ msgstr ""
-#~ "Un exemplaire de la Licence Publique Générale GNU doit être fourni avec "
-#~ "ce programme ; si ce n'est pas le cas, écrivez à la Free Software "
-#~ "Foundation, Inc.,51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, "
-#~ "USA."
