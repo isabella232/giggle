@@ -7,22 +7,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gigle master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle&keywords=I18N+L10N&component=UI: General\n"
-"POT-Creation-Date: 2016-09-06 21:14+0000\n"
-"PO-Revision-Date: 2016-12-01 23:35+0300\n"
-"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/giggle/issues\n"
+"POT-Creation-Date: 2017-10-18 15:10+0000\n"
+"PO-Revision-Date: 2019-01-08 11:48+0200\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-POOTLE-MTIME: 1428180702.000000\n"
 
 #: data/giggle.appdata.xml:7
-#| msgid "Giggle is a graphical frontend for the git content tracker."
 msgid "Giggle is a graphical frontend for the git directory tracker."
 msgstr "Giggle, git dizin takipçisi için bir grafiksel önuçtur."
 
@@ -35,12 +33,14 @@ msgstr ""
 "bir kod işleme görsel arayüzüne sahiptir."
 
 #: data/giggle.appdata.xml:17
-#| msgid "Giggle Website"
 msgid "Giggle history view"
 msgstr "Giggle geçmiş gösterici"
 
+#: data/giggle.appdata.xml:23 data/giggle.appdata.xml:33
+msgid "The GNOME Project"
+msgstr "GNOME Projesi"
+
 #: data/org.gnome.Giggle.desktop.in.in:5
-#| msgid "About Giggle"
 msgid "Giggle"
 msgstr "Giggle"
 
@@ -255,7 +255,7 @@ msgid ""
 "An error occurred when adding a file to git:\n"
 "%s"
 msgstr ""
-"git ortamına dosya eklenirken bir hata oluştu:\n"
+"Git ortamına dosya eklenirken bir hata oluştu:\n"
 "%s"
 
 #: src/giggle-file-list.c:816 src/giggle-file-list.c:842
