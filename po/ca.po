@@ -479,13 +479,13 @@ msgstr "%a %H:%M"
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1508
 msgid "%b %d %I:%M %p"
-msgstr "%b %d %H:%M"
+msgstr "%-d %b %-H:%M"
 
 #. it's older
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
-msgstr "%b %d %Y"
+msgstr "%-d %b de %Y"
 
 #: src/giggle-rev-list-view.c:1635
 msgid "Commit"
