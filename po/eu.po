@@ -1,0 +1,797 @@
+# Basque translation for giggle.
+# Copyright (C) 2019 giggle's COPYRIGHT HOLDER
+# This file is distributed under the same license as the giggle package.
+# Asier Sarasua Garmendia <asier.sarasua@gmail.com>, 2019.
+#
+msgid ""
+msgstr "Project-Id-Version: giggle master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/giggle/issues\n"
+"POT-Creation-Date: 2019-08-26 07:13+0000\n"
+"PO-Revision-Date: 2019-09-19 10:00+0100\n"
+"Last-Translator: Asier Sarasua Garmendia <asier.sarasua@gmail.com>\n"
+"Language-Team: Basque <librezale@librezale.eus>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/giggle.appdata.xml:7
+msgid "Giggle is a graphical frontend for the git directory tracker."
+msgstr "Giggle git direktorio-aztarnariaren interfaze grafiko bat da."
+
+#: data/giggle.appdata.xml:10
+msgid ""
+"It currently features a history viewer much like gitk and a commit GUI like "
+"git gui."
+msgstr "Unean, gitk aplikazioaren antzeko historia-ikustailea eta git gui aplikazioaren antzeko egikaritze-interfazea ditu."
+
+#: data/giggle.appdata.xml:17
+msgid "Giggle history view"
+msgstr "Giggle historiaren bista"
+
+#: data/giggle.appdata.xml:23 data/giggle.appdata.xml:33
+msgid "The GNOME Project"
+msgstr "GNOME proiektua"
+
+#: data/org.gnome.Giggle.desktop.in.in:5
+msgid "Giggle"
+msgstr "Giggle"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Giggle.desktop.in.in:12
+msgid "Git;"
+msgstr "Git;"
+
+#: data/main-window.ui:46
+msgid "URL:"
+msgstr "URLa:"
+
+#: data/main-window.ui:60
+msgid "Name:"
+msgstr "Izena:"
+
+#: data/main-window.ui:85 src/giggle-remote-editor.c:172
+msgid "Branches"
+msgstr "Adarrak"
+
+#: libgiggle/giggle-plugin.c:526
+#, c-format
+msgid "Cannot find plugin description in '%s'"
+msgstr "Ezin izan da pluginaren deskribapena aurkitu '%s'(e)n"
+
+#: plugins/hello-world.ui:5
+msgid "Demonstration of Giggle's Plugin System"
+msgstr "Giggle plugin-sistemaren erakusketa"
+
+#: plugins/hello-world.ui:11
+msgid "Hello World"
+msgstr "Kaixo mundua"
+
+#: plugins/hello-world.ui:12
+msgid "Check if the plugin system works"
+msgstr "Giggle plugin-sistemaren erakusketa"
+
+#: plugins/giggle-personal-details-window.c:80
+msgid "There was an error setting the configuration"
+msgstr "Errorea izan da konfigurazioa ezartzean"
+
+#: plugins/giggle-personal-details-window.c:182
+msgid "There was an error getting the configuration"
+msgstr "Errorea izan da konfigurazioa eskuratzean"
+
+#: plugins/giggle-personal-details-window.c:246
+msgid "_Name:"
+msgstr "_Izena:"
+
+#: plugins/giggle-personal-details-window.c:256
+msgid "_Email:"
+msgstr "_Helb. el.:"
+
+#: plugins/giggle-personal-details-window.c:269 plugins/personal-details.ui:11
+msgid "Personal Details"
+msgstr "Xehetasun pertsonalak"
+
+#: plugins/giggle-view-terminal.c:95
+msgid "_Terminal"
+msgstr "_Terminala"
+
+#: plugins/giggle-view-terminal.c:96
+msgid "Issue git commands via terminal"
+msgstr "Bidali git komandoak terminalaren bidez"
+
+#: plugins/personal-details.ui:5 plugins/personal-details.ui:12
+msgid "Edit personal details"
+msgstr "Editatu xehetasun pertsonalak"
+
+#: plugins/terminal-view.ui:5
+msgid "Terminal window"
+msgstr "Terminalaren leihoa"
+
+#: plugins/terminal-view.ui:11
+msgid "Create _Terminal"
+msgstr "Sortu _terminala"
+
+#: plugins/terminal-view.ui:12
+msgid "Create new tab in git terminal"
+msgstr "Sortu fitxa berria git terminalean"
+
+#: src/eggfindbar.c:303
+msgid "Find:"
+msgstr "Bilatu:"
+
+#: src/eggfindbar.c:316
+msgid "Find previous occurrence of the search string"
+msgstr "Hitzaren aurreko agerraldia bilatzen du"
+
+#: src/eggfindbar.c:324
+msgid "Find next occurrence of the search string"
+msgstr "Hitzaren hurrengo agerraldia bilatzen du"
+
+#: src/eggfindbar.c:331
+msgid "C_ase Sensitive"
+msgstr "M_aiuskulak/minuskulak"
+
+#: src/eggfindbar.c:335
+msgid "Toggle case sensitive search"
+msgstr "Txandakatu maiuskulak eta minuskulak kontuan hartzen dituen bilaketa"
+
+#: src/giggle-authors-view.c:78
+#, c-format
+msgid ""
+"An error occurred when retrieving authors list:\n"
+"%s"
+msgstr "Errorea gertatu da egileen zerrenda atzitzean:\n"
+"%s"
+
+#: src/giggle-authors-view.c:144
+msgid "Authors:"
+msgstr "Egileak:"
+
+#: src/giggle-branches-view.c:79
+#, c-format
+msgid ""
+"An error occurred when retrieving branches list:\n"
+"%s"
+msgstr "Errorea gertatu da adarren zerrenda atzitzean:\n"
+"%s"
+
+#: src/giggle-branches-view.c:145 src/giggle-revision-view.c:197
+msgid "Branches:"
+msgstr "Adarrak:"
+
+#: src/giggle-clone-dialog.c:246
+msgid "Clone Repository"
+msgstr "Klonatu biltegia"
+
+#: src/giggle-clone-dialog.c:254
+msgid "Cl_one"
+msgstr "K_lonatu"
+
+#: src/giggle-clone-dialog.c:278
+msgid "_Repository:"
+msgstr "_Biltegia:"
+
+#: src/giggle-clone-dialog.c:290
+msgid "_Local name:"
+msgstr "_Izen lokala:"
+
+#: src/giggle-clone-dialog.c:295
+msgid "Please select a location for the clone"
+msgstr "Hautatu kokaleku bat klonerako"
+
+#: src/giggle-clone-dialog.c:298
+msgid "Clone in _folder:"
+msgstr "Klonatu honako _karpetan:"
+
+#: src/giggle-diff-tree-view.c:140 src/giggle-file-list.c:1660
+#, c-format
+msgid ""
+"An error occurred when retrieving different files list:\n"
+"%s"
+msgstr "Errorea gertatu da fitxategi desberdinen zerrenda atzitzean:\n"
+"%s"
+
+#: src/giggle-diff-tree-view.c:207
+msgid "Changed files"
+msgstr "Aldatutako fitxategiak"
+
+#: src/giggle-diff-view.c:714
+#, c-format
+msgid ""
+"An error occurred when retrieving a diff:\n"
+"%s"
+msgstr "Errorea gertatu da diff bat atzitzean:\n"
+"%s"
+
+#: src/giggle-diff-window.c:80
+msgid "Commit changes"
+msgstr "Egikaritu aldaketak"
+
+#: src/giggle-diff-window.c:102
+msgid "Revision log:"
+msgstr "Berrikuspenen egunkaria:"
+
+#: src/giggle-diff-window.c:130
+msgid "Co_mmit"
+msgstr "_Egikaritu"
+
+#: src/giggle-diff-window.c:202
+#, c-format
+msgid ""
+"An error occurred when committing:\n"
+"%s"
+msgstr "Errorea gertatu da egikaritzean:\n"
+"%s"
+
+#: src/giggle-file-list.c:387
+#, c-format
+msgid ""
+"An error occurred when retrieving the file list:\n"
+"%s"
+msgstr "Errorea gertatu da fitxategien zerrenda atzitzean:\n"
+"%s"
+
+#: src/giggle-file-list.c:756
+#, c-format
+msgid ""
+"An error occurred when adding a file to git:\n"
+"%s"
+msgstr "Errorea gertatu da fitxategi bat git-era gehitzean:\n"
+"%s"
+
+#: src/giggle-file-list.c:816 src/giggle-file-list.c:842
+#: src/giggle-rev-list-view.c:1173 src/giggle-rev-list-view.c:1204
+#, c-format
+msgid "Could not save the patch as %s"
+msgstr "Ezin da adabakia gorde %s izenarekin"
+
+#: src/giggle-file-list.c:821 src/giggle-file-list.c:847
+#: src/giggle-rev-list-view.c:1181 src/giggle-rev-list-view.c:1209
+msgid "No error was given"
+msgstr "Ez da errorik eman"
+
+#: src/giggle-file-list.c:868 src/giggle-rev-list-view.c:1235
+#, c-format
+msgid "Patch saved as %s"
+msgstr "Adabakia gorde da %s izenarekin"
+
+#: src/giggle-file-list.c:872 src/giggle-rev-list-view.c:1239
+msgid "Created in project directory"
+msgstr "Proiektuaren direktorioan sortua"
+
+#: src/giggle-file-list.c:875 src/giggle-rev-list-view.c:1242
+#, c-format
+msgid "Created in directory %s"
+msgstr "%s direktorioan sortua"
+
+#: src/giggle-file-list.c:910 src/giggle-rev-list-view.c:1293
+msgid "Create Patch"
+msgstr "Sortu adabakia"
+
+#: src/giggle-file-list.c:1013
+msgid "Delete glob pattern?"
+msgstr "Ezabatu komodina?"
+
+#: src/giggle-file-list.c:1016
+msgid ""
+"The selected file was shadowed by a glob pattern that may be hiding other "
+"files, delete it?"
+msgstr "Hautatutako fitxategiak komodin baten itzala zuen, eta horrek beste fitxategi batzuk ezkuta ditzake. Ezabatu?"
+
+#: src/giggle-file-list.c:1411
+msgid "_Commit Changes"
+msgstr "_Egikaritu aldaketak"
+
+#: src/giggle-file-list.c:1413
+msgid "A_dd file to repository"
+msgstr "G_ehitu fitxategia biltegiari"
+
+#: src/giggle-file-list.c:1414 src/giggle-rev-list-view.c:1638
+msgid "Create _Patch"
+msgstr "Sortu _adabakia"
+
+#: src/giggle-file-list.c:1415
+msgid "_Add to .gitignore"
+msgstr "_Gehitu .gitignore fitxategira"
+
+#: src/giggle-file-list.c:1416
+msgid "_Remove from .gitignore"
+msgstr "_Kendu .gitignore fitxategitik"
+
+#: src/giggle-file-list.c:1420
+msgid "_Show all files"
+msgstr "Erakutsi fitxategi g_uztiak"
+
+#: src/giggle-file-list.c:1459
+msgid "Project"
+msgstr "Proiektua"
+
+#: src/giggle-helpers.c:176
+msgid "An error occurred:"
+msgstr "Errorea gertatu da:"
+
+#: src/giggle-main.c:36
+msgid "Clone a repository"
+msgstr "Klonatu biltegi bat"
+
+#: src/giggle-main.c:37 src/giggle-remotes-view.c:267
+msgid "URL"
+msgstr "URLa"
+
+#: src/giggle-main.c:40
+msgid "Show the diff window"
+msgstr "Erakutsi diff leihoa"
+
+#: src/giggle-main.c:44
+msgid "Show version information and exit"
+msgstr "Erakutsi bertsioaren informazioa eta irten"
+
+#: src/giggle-main.c:47
+msgid "[DIRECTORY]"
+msgstr "[DIREKTORIOA\t]"
+
+#: src/giggle-main.c:79
+#, c-format
+msgid "Report errors (in English, with LC_ALL=C) to <%s>."
+msgstr "Jakinarazi erroreak (ingelesez, LC_ALL=C erabilita) honi: <%s>."
+
+#: src/giggle-main.c:80
+msgid "Giggle is a graphical frontend for the git content tracker."
+msgstr "Giggle git eduki-aztarnariaren interfaze grafiko bat da."
+
+#: src/giggle-main.c:88
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "Probatu '%s --help' laguntza gehiago jasotzeko.\n"
+
+#: src/giggle-remote-editor.c:146
+msgid "Click to add mapping…"
+msgstr "Klik mapatzea gehitzeko…"
+
+#: src/giggle-remote-editor.c:365
+msgid "Unnamed"
+msgstr "Izengabea"
+
+#: src/giggle-remotes-view.c:256
+msgid "Icon"
+msgstr "Ikonoa"
+
+#: src/giggle-remotes-view.c:262
+msgid "Name"
+msgstr "Izena"
+
+#: src/giggle-remotes-view.c:280
+msgid "Double click to add remote…"
+msgstr "Klik bikoitza urrunekoa gehitzeko…"
+
+#: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
+msgid "Author:"
+msgstr "Egilea:"
+
+#: src/giggle-revision-view.c:184 src/giggle-view-file.c:1216
+msgid "Committer:"
+msgstr "Bidaltzailea:"
+
+#: src/giggle-revision-view.c:195 src/giggle-view-file.c:1217
+msgid "Date:"
+msgstr "Data:"
+
+#: src/giggle-revision-view.c:196 src/giggle-view-file.c:1218
+msgid "SHA:"
+msgstr "SHA:"
+
+#: src/giggle-revision-view.c:216
+msgid "Change Log:"
+msgstr "Aldaketa-egunkaria:"
+
+#: src/giggle-revision-view.c:505
+msgid "_Details"
+msgstr "_Xehetasunak"
+
+#: src/giggle-revision-view.c:506
+msgid "Display revision details"
+msgstr "Bistaratu berrikuspenaren xehetasunak"
+
+#: src/giggle-rev-list-view.c:331
+#, c-format
+msgid "Delete branch \"%s\""
+msgstr "Ezabatu “%s” adarra"
+
+#: src/giggle-rev-list-view.c:334
+#, c-format
+msgid "Delete tag \"%s\""
+msgstr "Ezabatu “%s” etiketa"
+
+#: src/giggle-rev-list-view.c:504
+msgid "Branch"
+msgstr "Adarra"
+
+#: src/giggle-rev-list-view.c:507
+msgid "Tag"
+msgstr "Etiketa"
+
+#: src/giggle-rev-list-view.c:510
+msgid "Remote"
+msgstr "Urrunekoa"
+
+#: src/giggle-rev-list-view.c:1063
+msgid "Enter branch name:"
+msgstr "Sartu adarraren izena:"
+
+#: src/giggle-rev-list-view.c:1114
+msgid "Enter tag name:"
+msgstr "Sartu etiketaren izena:"
+
+#: src/giggle-rev-list-view.c:1175
+msgid "Could not create patch"
+msgstr "Ezin izan da adabakia sortu"
+
+#: src/giggle-rev-list-view.c:1429
+msgid "Uncommitted changes"
+msgstr "Egikaritu gabeko aldaketak"
+
+#. TRANSLATORS: it's a strftime format string
+#: src/giggle-rev-list-view.c:1483
+msgid "%I:%M %p"
+msgstr "%I:%M %p"
+
+#. TRANSLATORS: it's a strftime format string
+#: src/giggle-rev-list-view.c:1496
+msgid "%a %I:%M %p"
+msgstr "%a, %I:%M %p"
+
+#. TRANSLATORS: it's a strftime format string
+#: src/giggle-rev-list-view.c:1508
+msgid "%b %d %I:%M %p"
+msgstr "%b %d %l:%M %p"
+
+#. it's older
+#. TRANSLATORS: it's a strftime format string
+#: src/giggle-rev-list-view.c:1513
+msgid "%b %d %Y"
+msgstr "%Y %b %d"
+
+#: src/giggle-rev-list-view.c:1635
+msgid "Commit"
+msgstr "Egikaritu"
+
+#: src/giggle-rev-list-view.c:1636
+msgid "Create _Branch"
+msgstr "Sortu _adarra"
+
+#: src/giggle-rev-list-view.c:1637
+msgid "Create _Tag"
+msgstr "Sortu _etiketa"
+
+#: src/giggle-rev-list-view.c:1703
+msgid "Graph"
+msgstr "Grafikoa"
+
+#: src/giggle-rev-list-view.c:1721
+msgid "Short Log"
+msgstr "Egunkari laburra"
+
+#: src/giggle-rev-list-view.c:1740
+msgid "Author"
+msgstr "Egilea"
+
+#: src/giggle-rev-list-view.c:1757
+msgid "Date"
+msgstr "Data"
+
+#: src/giggle-short-list.c:300
+msgid "Details"
+msgstr "Xehetasunak"
+
+#: src/giggle-short-list.c:416
+msgid "Show A_ll…"
+msgstr "Erakutsi _dena…"
+
+#: src/giggle-view-diff.c:107
+#, c-format
+msgid "Change %d of %d"
+msgstr "Aldatu %d / %d"
+
+#: src/giggle-view-diff.c:182
+msgid "_Previous Change"
+msgstr "A_urreko aldaketa"
+
+#: src/giggle-view-diff.c:182
+msgid "View previous change"
+msgstr "Bistaratu aurreko aldaketa"
+
+#: src/giggle-view-diff.c:186
+msgid "_Next Change"
+msgstr "_Hurrengo aldaketa"
+
+#: src/giggle-view-diff.c:186
+msgid "View next change"
+msgstr "Bistaratu hurrengo aldaketa"
+
+#: src/giggle-view-diff.c:348
+msgid "_Changes"
+msgstr "_Aldaketak"
+
+#: src/giggle-view-diff.c:349
+msgid "Browse a revision's changes"
+msgstr "Arakatu berrikuspen bateko aldaketak"
+
+#: src/giggle-view-file.c:324
+msgid "_Goto Line Number"
+msgstr "Joan lerro-_zenbakira"
+
+#: src/giggle-view-file.c:325
+msgid "Highlight specified line number"
+msgstr "Nabarmendu zehaztutako lerro-zenbakia"
+
+#: src/giggle-view-file.c:329
+msgid "Show _Changes"
+msgstr "Erakutsi _aldaketak"
+
+#: src/giggle-view-file.c:330
+msgid "Show changes for selected revision"
+msgstr "Erakutsi hautatutako berrikuspenaren aldaketak"
+
+#: src/giggle-view-file.c:334
+msgid "Select _Revision"
+msgstr "Hautatu _berrikuspena"
+
+#: src/giggle-view-file.c:335
+msgid "Select revision of selected line"
+msgstr "Hautatu aukeratutako lerroaren berrikuspena"
+
+#: src/giggle-view-file.c:897
+#, c-format
+msgid ""
+"An error occurred when getting file ref:\n"
+"%s"
+msgstr "Errorea gertatu da fitxategien erreferentzia eskuratzean:\n"
+"%s"
+
+#: src/giggle-view-file.c:968 src/giggle-view-history.c:248
+#: src/giggle-view-history.c:342
+#, c-format
+msgid ""
+"An error occurred when getting the revisions list:\n"
+"%s"
+msgstr "Errorea gertatu da berrikuspenen zerrenda eskuratzean:\n"
+"%s"
+
+#: src/giggle-view-file.c:1128
+msgid "Line Number:"
+msgstr "Lerro-zenbakia:"
+
+#: src/giggle-view-file.c:1566
+msgid "_Browse"
+msgstr "_Arakatu"
+
+#: src/giggle-view-file.c:1567
+msgid "Browse the files of this project"
+msgstr "Arakatu proiektu honetako fitxategiak"
+
+#: src/giggle-view-history.c:842
+msgid "_History"
+msgstr "_Historia"
+
+#: src/giggle-view-history.c:843
+msgid "Browse the history of this project"
+msgstr "Arakatu proiektu honen historia"
+
+#: src/giggle-view-summary.c:117
+msgid "Description:"
+msgstr "Azalpena:"
+
+#: src/giggle-view-summary.c:167
+msgid "Remotes:"
+msgstr "Urrunekoak:"
+
+#: src/giggle-view-summary.c:195
+msgid "_Summary"
+msgstr "_Laburpena"
+
+#: src/giggle-view-summary.c:198
+msgid "_Branches"
+msgstr "_Adarrak"
+
+#: src/giggle-view-summary.c:201
+msgid "_Authors"
+msgstr "_Egileak"
+
+#: src/giggle-view-summary.c:204
+msgid "_Remotes"
+msgstr "_Urrunekoak"
+
+#: src/giggle-window.c:546
+#, c-format
+msgid "The directory '%s' does not look like a git repository."
+msgstr "'%s' direktorioak ez dirudi git biltegia."
+
+#: src/giggle-window.c:629
+msgid "Select git repository"
+msgstr "Hautatu git biltegi bat"
+
+#: src/giggle-window.c:682
+#, c-format
+msgid "Properties of %s"
+msgstr "%s-(r)en propietateak"
+
+#: src/giggle-window.c:912
+msgid "Contributors:"
+msgstr "Laguntzaileak:"
+
+#: src/giggle-window.c:925
+msgid ""
+"Copyright © 2007 - 2008 Imendio AB\n"
+"Copyright © 2008 - 2009 Mathias Hasselmann\n"
+"Copyright © 2009 - 2012 The Giggle authors"
+msgstr "Copyright © 2007 - 2008 Imendio AB\n"
+"Copyright © 2008 - 2009 Mathias Hasselmann\n"
+"Copyright © 2009 - 2012 Giggle egileak"
+
+#. Translators: This is a special message that shouldn't be translated
+#. * literally. It is used in the about box to give credits to
+#. * the translators.
+#. * Thus, you should translate it to your name and email address.
+#. * You should also include other translators who have contributed to
+#. * this translation; in that case, please write each of them on a separate
+#. * line seperated by newlines (\n).
+#.
+#: src/giggle-window.c:937
+msgid "translator-credits"
+msgstr "Asier Sarasua Garmendia <asier.sarasua@gmail.com>"
+
+#: src/giggle-window.c:942
+msgid "A graphical frontend for Git"
+msgstr "Git aplikaziorako interfaze grafikoa"
+
+#: src/giggle-window.c:947
+msgid "About Giggle"
+msgstr "Giggle aplikazioari burua"
+
+#: src/giggle-window.c:951
+msgid "Giggle Website"
+msgstr "Giggle aplikazioaren webgunea"
+
+#: src/giggle-window.c:1007
+msgid "_Find…"
+msgstr "_Bilatu…"
+
+#: src/giggle-window.c:1008
+msgid "Find…"
+msgstr "Bilatu…"
+
+#: src/giggle-window.c:1014
+msgid "Find Ne_xt"
+msgstr "Aurkitu _hurrengoa"
+
+#: src/giggle-window.c:1015
+msgid "Find next match"
+msgstr "Aurkitu hurrengo bat parekatzea"
+
+#: src/giggle-window.c:1018
+msgid "Find Pre_vious"
+msgstr "Aurkitu _aurrekoa"
+
+#: src/giggle-window.c:1019
+msgid "Find previous match"
+msgstr "Aurkitu aurreko parekatzea"
+
+#: src/giggle-window.c:1025
+msgid "_Project"
+msgstr "_Proiektua"
+
+#: src/giggle-window.c:1026
+msgid "_Edit"
+msgstr "_Editatu"
+
+#: src/giggle-window.c:1027
+msgid "_Go"
+msgstr "_Joan"
+
+#: src/giggle-window.c:1028
+msgid "_View"
+msgstr "_Ikusi"
+
+#: src/giggle-window.c:1029
+msgid "_Help"
+msgstr "_Laguntza"
+
+#: src/giggle-window.c:1032
+msgid "Open a git repository"
+msgstr "Ireki git biltegi bat"
+
+#: src/giggle-window.c:1036
+msgid "Clone _location"
+msgstr "Klonatu koka_lekua"
+
+#: src/giggle-window.c:1036
+msgid "Clone a location"
+msgstr "Klonatu kokaleku bat"
+
+#: src/giggle-window.c:1041
+msgid "_Save patch"
+msgstr "_Gorde adabakia"
+
+#: src/giggle-window.c:1041
+msgid "Save a patch"
+msgstr "Gorde adabaki bat"
+
+#: src/giggle-window.c:1045
+msgid "_Diff current changes"
+msgstr "Uneko aldaketen _diff-a"
+
+#: src/giggle-window.c:1045
+msgid "Diff current changes"
+msgstr "Uneko aldaketen diff-a"
+
+#: src/giggle-window.c:1050
+msgid "Quit the application"
+msgstr "Irten aplikaziotik"
+
+#: src/giggle-window.c:1068
+msgid "Go backward in history"
+msgstr "Joan atzera historian"
+
+#: src/giggle-window.c:1072
+msgid "Go forward in history"
+msgstr "Joan aurrera historian"
+
+#: src/giggle-window.c:1076
+msgid "_Contents"
+msgstr "_Edukia"
+
+#: src/giggle-window.c:1077
+msgid "Show user guide for Giggle"
+msgstr "Erakutsi erabiltzailearen eskuliburua"
+
+#: src/giggle-window.c:1080
+msgid "Report _Issue"
+msgstr "_Jakinarazi akatsa"
+
+#: src/giggle-window.c:1081
+msgid "Report an issue you’ve found in Giggle"
+msgstr "Jakinarazi Giggle aplikazioan aurkitu duzun akatsa"
+
+#: src/giggle-window.c:1085
+msgid "About this application"
+msgstr "Aplikazio honi buruz"
+
+#: src/giggle-window.c:1092
+msgid "Show revision tree"
+msgstr "Erakutsi berrikuspenen zuhaitza"
+
+#: src/giggle-window.c:1099
+msgid "Show diffs by chunk"
+msgstr "Erakutsi diff-ak zatien arabera"
+
+#: src/giggle-window.c:1102
+msgid "Show diffs by file"
+msgstr "Erakutsi diff-ak fitxategien arabera"
+
+#: src/giggle-window.c:1105
+msgid "Show all diffs"
+msgstr "Erakutsi diff guztiak"
+
+#: src/giggle-window.c:1111
+msgid "Show and edit project properties"
+msgstr "Erakutsi eta editatu proiektuaren propietateak"
+
+#: src/giggle-window.c:1115
+msgid "Refresh current view"
+msgstr "Freskatu uneko bista"
+
+#: src/giggle-window.c:1454
+msgid "Search Inside _Patches"
+msgstr "Bilatu adabakien _barruan"
+
+#: src/giggle-window.c:1723
+msgid "Save patch file"
+msgstr "Gorde adabakiaren fitxategia"
+
+#: src/giggle-window.c:1743
+#, c-format
+msgid ""
+"An error occurred when saving to file:\n"
+"%s"
+msgstr "Errorea gertatu da fitxategian gordetzean:\n"
+"%s"
