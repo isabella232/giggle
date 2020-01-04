@@ -6,33 +6,32 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle&keywords=I18N+L10N&component=UI: General\n"
-"POT-Creation-Date: 2017-04-10 11:21+0000\n"
-"PO-Revision-Date: 2017-04-17 21:23+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/giggle/issues\n"
+"POT-Creation-Date: 2019-09-19 12:12+0000\n"
+"PO-Revision-Date: 2020-01-04 09:44+0100\n"
+"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: data/giggle.appdata.xml:7
 msgid "Giggle is a graphical frontend for the git directory tracker."
-msgstr ""
+msgstr "Giggle al è un frontend grafic pal tracker de cartele git."
 
 #: data/giggle.appdata.xml:10
 msgid ""
 "It currently features a history viewer much like gitk and a commit GUI like "
 "git gui."
 msgstr ""
-"Atualmentri al à un visualizadôr de cronologjie simil a gitk e une "
-"interface grafiche par mandâ simile a chê di git."
+"Atualmentri al à un visualizadôr de cronologjie simil a gitk e une interface "
+"grafiche par mandâ simile a chê di git."
 
 #: data/giggle.appdata.xml:17
 msgid "Giggle history view"
-msgstr ""
+msgstr "Viodude cronologjie di Giggle"
 
 #: data/giggle.appdata.xml:23 data/giggle.appdata.xml:33
 msgid "The GNOME Project"
@@ -41,11 +40,6 @@ msgstr "Il progjet GNOME"
 #: data/org.gnome.Giggle.desktop.in.in:5
 msgid "Giggle"
 msgstr "Giggle"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Giggle.desktop.in.in:8
-msgid "giggle"
-msgstr "giggle"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Giggle.desktop.in.in:12
@@ -107,7 +101,7 @@ msgstr "_Terminâl"
 
 #: plugins/giggle-view-terminal.c:96
 msgid "Issue git commands via terminal"
-msgstr ""
+msgstr "Invie i comants git vie terminâl"
 
 #: plugins/personal-details.ui:5 plugins/personal-details.ui:12
 msgid "Edit personal details"
@@ -139,11 +133,11 @@ msgstr "Cjate il prossim câs de stringhe di ricercje"
 
 #: src/eggfindbar.c:331
 msgid "C_ase Sensitive"
-msgstr ""
+msgstr "Sensibil aes M_aiusculis"
 
 #: src/eggfindbar.c:335
 msgid "Toggle case sensitive search"
-msgstr ""
+msgstr "Comute ricercje sensibil aes maiusculis/minusculis"
 
 #: src/giggle-authors-view.c:78
 #, c-format
@@ -193,7 +187,7 @@ msgstr "Selezione une posizion pal clon"
 
 #: src/giggle-clone-dialog.c:298
 msgid "Clone in _folder:"
-msgstr ""
+msgstr "Clone te _cartele:"
 
 #: src/giggle-diff-tree-view.c:140 src/giggle-file-list.c:1660
 #, c-format
@@ -287,13 +281,15 @@ msgstr "Cree patch"
 
 #: src/giggle-file-list.c:1013
 msgid "Delete glob pattern?"
-msgstr ""
+msgstr "Eliminâ il model globâl?"
 
 #: src/giggle-file-list.c:1016
 msgid ""
 "The selected file was shadowed by a glob pattern that may be hiding other "
 "files, delete it?"
 msgstr ""
+"Il file selezionât al è stât metût in ombrene (shadowing) di un model globâl "
+"(glob pattern) che al podarès platâ altris file, eliminâlu?"
 
 #: src/giggle-file-list.c:1411
 msgid "_Commit Changes"
@@ -329,7 +325,7 @@ msgstr "Si è presentât un erôr:"
 
 #: src/giggle-main.c:36
 msgid "Clone a repository"
-msgstr ""
+msgstr "Clone un repository"
 
 #: src/giggle-main.c:37 src/giggle-remotes-view.c:267
 msgid "URL"
@@ -337,7 +333,7 @@ msgstr "URL"
 
 #: src/giggle-main.c:40
 msgid "Show the diff window"
-msgstr ""
+msgstr "Mostre il barcon diff"
 
 #: src/giggle-main.c:44
 msgid "Show version information and exit"
@@ -345,7 +341,7 @@ msgstr "Mostre lis informazions de version e jes"
 
 #: src/giggle-main.c:47
 msgid "[DIRECTORY]"
-msgstr ""
+msgstr "[CARTELE]"
 
 #: src/giggle-main.c:79
 #, c-format
@@ -354,7 +350,7 @@ msgstr "Segnale erôrs (in inglês, cun LC_ALL=C) a <%s>."
 
 #: src/giggle-main.c:80
 msgid "Giggle is a graphical frontend for the git content tracker."
-msgstr ""
+msgstr "Giggle al è un frontend grafic pal tracker dai contignûts di git."
 
 #: src/giggle-main.c:88
 #, c-format
@@ -399,7 +395,7 @@ msgstr "SHA:"
 
 #: src/giggle-revision-view.c:216
 msgid "Change Log:"
-msgstr ""
+msgstr "Regjistri modifichis:"
 
 #: src/giggle-revision-view.c:505
 msgid "_Details"
@@ -722,11 +718,11 @@ msgstr "Vierç un repository git"
 
 #: src/giggle-window.c:1036
 msgid "Clone _location"
-msgstr ""
+msgstr "Clone _posizion"
 
 #: src/giggle-window.c:1036
 msgid "Clone a location"
-msgstr ""
+msgstr "Clone une posizion"
 
 #: src/giggle-window.c:1041
 msgid "_Save patch"
@@ -738,11 +734,11 @@ msgstr "Salve une patch"
 
 #: src/giggle-window.c:1045
 msgid "_Diff current changes"
-msgstr ""
+msgstr "_Diff lis modifichis atuâls"
 
 #: src/giggle-window.c:1045
 msgid "Diff current changes"
-msgstr ""
+msgstr "Diff lis modifichis atuâls"
 
 #: src/giggle-window.c:1050
 msgid "Quit the application"
@@ -778,19 +774,19 @@ msgstr "Informazions su cheste aplicazion"
 
 #: src/giggle-window.c:1092
 msgid "Show revision tree"
-msgstr ""
+msgstr "Mostre arbul des revisions"
 
 #: src/giggle-window.c:1099
 msgid "Show diffs by chunk"
-msgstr ""
+msgstr "Mostre diferencis par tocs"
 
 #: src/giggle-window.c:1102
 msgid "Show diffs by file"
-msgstr ""
+msgstr "Mostre diferencis par file"
 
 #: src/giggle-window.c:1105
 msgid "Show all diffs"
-msgstr ""
+msgstr "mostre dutis lis diferencis"
 
 #: src/giggle-window.c:1111
 msgid "Show and edit project properties"
@@ -816,3 +812,6 @@ msgid ""
 msgstr ""
 "Al è vignût fûr un erôr cuant che si salvave sul file:\n"
 "%s"
+
+#~ msgid "giggle"
+#~ msgstr "giggle"
