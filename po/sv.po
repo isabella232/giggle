@@ -18,18 +18,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Giggle 0.1\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle&keywords=I18N+L10N&component=UI: General\n"
-"POT-Creation-Date: 2017-06-28 17:51+0000\n"
-"PO-Revision-Date: 2017-01-21 22:16+0100\n"
-"Last-Translator: Josef Andersson <josef.andersson@fripost.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/giggle/issues\n"
+"POT-Creation-Date: 2019-09-19 12:12+0000\n"
+"PO-Revision-Date: 2020-02-02 02:05+0100\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: data/giggle.appdata.xml:7
 msgid "Giggle is a graphical frontend for the git directory tracker."
@@ -41,7 +40,7 @@ msgid ""
 "git gui."
 msgstr ""
 "Det innehåller för närvarande en historikvisare likt gitk och ett "
-"inchecknings-GUI likt git gui"
+"inchecknings-GUI likt git gui."
 
 #: data/giggle.appdata.xml:17
 msgid "Giggle history view"
@@ -54,11 +53,6 @@ msgstr "GNOME-projektet"
 #: data/org.gnome.Giggle.desktop.in.in:5
 msgid "Giggle"
 msgstr "Giggle"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Giggle.desktop.in.in:8
-msgid "giggle"
-msgstr "giggle"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Giggle.desktop.in.in:12
@@ -80,7 +74,7 @@ msgstr "Grenar"
 #: libgiggle/giggle-plugin.c:526
 #, c-format
 msgid "Cannot find plugin description in '%s'"
-msgstr "Kan inte hitta insticks-beskrivning i ”%s”"
+msgstr "Kan inte hitta insticksbeskrivning i ”%s”"
 
 #: plugins/hello-world.ui:5
 msgid "Demonstration of Giggle's Plugin System"
@@ -100,7 +94,7 @@ msgstr "Ett fel inträffade när konfigurationen ställdes in"
 
 #: plugins/giggle-personal-details-window.c:182
 msgid "There was an error getting the configuration"
-msgstr "Ett fel inträffade när konfiguration hämtades"
+msgstr "Ett fel inträffade när konfigurationen hämtades"
 
 #: plugins/giggle-personal-details-window.c:246
 msgid "_Name:"
@@ -132,7 +126,7 @@ msgstr "Terminalfönster"
 
 #: plugins/terminal-view.ui:11
 msgid "Create _Terminal"
-msgstr "Skapa _Terminal"
+msgstr "Skapa _terminal"
 
 #: plugins/terminal-view.ui:12
 msgid "Create new tab in git terminal"
@@ -308,8 +302,8 @@ msgid ""
 "The selected file was shadowed by a glob pattern that may be hiding other "
 "files, delete it?"
 msgstr ""
-"Den valda filen skuggas av en globalt mönster som kan dölja andra filer - Ta "
-"bort? "
+"Den valda filen skuggas av ett globalt mönster som kan dölja andra filer - "
+"Ta bort?"
 
 #: src/giggle-file-list.c:1411
 msgid "_Commit Changes"
@@ -477,13 +471,13 @@ msgstr "%a %H:%M"
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1508
 msgid "%b %d %I:%M %p"
-msgstr "%b %d %H:%M"
+msgstr "%d %b %H:%M"
 
 #. it's older
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
-msgstr "%b %d %Y"
+msgstr "%d %b %Y"
 
 #: src/giggle-rev-list-view.c:1635
 msgid "Commit"
@@ -777,7 +771,7 @@ msgstr "Gå framåt i historiken"
 
 #: src/giggle-window.c:1076
 msgid "_Contents"
-msgstr "Innehåll"
+msgstr "_Innehåll"
 
 #: src/giggle-window.c:1077
 msgid "Show user guide for Giggle"
@@ -809,7 +803,7 @@ msgstr "Visa förändringar filvis"
 
 #: src/giggle-window.c:1105
 msgid "Show all diffs"
-msgstr "Visa _alla diffar"
+msgstr "Visa alla diffar"
 
 #: src/giggle-window.c:1111
 msgid "Show and edit project properties"
@@ -835,6 +829,9 @@ msgid ""
 msgstr ""
 "Ett fel inträffade när filen skulle sparas:\n"
 "%s"
+
+#~ msgid "giggle"
+#~ msgstr "giggle"
 
 #~ msgid "Find..."
 #~ msgstr "Sök..."
