@@ -1,24 +1,60 @@
 # Translation to Ukrainian
-# Serhij Dubyk / Сергій Дубик, 2010
+# Serhij Dubyk / Сергій Дубик, 2010.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: Giggle\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=giggle\n"
-"POT-Creation-Date: 2013-08-20 01:55+0100\n"
-"PO-Revision-Date: 2010-12-26 11:15+0300\n"
-"Last-Translator: Serhij Dubyk <serhijdubyk@gmail.com>\n"
-"Language-Team: Ukrainian Linux Translators <translate@linux.org.ua>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/giggle/issues\n"
+"POT-Creation-Date: 2019-09-19 12:12+0000\n"
+"PO-Revision-Date: 2020-04-05 09:57+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.0.5\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 20.07.70\n"
 "X-Poedit-Language: Ukrainian\n"
 "X-Poedit-Country: UKRAINE\n"
 "X-Poedit-SourceCharset: utf-8\n"
+
+# Giggle це графічна оболонка для Git трекер контенту.
+#: data/giggle.appdata.xml:7
+#| msgid "Giggle is a graphical frontend for the git content tracker."
+msgid "Giggle is a graphical frontend for the git directory tracker."
+msgstr ""
+"Giggle — графічна оболонка для розподіленої системи керування версіями "
+"файлів git."
+
+#: data/giggle.appdata.xml:10
+msgid ""
+"It currently features a history viewer much like gitk and a commit GUI like "
+"git gui."
+msgstr ""
+"У поточній версії реалізовано панель перегляду журналу, яка є дуже подібною"
+" до панелі gitk, і графічний інтерфейс для внесків, подібний до git gui."
+
+# Git репозиторій перегляду
+#: data/giggle.appdata.xml:17
+#| msgid "Git repository viewer"
+msgid "Giggle history view"
+msgstr "Перегляд журналу у Giggle"
+
+#: data/giggle.appdata.xml:23 data/giggle.appdata.xml:33
+msgid "The GNOME Project"
+msgstr "Проєкт GNOME"
+
+# Хихикати
+#: data/org.gnome.Giggle.desktop.in.in:5
+msgid "Giggle"
+msgstr "Giggle"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Giggle.desktop.in.in:12
+msgid "Git;"
+msgstr "Git;гіт;"
 
 # URL:
 #: data/main-window.ui:46
@@ -170,31 +206,29 @@ msgstr "Гілки:"
 
 # Виберіть Git репозиторій
 #: src/giggle-clone-dialog.c:246
-#, fuzzy
 msgid "Clone Repository"
-msgstr "Виберіть git-сховище"
+msgstr "Клонувати сховище"
 
 #: src/giggle-clone-dialog.c:254
 msgid "Cl_one"
-msgstr ""
+msgstr "_Клонувати"
 
 # Історія
 #: src/giggle-clone-dialog.c:278
-#, fuzzy
 msgid "_Repository:"
-msgstr "_Історія"
+msgstr "С_ховище:"
 
 #: src/giggle-clone-dialog.c:290
 msgid "_Local name:"
-msgstr ""
+msgstr "_Локальна назва:"
 
 #: src/giggle-clone-dialog.c:295
 msgid "Please select a location for the clone"
-msgstr ""
+msgstr "Будь ласка, виберіть місце для клону"
 
 #: src/giggle-clone-dialog.c:298
 msgid "Clone in _folder:"
-msgstr ""
+msgstr "Клонувати до _теки:"
 
 # Сталася помилка при отриманні різних список файлів:\n
 # %s
@@ -268,7 +302,7 @@ msgid ""
 "An error occurred when adding a file to git:\n"
 "%s"
 msgstr ""
-"Сталася помилка при додаванні файлу до git:\n"
+"Сталася помилка при додаванні файла до git:\n"
 "%s"
 
 # Не вдалося зберегти патч %s
@@ -357,17 +391,13 @@ msgstr "Проект"
 # Помилка при здійсненні:\n
 # %s
 #: src/giggle-helpers.c:176
-#, fuzzy
 msgid "An error occurred:"
-msgstr ""
-"Сталася помилка при фіксації змін:\n"
-"%s"
+msgstr "Сталася помилка:"
 
 # Виберіть Git репозиторій
 #: src/giggle-main.c:36
-#, fuzzy
 msgid "Clone a repository"
-msgstr "Виберіть git-сховище"
+msgstr "клонувати сховище"
 
 # URL
 #: src/giggle-main.c:37 src/giggle-remotes-view.c:267
@@ -404,15 +434,14 @@ msgstr ""
 
 # Спробуйте `%s - Довідка&quot; для отримання додаткової інформації.\n
 #: src/giggle-main.c:88
-#, fuzzy, c-format
+#, c-format
 msgid "Try '%s --help' for more information.\n"
-msgstr "Використовуйте „%s - help“ для отримання додаткової інформації.\n"
+msgstr "Спробуйте '%s --help' для одержання додаткової інформації.\n"
 
 # Натисніть, щоб додати відображення…
 #: src/giggle-remote-editor.c:146
-#, fuzzy
 msgid "Click to add mapping…"
-msgstr "Натисніть, щоб додати відображення…"
+msgstr "Натисніть, щоб додати прив'язку…"
 
 # Неназваний
 #: src/giggle-remote-editor.c:365
@@ -431,9 +460,8 @@ msgstr "Ім’я"
 
 # Двічі клацніть додати віддаленого…
 #: src/giggle-remotes-view.c:280
-#, fuzzy
 msgid "Double click to add remote…"
-msgstr "Двічі клацніть для додавання віддаленого репозиторію…"
+msgstr "Двічі клацніть для додавання віддаленого сховища…"
 
 # Автор:
 #: src/giggle-revision-view.c:183 src/giggle-view-file.c:1215
@@ -495,7 +523,7 @@ msgstr "Мітка"
 # Віддаленого
 #: src/giggle-rev-list-view.c:510
 msgid "Remote"
-msgstr "Віддалений репозиторій"
+msgstr "Віддалене сховище"
 
 # Введіть назву філії:
 #: src/giggle-rev-list-view.c:1063
@@ -536,6 +564,7 @@ msgid "%b %d %I:%M %p"
 msgstr "%d %B %H:%M"
 
 # % B %d %Y
+#. it's older
 #. TRANSLATORS: it's a strftime format string
 #: src/giggle-rev-list-view.c:1513
 msgid "%b %d %Y"
@@ -583,7 +612,6 @@ msgstr "Подробиці"
 
 # Показати усе…
 #: src/giggle-short-list.c:416
-#, fuzzy
 msgid "Show A_ll…"
 msgstr "Показати _усе…"
 
@@ -653,8 +681,6 @@ msgstr "Вибрати версію"
 msgid "Select revision of selected line"
 msgstr "Вибрати версію для вибраного рядка"
 
-# Сталася помилка під час отримання файлу посилання:\n
-# %s
 #: src/giggle-view-file.c:897
 #, c-format
 msgid ""
@@ -703,15 +729,13 @@ msgstr "Перегляд історії цього проекту"
 
 # <б>Опис:</б>
 #: src/giggle-view-summary.c:117
-#, fuzzy
 msgid "Description:"
-msgstr "<b>Опис:</b>"
+msgstr "Опис:"
 
 # Дистанційне керування
 #: src/giggle-view-summary.c:167
-#, fuzzy
 msgid "Remotes:"
-msgstr "_Віддалені репозиторії"
+msgstr "Віддалені:"
 
 # Резюме
 #: src/giggle-view-summary.c:195
@@ -731,13 +755,13 @@ msgstr "Автори"
 # Дистанційне керування
 #: src/giggle-view-summary.c:204
 msgid "_Remotes"
-msgstr "_Віддалені репозиторії"
+msgstr "_Віддалені сховища"
 
 # Тека „%s“ не схожий на Git репозиторій.
 #: src/giggle-window.c:546
 #, c-format
 msgid "The directory '%s' does not look like a git repository."
-msgstr "Тека „%s“ не схожа на git-сховище."
+msgstr "Тека «%s» не схожа на git-сховище."
 
 # Виберіть Git репозиторій
 #: src/giggle-window.c:629
@@ -752,7 +776,7 @@ msgstr "Властивості %s"
 
 #: src/giggle-window.c:912
 msgid "Contributors:"
-msgstr ""
+msgstr "Учасники розробки:"
 
 #: src/giggle-window.c:925
 msgid ""
@@ -760,18 +784,27 @@ msgid ""
 "Copyright © 2008 - 2009 Mathias Hasselmann\n"
 "Copyright © 2009 - 2012 The Giggle authors"
 msgstr ""
+"© Imendio AB, 2007–2008\n"
+"© Mathias Hasselmann, 2008–2009\n"
+"© Автори Giggle, 2009–2012"
 
 # Перекладач-кредитів
+#. Translators: This is a special message that shouldn't be translated
+#. * literally. It is used in the about box to give credits to
+#. * the translators.
+#. * Thus, you should translate it to your name and email address.
+#. * You should also include other translators who have contributed to
+#. * this translation; in that case, please write each of them on a separate
+#. * line seperated by newlines (\n).
+#.
 #: src/giggle-window.c:937
 msgid "translator-credits"
 msgstr "Сергій Дубик <dubyk@ukr.net>"
 
 # Графічний інтерфейс до Git трекер контенту.
 #: src/giggle-window.c:942
-#, fuzzy
 msgid "A graphical frontend for Git"
-msgstr ""
-"Графічний інтерфейс до розподіленої системи керування версіями файлів Git."
+msgstr "Графічний інтерфейс до Git"
 
 # Про Giggle
 #: src/giggle-window.c:947
@@ -780,21 +813,18 @@ msgstr "Про Giggle"
 
 # Хихикати
 #: src/giggle-window.c:951
-#, fuzzy
 msgid "Giggle Website"
-msgstr "Giggle"
+msgstr "Сайт Giggle"
 
 # Знайти…
 #: src/giggle-window.c:1007
-#, fuzzy
 msgid "_Find…"
-msgstr "_Пошук…"
+msgstr "З_найти…"
 
 # Пошук по сайту:
 #: src/giggle-window.c:1008
-#, fuzzy
 msgid "Find…"
-msgstr "Знайти:"
+msgstr "Знайти…"
 
 # Знайти далі
 #: src/giggle-window.c:1014
@@ -848,11 +878,11 @@ msgstr "Відкрити git-сховище"
 
 #: src/giggle-window.c:1036
 msgid "Clone _location"
-msgstr ""
+msgstr "Клонувати _місце"
 
 #: src/giggle-window.c:1036
 msgid "Clone a location"
-msgstr ""
+msgstr "Клонувати місце"
 
 # Зберегти патч
 #: src/giggle-window.c:1041
@@ -891,11 +921,11 @@ msgstr "Перейти вперед у історії"
 
 #: src/giggle-window.c:1076
 msgid "_Contents"
-msgstr ""
+msgstr "В_міст"
 
 #: src/giggle-window.c:1077
 msgid "Show user guide for Giggle"
-msgstr ""
+msgstr "Показати підручник користувача Giggle"
 
 # Повідомити про проблему
 #: src/giggle-window.c:1080
@@ -904,9 +934,8 @@ msgstr "Повідомити про _проблему"
 
 # Доповідь питання Ви знайшли у Giggle
 #: src/giggle-window.c:1081
-#, fuzzy
 msgid "Report an issue you’ve found in Giggle"
-msgstr "Повідомити про проблему знайденою Вами у Giggle"
+msgstr "Повідомити про проблему знайденою вами у Giggle"
 
 # Про цю програму
 #: src/giggle-window.c:1085
@@ -920,19 +949,17 @@ msgstr "Показати дерево версій"
 
 #: src/giggle-window.c:1099
 msgid "Show diffs by chunk"
-msgstr ""
+msgstr "Показати різниці за фрагментами"
 
 # Показати усі файли
 #: src/giggle-window.c:1102
-#, fuzzy
 msgid "Show diffs by file"
-msgstr "Показати усі файли"
+msgstr "Показати різниці за файлом"
 
 # Показати усі файли
 #: src/giggle-window.c:1105
-#, fuzzy
 msgid "Show all diffs"
-msgstr "Показати усі файли"
+msgstr "Показати усі різниці"
 
 # Показати й відредагувати властивості проекту
 #: src/giggle-window.c:1111
@@ -962,41 +989,5 @@ msgid ""
 "An error occurred when saving to file:\n"
 "%s"
 msgstr ""
-"Сталася помилка при збереженні до файлу:\n"
+"Сталася помилка при збереженні до файла:\n"
 "%s"
-
-# Хихикати
-#~ msgid "Giggle"
-#~ msgstr "Giggle"
-
-# Git репозиторій перегляду
-#~ msgid "Git repository viewer"
-#~ msgstr "Огляд git-сховища"
-
-# Знайти Попередня
-#~ msgid "Find Previous"
-#~ msgstr "Знайти попереднє"
-
-# Знайти далі
-#~ msgid "Find Next"
-#~ msgstr "Знайти наступне"
-
-# Знайти…
-#~ msgid "Find..."
-#~ msgstr "Пошук…"
-
-# <б>Філії</б>
-#~ msgid "<b>Branches</b>"
-#~ msgstr "<b>Гілки</b>"
-
-# <б>пульти:</б>
-#~ msgid "<b>Remotes:</b>"
-#~ msgstr "<b>Віддалені репозиторії:</b>"
-
-# Відвідати домашню сторінку
-#~ msgid "Visit _Homepage"
-#~ msgstr "Відвідати _домашню сторінку"
-
-# Відвідати домашню сторінку Giggle
-#~ msgid "Visit the homepage of Giggle"
-#~ msgstr "Відвідати домашню сторінку Giggle"
