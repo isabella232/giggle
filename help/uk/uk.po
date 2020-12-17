@@ -1,0 +1,516 @@
+# Ukrainian translation for giggle.
+# Copyright (C) 2020 giggle's COPYRIGHT HOLDER
+# This file is distributed under the same license as the giggle package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: giggle master\n"
+"POT-Creation-Date: 2020-07-05 13:06+0000\n"
+"PO-Revision-Date: 2020-07-19 11:06+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.07.70\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Юрій Чорноіван <yurchor@ukr.net>, 2020"
+
+#. (itstool) path: info/desc
+#: C/browse-view.page:6
+msgid "Viewing the contents of the repository"
+msgstr "Перегляд вмісту сховища"
+
+#. (itstool) path: credit/name
+#: C/browse-view.page:11 C/history-view.page:11 C/index.page:7
+#: C/introduction.page:11 C/opening-repositories.page:11
+#: C/tagging-commits.page:11
+msgid "Łukasz Jernaś"
+msgstr "Łukasz Jernaś"
+
+#. (itstool) path: license/p
+#: C/browse-view.page:22 C/history-view.page:22 C/index.page:18
+#: C/introduction.page:22 C/opening-repositories.page:22
+#: C/tagging-commits.page:22
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#. (itstool) path: page/title
+#: C/browse-view.page:26
+msgid "Browse view"
+msgstr "Панель навігації"
+
+#. (itstool) path: section/title
+#: C/browse-view.page:28 C/history-view.page:27
+msgid "Overview"
+msgstr "Огляд"
+
+#. (itstool) path: figure/desc
+#: C/browse-view.page:30
+msgid "Giggle in Browse view mode"
+msgstr "Giggle у режимі навігації"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/browse-view.page:31
+msgctxt "_"
+msgid ""
+"external ref='figures/giggle-browse_view_sections.png' "
+"md5='390225c079a94ec75fd1c172f90c6b3c'"
+msgstr ""
+"external ref='figures/giggle-browse_view_sections.png' "
+"md5='390225c079a94ec75fd1c172f90c6b3c'"
+
+#. (itstool) path: media/p
+#: C/browse-view.page:32
+msgid "Giggle main window in Browse mode"
+msgstr "Головне вікно Giggle у режимі навігації"
+
+#. (itstool) path: section/p
+#: C/browse-view.page:35
+msgid "<app>Giggle</app>'s browse view is set up in three main parts:"
+msgstr "Панель навігації <app>Giggle</app> поділено на три основні частини:"
+
+#. (itstool) path: item/p
+#: C/browse-view.page:38
+msgid "Project tree"
+msgstr "Ієрархія проєкту"
+
+#. (itstool) path: item/p
+#: C/browse-view.page:39
+msgid "Displays all the files included in the current repository."
+msgstr "Показує усіх файли, які включено до поточного сховища."
+
+#. (itstool) path: item/p
+#: C/browse-view.page:42
+msgid "File preview"
+msgstr "Перегляд файлів"
+
+#. (itstool) path: item/p
+#: C/browse-view.page:43
+msgid ""
+"Displays the contents of the currently selected file according as of the "
+"selected revision."
+msgstr ""
+"Показує вміст поточного позначеного файла відповідно до вибраної модифікації."
+
+#. (itstool) path: item/p
+#: C/browse-view.page:46 C/history-view.page:37
+msgid "History graph"
+msgstr "Граф журналу"
+
+#. (itstool) path: item/p
+#: C/browse-view.page:47
+msgid ""
+"Displays a visual representation of the currently selected file's history"
+msgstr "Показує візуальну картину журналу поточного позначеного файла"
+
+#. (itstool) path: section/title
+#: C/browse-view.page:52
+msgid "About the Project tree"
+msgstr "Про ієрархію проєкту"
+
+#. (itstool) path: section/p
+#: C/browse-view.page:53
+msgid ""
+"The Project tree is a powerful part of Giggle's interface, of course if you "
+"know about it. By default it doesn't display files hidden by <file>."
+"gitignore</file>. You can change this behaviour by using the right-click "
+"context menu option <gui>Show all files</gui>. Files which are not part of "
+"your repository are greyed out."
+msgstr ""
+"Ієрархія проєкту є потужною частиною інтерфейсу Giggle, звичайно ж, якщо ви"
+" про неї знаєте. Типово, на ній не буде показано файли, які приховано за"
+" допомогою <file>.gitignore</file>. Ви можете змінити цю поведінку за"
+" допомогою контекстного меню, яке викликається клацанням правою кнопкою миші,"
+" а саме, пункту <gui>Показати усі файли</gui>. Файли, які не є частиною"
+" сховища, буде показано сірим кольором."
+
+#. (itstool) path: section/p
+#: C/browse-view.page:54
+msgid "The Project tree offers you the following:"
+msgstr "Панель ієрархія проєкту пропонує вам такі можливості:"
+
+#. (itstool) path: item/p
+#: C/browse-view.page:57
+msgid "Adding files to the repository."
+msgstr "Додавання файлів до сховища."
+
+#. (itstool) path: item/p
+#: C/browse-view.page:58
+msgid "By using the <gui>Add file to repository</gui> context menu option."
+msgstr ""
+"За допомогою пункту контекстного меню <gui>Додати файл до сховища</gui>."
+
+#. (itstool) path: item/p
+#: C/browse-view.page:61
+msgid "Adding/removing files to <file>.gitignore</file>."
+msgstr ""
+"Додавання файлів до <file>.gitignore</file> або вилучення файлів звідти."
+
+#. (itstool) path: item/p
+#: C/browse-view.page:62
+msgid ""
+"By using the <gui>Add to .gitignore</gui> or <gui>Remove from .gitignore</"
+"gui> context menu options."
+msgstr ""
+"За допомогою пунктів контекстного меню <gui>Додати до .gitignore</gui> та <"
+"gui>Вилучити з .gitignore</gui>."
+
+#. (itstool) path: item/p
+#: C/browse-view.page:65
+msgid "Editing files"
+msgstr "Редагування файлів"
+
+#. (itstool) path: item/p
+#: C/browse-view.page:68
+msgid "Committing"
+msgstr "Записується до репозиторію"
+
+#. (itstool) path: item/p
+#: C/browse-view.page:71
+msgid "Creating patches"
+msgstr "Створення латок"
+
+#. (itstool) path: item/p
+#: C/browse-view.page:72
+msgid ""
+"When there are any unstaged changes in the file list, you can create a patch "
+"by using the <gui>Create patch</gui> context menu option."
+msgstr ""
+"Якщо у списку файлів є якісь незаписані зміни, ви можете створити латку за"
+" допомогою пункту контекстного меню <gui>Створити латку</gui>."
+
+#. (itstool) path: info/desc
+#: C/history-view.page:6
+msgid "Viewing the history of a repository"
+msgstr "Перегляд журналу сховища"
+
+#. (itstool) path: page/title
+#: C/history-view.page:25
+msgid "History view"
+msgstr "Панель журналу"
+
+#. (itstool) path: figure/desc
+#: C/history-view.page:29
+msgid "Giggle in History view mode"
+msgstr "Giggle у режимі перегляду журналу"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/history-view.page:30
+msgctxt "_"
+msgid ""
+"external ref='figures/giggle-history_view_sections.png' "
+"md5='3b487583a028a4d087e3d6a5bcd589b8'"
+msgstr ""
+"external ref='figures/giggle-history_view_sections.png' "
+"md5='3b487583a028a4d087e3d6a5bcd589b8'"
+
+#. (itstool) path: media/p
+#: C/history-view.page:31
+msgid "Giggle main window in History mode"
+msgstr "Головне вікно Giggle у режимі журналу"
+
+#. (itstool) path: section/p
+#: C/history-view.page:34
+msgid "<app>Giggle</app>'s history view is set up in three main parts:"
+msgstr "Панель журналу <app>Giggle</app> поділено на три основні частини:"
+
+#. (itstool) path: item/p
+#: C/history-view.page:38
+msgid ""
+"Displays a visual representation of the current repository history, "
+"including all the branches be it remote or local. By hovering the mouse "
+"cursor over the icons you can display additional information, such as branch "
+"and tag names. Moving through history is accomplished either by using the "
+"mouse or the <key>Up</key> and <key>Down</key> keys."
+msgstr ""
+"Показує візуальне представлення журналу поточного сховища, включно із усіма"
+" гілками, віддаленими або локальними. Якщо ви наведете вказівник миші на"
+" піктограми, програма покаже додаткові відомості, зокрема назви гілок і"
+" міток. Пересування журналом здійснюється за допомогою миші або натискання"
+" клавіш <key>↑</key> і <key>↓</key>."
+
+#. (itstool) path: item/p
+#: C/history-view.page:41
+msgid "Changed files"
+msgstr "Змінені файли"
+
+#. (itstool) path: item/p
+#: C/history-view.page:42
+msgid "Displays files changed in the currently selected revision"
+msgstr "Показує файли, які було змінено у поточній позначеній модифікації"
+
+#. (itstool) path: item/p
+#: C/history-view.page:45
+msgid "Diff"
+msgstr "Diff"
+
+#. (itstool) path: item/p
+#: C/history-view.page:46
+msgid "Displays the differences for the selected file and revision."
+msgstr "Показує відмінності для позначеного файла і модифікації."
+
+#. (itstool) path: note/p
+#: C/history-view.page:48
+msgid ""
+"<app>Giggle</app> displays the differences as individual chunks, you can "
+"move between them either by using the Up and Down icons above the list of "
+"changed files, or by pressing <keyseq><key>Alt</key><key>Up</key></keyseq> "
+"and <keyseq><key>Alt</key><key>Down</key></keyseq> keys. Doing so will also "
+"move you through the list of changed files as the diff progresses."
+msgstr ""
+"<app>Giggle</app> показує відмінності як окремі фрагменти. Ви можете"
+" пересуватися між ними або за допомогою кнопок із піктограмами-стрілками над"
+" списком змінених файлів, або за допомогою натискання комбінацій клавіш <"
+"keyseq><key>Alt</key><key>↑</key></keyseq> та <keyseq><key>Alt</key><key>↓<"
+"/key></keyseq>. Використання цих засобів керування також пересуватиме"
+" перегляд списком змінених файлів під час пересування різницею."
+
+#. (itstool) path: page/title
+#: C/index.page:22
+msgid "Giggle Help"
+msgstr "Довідка з Giggle"
+
+#. (itstool) path: section/title
+#: C/index.page:25
+msgid "Working with <app>Giggle</app>"
+msgstr "Робота з <app>Giggle</app>"
+
+#. (itstool) path: section/title
+#: C/index.page:28
+msgid "Working with GIT repositories"
+msgstr "Робота зі сховищами GIT"
+
+#. (itstool) path: info/desc
+#: C/introduction.page:6
+msgid "Introduction to the <app>Giggle</app> GIT repository viewer"
+msgstr "Вступ до <app>Giggle</app>, програми для перегляду сховищ GIT"
+
+#. (itstool) path: page/title
+#: C/introduction.page:26
+msgid "Introduction"
+msgstr "Вступ"
+
+#. (itstool) path: page/p
+#: C/introduction.page:27
+msgid ""
+"The <app>Giggle</app> application enables you to graphically browse and "
+"manipulate the contents of a git directory tree."
+msgstr ""
+"Програма <app>Giggle</app> надає вам змогу здійснювати навігацію та керувати"
+" вмістом ієрархії каталогів сховища git у графічному режимі."
+
+#. (itstool) path: section/title
+#: C/introduction.page:30
+msgid "Starting <app>giggle</app>"
+msgstr "Запуск <app>giggle</app>"
+
+#. (itstool) path: section/p
+#: C/introduction.page:31
+msgid "You can start <app>giggle</app> in the following ways:"
+msgstr "Запустити <app>giggle</app> можна у один із таких способів:"
+
+#. (itstool) path: item/p
+#: C/introduction.page:34
+msgid ""
+"Choose <guiseq><gui>Programming</gui> <gui>Giggle</gui></guiseq> from the "
+"<gui>Applications</gui> menu."
+msgstr ""
+"Виберіть пункт <guiseq><gui>Програмування</gui> <gui>Giggle</gui></guiseq> з"
+" меню <gui>Програми</gui>."
+
+#. (itstool) path: item/p
+#: C/introduction.page:37
+msgid ""
+"Run <cmd>giggle</cmd> at the prompt in a terminal such or from the <gui>Run "
+"Application</gui> dialog."
+msgstr ""
+"Віддайте команду <cmd>giggle</cmd> у запиті термінала або у діалоговому вікні"
+" <gui>Запустити програму</gui>."
+
+#. (itstool) path: section/title
+#: C/introduction.page:43
+msgid "Closing <app>giggle</app>"
+msgstr "Закриття <app>giggle</app>"
+
+#. (itstool) path: section/p
+#: C/introduction.page:44
+msgid ""
+"To close <app>giggle</app> choose <guiseq><gui>Project</gui><gui>Quit</gui></"
+"guiseq>, or press <keyseq><key>Ctrl</key><key>Q</key></keyseq>."
+msgstr ""
+"Щоб закрити вікно <app>giggle</app>, виберіть пункт меню <guiseq><gui>Проєкт<"
+"/gui><gui>Вийти</gui></guiseq> або натисніть комбінацію клавіш <keyseq><key"
+">Ctrl</key><key>Q</key></keyseq>."
+
+#. (itstool) path: info/desc
+#: C/license.page:7
+msgid "Legal information."
+msgstr "Правові відомості."
+
+#. (itstool) path: page/title
+#: C/license.page:10
+msgid "License"
+msgstr "Ліцензування"
+
+#. (itstool) path: page/p
+#: C/license.page:11
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Ця робота поширюється за умов ліцензування CreativeCommons Attribution-Share "
+"Alike 3.0 Unported."
+
+#. (itstool) path: page/p
+#: C/license.page:19
+msgid "You are free:"
+msgstr "Ви можете:"
+
+#. (itstool) path: item/title
+#: C/license.page:24
+msgid "<em>To share</em>"
+msgstr "<em>Ділитися</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:25
+msgid "To copy, distribute and transmit the work."
+msgstr "Копіювати, поширювати і передавати цю роботу"
+
+#. (itstool) path: item/title
+#: C/license.page:28
+msgid "<em>To remix</em>"
+msgstr "<em>Змінювати</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:29
+msgid "To adapt the work."
+msgstr "Адаптувати цю роботу."
+
+#. (itstool) path: page/p
+#: C/license.page:32
+msgid "Under the following conditions:"
+msgstr "За дотримання таких умов:"
+
+#. (itstool) path: item/title
+#: C/license.page:37
+msgid "<em>Attribution</em>"
+msgstr "<em>Посилання на джерело</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:38
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Ви маєте вказати авторство так, як це визначено автором або ліцензіатом (але "
+"не у такий спосіб, наче вони підтримують вас або ваше використання роботи)."
+
+#. (itstool) path: item/title
+#: C/license.page:45
+msgid "<em>Share Alike</em>"
+msgstr "<em>Поширення на тих самих умовах</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:46
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Якщо ви змінюєте, перетворюєте або створюєте роботу на основі цієї роботи, "
+"ви можете поширювати результати лише за тих самих, подібних або сумісних "
+"умов ліцензування."
+
+#. (itstool) path: page/p
+#: C/license.page:52
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Щоб ознайомитися із повним текстом ліцензійних умов, скористайтеся <link "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">сайтом "
+"CreativeCommons</link> або прочитайте повністю <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/\">Commons Deed</link>."
+
+#. (itstool) path: info/desc
+#: C/opening-repositories.page:6
+msgid "Opening GIT repositories"
+msgstr "Відкриття сховищ GIT"
+
+#. (itstool) path: page/title
+#: C/opening-repositories.page:26
+msgid "Opening a repository"
+msgstr "Відкриття сховища"
+
+#. (itstool) path: page/p
+#: C/opening-repositories.page:27
+msgid "You can open a git repository in the following ways:"
+msgstr "Відкрити сховище git можна у один із таких способів:"
+
+#. (itstool) path: item/p
+#: C/opening-repositories.page:30
+msgid ""
+"using <guiseq><gui>Project</gui><gui>Open</gui></guiseq>, and selecting the "
+"directory with your repository,"
+msgstr ""
+"за допомогою пункту меню <guiseq><gui>Проєкт</gui><gui>Відкрити</gui></guiseq"
+"> і вибору каталогу із вашим сховищем,"
+
+#. (itstool) path: item/p
+#: C/opening-repositories.page:33
+msgid "running <cmd>giggle</cmd> in your project's directory,"
+msgstr "за допомогою запуску <cmd>giggle</cmd> у каталозі вашого проєкту,"
+
+#. (itstool) path: item/p
+#: C/opening-repositories.page:36
+msgid ""
+"running <cmd>giggle</cmd> with the repository path specified as an argument."
+msgstr ""
+"за допомогою запуску <cmd>giggle</cmd> із шляхом до сховища, заданим як"
+" аргумент команди."
+
+#. (itstool) path: info/desc
+#. (itstool) path: page/title
+#: C/tagging-commits.page:6 C/tagging-commits.page:26
+msgid "Tagging commits"
+msgstr "Створення міток для внесків"
+
+#. (itstool) path: page/p
+#: C/tagging-commits.page:27
+msgid ""
+"To make a new tag open the context menu by right clicking on a commit in the "
+"revision window (it doesn't matter if it's the Browse or History view), then "
+"click <gui>Create tag</gui> and enter a name in the just opened dialog "
+"window."
+msgstr ""
+"Щоб створити мітку, відкрийте контекстне меню клацанням правою кнопкою миші"
+" на пункті внеску у вікні модифікацій (не має значення, у якому режимі працює"
+" програма — навігації чи журналу), потім клацніть на пункті <gui>Створити"
+" мітку</gui> і введіть назву у діалоговому вікні, яке буде відкрито програмою."
+
+#. (itstool) path: page/p
+#: C/tagging-commits.page:28
+msgid ""
+"You will notice that near the revision you have selected a new icon has "
+"appeared - it's your newly created tag."
+msgstr ""
+"Після цього поряд із пунктом вибраної вами модифікації буде показано нову"
+" піктограму — це створена вами мітка."
