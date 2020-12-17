@@ -132,6 +132,8 @@ AC_RUN_IFELSE(
 dnl  ------------------
 dnl | Language Support |---------------------------------------
 dnl  ------------------
+# FIXME: Remove AM_GNU_GETTEXT_VERSION once autoreconf supports REQUIRE_VERSION
+AM_GNU_GETTEXT_VERSION([0.19.8])
 AM_GNU_GETTEXT_REQUIRE_VERSION([0.19.8])
 AM_GNU_GETTEXT([external])
 
