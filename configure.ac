@@ -132,7 +132,7 @@ AC_RUN_IFELSE(
 dnl  ------------------
 dnl | Language Support |---------------------------------------
 dnl  ------------------
-AM_GNU_GETTEXT_VERSION([0.19.4])
+AM_GNU_GETTEXT_REQUIRE_VERSION([0.19.8])
 AM_GNU_GETTEXT([external])
 
 AC_SUBST([GETTEXT_PACKAGE], [giggle])
