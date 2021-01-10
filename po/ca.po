@@ -555,7 +555,7 @@ msgstr "Navega pels canvis de la revisió"
 
 #: src/giggle-view-file.c:324
 msgid "_Goto Line Number"
-msgstr "_Vés al número de línia"
+msgstr "_Ves al número de línia"
 
 #: src/giggle-view-file.c:325
 msgid "Highlight specified line number"
@@ -730,7 +730,7 @@ msgstr "_Edita"
 
 #: src/giggle-window.c:1027
 msgid "_Go"
-msgstr "_Vés a"
+msgstr "_Ves a"
 
 #: src/giggle-window.c:1028
 msgid "_View"
@@ -774,11 +774,11 @@ msgstr "Surt de l'aplicació"
 
 #: src/giggle-window.c:1068
 msgid "Go backward in history"
-msgstr "Vés enrere en l'historial"
+msgstr "Ves enrere en l'historial"
 
 #: src/giggle-window.c:1072
 msgid "Go forward in history"
-msgstr "Vés endavant amb l'historial"
+msgstr "Ves endavant amb l'historial"
 
 #: src/giggle-window.c:1076
 msgid "_Contents"
